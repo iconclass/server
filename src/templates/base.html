@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <title>{% block title %}ICONCLASS{% endblock %}</title>
+    <link href="/static/styles20210426.css" rel="stylesheet">
+    {% endblock %}
+    <script async defer data-domain="test.iconclass.org" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <div id="api"><a title="Machine-readable interaction" href="/docs/">API</a> &middot; <a href="https://github.com/iconclass/data" title="The underlying source data of the system">DATA</a></div>
+    <h4><a href="/" title="Pick a random notation!">ICONCLASS</a></h4>
+    <input style="width: 98vw" id="searchbox" autocomplete="off" type="text" name="q" placeholder="Search" value="{{q}}"/>
+    <div id="results">&nbsp;</div>
+    {% block content %}{% endblock %}
+    <div id="call2021">
+        <div style="font-size: 60%">This is a new tool under development</div>
+        Ideas? Comments? Please use <a href="https://docs.google.com/document/d/1yg8aVhmbR9UrWz4ECthPcCIJsezSm6PTPFKmtpcoAqI/edit?usp=sharing">this GoogleDoc</a> to let me know.</div>
+</body>
+<script src="/static/main20210426.js"></script>
+<script>
+    document.IC_LANG = "{{lang}}"
+</script>
+</html>

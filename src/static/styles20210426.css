@@ -1,0 +1,47 @@
+body {
+  background-color: whitesmoke;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+#results {
+  font-size: 75%;
+  margin: 0;
+  padding: 5px 5px 5px 10px;
+}
+#foundmsg {
+  color: brown;
+  font-style: italic;
+  margin: 0 0 5px 5px;
+}
+form {
+  margin: 0;
+}
+#languages {
+  margin-top: 10px;
+  padding: 5px;
+}
+#languages a {
+  margin-right: 6px;
+}
+#call2021 {
+  width: 80ch;
+  margin: 0 auto;
+  padding: 20px 5px 10px 5px;
+  border-top: 2px solid #bbd;
+  text-align: center;
+}
+#api {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding: 0 10px 0 0;
+}

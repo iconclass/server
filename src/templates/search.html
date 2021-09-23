@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Search: {{ q }}{% endblock %}
+{% block content %}
+    <h2 style="margin: 0">Found {{total}} searching for {{q}}</h2>
+    <div style="margin-bottom: 10px">        
+        {% if include_keys == "1"%}<a href="/search?lang={{lang}}&q={{q}}&sort={{sort}}&keys=0">Exclude (+ Keys)</a>{% else %}<a href="/search?lang={{lang}}&q={{q}}&sort={{sort}}&keys=1">Include (+ Keys)</a>{% endif %}
+        <div style="display: inline-block; margin: 0 10px">&middot;</div>
+        {% if sort == "rank" %}<a href="/search?lang={{lang}}&q={{q}}&sort=notation&keys={{include_keys}}">Sort by Notation</a>{% else %}<a href="/search?lang={{lang}}&q={{q}}&sort=rank&keys={{include_keys}}">Sort by Rank</a>{% endif %}
+    </div>
+
+    <div style="max-width: 90ch">
+    {% for r in results %}
+    <div style="text-indent: -1em; margin-left: 1em; margin-bottom: 5px">
+        <a href="/{{lang}}/{{r['n']}}">{{r['n']}}</a> &nbsp; {{ r.get('txt').get(lang)}}
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

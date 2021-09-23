@@ -1,0 +1,19 @@
+FROM python:3.9.7-alpine
+
+RUN apk update && apk add gcc libc-dev make sqlite-dev git perl \
+    && git clone --recursive https://github.com/epoz/fts5-snowball.git
+
+WORKDIR /fts5-snowball
+
+RUN make
+
+COPY ./data /data
+COPY ./src/scripts/make_index.py /data/
+
+RUN cp /fts5-snowball/fts5stemmer.so /data/
+
+WORKDIR /data
+
+RUN pip install textbase xlsxwriter tqdm
+
+CMD python make_index.py
