@@ -1,6 +1,5 @@
 FROM iconclass_base
 
-ENV PYTHONUNBUFFERED True
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
