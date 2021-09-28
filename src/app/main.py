@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse, RedirectResponse, Response
+from fastapi.responses import HTMLResponse, RedirectResponse, Response, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import iconclass
@@ -31,6 +31,56 @@ async def index() -> RedirectResponse:
 #     response = HttpResponseRedirect("/" + urllib.quote(notation) + ".rdf")
 #     response.status_code = 303
 #     return response
+
+
+@app.get("/{notation}.jskos", response_model=JSKOS, response_model_exclude_unset=True)
+async def notation_jskos(notation: str):
+    if notation == "ICONCLASS":
+        tmp = {
+            "@context": "https://gbv.github.io/jskos/context.json",
+            "definition": {
+                "en": ["Subject classification for cultural heritage content"]
+            },
+            "identifier": [
+                "http://bartoc.org/en/node/459",
+                "http://www.wikidata.org/entity/Q1502787",
+            ],
+            "namespace": "https://iconclass.org/",
+            "notation": ["IC"],
+            "prefLabel": {
+                "en": "ICONCLASS",
+            },
+            "type": ["http://www.w3.org/2004/02/skos/core#ConceptScheme"],
+            "uri": "https://iconclass.org/",
+            "topConcepts": [{"uri": f"https://iconclass.org/{x}"} for x in range(10)],
+        }
+        return JSONResponse(tmp)
+    else:
+        obj = iconclass.get(notation)
+    tmp = {
+        "@context": "https://gbv.github.io/jskos/context.json",
+        "uri": f"https://iconclass.org/{urllib.parse.quote(notation)}",
+        "type": ["http://www.w3.org/2004/02/skos/core#Concept"],
+        "prefLabel": obj.get("txt", {}),
+        "altLabel": obj.get("kw", {}),
+        "notation": [notation],
+    }
+    if "p" in obj:
+        tmp["ancestors"] = [
+            {"uri": f"https://iconclass.org/{urllib.parse.quote(p)}"}
+            for p in obj.get("p", [None])[:-1]
+        ]
+    if "c" in obj:
+        tmp["narrower"] = [
+            {"uri": f"https://iconclass.org/{urllib.parse.quote(c)}"}
+            for c in obj.get("c", [])
+        ]
+    if "r" in obj:
+        tmp["related"] = [
+            {"uri": f"https://iconclass.org/{urllib.parse.quote(r)}"}
+            for r in obj.get("r", [])
+        ]
+    return tmp
 
 
 @app.get("/{notation}.json", response_model=Notation, response_model_exclude_unset=True)
@@ -128,8 +178,19 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
     return results
 
 
+@app.get("/browse/{lang}", response_class=HTMLResponse)
+async def browse(request: Request, lang: str):
+    if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "ja"):
+        lang = "en"
+    ctx = {
+        "request": request,
+        "lang": lang,
+    }
+    return templates.TemplateResponse("browse.html", ctx)
+
+
 @app.get("/{lang}/{notation}", response_class=HTMLResponse)
-async def browse(request: Request, lang: str, notation: str):
+async def lang_notation(request: Request, lang: str, notation: str):
     if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "ja"):
         lang = "en"
     obj = iconclass.get(notation)
@@ -143,4 +204,4 @@ async def browse(request: Request, lang: str, notation: str):
         "notation": notation,
         "tops": tops,
     }
-    return templates.TemplateResponse("browse.html", ctx)
+    return templates.TemplateResponse("lang_notation.html", ctx)

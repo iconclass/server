@@ -1,5 +1,6 @@
 from typing import Optional, List, Dict, Text
 from pydantic import BaseModel
+from pydantic.errors import UrlUserInfoError
 
 
 class NotationTexts(BaseModel):
@@ -37,3 +38,14 @@ class Notation(BaseModel):
     r: Optional[List]
     txt: NotationTexts
     kw: KeywordTexts
+
+
+class JSKOS(BaseModel):
+    uri: Text
+    type: List[Text]
+    notation: List[Text]
+    prefLabel: Optional[Dict]
+    altLabel: Optional[Dict]
+    ancestors: Optional[List]
+    narrower: Optional[List]
+    related: Optional[List]
