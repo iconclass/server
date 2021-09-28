@@ -1,6 +1,5 @@
-from typing import Optional
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import iconclass
@@ -8,14 +7,15 @@ import sqlite3
 import os
 import urllib.parse
 from .util import fill_obj
+from .models import *
 
-app = FastAPI()
+app = FastAPI(openapi_url="/openapi")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/")
-async def read_root():
+@app.get("/", response_class=RedirectResponse)
+async def index() -> RedirectResponse:
     SQL = "select notation from notations ORDER BY RANDOM() LIMIT 1"
     IC_INDEX_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
     cur = sqlite3.connect(IC_INDEX_PATH).cursor()
@@ -26,18 +26,50 @@ async def read_root():
     u = urllib.parse.quote(results[0])
     return RedirectResponse(f"/en/{u}")
 
-    if notation.endswith(".rdf"):
-        return linked_data(request, "rdf", notation[:-4])
-    if notation.endswith(".json"):
-        return linked_data(request, "json", notation[:-5])
-    if notation.endswith(".fat"):
-        return linked_data(request, "fat", notation[:-4])
-    if request.META.get("HTTP_ACCEPT").find("application/rdf+xml") > -1:
-        response = HttpResponseRedirect("/" + urllib.quote(notation) + ".rdf")
-        response.status_code = 303
-        return response
 
-    # return RedirectResponse("/en/31A621(+9212)")
+# if request.META.get("HTTP_ACCEPT").find("application/rdf+xml") > -1:
+#     response = HttpResponseRedirect("/" + urllib.quote(notation) + ".rdf")
+#     response.status_code = 303
+#     return response
+
+
+@app.get("/{notation}.json", response_model=Notation, response_model_exclude_unset=True)
+async def notation_json(notation: str):
+    if notation == "ICONCLASS":
+        obj = {
+            "txt": {},
+            "c": [str(x) for x in range(10)],
+            "n": "ICONCLASS",
+            "kw": {},
+            "p": [],
+        }
+    else:
+        obj = iconclass.get(notation)
+    return obj
+
+
+@app.get("/{notation}.rdf", response_class=Response)
+async def notation_rdf(request: Request, notation: str):
+    if notation in ("scheme", "ICONCLASS"):
+        SKOSRDF = """<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <skos:ConceptScheme rdf:about="https://iconclass.org/rdf/2021/09/">
+        <dc:title>ICONCLASS</dc:title>
+        <dc:description>Iconclass is a subject-specific multilingual classification system. It is a hierarchically ordered collection of definitions of objects, people, events and abstract ideas that serve as the subject of an image. Art historians, researchers and curators use it to describe, classify and examine the subject of images represented in various media such as paintings, drawings, photographs and texts.</dc:description>
+        <dc:creator>Henri van de Waal</dc:creator>
+        <skos:hasTopConcept rdf:resource="https://iconclass.org/ICONCLASS"/>
+   </skos:ConceptScheme>
+</rdf:RDF>"""
+        return Response(content=SKOSRDF, media_type="application/xml")
+    else:
+        obj = iconclass.get(notation)
+        return templates.TemplateResponse(
+            "rdf.html", {"obj_list": [obj], "request": request}
+        )
 
 
 @app.get("/search", response_class=HTMLResponse)
@@ -82,7 +114,7 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
     IC_INDEX_PATH = os.environ.get("IC_INDEX_PATH", "iconclass_index.sqlite")
     index_db = sqlite3.connect(IC_INDEX_PATH)
     index_db.enable_load_extension(True)
-    index_db.load_extension("./fts5stemmer")
+    index_db.load_extension("/usr/local/lib/fts5stemmer")
     cur = index_db.cursor()
 
     if keys:
@@ -112,33 +144,3 @@ async def browse(request: Request, lang: str, notation: str):
         "tops": tops,
     }
     return templates.TemplateResponse("browse.html", ctx)
-
-
-def linked_data(format: str, notation: str):
-    if notation == "scheme":
-        SKOSRDF = """<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <skos:ConceptScheme rdf:about="http://iconclass.org/rdf/2011/09/">
-        <dc:title>ICONCLASS</dc:title>
-        <dc:description>Iconclass is a subject-specific multilingual classification system. It is a hierarchically ordered collection of definitions of objects, people, events and abstract ideas that serve as the subject of an image. Art historians, researchers and curators use it to describe, classify and examine the subject of images represented in various media such as paintings, drawings, photographs and texts.</dc:description>
-        <dc:creator>Henri van de Waal</dc:creator>
-        <skos:hasTopConcept rdf:resource="http://iconclass.org/ICONCLASS"/>
-   </skos:ConceptScheme>
-</rdf:RDF>"""
-        return SKOSRDF, "application/xml"
-    if notation == "ICONCLASS":
-        obj = {"txt": {"en": "ICONCLASS Top"}, "c": [str(x) for x in range(10)]}
-    else:
-        obj = iconclass.get(notation)
-    if format == "rdf":
-        tmp = loader.render_to_string("rdf.html", {"obj_list": [obj]})
-        return tmp, "application/xml"
-    if format == "fat":
-        obj = fill_obj(obj)
-        if "comments" in obj:
-            del obj["comments"]
-    return json.dumps(obj, indent=2), "application/json"
