@@ -123,7 +123,7 @@ def index(lang, lang_name, prime_content=False):
     Z = []
     with sqlite3.connect("/out/iconclass_index.sqlite") as index_db:
         index_db.enable_load_extension(True)
-        index_db.load_extension("./fts5stemmer")
+        index_db.load_extension("/usr/local/lib/fts5stemmer")
         ci = index_db.cursor()
 
         ci.execute(
