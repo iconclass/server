@@ -3,3 +3,4 @@ aiofiles==0.4.0
 Jinja2==2.10.3
 ICONCLASS==0.10
 uvicorn==0.11.3
+Transcrypt==3.9.0

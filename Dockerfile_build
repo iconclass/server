@@ -12,7 +12,7 @@ RUN make
 COPY ./data /data
 COPY ./src/scripts/make_index.py /data/
 
-RUN cp /fts5-snowball/fts5stemmer.so /data/
+RUN cp /fts5-snowball/fts5stemmer.so /usr/local/lib/
 
 WORKDIR /data
 

@@ -49,3 +49,7 @@ class JSKOS(BaseModel):
     ancestors: Optional[List]
     narrower: Optional[List]
     related: Optional[List]
+
+
+class JSONLD(BaseModel):
+    graph: List[Dict]

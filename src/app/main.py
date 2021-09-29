@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import FastAPI, Request, HTTPException, Query
 from fastapi.responses import HTMLResponse, RedirectResponse, Response, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -12,6 +12,12 @@ from .models import *
 app = FastAPI(openapi_url="/openapi")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
+
+
+@app.get("/json")
+async def json_list(notation: List[str] = Query(None)):
+    objs = iconclass.get_list(notation)
+    return {"result": objs, "requested": notation}
 
 
 @app.get("/", response_class=RedirectResponse)
@@ -31,6 +37,78 @@ async def index() -> RedirectResponse:
 #     response = HttpResponseRedirect("/" + urllib.quote(notation) + ".rdf")
 #     response.status_code = 303
 #     return response
+
+# https://json-ld.org/
+# https://github.com/digitalbazaar/pyld
+@app.get("/{notation}.jsonld", response_model=JSONLD, response_model_exclude_unset=True)
+async def notation_jsonld(notation: str):
+    if notation == "ICONCLASS":
+        # skos:hasTopConcept
+        obj = {
+            "@context": {
+                "skos": "http://www.w3.org/2004/02/skos/core#",
+                "uri": "@id",
+                "type": "@type",
+                "lang": "@language",
+                "value": "@value",
+                "graph": "@graph",
+                "prefLabel": "skos:prefLabel",
+            },
+            "uri": "https://iconclass.org/rdf/2021/09/",
+            "type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        }
+    else:
+        obj = iconclass.get(notation)
+    tmp = {
+        "@context": {
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "dc": "http://purl.org/dc/elements/1.1/",
+            "uri": "@id",
+            "type": "@type",
+            "lang": "@language",
+            "value": "@value",
+            "graph": "@graph",
+            "prefLabel": "skos:prefLabel",
+            "altLabel": "skos:altLabel",
+            "broader": "skos:broader",
+            "narrower": "skos:narrower",
+            "related": "skos:related",
+            "inScheme": "skos:inScheme",
+        },
+        "graph": [
+            {
+                "uri": f"https://iconclass.org/{urllib.parse.quote(notation)}",
+                "type": "skos:Concept",
+                "inScheme": "https://iconclass.org/rdf/2021/09/",
+                "prefLabel": [
+                    {"lang": lang, "value": txt}
+                    for lang, txt in obj.get("txt", {}).items()
+                ],
+                "dc:subject": [
+                    {"lang": lang, "value": kw}
+                    for lang, kws in obj.get("kw", {}).items()
+                    for kw in kws
+                ],
+            },
+            {"uri": "https://iconclass.org/rdf/2021/09/", "type": "skos:ConceptScheme"},
+        ],
+    }
+    tmp_graph = tmp["graph"][0]
+    if "p" in obj and len(obj["p"]) > 1:
+        tmp_graph["broader"] = {
+            "uri": f"https://iconclass.org/{urllib.parse.quote(obj['p'][-2])}"
+        }
+    if "c" in obj:
+        tmp_graph["narrower"] = [
+            {"uri": f"https://iconclass.org/{urllib.parse.quote(c)}"}
+            for c in obj.get("c", [])
+        ]
+    if "r" in obj:
+        tmp_graph["related"] = [
+            {"uri": f"https://iconclass.org/{urllib.parse.quote(r)}"}
+            for r in obj.get("r", [])
+        ]
+    return JSONResponse(tmp)
 
 
 @app.get("/{notation}.jskos", response_model=JSKOS, response_model_exclude_unset=True)
@@ -80,7 +158,7 @@ async def notation_jskos(notation: str):
             {"uri": f"https://iconclass.org/{urllib.parse.quote(r)}"}
             for r in obj.get("r", [])
         ]
-    return tmp
+    return JSONResponse(tmp)
 
 
 @app.get("/{notation}.json", response_model=Notation, response_model_exclude_unset=True)

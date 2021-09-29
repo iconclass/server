@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}IC ({{lang}}) {{ notation }}{%endblock %}
+{% block content %}
+{% for top in tops%}
+<div style="max-width: 90ch">
+  {% if top['n'] == notation[0] %}
+  <div style="margin-bottom: 5px">
+    {% for p in obj.p%}
+    <div style="padding-left: {% if loop.first %}0px{% else %}4px{% endif %}{% if loop.last %}; margin: 4px 0 4px 4px; font-size: 140%{% endif %}">
+      {% if loop.last %}{{p['n']}}{% else %}<a href="/{{lang}}/{{p['n']}}">{{p['n']}}</a>{% endif %} &nbsp; {{ p.get('txt', {}).get(lang, "")}}
+    </div>
+    {% endfor %}
+    <div style="margin: 0 0 8px 10px; font-style: italic">
+      {% for kw in obj.get('kw', {}).get(lang, []) %}<a href="/search?lang={{lang}}&q={{kw}}" title="Search for this keyword">{{kw}}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+    </div>
+    {% for c in obj.c%}
+    <div style="padding-left: 8px">
+      <a href="/{{lang}}/{{c['n']}}">{{c['n']}}</a> &nbsp; {{ c.get('txt', {}).get(lang, "")}}
+    </div>
+    {% endfor %}
+    {% if obj.r %}
+    <div style="margin: 5px 0 5px 5px; background-color: rgb(255, 244, 230); padding: 3px; border-top: 1px solid rgb(248, 233, 214);">
+      <div style="font-style: italic; margin-bottom: 5px">See also:</div>
+      {% for r in obj.r %}
+      <div style="padding-left: 8px">
+        <a href="/{{lang}}/{{r['n']}}">{{r['n']}}</a> &nbsp; {{ r.get('txt', {}).get(lang, "")}}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% else %}<a href="/{{lang}}/{{top['n']}}">{{top['n']}}</a> &nbsp; {{ top.get('txt').get(lang)}}
+  {% endif %}
+</div>
+{% endfor %}
+<div id="languages">
+  {% if lang != "en"%}<a href="/en/{{notation}}">English</a>{% endif %} 
+  {% if lang != "de"%}<a href="/de/{{notation}}">Deutsch</a>{% endif %} 
+  {% if lang != "fr"%}<a href="/fr/{{notation}}">Français</a>{% endif %} 
+  {% if lang != "it"%}<a href="/it/{{notation}}">Italiano</a>{% endif %} 
+  {% if lang != "pt"%}<a href="/pt/{{notation}}">Portuguese</a>{% endif %} 
+  {% if lang != "fi"%}<a href="/fi/{{notation}}">Finnish</a>{% endif %} 
+  {% if lang != "nl"%}<a href="/nl/{{notation}}">Nederlands</a>{% endif %}
+  {% if lang != "zh"%}<a href="/zh/{{notation}}">中文</a>{% endif %}
+  {% if lang != "ja"%}<a href="/jp/{{notation}}">日本語</a>{% endif %}
+</div>
+{% endblock %}
