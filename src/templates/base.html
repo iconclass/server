@@ -70,7 +70,7 @@
             </li>
           </ul>
 
-          <form
+          <div
             class="col-12 col-lg-auto mb-3 mb-lg-0 me-3"
             style="width: 40ch"
           >
@@ -84,7 +84,7 @@
               aria-label="Search"
               value="{{q}}"
             />
-          </form>
+          </div>
 
           <div class="text-end">
             <button type="button" class="btn btn-outline-light me-2">
@@ -96,7 +96,11 @@
       </div>
     </header>
 
-    <div id="results">&nbsp;</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 p-2" id="results">&nbsp;</div>
+        </div>
+    </div>
 
     <div class="container-fluid">{% block content %}{% endblock %}</div>
 
