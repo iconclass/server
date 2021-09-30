@@ -80,6 +80,7 @@ async def notation_jsonld(notation: str):
                 "uri": f"https://iconclass.org/{urllib.parse.quote(notation)}",
                 "type": "skos:Concept",
                 "inScheme": "https://iconclass.org/rdf/2021/09/",
+                "skos:notation": notation,
                 "prefLabel": [
                     {"lang": lang, "value": txt}
                     for lang, txt in obj.get("txt", {}).items()
