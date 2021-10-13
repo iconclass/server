@@ -9,7 +9,7 @@ def reset_fontsizes():
 
 
 class NotationElement:
-    def __init__(self, parent_element, notation, obj=None):
+    def __init__(self, parent_element, notation, obj=None, showkids=False):
         self.parent_element = parent_element
         self.notation = notation
         self.expanded = False
@@ -17,7 +17,7 @@ class NotationElement:
         self.expanda_open = "&middot; " + self.notation
         nuri = "/{}.json".format(encodeURIComponent(notation))
         if obj:
-            self.got_json_obj(obj)
+            self.got_json_obj(obj, showkids)
         else:
             fetch(nuri).then(self.got_init_response)
 
@@ -36,14 +36,14 @@ class NotationElement:
             if c in tmp_map:
                 CACHE[c] = NotationElement(self.kids_element, c, tmp_map[c])
 
-    def got_json_obj(self, obj):
+    def got_json_obj(self, obj, showkids=False):
         obj = dict(obj)
         txts = dict(obj.get("txt", {}))
         kws = dict(obj.get("kw", {}))
         self.children = obj.get("c", [])
         if len(self.children) > 0:
-            self.expanda_closed = "&#9654; " + self.notation
-            self.expanda_open = "&#9660; " + self.notation
+            self.expanda_closed = "&vellip; " + self.notation
+            self.expanda_open = "&dtdot;" + self.notation
         expanda = Span(
             self.expanda_closed,
             id="x" + self.notation,
@@ -61,22 +61,31 @@ class NotationElement:
         if len(obj.get("r", [])) > 0:
             details.C.append(Div("Also:" + ", ".join([r for r in obj.get("r", [])])))
 
-        tmp = Div(
-            expanda,
-            Span(txts.get(document.IC_LANG, ""), _class="notation_txt"),
-            details,
-            id=self.notation,
-            _class="notation_container",
-        )
-
         self.parent_element.insertAdjacentHTML(
             "beforeend",
-            Div(tmp, Div(id="kids_" + self.notation), _class="row").render(),
+            Div(
+                Div(
+                    expanda,
+                    Span(txts.get(document.IC_LANG, ""), _class="notation_txt"),
+                    details,
+                    id=self.notation,
+                    _class="notation_container",
+                ),
+                Div(id="kids_" + self.notation),
+                style={"padding-left": "10px"},
+            ).render(),
         )
         expander = document.getElementById("x" + self.notation)
         expander.addEventListener("click", self.expand)
         self.element = document.getElementById(self.notation)
         self.kids_element = document.getElementById("kids_" + self.notation)
+
+        if showkids:
+
+            class E:
+                target = expander
+
+            self.expand(E())
 
     def expand(self, event):
         if self.expanded:
@@ -86,11 +95,15 @@ class NotationElement:
             reset_fontsizes()
             self.element.classList.add("active_notation")
             event.target.innerHTML = self.expanda_open
-            self.kids_element.style.display = "block"
+            # self.kids_element.style.display = "block"
             # If any of self.c in CACHE, we have already fetched the kids don't do it again
             if self.children[0] not in CACHE:
                 params = "&".join(
-                    ["notation=" + encodeURIComponent(c) for c in self.children]
+                    [
+                        "notation=" + encodeURIComponent(c)
+                        for c in self.children
+                        if c.find("(+") < 0
+                    ]
                 )
                 fetch("/json?" + params).then(self.got_children_response)
 
@@ -100,5 +113,6 @@ class NotationElement:
 CACHE["ICONCLASS"] = NotationElement(
     document.getElementById("thetree"),
     "ICONCLASS",
-    {"n": "ICONCLASS", "c": [str(x) for x in range(10)], "txt": {}},
+    {"n": "", "c": [str(x) for x in range(10)], "txt": {}},
+    True,
 )
