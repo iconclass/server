@@ -4,7 +4,7 @@
 {% block head_last%}<script type="module">import * as frontend from '/static/__target__/frontend.js';</script>
 <style type="text/css">
 .notation_n {margin-right: 1em; padding: 4px; color: #ccc;}
-.notation_container {border-left: 2px solid #ccc; padding-left: 1ch}
+.notation_container { padding-left: 1ch}
 .active_notation {font-size: 150%}
 .details {display: none; font-size: 70%}
 .active_notation .details { display: block; padding-left: 3ch}
@@ -25,7 +25,7 @@
   {% if lang != "ja"%}<a href="/browse/jp">日本語</a>{% endif %}
 </div>
 
-<div id="thetree" style="margin-bottom: 10vh">&nbsp;</div>
+<div id="thetree" style="margin-bottom: 10vh"></div>
 
 
 {% endblock %}
