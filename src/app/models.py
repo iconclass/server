@@ -35,7 +35,16 @@ class Notation(BaseModel):
     n: Text
     p: List[Text]
     c: Optional[List[Text]]
-    r: Optional[List]
+    r: Optional[List[Text]]
+    txt: NotationTexts
+    kw: KeywordTexts
+
+
+class FilledNotation(BaseModel):
+    n: Text
+    p: List[Dict]
+    c: Optional[List[Dict]]
+    r: Optional[List[Dict]]
     txt: NotationTexts
     kw: KeywordTexts
 

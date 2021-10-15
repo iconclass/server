@@ -11,6 +11,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+
     {% endblock %}
     <script
       async
@@ -24,14 +29,37 @@
   <body>
     <header class="p-3 bg-dark text-white">
       <div class="container-fluid">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="/" title="Pick a random notation!" class="nav-link px-2 text-secondary">Home</a></li>
+        <div
+          class="
+            d-flex
+            flex-wrap
+            align-items-center
+            justify-content-center justify-content-lg-start
+          "
+        >
+          <ul
+            class="
+              nav
+              col-12 col-lg-auto
+              me-lg-auto
+              mb-2
+              justify-content-center
+              mb-md-0
+            "
+          >
+            <li>
+              <a
+                href="/"
+                title="Pick a random notation!"
+                class="nav-link px-2 text-secondary"
+                >Home</a
+              >
+            </li>
             <li>
               <a
                 href="/browse/{{lang}}"
                 class="nav-link px-2 text-white"
-                title="Brwose the tree of notations"
+                title="Browse the tree of notations"
                 >Browse</a
               >
             </li>
@@ -40,18 +68,18 @@
                 href="https://github.com/iconclass/data"
                 class="nav-link px-2 text-white"
                 title="The underlying source data of the system"
-                >DATA</a
+                >Data</a
               >
             </li>
             <li>
               <a href="/docs/" class="nav-link px-2 text-white">API</a>
             </li>
+            <li>
+                <a href="/language/" class="nav-link px-2  text-white" title="Change the system language">Language</a>
+            </li>
           </ul>
 
-          <div
-            class="col-12 col-lg-auto mb-3 mb-lg-0 me-3"
-            style="width: 40ch"
-          >
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-3" style="width: 40ch">
             <input
               id="searchbox"
               autocomplete="off"
@@ -74,22 +102,16 @@
       </div>
     </header>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 p-2" id="results">&nbsp;</div>
-        </div>
-    </div>
-
     <div class="container-fluid">{% block content %}{% endblock %}</div>
 
-    <footer class="p-3 bg-dark text-white">
+    <footer class="p-2 bg-light">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-9">&nbsp;</div>
-            <div class="col">
-              <a class="btn btn-info" href="https://docs.google.com/document/d/1yg8aVhmbR9UrWz4ECthPcCIJsezSm6PTPFKmtpcoAqI/edit?usp=sharing" target="_feedback">Feedback</a>
-            </div>
+          <div class="col-9">Contact: info@iconclass.org</div>
+          <div class="col-3">
+            <a class="btn btn-info" href="https://docs.google.com/document/d/1yg8aVhmbR9UrWz4ECthPcCIJsezSm6PTPFKmtpcoAqI/edit?usp=sharing" target="_feedback">Feedback</a>
           </div>
+        </div>
       </div>
     </footer>
   </body>

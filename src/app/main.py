@@ -13,6 +13,8 @@ app = FastAPI(openapi_url="/openapi")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
+from .fragments import *
+
 
 @app.get("/json")
 async def json_list(notation: List[str] = Query(None)):
@@ -20,8 +22,13 @@ async def json_list(notation: List[str] = Query(None)):
     return {"result": objs, "requested": notation}
 
 
-@app.get("/", response_class=RedirectResponse)
-async def index() -> RedirectResponse:
+@app.get("/", response_class=HTMLResponse)
+async def homepage(request: Request):
+    return templates.TemplateResponse("homepage.html", {"request": request})
+
+
+@app.get("/random", response_class=RedirectResponse)
+async def random() -> RedirectResponse:
     SQL = "select notation from notations ORDER BY RANDOM() LIMIT 1"
     IC_INDEX_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
     cur = sqlite3.connect(IC_INDEX_PATH).cursor()
@@ -175,6 +182,23 @@ async def notation_json(notation: str):
     else:
         obj = iconclass.get(notation)
     return obj
+
+
+@app.get(
+    "/{notation}.fat", response_model=FilledNotation, response_model_exclude_unset=True
+)
+async def notation_fat(notation: str):
+    if notation == "ICONCLASS":
+        obj = {
+            "txt": {},
+            "c": [str(x) for x in range(10)],
+            "n": "ICONCLASS",
+            "kw": {},
+            "p": [],
+        }
+    else:
+        obj = iconclass.get(notation)
+    return fill_obj(obj)
 
 
 @app.get("/{notation}.rdf", response_class=Response)

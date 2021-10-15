@@ -1,13 +1,40 @@
 import iconclass
 import urllib.parse
+import re
+
+KEYS_RE = r"^\w*\(\+"
+
+
+def valid_lang(lang):
+    if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "ja"):
+        lang = "en"
+    return lang
 
 
 def fill_obj(obj):
     if not obj:
         return
-    for thing in ("p", "c", "r"):
+    # Add a synthetic item for the keys and with-names , by pre-filtering on items
+    k = [k for k in obj.get("c", []) if re.match(KEYS_RE, k)]
+    if k:
+        obj["k"] = k
+
+    kws_path = {}
+    for thing in ("p", "c", "r", "k"):
         tmp = list(filter(None, [iconclass.get(x) for x in obj.get(thing, [])]))
         obj[thing] = tmp
+        if thing in ("p", "r"):
+            for t in tmp:
+                for lang, tt in t.get("kw", {}).items():
+                    kws_path.setdefault(lang, []).extend(
+                        tt
+                    )  # Note, tt is a list of keywords
+
+    # Get all the keywords from the whole path, and make them unique, plus sorted
+    if kws_path:
+        for lang, kws in kws_path.items():
+            obj.setdefault("kws_all", {})[lang] = sorted(set(kws))
+
     return obj
 
 
@@ -53,4 +80,3 @@ def to_skos_ntriple(obj):
                 '"%s"@%s' % (kw.encode("unicode-escape").decode("ascii"), lan),
             )
     return "\n".join(buf).encode("ascii")
-
