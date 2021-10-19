@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block title %}IC ({{lang}}) {{ notation }}{%endblock %}
 {% block content %}
+
+<div class="container-fluid">
+
 {% for top in tops%}
 <div style="max-width: 90ch">
   {% if top['n'] == notation[0] %}
@@ -44,4 +47,7 @@
   {% if lang != "zh"%}<a href="/zh/{{notation}}">中文</a>{% endif %}
   {% if lang != "ja"%}<a href="/jp/{{notation}}">日本語</a>{% endif %}
 </div>
+
+</div>
+
 {% endblock %}
