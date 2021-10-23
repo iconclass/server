@@ -30,8 +30,8 @@ async def homepage(request: Request):
 @app.get("/random", response_class=RedirectResponse)
 async def random() -> RedirectResponse:
     SQL = "select notation from notations ORDER BY RANDOM() LIMIT 1"
-    IC_INDEX_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
-    cur = sqlite3.connect(IC_INDEX_PATH).cursor()
+    IC_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
+    cur = sqlite3.connect(IC_PATH).cursor()
     try:
         results = [x[0] for x in cur.execute(SQL)]
     except sqlite3.OperationalError:
