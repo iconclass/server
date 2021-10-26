@@ -1,6 +1,8 @@
+from sqlite3.dbapi2 import OperationalError
 from typing import Optional, List, Dict, Text
 from pydantic import BaseModel
 from pydantic.errors import UrlUserInfoError
+from pydantic.types import OptionalInt
 
 
 class NotationTexts(BaseModel):
@@ -37,7 +39,7 @@ class Notation(BaseModel):
     c: Optional[List[Text]]
     r: Optional[List[Text]]
     txt: NotationTexts
-    kw: KeywordTexts
+    kw: Optional[KeywordTexts]
 
 
 class FilledNotation(BaseModel):
@@ -46,7 +48,8 @@ class FilledNotation(BaseModel):
     c: Optional[List[Dict]]
     r: Optional[List[Dict]]
     txt: NotationTexts
-    kw: KeywordTexts
+    kw: Optional[KeywordTexts]
+    image_count: OptionalInt
 
 
 class JSKOS(BaseModel):

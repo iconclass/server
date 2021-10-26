@@ -1,12 +1,27 @@
 import iconclass
 import urllib.parse
-import re
+import re, os, sqlite3
+from typing import List
 
 KEYS_RE = r"^\w*\(\+"
 
 
+def get_image_path_count(notation: str) -> List:
+    if notation.endswith("...)"):
+        notation = notation[:-4]
+    IC_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
+    index_db = sqlite3.connect(IC_PATH)
+    cur = index_db.cursor()
+    cur.execute(
+        "SELECT count(image) FROM images i INNER JOIN images_ic ii ON ii.id = i.id WHERE ii.notation LIKE ?",
+        (notation + "%",),
+    )
+    results = cur.fetchone()
+    return results[0]
+
+
 def valid_lang(lang):
-    if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "ja"):
+    if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "jp"):
         lang = "en"
     return lang
 
@@ -35,6 +50,7 @@ def fill_obj(obj):
         for lang, kws in kws_path.items():
             obj.setdefault("kws_all", {})[lang] = sorted(set(kws))
 
+    #    obj["image_count"] = get_image_path_count(obj["n"])
     return obj
 
 

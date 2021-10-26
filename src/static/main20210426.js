@@ -46,7 +46,7 @@ searchbox.onkeyup = debounce((event) => {
         let results =
           `<div id="foundmsg">${d.total} found. Press Enter to see the Search results...</div>` +
           d.result
-            .map((r) => `<div><a href="/en/${r}">${r}</a></div>`)
+            .map((r) => `<div><span notation="${r}">${r}</span></div>`)
             .join("");
         document.getElementById("results").innerHTML = results;
       });

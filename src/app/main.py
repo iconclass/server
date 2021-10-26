@@ -198,6 +198,7 @@ async def notation_fat(notation: str):
         }
     else:
         obj = iconclass.get(notation)
+
     return fill_obj(obj)
 
 

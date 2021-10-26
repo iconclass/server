@@ -13,7 +13,7 @@
       <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Also see:</h4>
       {% for r in obj.r %}
       <div style="padding-left: 8px">
-        <span data-notation="{{r['n']}}" class="navver" href="#">{{r['n']}}</span> &nbsp; {{ r.get('txt', {}).get(lang, "")}}
+        <span data-notation="{{r['n']}}" notation="{{r['n']}}" class="navver" href="#">{{r['n']}}</span> &nbsp; {{ r.get('txt', {}).get(lang, "")}}
       </div>
       {% endfor %}
     </div>
@@ -21,7 +21,8 @@
 
     {% for c in obj.k%}
     <div style="padding-left: 8px">
-      <a href="/{{lang}}/{{c['n']}}">{{c['n']}}</a> &nbsp; {{ c.get('txt', {}).get(lang, "")}}
+      <a href="/{{lang}}/{{c['n']}}">{{c['n'].replace(obj["n"], "")}}</a> &nbsp; 
+      {{ c.get('txt', {}).get(lang, "").replace(obj.get('txt', {}).get(lang, ""), "")}}
     </div>
     {% endfor %}
 
@@ -34,7 +35,7 @@
     <h4>A sample image</h4>
     {% endif %}
     {% for i in images %}
-        <a target="_sample" style="margin: 0 0 0 10px" href="{{i[1]}}"><img src="https://test.iconclass.org/iiif/3/{{i[0]}}/full/150,/0/default.jpg" title="{{i[2]}}"></a>
+        <a target="_sample" style="margin: 0 0 0 10px" href="{{i[1]}}"><img src="https://test.iconclass.org/iiif/3/{{i[0]}}/full/,300/0/default.jpg" title="{{i[2]}}"></a>
     {% endfor %}
     </div>
     {% endif %}
