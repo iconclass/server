@@ -1,8 +1,9 @@
 <div>
-    <span style="color: #ccc; font-size: 150%">{{obj.n}}</span>
-    <span style="font-size: 150%">{{obj.txt.get(lang, "")}}</span>
+    <h4>Selected concept:</h4>
+    <span style="color: #ccc; font-size: 170%">{{obj.n}} &middot; </span>
+    <span style="font-size: 170%">{{obj.txt.get(lang, "")}}</span>
     {% if obj.get("kw", {}).get(lang, []) %}
-    <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Keywords:</h4>
+    <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Search with these related keywords:</h4>
     <div style="margin: 0 0 8px 10px; font-style: italic">
       {% for kw in obj.get('kws_all', {}).get(lang, []) %}<a href="/search?lang={{lang}}&q={{kw}}" title="Search for this keyword">{{kw}}</a>{% if not loop.last %}, {% endif %}{% endfor %}
     </div>
@@ -19,24 +20,31 @@
     </div>
     {% endif %}
 
+    {% if obj.k %}
+    <h4 style="font-size: 75%; margin-top: 1rem">Add more detail with (+) keys</h4>
     {% for c in obj.k%}
     <div style="padding-left: 8px">
       <a href="/{{lang}}/{{c['n']}}">{{c['n'].replace(obj["n"], "")}}</a> &nbsp; 
       {{ c.get('txt', {}).get(lang, "").replace(obj.get('txt', {}).get(lang, ""), "")}}
     </div>
     {% endfor %}
-
+    {% endif %}
 
     {% if images %}
     <div>
     {% if images_count > 1 %}
-    <h4>Sample image count: {{images_count}} </h4>
+    <h4 style="margin-top: 1rem">Was used for {{images_count}} images:</h4>
+    {% if images_count > 169 %}<div style="font-size: 75%">And here is a random sample of some of them</div>{% endif %}
     {% else %}
-    <h4>A sample image</h4>
+    <h4>Was used for this sample image:</h4>
     {% endif %}
+    <div class="row">
+    <div class="col">
     {% for i in images %}
-        <a target="_sample" style="margin: 0 0 0 10px" href="{{i[1]}}"><img src="https://test.iconclass.org/iiif/3/{{i[0]}}/full/,300/0/default.jpg" title="{{i[2]}}"></a>
+        <a target="_sample" style="margin: 0 0 0 10px" href="{{i[1]}}"><img height="200px" src="https://test.iconclass.org/iiif/3/{{i[0]}}/full/,300/0/default.jpg" title="{{i[2]}}"></a>
     {% endfor %}
+    </div>
+    </div>
     </div>
     {% endif %}
 
