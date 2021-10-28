@@ -6,7 +6,7 @@ import iconclass
 import sqlite3
 import os
 import urllib.parse
-from .util import fill_obj
+from .util import fill_obj, valid_lang
 from .models import *
 
 app = FastAPI(openapi_url="/openapi")
@@ -284,8 +284,7 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
 
 @app.get("/browse/{lang}", response_class=HTMLResponse)
 async def browse(request: Request, lang: str):
-    if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "ja"):
-        lang = "en"
+    lang = valid_lang(lang)
     ctx = {
         "request": request,
         "lang": lang,
