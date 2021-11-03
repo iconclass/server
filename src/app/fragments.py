@@ -20,7 +20,7 @@ def get_images(notation: str, size: int = 169) -> List:
         (notation,),
     )
     results = cur.fetchall()
-    if len(results) > 169:
+    if len(results) > size:
         return len(results), random.sample(results, size)
     else:
         return len(results), results
@@ -30,7 +30,7 @@ def get_images(notation: str, size: int = 169) -> List:
 async def focus(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     obj = iconclass.get(notation)
-    images_count, images_sample = get_images(notation)
+    images_count, images_sample = get_images(notation, 3)
     ctx = {
         "request": request,
         "obj": fill_obj(obj),

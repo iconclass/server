@@ -1,6 +1,6 @@
 <div>
     <h4>Selected concept:</h4>
-    <span style="color: #ccc; font-size: 170%">{{obj.n}} &middot; </span>
+    <span style="padding-left: 0.2rem; border-left: 2px solid red; color: red; font-size: 170%">{{obj.n}} &middot; </span>
     <span style="font-size: 170%">{{obj.txt.get(lang, "")}}</span>
     {% if obj.get("kw", {}).get(lang, []) %}
     <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Search with these related keywords:</h4>
@@ -34,7 +34,7 @@
     <div>
     {% if images_count > 1 %}
     <h4 style="margin-top: 1rem">Was used for {{images_count}} images:</h4>
-    {% if images_count > 169 %}<div style="font-size: 75%">And here is a random sample of some of them</div>{% endif %}
+    {% if images_count > 3 %}<div style="font-size: 75%">And here is a tiny random sample of some of them</div>{% endif %}
     {% else %}
     <h4>Was used for this sample image:</h4>
     {% endif %}
