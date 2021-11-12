@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block login %}{% endblock %}
+{% block searchbox %}{% endblock %}
+
+
+{% block head_last %}<style>
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+</style>{% endblock %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row">
+
+        <div class="form-signin col-6">
+        <form>
+            <h1 class="h3 mb-3 fw-normal">Please login</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" 
+                 style="margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+                <label for="emailInput">Email address</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" 
+                style="margin-bottom: 10px; border-top-left-radius: 0; border-top-right-radius: 0;">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" id="signinButton">Sign in</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" id="signupButton" style="display:none">Sign in</button>
+            
+        </form>
+        </div>  
+
+        <div class="col-6 p-5">If you have not done so yet, you can also <a id="registerNew" href="/register">Register a new account</a></div>
+    </div>
+    <div class="row"><div class="col m-5">
+            <h4>Help!</h4>
+            <span id="helptext">I forgot my password, <a href="#" id="resetPassword">can you send me a reset link?</a></span>
+            <div id="reminderMsg" style="margin-top: 1rem"></div>
+            </div></div>
+    </div>
+
+</div>
+<script type="text/javascript">
+document.getElementById("emailInput").focus()
+document.getElementById("resetPassword").addEventListener("click", function(event) {
+    event.preventDefault()
+    var emailAddress = document.getElementById("emailInput").value
+    if(emailAddress) {
+        document.getElementById("reminderMsg").innerHTML = "OK, we have sent an email to: " + emailAddress + "<br> (if that email is registered with us)<p><em>Keep an eye on your SPAM box too</em></p>"
+        document.getElementById("helptext").style.display = "none"
+    } else {
+        document.getElementById("reminderMsg").innerHTML = "Please enter an email address and click again"
+        document.getElementById("emailInput").focus()
+    }
+})
+</script>
+{% endblock %}

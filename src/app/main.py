@@ -1,19 +1,53 @@
-from fastapi import FastAPI, Request, HTTPException, Query
-from fastapi.responses import HTMLResponse, RedirectResponse, Response, JSONResponse
+from fastapi import Depends, FastAPI, Request, HTTPException, Query, status
+from fastapi.responses import (
+    HTMLResponse,
+    RedirectResponse,
+    Response,
+    JSONResponse,
+    PlainTextResponse,
+)
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.middleware.cors import CORSMiddleware
+from starlette.exceptions import HTTPException as StarletteHTTPException
 import iconclass
 import sqlite3
 import os
 import urllib.parse
+from datetime import timedelta
+
 from .util import fill_obj, valid_lang
 from .models import *
+
+from .config import ORIGINS, ACCESS_TOKEN_EXPIRE_DAYS
 
 app = FastAPI(openapi_url="/openapi")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 from .fragments import *
+from .am import *
+
+
+@app.exception_handler(StarletteHTTPException)
+async def myhttp_exception_handler(request, exc):
+    if exc.status_code == 401:
+        return RedirectResponse("/login")
+    headers = getattr(exc, "headers", None)
+    if headers:
+        return JSONResponse(
+            {"detail": exc.detail}, status_code=exc.status_code, headers=headers
+        )
+    else:
+        return JSONResponse({"detail": exc.detail}, status_code=exc.status_code)
 
 
 @app.get("/json")
@@ -283,7 +317,9 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
 
 
 @app.get("/browse/{lang}", response_class=HTMLResponse)
-async def browse(request: Request, lang: str):
+async def browse(
+    request: Request, lang: str, current_user: User = Depends(get_current_user)
+):
     lang = valid_lang(lang)
     ctx = {
         "request": request,

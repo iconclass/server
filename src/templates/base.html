@@ -17,94 +17,35 @@
     />
 
     {% endblock %}
-    <script
-      async
-      defer
-      data-domain="test.iconclass.org"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
+    <script async defer data-domain="test.iconclass.org" src="https://plausible.io/js/plausible.js"></script>
     {% block head_last %}{% endblock %}
   </head>
 
   <body>
     <header class="p-3 bg-dark text-white">
       <div class="container-fluid">
-        <div
-          class="
-            d-flex
-            flex-wrap
-            align-items-center
-            justify-content-center justify-content-lg-start
-          "
-        >
-          <ul
-            class="
-              nav
-              col-12 col-lg-auto
-              me-lg-auto
-              mb-2
-              justify-content-center
-              mb-md-0
-            "
-          >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a
-                href="/"
-                title="Pick a random notation!"
-                class="nav-link px-2 text-secondary"
-                >Home</a
-              >
+              <a href="/" title="Pick a random notation!" class="nav-link px-2 text-secondary">ICONCLASS</a>
             </li>
             <li>
-              <a
-                href="/browse/en"
-                class="nav-link px-2 text-white"
-                title="Browse the tree of notations"
-                >Browse</a
-              >
+              <a href="/browse/en" class="nav-link px-2 text-white" title="Browse the tree of notations">Browse</a>
             </li>
             <li>
-              <a
-                href="https://github.com/iconclass/data"
-                class="nav-link px-2 text-white"
-                title="The underlying source data of the system"
-                >Data</a
-              >
-            </li>
-            <li>
-              <a href="/docs/" class="nav-link px-2 text-white">API</a>
-            </li>
-            <li>
-              <a
-                href="/language/"
-                class="nav-link px-2 text-white"
-                title="Change the system language"
-                >Language</a
-              >
+              <a href="/help/about" class="nav-link px-2 text-white" title="More documentation on using the system">Documentation</a>
             </li>
             <li><a class="btn btn-info" href="https://forms.gle/twPq7swQZXmSX46G8" target="_feedback">Feedback</a>
             </li>
           </ul>
 
-          <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-3" style="width: 40ch">
-            <input
-              id="searchbox"
-              autocomplete="off"
-              name="q"
-              type="search"
-              class="form-control form-control-dark"
-              placeholder="Search..."
-              aria-label="Search"
-              value="{{q}}"
-            />
-          </div>
+          {% block searchbox %}<div class="col-12 col-lg-auto mb-3 mb-lg-0 me-3" style="width: 40ch">
+            <input id="searchbox" autocomplete="off" name="q" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" value="{{q}}"/>
+          </div>{% endblock %}
 
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-light me-2">
-              Login
-            </button>
-            <button type="button" class="btn btn-warning">Sign-up</button>
-          </div>
+          {% block login %}<div class="text-end">
+            <a href="/login" type="button" class="btn btn-warning">Login</a>
+          </div>{% endblock%}
         </div>
       </div>
     </header>
@@ -150,7 +91,6 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
-  <script src="/static/main20211022.js"></script>
   <script>
     document.IC_LANG = "{{lang}}";
   </script>

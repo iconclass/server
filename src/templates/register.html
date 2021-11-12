@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block searchbox %}{% endblock %}
+
+
+{% block head_last %}<style>
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+
+</style>{% endblock %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row">
+
+        <div class="form-signin col-8">
+        <form>
+            <h1 class="h3 mb-3 fw-normal">Register a new account</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" 
+                 style="margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="username" class="form-control" id="" placeholder="Firstname Lastname"
+                 style="margin-bottom: 10px; border-top-left-radius: 0; border-top-right-radius: 0;">
+                <label for="floatingInput">Your name</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" id="signupButton">Sign up</button>
+            
+        </form>
+        </div>  
+
+        <div class="col-4 p-3">
+            <p>After registering, you will be sent an email to confirm your address and choose a new password.</p>
+            <p><em>Please keep an eye on your SPAM box in case the registration mail gets lost there.</em></p>
+            <h4>Why should you bother registering?</h4>
+            <p>Good question! It allows you to see the sample images, to illustrate the system. 
+            You can also upload and describe your own images, or catalog image URLs you find elsewhere on the web</p>
+            <p>It is also possible to record some settings to make using the site easier, like the default language used for ICONCLASS texts.</p>
+        </div>
+
+    </div>
+
+</div>
+<script type="text/javascript">
+document.getElementById("emailInput").focus()
+</script>
+{% endblock %}
