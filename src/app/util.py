@@ -96,3 +96,23 @@ def to_skos_ntriple(obj):
                 '"%s"@%s' % (kw.encode("unicode-escape").decode("ascii"), lan),
             )
     return "\n".join(buf).encode("ascii")
+
+
+def do_search(q: str, lang: str, sort: str, keys: bool):
+    if lang not in ("en", "de"):
+        lang = "en"
+    IC_INDEX_PATH = os.environ.get("IC_INDEX_PATH", "iconclass_index.sqlite")
+    index_db = sqlite3.connect(IC_INDEX_PATH)
+    index_db.enable_load_extension(True)
+    index_db.load_extension("/usr/local/lib/fts5stemmer")
+    cur = index_db.cursor()
+
+    if keys:
+        SQL = f"SELECT notation FROM {lang} WHERE text MATCH ? order by {sort}"
+    else:
+        SQL = f"SELECT notation FROM {lang} WHERE is_key=0 AND text MATCH ? order by {sort}"
+    try:
+        results = [x[0] for x in cur.execute(SQL, (q,))]
+    except sqlite3.OperationalError:
+        results = []
+    return results

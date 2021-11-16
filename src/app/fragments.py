@@ -1,12 +1,12 @@
 import os, sqlite3, random
-from fastapi import Request
+from fastapi import Request, Query
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from typing import Optional, List, Dict, Text
 
 import iconclass
 from .main import app
-from .util import fill_obj, valid_lang
+from .util import fill_obj, valid_lang, do_search
 
 templates = Jinja2Templates(directory="templates")
 
@@ -40,3 +40,29 @@ async def focus(request: Request, lang: str, notation: str):
         "images_count": images_count,
     }
     return templates.TemplateResponse("notation_focus.html", ctx)
+
+
+@app.get("/fragments/search/{lang}/", response_class=HTMLResponse)
+async def search(
+    request: Request,
+    lang: str,
+    q: str,
+    sort: Optional[str] = "rank",
+    keys: Optional[str] = "0",
+):
+    if lang not in ("en", "de"):
+        lang = "en"  # for now we can only searh in en/de until we index all
+    results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"))
+    # Properly filter in case of bogus notations
+    results_objs = filter(None, [iconclass.get(o) for o in results[:999]])
+    ctx = {
+        "request": request,
+        "results": results_objs,
+        "total": len(results),
+        "q": q,
+        "lang": lang,
+        "sort": sort,
+        "include_keys": keys,
+    }
+
+    return templates.TemplateResponse("search_fragment.html", ctx)

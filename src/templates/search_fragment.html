@@ -1,0 +1,14 @@
+<h4 style="margin-top: 1rem">Found {{total}} results, searching for <em>{{q}}</em></h4>
+<div style="margin-bottom: 10px">        
+    {% if include_keys == "1"%}<a class="btn" href="/search?lang={{lang}}&q={{q}}&sort={{sort}}&keys=0">Exclude (+ Keys)</a>{% else %}<a href="/search?lang={{lang}}&q={{q}}&sort={{sort}}&keys=1" class="btn">(+ Keys)</a>{% endif %}    
+    {% if sort == "rank" %}<a class="btn" href="/search?lang={{lang}}&q={{q}}&sort=notation&keys={{include_keys}}">Sort by Notation</a>{% else %}<a class="btn" href="/search?lang={{lang}}&q={{q}}&sort=rank&keys={{include_keys}}">Sort by Rank</a>{% endif %}
+</div>
+
+<div style="max-width: 90ch">
+{% for r in results %}
+<div style="text-indent: -1em; margin-left: 1em; margin-bottom: 5px">
+    <span style="cursor: pointer" notation="{{r['n']}}">{{r['n']}} &middot; {{ r.get('txt').get(lang)}}</span>
+</div>
+{% endfor %}
+</div>
+
