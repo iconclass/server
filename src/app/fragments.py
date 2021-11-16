@@ -30,7 +30,7 @@ def get_images(notation: str, size: int = 169) -> List:
 async def focus(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     obj = iconclass.get(notation)
-    images_count, images_sample = get_images(notation, 3)
+    images_count, images_sample = get_images(notation, 9)
     ctx = {
         "request": request,
         "obj": fill_obj(obj),
