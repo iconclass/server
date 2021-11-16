@@ -317,9 +317,7 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
 
 
 @app.get("/browse/{lang}", response_class=HTMLResponse)
-async def browse(
-    request: Request, lang: str, current_user: User = Depends(get_current_user)
-):
+async def browse(request: Request, lang: str):
     lang = valid_lang(lang)
     ctx = {
         "request": request,

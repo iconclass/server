@@ -1,4 +1,6 @@
+from os import access
 from fastapi import Depends, HTTPException, status, Request
+from fastapi.security.base import SecurityBase
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -10,6 +12,10 @@ from .config import ADMIN_DATABASE, SECRET_KEY, ACCESS_TOKEN_EXPIRE_DAYS
 import sqlite3
 from passlib.context import CryptContext
 from .main import app
+
+from starlette.authentication import AuthenticationBackend, AuthCredentials
+from starlette.middleware.authentication import AuthenticationMiddleware
+
 
 ALGORITHM = "HS256"
 templates = Jinja2Templates(directory="templates")
@@ -68,11 +74,17 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):
-    credentials_exception = HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
-    )
+    return get_user_from_token(token)
+
+
+credentials_exception = HTTPException(
+    status_code=status.HTTP_401_UNAUTHORIZED,
+    detail="Could not validate credentials",
+    headers={"WWW-Authenticate": "Bearer"},
+)
+
+
+def get_user_from_token(token: str):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
@@ -102,10 +114,7 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
             detail="Incorrect username or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    access_token_expires = timedelta(days=ACCESS_TOKEN_EXPIRE_DAYS)
-    access_token = create_access_token(
-        data={"sub": user.username}, expires_delta=access_token_expires
-    )
+    access_token = create_access_token(data={"sub": user.username})
     return {"access_token": access_token, "token_type": "bearer"}
 
 
@@ -117,3 +126,15 @@ async def mylogin(request: Request):
 @app.get("/register", response_class=HTMLResponse)
 async def myregister(request: Request):
     return templates.TemplateResponse("register.html", {"request": request})
+
+
+class CookieTokenAuthBackend(AuthenticationBackend):
+    async def authenticate(self, request):
+        access_token = request.cookies.get("access_token")
+        if access_token:
+            user = get_user_from_token(access_token)
+            if user:
+                return AuthCredentials(["authenticated"]), user
+
+
+app.add_middleware(AuthenticationMiddleware, backend=CookieTokenAuthBackend())

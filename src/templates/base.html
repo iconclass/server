@@ -44,7 +44,12 @@
           </div>{% endblock %}
 
           {% block login %}<div class="text-end">
-            <a href="/login" type="button" class="btn btn-warning">Login</a>
+            {% if request.user %}
+                <a href="/logout" type="button" class="btn btn-warning">Logout {{request.user.username}}</a>
+            {% else %}
+                <a href="/login" type="button" class="btn btn-warning">Login</a>
+            {% endif %}
+            
           </div>{% endblock%}
         </div>
       </div>
