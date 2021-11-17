@@ -8,6 +8,8 @@ from fastapi.responses import (
 )
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from jinja2 import Markup
+
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
 import iconclass
@@ -15,8 +17,8 @@ import sqlite3
 import os
 import urllib.parse
 from datetime import timedelta
-
-from .util import fill_obj, valid_lang, do_search
+import markdown
+from .util import fill_obj, valid_lang, do_search, LANGUAGES
 from .models import *
 
 from .config import ORIGINS, ACCESS_TOKEN_EXPIRE_DAYS
@@ -59,6 +61,20 @@ async def json_list(notation: List[str] = Query(None)):
 @app.get("/", response_class=HTMLResponse)
 async def homepage(request: Request):
     return templates.TemplateResponse("homepage.html", {"request": request})
+
+
+@app.get("/help/{page}", response_class=HTMLResponse)
+async def help(request: Request, page: str):
+    infilepath = os.path.join("help", f"{page}.md")
+    if not os.path.exists(infilepath):
+        raise HTTPException(status_code=404, detail=f"Page [{page}] not found")
+    md = markdown.Markdown(
+        output_format="html5", extensions=["nl2br", "meta", "attr_list"]
+    )
+    html = md.convert(open(infilepath).read())
+    return templates.TemplateResponse(
+        "help.html", {"request": request, "content": Markup(html)}
+    )
 
 
 @app.get("/random", response_class=RedirectResponse)
@@ -299,10 +315,7 @@ async def api_search(
 @app.get("/browse/{lang}", response_class=HTMLResponse)
 async def browse(request: Request, lang: str):
     lang = valid_lang(lang)
-    ctx = {
-        "request": request,
-        "lang": lang,
-    }
+    ctx = {"request": request, "lang": lang, "language": LANGUAGES.get(lang, "English")}
     return templates.TemplateResponse("browse.html", ctx)
 
 
