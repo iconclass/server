@@ -18,20 +18,6 @@
 
 <div class="container-fluid">
 
-<div id="languages" class="row" style="display: none">
-    <div class="col-6">
-  {% if lang != "en"%}<a href="/browse/en">English</a>{% endif %} 
-  {% if lang != "de"%}<a href="/browse/de">Deutsch</a>{% endif %} 
-  {% if lang != "fr"%}<a href="/browse/fr">Français</a>{% endif %} 
-  {% if lang != "it"%}<a href="/browse/it">Italiano</a>{% endif %} 
-  {% if lang != "pt"%}<a href="/browse/pt">Portuguese</a>{% endif %} 
-  {% if lang != "fi"%}<a href="/browse/fi">Finnish</a>{% endif %} 
-  {% if lang != "nl"%}<a href="/browse/nl">Nederlands</a>{% endif %}
-  {% if lang != "zh"%}<a href="/browse/zh">中文</a>{% endif %}
-  {% if lang != "ja"%}<a href="/browse/jp">日本語</a>{% endif %}
-  </div>
-</div>
-
 <div class="row p-2">
     <div class="col-6" style="max-height: 100vh; overflow: auto">
 
@@ -57,6 +43,23 @@
         <div id="results">&nbsp;</div>
     </div>
 </div>
+
+<div id="languages" class="row mb-3" style="font-size: 60%">
+    <div class="col-3">&nbsp;</div>
+    <div class="col-9">
+    <p>Choose to view the contents in a different language</p>
+  {% if lang != "en"%}<a class="btn btn-sm" href="/browse/en">English</a>{% endif %} 
+  {% if lang != "de"%}<a class="btn btn-sm" href="/browse/de">Deutsch</a>{% endif %} 
+  {% if lang != "fr"%}<a class="btn btn-sm" href="/browse/fr">Français</a>{% endif %} 
+  {% if lang != "it"%}<a class="btn btn-sm" href="/browse/it">Italiano</a>{% endif %} 
+  {% if lang != "pt"%}<a class="btn btn-sm" href="/browse/pt">Portuguese</a>{% endif %} 
+  {% if lang != "fi"%}<a class="btn btn-sm" href="/browse/fi">Finnish</a>{% endif %} 
+  {% if lang != "nl"%}<a class="btn btn-sm" href="/browse/nl">Nederlands</a>{% endif %}
+  {% if lang != "zh"%}<a class="btn btn-sm" href="/browse/zh">中文</a>{% endif %}
+  {% if lang != "ja"%}<a class="btn btn-sm" href="/browse/jp">日本語</a>{% endif %}
+  </div>
+</div>
+
 
 </div>
 
