@@ -22,26 +22,17 @@
   </head>
 
   <body>
-    <header class="p-3 bg-dark text-white">
+    <header class="p-3" style="border-bottom: 2px solid #ccc; background-color: #eee;">
       <div class="container-fluid">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <a href="/" title="Pick a random notation!" class="nav-link px-2 text-secondary">ICONCLASS</a>
+              <a href="/browse/en" title="Browse and Search in the the ICONCLASS system " class="nav-link px-2 text-secondary">ICONCLASS</a>
             </li>
             <li>
-              <a href="/browse/en" class="nav-link px-2 text-white" title="Browse the tree of notations">Browse</a>
+              <a href="/help/about" class="nav-link px-2" title="More documentation on using the system">Documentation</a>
             </li>
-            <li>
-              <a href="/help/about" class="nav-link px-2 text-white" title="More documentation on using the system">Documentation</a>
-            </li>
-            <li><a class="btn btn-info" href="https://forms.gle/twPq7swQZXmSX46G8" target="_feedback">Feedback</a>
-            </li>
-          </ul>
-
-          {% block searchbox %}<div class="col-12 col-lg-auto mb-3 mb-lg-0 me-3" style="width: 40ch">
-            <input id="searchbox" autocomplete="off" name="q" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" value="{{q}}"/>
-          </div>{% endblock %}
+          </ul>          
 
           {% block login %}<div class="text-end">
             {% if request.user.is_authenticated %}
@@ -51,6 +42,7 @@
             {% endif %}
             
           </div>{% endblock%}
+          <a class="btn btn-info" href="https://forms.gle/twPq7swQZXmSX46G8" target="_feedback">Feedback</a>
         </div>
       </div>
     </header>
