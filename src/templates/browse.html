@@ -1,7 +1,9 @@
 {% extends "base.html" %}
-{% block title %}IC Browse ({{lang}}) {{ notation }}{% endblock %}
+{% block title %}IC Browse ({{language}}) {{ notation }}{% endblock %}
 
 {% block head_last%}<script type="module">import * as frontend from '/static/__target__/frontend.js';</script>
+<script src="/static/openseadragon-2.4.2/openseadragon.min.js"></script>
+
 <style type="text/css">
 .active_notation  {border-left: 2px solid red}
 .open_notation::before {

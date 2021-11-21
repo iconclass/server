@@ -14,7 +14,7 @@
       <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Also see:</h4>
       {% for r in obj.r %}
       <div style="padding-left: 8px">
-        <span data-notation="{{r['n']}}" notation="{{r['n']}}" class="navver" href="#">{{r['n']}}</span> &nbsp; {{ r.get('txt', {}).get(lang, "")}}
+        <span data-notation="{{r['n']}}" notation="{{r['n']}}" class="navver" href="#">{{r['n']}} &middot; {{ r.get('txt', {}).get(lang, "")}}</a>
       </div>
       {% endfor %}
     </div>
@@ -24,8 +24,8 @@
     <h4 style="font-size: 75%; margin-top: 1rem">Add more detail with (+) keys</h4>
     {% for c in obj.k%}
     <div style="padding-left: 8px">
-      <a href="/{{lang}}/{{c['n']}}">{{c['n'].replace(obj["n"], "")}}</a> &nbsp; 
-      {{ c.get('txt', {}).get(lang, "").replace(obj.get('txt', {}).get(lang, ""), "")}}
+      <span style="cursor: pointer" notation="{{c['n']}}">{{c['n']}} &middot; 
+      {{ c.get('txt', {}).get(lang, "")}}</span>
     </div>
     {% endfor %}
     {% endif %}

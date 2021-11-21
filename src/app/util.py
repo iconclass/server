@@ -2,6 +2,8 @@ import iconclass
 import urllib.parse
 import re, os, sqlite3
 from typing import List
+import smtplib
+from email.message import EmailMessage
 
 KEYS_RE = r"^\w*\(\+"
 
@@ -18,6 +20,19 @@ def get_image_path_count(notation: str) -> List:
     )
     results = cur.fetchone()
     return results[0]
+
+
+LANGUAGES = {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "Français",
+    "it": "Italiano",
+    "pt": "Portuguese",
+    "fi": "Finnish",
+    "nl": "Nederlands",
+    "zh": "中文",
+    "ja": "日本語",
+}
 
 
 def valid_lang(lang):
@@ -116,3 +131,14 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
     except sqlite3.OperationalError:
         results = []
     return results
+
+
+def send_email(sender: str, receiver: str, subject: str, body: str):
+    msg = EmailMessage()
+    msg["From"] = sender
+    msg["To"] = receiver
+    msg["Subject"] = subject
+    msg.set_content(body)
+    s = smtplib.SMTP("localhost")
+    s.send_message(msg)
+    s.quit()

@@ -11,7 +11,6 @@ from fastapi.templating import Jinja2Templates
 from jinja2 import Markup
 
 from fastapi.middleware.cors import CORSMiddleware
-from starlette.exceptions import HTTPException as StarletteHTTPException
 import iconclass
 import sqlite3
 import os
@@ -37,19 +36,6 @@ app.add_middleware(
 
 from .fragments import *
 from .am import *
-
-
-@app.exception_handler(StarletteHTTPException)
-async def myhttp_exception_handler(request, exc):
-    if exc.status_code == 401:
-        return RedirectResponse("/login")
-    headers = getattr(exc, "headers", None)
-    if headers:
-        return JSONResponse(
-            {"detail": exc.detail}, status_code=exc.status_code, headers=headers
-        )
-    else:
-        return JSONResponse({"detail": exc.detail}, status_code=exc.status_code)
 
 
 @app.get("/json")

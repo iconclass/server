@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% block searchbox %}{% endblock %}
 
 
 {% block head_last %}<style>
@@ -31,13 +30,16 @@
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating">
-                <input type="username" class="form-control" id="" placeholder="Firstname Lastname"
+                <input type="username" class="form-control" id="usernameInput" placeholder="Your name"
                  style="margin-bottom: 10px; border-top-left-radius: 0; border-top-right-radius: 0;">
                 <label for="floatingInput">Your name</label>
             </div>
             <button class="w-100 btn btn-lg btn-primary" type="submit" id="signupButton">Sign up</button>
             
         </form>
+            <div id="reminderMsg" style="margin-top: 1rem"></div>
+
+
         </div>  
 
         <div class="col-4 p-3">
@@ -46,7 +48,7 @@
             <h4>Why should you bother registering?</h4>
             <p>Good question! It allows you to see the sample images, to illustrate the system. 
             You can also upload and describe your own images, or catalog image URLs you find elsewhere on the web</p>
-            <p>It is also possible to record some settings to make using the site easier, like the default language used for ICONCLASS texts.</p>
+            <p>It is also possible to save settings to make using the site easier, like the default language used for ICONCLASS texts.</p>
         </div>
 
     </div>
@@ -54,5 +56,36 @@
 </div>
 <script type="text/javascript">
 document.getElementById("emailInput").focus()
+
+
+async function doRegister(username, email) {
+    var response = await fetch("/newuser", {
+        method: 'POST', mode: 'cors', body: "username=" + username + "&email="+email, 
+        credentials: 'same-origin',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+    })
+    if(response.status === 200) {
+        document.location="/help/thanks_for_registering"
+    } else {
+        document.getElementById("reminderMsg").innerHTML = "<b>Sorry, something went wrong registering this email and username<b>"
+        document.getElementById("emailInput").focus()
+    }
+}
+
+document.getElementById("signupButton").addEventListener("click", function(event) {
+    event.preventDefault()
+    var emailAddress = document.getElementById("emailInput").value
+    var username = document.getElementById("usernameInput").value
+    if(emailAddress && username) {
+        doRegister(username, emailAddress)
+    } else {
+        document.getElementById("reminderMsg").innerHTML = "<b>Make sure you fill in both an email address and a name<b>"
+        if(emailAddress) {
+            document.getElementById("usernameInput").focus()
+        } else {
+            document.getElementById("emailInput").focus()
+        }
+    }
+})
 </script>
 {% endblock %}
