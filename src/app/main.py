@@ -321,3 +321,8 @@ async def lang_notation(request: Request, lang: str, notation: str):
         "tops": tops,
     }
     return templates.TemplateResponse("lang_notation.html", ctx)
+
+
+@app.get("/showcase", response_class=HTMLResponse)
+async def showcase(request: Request):
+    return templates.TemplateResponse("showcase.html", {"request": request})
