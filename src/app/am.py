@@ -248,9 +248,9 @@ async def newuser(username: str = Form(...), email: str = Form(...)):
         admin_db.commit()
         valid = validate_email(email)
         email = valid.email
-        msg_body = f"""Thanks for registering as a new user at https://iconclass.org with the username {username} <{email}>
+        msg_body = f"""Thanks for registering as a new user at https://test.iconclass.org with the username {username} <{email}>
 
-Please now enter a new password using this link: https://iconclass.org/password/{nonce}
+Please now enter a new password using this link: https://test.iconclass.org/password/{nonce}
 """
         create_mail_reminder(email, "New user password link", msg_body)
 

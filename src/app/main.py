@@ -36,6 +36,7 @@ app.add_middleware(
 
 from .fragments import *
 from .am import *
+from .metabotnik import *
 
 
 @app.get("/json")

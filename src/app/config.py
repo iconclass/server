@@ -8,8 +8,11 @@ DEBUG = os.environ.get("DEBUG", "0") == "1"
 SECRET_KEY = os.environ.get("SECRET_KEY", "foobarbaz")
 VERSION = os.environ.get("VERSION", "0.1")
 ADMIN_DATABASE = os.environ.get("ADMIN_DATABASE", "admin.sqlite")
+IC_DATABASE = os.environ.get("IC_DATABASE", "iconclass_index.sqlite")
+METABOTNIK_DATABASE = os.environ.get("METABOTNIK_DATABASE", "metabotnik.sqlite")
 ORIGINS = os.environ.get(
     "ORIGINS",
     "http://localhost:8080",
 ).split(" ")
 ACCESS_TOKEN_EXPIRE_DAYS = int(os.environ.get("ACCESS_TOKEN_EXPIRE_DAYS", "30"))
+SITE_URL = os.environ.get("SITE_URL", "https://test.iconclass.org")
