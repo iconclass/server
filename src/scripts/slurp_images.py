@@ -16,6 +16,6 @@ for x in textbase.parse(sys.argv[1]):
 
 d = sqlite3.connect("iconclass.sqlite")
 c = d.cursor()
-c.executemany("INSERT INTO images VALUES ?, ?, ?, ?", i)
-c.executemany("INSERT INTO images_ic VALUES ?, ?", u)
+c.executemany("INSERT INTO images VALUES (?, ?, ?, ?)", i)
+c.executemany("INSERT INTO images_ic VALUES (?, ?)", u)
 d.commit()
