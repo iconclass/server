@@ -26,6 +26,19 @@ def get_images(notation: str, size: int = 169) -> List:
         return len(results), results
 
 
+@app.get("/fragments/simple/{lang}/{notation}", response_class=HTMLResponse)
+async def simple(request: Request, lang: str, notation: str):
+    lang = valid_lang(lang)
+    obj = iconclass.get(notation)
+    ctx = {
+        "request": request,
+        "obj": fill_obj(obj),
+        "notation": notation,
+        "lang": lang,
+    }
+    return templates.TemplateResponse("notation_simple.html", ctx)
+
+
 @app.get("/fragments/focus/{lang}/{notation}", response_class=HTMLResponse)
 async def focus(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)

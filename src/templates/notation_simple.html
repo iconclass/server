@@ -1,0 +1,31 @@
+<div>
+    {% for p in obj.p%}
+    <div>
+      {% if loop.last %}
+        <span style="padding-left: 0.2rem; border-left: 2px solid red; color: red; font-size: 170%">{{p['n']}} &middot; </span>
+        <span style="font-size: 170%">{{p.get('txt', {}).get(lang, "")}}</span>
+      {% else %}
+        <span style="padding-left: 0.2rem;">{{p['n']}} &middot; </span>
+        <span>{{p.get('txt', {}).get(lang, "")}}</span>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    {% if obj.get("kw", {}).get(lang, []) %}
+    <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Related keywords:</h4>
+    <div style="margin: 0 0 8px 10px; font-style: italic">
+      {% for kw in obj.get('kws_all', {}).get(lang, []) %}{{kw}}{% if not loop.last %}, {% endif %}{% endfor %}
+    </div>
+    {% endif %}
+
+    {% if obj.r %}
+    <div style="margin: 5px 0 5px 5px; background-color: rgb(255, 250, 250); padding: 3px; border-top: 1px solid rgb(248, 233, 214);">
+      <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Also see:</h4>
+      {% for r in obj.r %}
+      <div style="padding-left: 8px">
+        <span data-notation="{{r['n']}}" notation="{{r['n']}}" class="navver" href="#">{{r['n']}} &middot; {{ r.get('txt', {}).get(lang, "")}}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+</div>

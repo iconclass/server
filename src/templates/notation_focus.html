@@ -14,7 +14,7 @@
       <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Also see:</h4>
       {% for r in obj.r %}
       <div style="padding-left: 8px">
-        <span data-notation="{{r['n']}}" notation="{{r['n']}}" class="navver" href="#">{{r['n']}} &middot; {{ r.get('txt', {}).get(lang, "")}}</a>
+        <span data-notation="{{r['n']}}" notation="{{r['n']}}" class="navver" href="#">{{r['n']}} &middot; {{ r.get('txt', {}).get(lang, "")}}</span>
       </div>
       {% endfor %}
     </div>
