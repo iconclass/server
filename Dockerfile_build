@@ -2,7 +2,7 @@ FROM python:3.9.7-alpine
 
 ENV PYTHONUNBUFFERED True
 
-RUN apk update && apk add gcc libc-dev make sqlite-dev git perl \
+RUN apk update && apk add gcc g++ libffi-dev libc-dev make sqlite-dev git perl \
     && git clone --recursive https://github.com/epoz/fts5-snowball.git
 
 WORKDIR /fts5-snowball
