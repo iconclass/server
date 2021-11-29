@@ -53,7 +53,7 @@ async def homepage(request: Request):
 
 
 def aimg(*args, **kwargs):
-    return f'<img src="/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
+    return f'<img src="https://test.iconclass.org/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
 
 
 @app.get("/help/{page}", response_class=HTMLResponse)
