@@ -16,3 +16,4 @@ ORIGINS = os.environ.get(
 ).split(" ")
 ACCESS_TOKEN_EXPIRE_DAYS = int(os.environ.get("ACCESS_TOKEN_EXPIRE_DAYS", "30"))
 SITE_URL = os.environ.get("SITE_URL", "https://test.iconclass.org")
+HELP_PATH = os.environ.get("HELP_PATH", "./help/")

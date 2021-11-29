@@ -20,7 +20,7 @@ import markdown
 from .util import fill_obj, valid_lang, do_search, LANGUAGES
 from .models import *
 
-from .config import ORIGINS, ACCESS_TOKEN_EXPIRE_DAYS
+from .config import ORIGINS, ACCESS_TOKEN_EXPIRE_DAYS, HELP_PATH
 
 app = FastAPI(openapi_url="/openapi")
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -52,7 +52,7 @@ async def homepage(request: Request):
 
 @app.get("/help/{page}", response_class=HTMLResponse)
 async def help(request: Request, page: str):
-    infilepath = os.path.join("help", f"{page}.md")
+    infilepath = os.path.join(HELP_PATH, f"{page}.md")
     if not os.path.exists(infilepath):
         raise HTTPException(status_code=404, detail=f"Page [{page}] not found")
     md = markdown.Markdown(
