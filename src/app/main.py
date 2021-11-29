@@ -9,6 +9,7 @@ from fastapi.responses import (
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from jinja2 import Markup
+from .shortcodes import apply_shortcodes
 
 from fastapi.middleware.cors import CORSMiddleware
 import iconclass
@@ -20,7 +21,8 @@ import markdown
 from .util import fill_obj, valid_lang, do_search, LANGUAGES
 from .models import *
 
-from .config import ORIGINS, ACCESS_TOKEN_EXPIRE_DAYS, HELP_PATH
+from .config import ORIGINS, HELP_PATH
+
 
 app = FastAPI(openapi_url="/openapi")
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -50,6 +52,10 @@ async def homepage(request: Request):
     return templates.TemplateResponse("homepage.html", {"request": request})
 
 
+def aimg(*args, **kwargs):
+    return f'<img src="/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
+
+
 @app.get("/help/{page}", response_class=HTMLResponse)
 async def help(request: Request, page: str):
     infilepath = os.path.join(HELP_PATH, f"{page}.md")
@@ -59,8 +65,10 @@ async def help(request: Request, page: str):
         output_format="html5", extensions=["nl2br", "meta", "attr_list"]
     )
     html = md.convert(open(infilepath).read())
+    out2, _ = apply_shortcodes(html, {"aimg": aimg})
+
     return templates.TemplateResponse(
-        "help.html", {"request": request, "content": Markup(html)}
+        "help.html", {"request": request, "content": Markup(out2)}
     )
 
 
