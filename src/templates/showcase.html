@@ -13,8 +13,7 @@
 
         <div class="mt-3">
             <div>
-                <h2>Introduction</h2>
-                <p>This is a showcase application of ICONCLASS.</p>
+                <h2 class="mb-5">Showcase application</h2>
 
                 <h4>What to do?</h4>
                 <p><b>CLICK</b> on the image to the right, and read the corresponding description.</p>
@@ -25,6 +24,10 @@
 
 
             </div>
+            <div class="category lead mt-5 shadow p-2">
+            The Iconclass view of the world is subdivided in 10 main categories. The scope of each of these categories is here demonstrated by a random selection of images tagged with Iconclass concepts. An Iconclass concept consists of an alphanumeric class number (“notation”) and a corresponding content definition (“textual correlate”). An object can be tagged with as many concepts as the user sees fit. The samples in our demonstration set are tagged with just one concept.
+            </div>
+
             <div style="display: none" class="category" notation="0"><h3>Abstract, Non-representational Art</h3>
             This concept is an addition to the original schedules. It was added as Iconclass began to be applied to modern, abstract art at a.o. Bildarchiv Foto Marburg. The concept has no further subdivisions.</div>
             <div style="display: none" class="category" notation="1"><h3>Religion and Magic</h3>
@@ -82,7 +85,7 @@ async function doInits() {
           cache: "no-cache",
           method: "GET",
         }).then((response) => response.json()).then((result) => {
-            linkbox.innerHTML = `<a class="btn btn-info btn-sm mb-3" target="icshowcasesource" href="${result.obj.L}">View the linked website</a> of this image`
+            linkbox.innerHTML = `<a class="btn btn-info btn-sm mb-3" target="icshowcasesource" href="${result.obj.L}">View the linked website of this image</a>`
             if(result.obj.IC) {                
                 let category = result.obj.IC[0].substring(0,1);
                 let categories = document.getElementsByClassName("category");
