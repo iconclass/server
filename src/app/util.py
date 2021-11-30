@@ -142,3 +142,14 @@ def send_email(sender: str, receiver: str, subject: str, body: str):
     s = smtplib.SMTP("localhost")
     s.send_message(msg)
     s.quit()
+
+
+def get_random_notations(count: int = 1):
+    SQL = f"select notation from notations ORDER BY RANDOM() LIMIT {count}"
+    IC_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
+    cur = sqlite3.connect(IC_PATH).cursor()
+    try:
+        results = [x[0] for x in cur.execute(SQL)]
+    except sqlite3.OperationalError:
+        results = ["0"]
+    return results

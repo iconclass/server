@@ -18,7 +18,7 @@ import os
 import urllib.parse
 from datetime import timedelta
 import markdown
-from .util import fill_obj, valid_lang, do_search, LANGUAGES
+from .util import fill_obj, valid_lang, do_search, LANGUAGES, get_random_notations
 from .models import *
 
 from .config import ORIGINS, HELP_PATH
@@ -74,13 +74,7 @@ async def help(request: Request, page: str):
 
 @app.get("/random", response_class=RedirectResponse)
 async def random() -> RedirectResponse:
-    SQL = "select notation from notations ORDER BY RANDOM() LIMIT 1"
-    IC_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
-    cur = sqlite3.connect(IC_PATH).cursor()
-    try:
-        results = [x[0] for x in cur.execute(SQL)]
-    except sqlite3.OperationalError:
-        results = ["0"]
+    results = get_random_notations()
     u = urllib.parse.quote(results[0])
     return RedirectResponse(f"/en/{u}")
 
@@ -310,26 +304,16 @@ async def api_search(
 @app.get("/browse/{lang}", response_class=HTMLResponse)
 async def browse(request: Request, lang: str):
     lang = valid_lang(lang)
-    ctx = {"request": request, "lang": lang, "language": LANGUAGES.get(lang, "English")}
-    return templates.TemplateResponse("browse.html", ctx)
+    results = get_random_notations()
+    u = urllib.parse.quote(results[0])
+    return RedirectResponse(f"/{lang}/{u}")
 
 
 @app.get("/{lang}/{notation}", response_class=HTMLResponse)
 async def lang_notation(request: Request, lang: str, notation: str):
-    if lang not in ("en", "de", "fr", "it", "pt", "nl", "pl", "zh", "fi", "ja"):
-        lang = "en"
-    obj = iconclass.get(notation)
-    if not obj:
-        raise HTTPException(status_code=404, detail=f"Notation {notation} not found")
-    tops = [iconclass.get(t) for t in "0 1 2 3 4 5 6 7 8 9".split()]
-    ctx = {
-        "request": request,
-        "lang": lang,
-        "obj": fill_obj(obj),
-        "notation": notation,
-        "tops": tops,
-    }
-    return templates.TemplateResponse("lang_notation.html", ctx)
+    lang = valid_lang(lang)
+    ctx = {"request": request, "lang": lang, "language": LANGUAGES.get(lang, "English")}
+    return templates.TemplateResponse("browse.html", ctx)
 
 
 @app.get("/showcase", response_class=HTMLResponse)
