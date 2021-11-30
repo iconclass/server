@@ -21,7 +21,7 @@ import markdown
 from .util import fill_obj, valid_lang, do_search, LANGUAGES, get_random_notations
 from .models import *
 
-from .config import ORIGINS, HELP_PATH
+from .config import ORIGINS, HELP_PATH, SITE_URL
 
 
 app = FastAPI(openapi_url="/openapi")
@@ -57,7 +57,10 @@ def aimg(*args, **kwargs):
 
 
 def pdf(*args, **kwargs):
-    return f'<a target="read" href="/read/{args[0]}.pdf">{args[1]}</a>'
+    if len(args) > 1:
+        return f'<a target="read" href="{SITE_URL}/read/{args[0]}.pdf">{args[1]}</a>'
+    else:
+        return f'<a target="read" href="{SITE_URL}/read/{args[0]}.pdf">full text</a>'
 
 
 @app.get("/read/{filename}", response_class=HTMLResponse)
