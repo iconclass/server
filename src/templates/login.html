@@ -48,7 +48,7 @@
     <div class="row">
         <div class="col m-5">
             <h4>Help!</h4>
-            <span id="helptext">I forgot my password, <a href="#" id="resetPassword">can you send me a reset link?</a></span>
+            <span id="helptext">I forgot my password, <a href="/passwordreset">can you send me a reset link?</a></span>
             <div id="reminderMsg" style="margin-top: 1rem"></div>
         </div>
     </div>
@@ -57,26 +57,6 @@
 <script type="text/javascript">
 document.getElementById("emailInput").focus()
 
-document.getElementById("resetPassword").addEventListener("click", function(event) {
-    event.preventDefault()
-    var emailAddress = document.getElementById("emailInput").value
-    if(emailAddress) {
-        var response = fetch("/password/reminder", {
-            method: 'POST', mode: 'cors', body: "email="+emailAddress, credentials: 'same-origin',
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-            }).then(response => {
-                if(response.status === 200) {
-                    document.getElementById("reminderMsg").innerHTML = "OK, we have sent an email to: " + emailAddress + "<br> (if that email is registered with us)<p><em>Keep an eye on your SPAM box too</em></p>"
-                    document.getElementById("helptext").style.display = "none"
-                }
-            })
-        
-
-    } else {
-        document.getElementById("reminderMsg").innerHTML = "Please enter an email address and click again"
-        document.getElementById("emailInput").focus()
-    }
-})
 
 async function doLogin(username, password) {
     var response = await fetch("/token", {

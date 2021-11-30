@@ -165,7 +165,12 @@ async def myregister(request: Request):
     return templates.TemplateResponse("register.html", {"request": request})
 
 
-def create_mail_reminder(email: str, subject: str = None, msg: str = None) -> str:
+@app.get("/passwordreset", response_class=HTMLResponse)
+async def passwordreset(request: Request):
+    return templates.TemplateResponse("passwordreset.html", {"request": request})
+
+
+def create_mail_reminder(email: str, subject: str = None) -> str:
     # Make a nonce and insert in the admin database, send user a password reminder link
     nonce = KsuidMs()
     admin_db = sqlite3.connect(ADMIN_DATABASE)
@@ -177,7 +182,7 @@ def create_mail_reminder(email: str, subject: str = None, msg: str = None) -> st
     if not msg:
         msg = f"""Somebody (hopefully it was you!) submitted a password reset request at https://test.iconclass.org
 
-To enter a new password, you can use this link: https://test.iconclass.org/password/{nonce}        
+Use this link: https://test.iconclass.org/password/{nonce} to enter a new password.
 (After about a day, this link does not work anymore)
 """
     send_email(
@@ -239,7 +244,6 @@ async def password_reset(nonce: str, newpassword: str = Form(...)):
 async def newuser(username: str = Form(...), email: str = Form(...)):
     # Do some basic sanity checking on the email submitted
     try:
-        nonce = KsuidMs()
         admin_db = sqlite3.connect(ADMIN_DATABASE)
         con = admin_db.cursor()
         con.execute(
@@ -248,11 +252,7 @@ async def newuser(username: str = Form(...), email: str = Form(...)):
         admin_db.commit()
         valid = validate_email(email)
         email = valid.email
-        msg_body = f"""Thanks for registering as a new user at https://test.iconclass.org with the username {username} <{email}>
-
-Please now enter a new password using this link: https://test.iconclass.org/password/{nonce}
-"""
-        create_mail_reminder(email, "New user password link", msg_body)
+        create_mail_reminder(email, f"Welcome {username} to iconclass.org")
 
     except EmailNotValidError as e:
         raise HTTPException(status_code=400, detail=str(e))
