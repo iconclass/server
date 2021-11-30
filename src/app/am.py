@@ -179,8 +179,7 @@ def create_mail_reminder(email: str, subject: str = None) -> str:
     admin_db.commit()
     if not subject:
         subject = "Password change request at test.iconclass.org"
-    if not msg:
-        msg = f"""Somebody (hopefully it was you!) submitted a password reset request at https://test.iconclass.org
+    msg = f"""Somebody (hopefully it was you!) submitted a password reset request at https://test.iconclass.org
 
 Use this link: https://test.iconclass.org/password/{nonce} to enter a new password.
 (After about a day, this link does not work anymore)
