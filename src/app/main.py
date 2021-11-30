@@ -56,6 +56,17 @@ def aimg(*args, **kwargs):
     return f'<img src="https://test.iconclass.org/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
 
 
+def pdf(*args, **kwargs):
+    return f'<a target="read" href="/read/{args[0]}.pdf">{args[1]}</a>'
+
+
+@app.get("/read/{filename}", response_class=HTMLResponse)
+async def read(request: Request, filename: str):
+    return templates.TemplateResponse(
+        "read.html", {"request": request, "filename": filename}
+    )
+
+
 @app.get("/help/{page}", response_class=HTMLResponse)
 async def help(request: Request, page: str):
     infilepath = os.path.join(HELP_PATH, f"{page}.md")
@@ -65,7 +76,7 @@ async def help(request: Request, page: str):
         output_format="html5", extensions=["nl2br", "meta", "attr_list"]
     )
     html = md.convert(open(infilepath).read())
-    out2, _ = apply_shortcodes(html, {"aimg": aimg})
+    out2, _ = apply_shortcodes(html, {"aimg": aimg, "pdf": pdf})
 
     return templates.TemplateResponse(
         "help.html", {"request": request, "content": Markup(out2)}
@@ -312,7 +323,12 @@ async def browse(request: Request, lang: str):
 @app.get("/{lang}/{notation}", response_class=HTMLResponse)
 async def lang_notation(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
-    ctx = {"request": request, "lang": lang, "language": LANGUAGES.get(lang, "English")}
+    ctx = {
+        "request": request,
+        "lang": lang,
+        "language": LANGUAGES.get(lang, "English"),
+        "notation": notation,
+    }
     return templates.TemplateResponse("browse.html", ctx)
 
 
