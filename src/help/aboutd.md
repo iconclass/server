@@ -2,7 +2,7 @@
 ### D. Conference papers, presentations, and (online) lectures about Iconclass or related topics
 
 <table>
-<tr><td valign="top">{{% aimg aboutpage_2010rsa %}}<br/></td><td valign="top">Renaissance Society of America. Venice, 8-10 April 2010
+<tr><td valign="top">{{% aimg aboutpage_2010rsa %}}<br/></td><td valign="top">Renaissance Society of America. Venice, 8-10 April 2010 {{% pdf 2010_rsa_venice %}}
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_2011ses %}}<br/></td><td valign="top"><b>Associations & Annotations</b><br/>
 Ninth International Conference of the Society for Emblem Studies, Glasgow, 27 June-1 July, 2011

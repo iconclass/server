@@ -1,4 +1,4 @@
-﻿<a name="bibliography">
+<a name="bibliography">
 ### A. Bibliography of publications about Iconclass and of publications using Iconclass for iconographic indexing.
 
 1940
@@ -15,24 +15,26 @@
 
 1964
 
-- H. van de Waal, Some principles of a general iconographical classification. In: Actes du Cinquième Congrès International d’Esthétique / Proceeding of the Fifth International Congress of Aesthetics (Amsterdam, 1964), La Haye 1968, pp. 728–33 {{% pdf 1964_Aesthetics "Fullz text" %}}
+- H. van de Waal, Some principles of a general iconographical classification. In: Actes du Cinquième Congrès International d’Esthétique / Proceeding of the Fifth International Congress of Aesthetics (Amsterdam, 1964), La Haye 1968, pp. 728–33 {{% pdf 1964_Aesthetics %}}
 
-1968  
-<a name="dial">- H. van de Waal, Decimal Index of the Art of the Low Countries D.I.A.L., Abridged edition of the Iconclass System. (The Hague, 1968; 2nd edition 1971) [full text](1968_DIAL.pdf)
+1968
 
-1969  
-<a name="wilberg"/>- Th.A.G. Wilberg-Vignau-Schuurman, Die emblematischen Elemente im Werke Joris Hoefnagels. Leiden Dissertation (2 volumes) (supervisor: H. van de Waal). Universitaire Pers Leiden, 1969. In particular volume 1, pp. 277-358 (Index by Iconclass notation, in accordance with the system’s version of 1969!) [full text](fulltext/1969_Hoefnagels_index.pdf)
+- [&para;](#dial){: name="dial" } H. van de Waal, Decimal Index of the Art of the Low Countries D.I.A.L., Abridged edition of the Iconclass System. (The Hague, 1968; 2nd edition 1971) {{% pdf 1968_DIAL %}}
 
-- H. v.d. Waal, Système de classification iconographique “ICONCLASS” et la collection de reproductions D.I.A.L. (Decimal Index of the Art of the Low Countries) . Lecture delivered at the Colloques Internationaux du Centre National de la Recherche Scientifique “Bibliographie d’ Histoire de l’Art”, Paris 25-26 March, 1969
+1969
+
+- Th.A.G. Wilberg-Vignau-Schuurman, Die emblematischen Elemente im Werke Joris Hoefnagels. Leiden Dissertation (2 volumes) (supervisor: H. van de Waal). Universitaire Pers Leiden, 1969. In particular volume 1, pp. 277-358 (Index by Iconclass notation, in accordance with the system’s version of 1969!) <a name="wilberg"/> {{% pdf 1969_Hoefnagels_index %}}
+
+- H. v.d. Waal, Système de classification iconographique “ICONCLASS” et la collection de reproductions D.I.A.L. (Decimal Index of the Art of the Low Countries) . Lecture delivered at the Colloques Internationaux du Centre National de la Recherche Scientifique “Bibliographie d’ Histoire de l’Art”, Paris 25-26 March, 1969 {{% pdf 1969_CNRS %}}
 
 1971
 
-- F. v.d. Walle, P.L.W. Aerts, Memo 4-71-31: Globale analyse Iconografisch Bibliografie Systeem. Typescript (Amsterdam, Infonet, 1971)
-- H. van de Waal, A general system for filing photographs according to their subject matter. Lecture, St. Gallen, 22-28 August 1971
+- F. v.d. Walle, P.L.W. Aerts, Memo 4-71-31: Globale analyse Iconografisch Bibliografie Systeem. Typescript (Amsterdam, Infonet, 1971) {{% pdf 1971_Infonet_Analyse %}}
+- H. van de Waal, A general system for filing photographs according to their subject matter. Lecture, St. Gallen, 22-28 August 1971 {{% pdf 1971_St_Gallen %}}
 
 1972-1985
 
-- H. v.d. Waal, Iconclass an iconographic classification system, completed and edited by L.D. Couprie with R.H. Fuchs, E. Tholen & G. Vellekoop (North-Holland, Amsterdam, 1974-1985). 17 volumes
+- H. v.d. Waal, Iconclass an iconographic classification system, completed and edited by L.D. Couprie with R.H. Fuchs, E. Tholen & G. Vellekoop (North-Holland, Amsterdam, 1974-1985). 17 volumes. General Introduction (volume 2/3) {{% pdf 1974_Iconclass_Generalintro %}}
 - R.H. Fuchs, Henri van de Waal, 1910-1972, In: Simiolus: Netherlands Quarterly for the History of Art, Vol. 6, No. 1 (1972 - 1973), pp. 4-7
 
 1976-77 reviews
@@ -42,7 +44,7 @@
 
 1978
 
-- L.D. Couprie, Iconclass. A Device for the Iconographic Analysis of Art Objects, In: Museum, 30 (1978), pp. 194–98
+- L.D. Couprie, Iconclass. A Device for the Iconographic Analysis of Art Objects, In: Museum, 30 (1978), pp. 194–98 {{% pdf 1978_Couprie_museum_international %}}
 
 1980
 
@@ -50,23 +52,23 @@
 
 1983
 
-- L.D. Couprie, Iconclass: An Iconographic Classification System, In: Art Libraries Journal, 8 (1983), pp. 32–49
+- L.D. Couprie, Iconclass: An Iconographic Classification System, In: Art Libraries Journal, 8 (1983), pp. 32–49 {{% pdf 1983_couprie %}}
 
 1986
 
-- R. van Straten, Panofsky and Iconclass. In: Artibus et Historiae, Vol. 7, No.13 (1986), pp. 165-181
+- R. van Straten, Panofsky and Iconclass. In: Artibus et Historiae, Vol. 7, No.13 (1986), pp. 165-181 {{% pdf 1986_van_straten %}}
 
 1987
 
-- C. Richter Sherman, Iconclass: A Historical Perspective. In: Visual Resources, Vol IV (1987), pp 237-246
-- J.P.J. Brandhorst, book illumination as a source of iconographic information. Gazette du livre médiéval, No 10, Printemps 1987, pp. 10-14
+- C. Richter Sherman, Iconclass: A Historical Perspective. In: Visual Resources, Vol IV (1987), pp 237-246 {{% pdf 1987_ShermanVR %}}
+- J.P.J. Brandhorst, book illumination as a source of iconographic information. Gazette du livre médiéval, No 10, Printemps 1987, pp. 10-14 {{% pdf 1987_Gazettedulivremedieval %}}
 
 1988
 
 - C. Gordon, Report on the ICONCLASS Workshop November 2-4, 1987, In: Visual Resources, Vol. V, no. 3 (1988), pp. vii-ix, 197-258 [?]
 - R. van Straten, L.D. Couprie, Corrections of the Iconclass system. In: Visual Resources, Vol. V (1988), pp 123-134
 - H. Roberts, "Do you have any pictures of .....?" : subject access to works of art in visual collections and book reproductions, In: Art Documentation: Journal of the Art Libraries Society of North America, Fall 1988, pp 87-90.
-- K. van der Horst, Illuminated and Decorated Medieval Manuscripts in the University Library, Utrecht. An Illustrated Catalogue. Maarssen/The Hague, 1989 = ISBN 90-6179-086-7 [also: Cambridge ; New York : Cambridge University Press 1989]
+- K. van der Horst, Illuminated and Decorated Medieval Manuscripts in the University Library, Utrecht. An Illustrated Catalogue. Maarssen/The Hague, 1989 = ISBN 90-6179-086-7 [also: Cambridge; New York; Cambridge University Press 1989]
 
 1989
 
@@ -75,9 +77,9 @@
 
 1991
 
-- Kitty Kilian, Iconclass: het Esperanto van de kunstgeschiedenis. NRC, 6 july 1991 [full text](1991_NRC_Iconclass_Esperanto.pdf)
-- G. Labrot, Collections of Paintings in Naples 1600-1780. München, 1991  
-  <a name="vrreport">- J.P.J. Brandhorst, P. van Huisstede, Report on the Iconclass Workshop, June 26-28, 1989. Special Issue of Visual Resources, Vol VIII, 1991, pp i-xiv and pp 1-78
+- Kitty Kilian, Iconclass: het Esperanto van de kunstgeschiedenis. NRC, 6 july 1991 {{% pdf 1991_NRC_Iconclass_Esperanto %}}
+- G. Labrot, Collections of Paintings in Naples 1600-1780. München, 1991
+- J.P.J. Brandhorst, P. van Huisstede, Report on the Iconclass Workshop, June 26-28, 1989. <a name="vrreport"> Special Issue of Visual Resources, Vol VIII, 1991, pp i-xiv and pp 1-78 {{% pdf 1991_VRWorkshopreport %}}
 
 1992
 
@@ -87,10 +89,11 @@
 
 1993
 
-- J.P.J. Brandhorst, Quantificability in Iconography. In: Knowledge Organization 20(1993)No. 1, pp 12-19, 29
+- J.P.J. Brandhorst, Quantifiability in Iconography. In: Knowledge Organization 20(1993)No. 1, pp 12-19, 29
 - Angelika Grund, Iconclass. On Subject Analysis of Iconographic Representations of Works of Art. In: Knowledge Organization 20(1993)No. 1, pp 20-29
 - A. E. Cawkell, Encyclopaedic Dictionary of Information Technology and Systems,(Bowker, 1993), in the lemma IMAGES, pp 132-154 dr Catherine Gordon describes the use of iconclass at the Witt Library
-- C. Gordon, Analysis of Shakespeare. A complete listing of scenes for the expansion of 83(...) [unpublished]
+- C. Gordon, Analysis of Shakespeare. A complete listing of scenes for the expansion of 83(...) [unpublished] {{% pdf 1993_Shakespeare_index_gordon %}}
+- J.P.J. Brandhorst, P. van Huisstede, Analysis of the Iconclass files in Leiden, Marburg and London. Unpublished report, in preparation of an Iconclass Machine Readable Version (IMRV). Replaced by the stand alone Iconclass Browser. Utrecht, Computer & Letteren, Version 2, 1993 {{% pdf 1993_analysisLeidenWittMarburg_version2 %}}
 
 1994
 
