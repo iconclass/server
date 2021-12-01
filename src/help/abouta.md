@@ -1,6 +1,8 @@
 <a name="bibliography">
 ### A. Bibliography of publications about Iconclass and of publications using Iconclass for iconographic indexing.
 
+Our aim is to offer a comprehensive overview of the articles, book chapters, indices, reports, theses, etcetera, dealing in some way with Iconclass. Wherever possible - and allowed by copyright regulations - we have included full text versions. Some of the full texts were not available in electronic format; then we have included scans of their printed format. We are grateful for all additional references.
+
 1940
 
 - H. van de Waal, De rangschikking en catalogiseering van een topografischen atlas. Oudheidkundig Jaarboek 9 (1940), pp 14-25
@@ -23,7 +25,7 @@
 
 1969
 
-- Th.A.G. Wilberg-Vignau-Schuurman, Die emblematischen Elemente im Werke Joris Hoefnagels. Leiden Dissertation (2 volumes) (supervisor: H. van de Waal). Universitaire Pers Leiden, 1969. In particular volume 1, pp. 277-358 (Index by Iconclass notation, in accordance with the system’s version of 1969!) <a name="wilberg"/> {{% pdf 1969_Hoefnagels_index %}}
+- [&para;](#wilberg){: name="wilberg" } Th.A.G. Wilberg-Vignau-Schuurman, Die emblematischen Elemente im Werke Joris Hoefnagels. Leiden Dissertation (2 volumes) (supervisor: H. van de Waal). Universitaire Pers Leiden, 1969. In particular volume 1, pp. 277-358 (Index by Iconclass notation, in accordance with the system’s version of 1969!) {{% pdf 1969_Hoefnagels_index %}}
 
 - H. v.d. Waal, Système de classification iconographique “ICONCLASS” et la collection de reproductions D.I.A.L. (Decimal Index of the Art of the Low Countries) . Lecture delivered at the Colloques Internationaux du Centre National de la Recherche Scientifique “Bibliographie d’ Histoire de l’Art”, Paris 25-26 March, 1969 {{% pdf 1969_CNRS %}}
 
@@ -66,14 +68,14 @@
 1988
 
 - C. Gordon, Report on the ICONCLASS Workshop November 2-4, 1987, In: Visual Resources, Vol. V, no. 3 (1988), pp. vii-ix, 197-258 [?]
-- R. van Straten, L.D. Couprie, Corrections of the Iconclass system. In: Visual Resources, Vol. V (1988), pp 123-134
-- H. Roberts, "Do you have any pictures of .....?" : subject access to works of art in visual collections and book reproductions, In: Art Documentation: Journal of the Art Libraries Society of North America, Fall 1988, pp 87-90.
-- K. van der Horst, Illuminated and Decorated Medieval Manuscripts in the University Library, Utrecht. An Illustrated Catalogue. Maarssen/The Hague, 1989 = ISBN 90-6179-086-7 [also: Cambridge; New York; Cambridge University Press 1989]
+- R. van Straten, L.D. Couprie, Corrections of the Iconclass system. In: Visual Resources, Vol. V (1988), pp 123-134 doi: https://dx.doi.org/10.1080/01973762.1988.9659170
+- H. Roberts, "Do you have any pictures of .....?" : subject access to works of art in visual collections and book reproductions, In: Art Documentation: Journal of the Art Libraries Society of North America, Fall 1988, pp 87-90. doi: https://dx.doi.org/10.1086/adx.7.3.27947910
 
 1989
 
-- Ikonographie und die Iconclass-Datei. In: L. Heusinger, Marburger Informations-, Dokumentations- und Administrations-System (MIDAS). Handbuch, (K.G. Saur, München etc. 1989), section 60, pp 361-424
+- Ikonographie und die Iconclass-Datei. In: L. Heusinger, Marburger Informations-, Dokumentations- und Administrations-System (MIDAS). Handbuch, (K.G. Saur, München etc. 1989), **section 60 Ikonographie**, pp 361-424. See {{% pdf 1989_midas %}} of this section.
 - H.E. Roberts, R. Hall, Iconographic Index to Old Testament Subjects Represented in Photographs and Slides of Paintings in the Visual Collections, Fine Arts Library, Harvard University, New York: Garland, 1989
+- K. van der Horst, Illuminated and Decorated Medieval Manuscripts in the University Library, Utrecht. An Illustrated Catalogue. Maarssen/The Hague, 1989 = ISBN 90-6179-086-7 [also: Cambridge; New York; Cambridge University Press 1989] {{% pdf 1989_Mss_utrecht %}} of the list of used Iconclass notations.
 
 1991
 
@@ -83,7 +85,7 @@
 
 1992
 
-- J.P.J. Brandhorst, P. van Huisstede, Iconclass: Recent Developments, Visual Resources, Vol VIII, 1992 pp 367-382
+- J.P.J. Brandhorst, P. van Huisstede, Iconclass: Recent Developments, Visual Resources, Vol VIII, 1992 pp 367-382 {{% pdf 1992_VRrecentdevelopments %}}
 - J. v.d. Berg, J.P.J. Brandhorst, J.W.J.M. Broeren, P. van Huisstede, B. Jongejan, G.J. Duijfjes-Vellekoop. ICONCLASS Browser User’s Guide, Utrecht, 1992
 - H.E. Roberts, R. Hall, Iconographic Index to New Testament Subjects Represented in Photographs and Slides of Paintings in the Visual Collections, Fine Arts Library, Harvard University, vol. I: Narrative Paintings of the Italian School, Garland Publishing: New York 1992; vol. II: Christian Devotional Painting of the Italian School, Routlege : New York, London 2001.
 
@@ -126,7 +128,7 @@
 
 1998
 
-- 1848. Politik, Propaganda, Information und Unterhaltung aus der Druckerpresse. Deutsches Historisches Museum, Berlin. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1998
+- 1848 - Politik, Propaganda, Information und Unterhaltung aus der Druckerpresse. Deutsches Historisches Museum, Berlin. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1998
 - Filmplakate der Österreichischen Nationalbibliothek (1910-1955). ÖNB, Wien. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1998
 - Gamälde Galerie Berlin. Staatliche Museen zu Berlin - Preussischer Kulturbesitz. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1998
 - Courtauld Gallery Paintings. Illustrated Catalogue. Witt Library, Courtauld Institue of Art, University of London. CD-ROM, 1998
@@ -136,7 +138,7 @@
 
 - C. Togneri, ICONCLASS and Its Application to Primary Documents. In: C. Hourihane (ed.) Image and Belief. Studies in Celebration of the eightieth anniversary of the Index of Christian Art. (Princeton, 1999), pp 259-271
 - J. van den Berg, G.J. Duijfjes-Vellekoop, Translating ICONCLASS and the Connectivity Concept of the Iconclass2000 Browser. In: C. Hourihane (ed.) Image and Belief. Studies in Celebration of the eightieth anniversary of the Index of Christian Art. (Princeton, 1999), pp 291-307
-- P. van Huisstede & J.P.J. Brandhorst, Dutch Pinter’s devices. 15th-17th century. A Catalogue with CD-ROM (3 Vols). Nieuwkoop, 1999  
+- P. van Huisstede & J.P.J. Brandhorst, Dutch Pinter’s devices. 15th-17th century. A Catalogue with CD-ROM (3 Vols). Nieuwkoop, 1999
   [revieved by: M. Baca, In: Art Documentation: Journal of the Art Libraries Society of North America, Vol. 19, No. 2 (Fall 2000), pp. 52-53]
 - E. Posthumus, Libertas Browser
 - Katalog der Zeichnungen. Kunstsammlung der Universität Göttingen. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1999
@@ -145,8 +147,8 @@
 
 2000
 
-- Iconclass / [Henri van de Waal] ; edizione italiana a cura di Marco Lattanzi, Simona Ciofetta, Elena Plances - Rome : ICCD, 2000 - 8 volumes: 7 system volumes and a separate Introduction volume.
-- - see: http://www.iccd.beniculturali.it/it/152/pubblicazioni-iccd/4116/iconclass
+- Iconclass / [Henri van de Waal] ; edizione italiana a cura di Marco Lattanzi, Simona Ciofetta, Elena Plances - Rome : ICCD, 2000 - 8 volumes: 7 system volumes and an Introduction. (see: {{% pdf 2000_ICCDTranslationIntroduzione %}} of the Introduction volume)
+  See: http://www.iccd.beniculturali.it/it/152/pubblicazioni-iccd/4116/iconclass
 - Nationalgalerie. Gesamtverzeichnis der Gemälde und Skulpturen. Staatliche Museen zu Berlin - Preussischer Kulturbesitz. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 2000
 
 2003
@@ -164,7 +166,7 @@
 2008
 
 - K. Stanicka-Brzezicka, System klasyfikacji ikonograficznej Iconclass: charakterystyka, przykłady zastosowania, problemy [Iconclass: system of iconographical classification - characteristics, usage, problems]. In: Nowoczesne metody gromadzenia i udostępniania wiedzy o zabytkach [Modern methods of gathering and proliferating knowledge on art heritage], Wrocław 2008, pp. 29-34 (Cyfrowe Spotkania z Zabytkami, 1)
-- Hidenobu KUJIRAI, ICONCLASS : Iconographic classification system (Special feature - Classification, with a fresh eye). In: The Journal of Information Science and Technology Association Vol. 58(2008), issue 2, pp 57-63. (DOI: https://doi.org/10.18919/jkg.58.2_57)
+- Hidenobu KUJIRAI, ICONCLASS : Iconographic classification system (Special feature - Classification, with a fresh eye). In: The Journal of Information Science and Technology Association Vol. 58(2008), issue 2, pp 57-63. (DOI: https://doi.org/10.18919/jkg.58.2_57) {{% pdf 2008_KJ00004841766 %}}
 
 2009
 
@@ -183,18 +185,22 @@
 2019
 
 - J.P.J. Brandhorst, ICONCLASS: a key to collaboration in the Digital Humanities. In: C. Hourihane (ed.) The Routledge companion to medieval iconography (London, 2019), pp 201-219
-- Carvalho, Rosário Salema de. “To be part of... Architecture, Decoration or Iconography. Documenting Azulejo as integrated heritage.” ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences IV-2/W6 (2019): 39–46. http://dx.doi.org/10.5194/isprs-annals-iv-2-w6-39-2019.
-- J.P.J. Brandhorst, A word is worth a thousand pictures. Why the use of Iconclass will make Artificial Intelligence smarter. Lecture presented at the conference "Changing Frontiers:Iconographic Archives in the Past and Present" on October 13th 2019, at University of Chicago Center in Beijing. (Chinese translation forthcoming)
-- Kabashi, Anyla. 2019. “Iconclass – classification system for art and iconography”. Tese de Graduação, Faculdade de Humanidades e Ciências Sociais da Universidade de Zagreb (https://repozitorij.ffzg.unizg.hr/islandora/object/ffzg:639)
+- Carvalho, Rosário Salema de. “To be part of... Architecture, Decoration or Iconography. Documenting Azulejo as integrated heritage.” ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences IV-2/W6 (2019): 39–46. http://dx.doi.org/10.5194/isprs-annals-iv-2-w6-39-2019. {{% pdf 2019_isprs-annals-IV-2-W6-39 %}}
+- J.P.J. Brandhorst, A word is worth a thousand pictures. Why the use of Iconclass will make Artificial Intelligence smarter. Lecture presented at the conference "Changing Frontiers:Iconographic Archives in the Past and Present" on October 13th 2019, at University of Chicago Center in Beijing. (Chinese translation forthcoming) English manuscript version: {{% pdf 2019_iconclass_and_ai %}}
+- Kabashi, Anyla. 2019. “Iconclass – classification system for art and iconography”. Tese de Graduação, Faculdade de Humanidades e Ciências Sociais da Universidade de Zagreb (https://repozitorij.ffzg.unizg.hr/islandora/object/ffzg:639) {{% pdf 2019_kabashi_zavrsni %}}
 
 2020
 
-- Carvalho, Rosário Salema de, and João Pedro Monteiro. “São Tiago no Azulejo Barroco Português.” Ad Limina 11, no. 11 (2020): 213–42. https://www.caminodesantiago.gal/pt/conocimiento-e-investigacion/ad-limina/ad-limina-xi.
-- Carvalho, Rosário Salema de Carvalho. “The Iconographic Role of Azulejo Frames.” Word & Image 36, no. 2 (2020): 135–65. https://doi.org/10.1080/02666286.2019.1639347.
+- Carvalho, Rosário Salema de, and João Pedro Monteiro. São Tiago no Azulejo Barroco Português. Ad Limina 11, no. 11 (2020): 213–42. https://www.caminodesantiago.gal/pt/conocimiento-e-investigacion/ad-limina/ad-limina-xi.
+- Carvalho, Rosário Salema de Carvalho. The Iconographic Role of Azulejo Frames. Word & Image 36, no. 2 (2020): 135–65. https://doi.org/10.1080/02666286.2019.1639347
+- Banar, N., Daelemans, W. and Kestemont, M., Neural Machine Translation of Artwork Titles Using Iconclass Codes. In: Proceedings of the The 4th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, December 2020, pp 42-51 {{% pdf 2020_kestemont_latechclfl-15 %}}
 
 2021
 
 - Leo, L. On the Developments of the Iconographic File Authority: New Research Perspectives. Environ. Sci. Proc. 2021, 10, 13. https://doi.org/10.3390/environsciproc2021010013
+- Cetinic, E. Towards Generating and Evaluating Iconographic Image Captions of Artworks. J. Imaging 2021, 7, 123. https://doi.org/10.3390/jimaging7080123 {{% pdf 2021_jimaging-07-00123-v2 %}}
+- Banar, N., Daelemans, W. and Kestemont, M., Multi-modal Label Retrieval for the Visual Arts: The Case of Iconclass. DOI: 10.5220/0010390606220629. In: Proceedings of the 13th International Conference on Agents and Artificial Intelligence (ICAART 2021) - Volume 1, pages 622-629, ISBN: 978-989-758-484-8
+- J.P.J. Brandhorst (with contributions by Angela Kailus a.o.), Revising Iconclass section 32B human races, peoples; nationalities. {{% pdf 2021_updating32B %}} of the explanation and a listing of the revised concept definitions.
 
 2022
 
