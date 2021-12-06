@@ -20,7 +20,9 @@ def escape(param):
 
 
 @app.get(
-    "/metabotnik/xy/{projectname}/{x:float}_{y:float}", response_class=PlainTextResponse
+    "/metabotnik/xy/{projectname}/{x:float}_{y:float}",
+    response_class=PlainTextResponse,
+    include_in_schema=False,
 )
 async def xy(projectname: str, x: float, y: float):
     projectname = escape(projectname)
@@ -43,6 +45,7 @@ async def xy(projectname: str, x: float, y: float):
 @app.get(
     "/metabotnik/xy_wh/{projectname}/{x:float}_{y:float}",
     response_class=JSONResponse,
+    include_in_schema=False,
 )
 async def xy_wh(projectname: str, x: float, y: float):
     projectname = escape(projectname)
@@ -65,6 +68,7 @@ async def xy_wh(projectname: str, x: float, y: float):
 @app.get(
     "/metabotnik/tag_wh/{projectname}/{tag}",
     response_class=JSONResponse,
+    include_in_schema=False,
 )
 async def tag_wh(projectname: str, tag: str):
     projectname = escape(projectname)
@@ -82,8 +86,7 @@ async def tag_wh(projectname: str, tag: str):
 
 
 @app.get(
-    "/metabotnik/{projectname}",
-    response_class=JSONResponse,
+    "/metabotnik/{projectname}", response_class=JSONResponse, include_in_schema=False
 )
 async def project(projectname: str):
     projectname = escape(projectname)

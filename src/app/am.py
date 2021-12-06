@@ -130,12 +130,12 @@ def get_user_from_token(token: str):
     return User(username=username, name=name)
 
 
-@app.get("/users/me", response_model=User)
+@app.get("/users/me", response_model=User, include_in_schema=False)
 async def read_users_me(current_user: User = Depends(get_current_user)):
     return current_user
 
 
-@app.post("/token", response_model=Token)
+@app.post("/token", response_model=Token, include_in_schema=False)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
     user = authenticate_user(form_data.username, form_data.password)
     if not user:
@@ -148,24 +148,24 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     return {"access_token": access_token, "token_type": "bearer"}
 
 
-@app.get("/login", response_class=HTMLResponse)
+@app.get("/login", response_class=HTMLResponse, include_in_schema=False)
 async def mylogin(request: Request):
     return templates.TemplateResponse("login.html", {"request": request})
 
 
-@app.get("/logout", response_class=RedirectResponse)
+@app.get("/logout", response_class=RedirectResponse, include_in_schema=False)
 async def mylogout():
     r = RedirectResponse("/")
     r.delete_cookie("access_token")
     return r
 
 
-@app.get("/register", response_class=HTMLResponse)
+@app.get("/register", response_class=HTMLResponse, include_in_schema=False)
 async def myregister(request: Request):
     return templates.TemplateResponse("register.html", {"request": request})
 
 
-@app.get("/passwordreset", response_class=HTMLResponse)
+@app.get("/passwordreset", response_class=HTMLResponse, include_in_schema=False)
 async def passwordreset(request: Request):
     return templates.TemplateResponse("passwordreset.html", {"request": request})
 
@@ -192,7 +192,7 @@ Use this link: https://test.iconclass.org/password/{nonce} to enter a new passwo
     )
 
 
-@app.post("/password/reminder")
+@app.post("/password/reminder", include_in_schema=False)
 async def password_reminder(email: str = Form(...)):
     user = get_user_fromdb(email)
     if not user:
@@ -201,7 +201,7 @@ async def password_reminder(email: str = Form(...)):
     return {"msg": "OK! 🤓"}
 
 
-@app.get("/password/{nonce}", response_class=HTMLResponse)
+@app.get("/password/{nonce}", response_class=HTMLResponse, include_in_schema=False)
 async def password_reset_form(request: Request, nonce: str):
     con = sqlite3.connect(ADMIN_DATABASE).cursor()
     nonce_exists = con.execute(
@@ -216,7 +216,7 @@ async def password_reset_form(request: Request, nonce: str):
     )
 
 
-@app.post("/password/{nonce}/reset")
+@app.post("/password/{nonce}/reset", include_in_schema=False)
 async def password_reset(nonce: str, newpassword: str = Form(...)):
     admin_db = sqlite3.connect(ADMIN_DATABASE)
     con = admin_db.cursor()
@@ -239,7 +239,7 @@ async def password_reset(nonce: str, newpassword: str = Form(...)):
     return {"msg": "Password has been reset"}
 
 
-@app.post("/newuser")
+@app.post("/newuser", include_in_schema=False)
 async def newuser(username: str = Form(...), email: str = Form(...)):
     # Do some basic sanity checking on the email submitted
     try:

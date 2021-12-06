@@ -26,7 +26,11 @@ def get_images(notation: str, size: int = 169) -> List:
         return len(results), results
 
 
-@app.get("/fragments/simple/{lang}/{notation}", response_class=HTMLResponse)
+@app.get(
+    "/fragments/simple/{lang}/{notation}",
+    response_class=HTMLResponse,
+    include_in_schema=False,
+)
 async def simple(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     obj = iconclass.get(notation)
@@ -39,7 +43,11 @@ async def simple(request: Request, lang: str, notation: str):
     return templates.TemplateResponse("notation_simple.html", ctx)
 
 
-@app.get("/fragments/focus/{lang}/{notation}", response_class=HTMLResponse)
+@app.get(
+    "/fragments/focus/{lang}/{notation}",
+    response_class=HTMLResponse,
+    include_in_schema=False,
+)
 async def focus(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     obj = iconclass.get(notation)
@@ -55,7 +63,9 @@ async def focus(request: Request, lang: str, notation: str):
     return templates.TemplateResponse("notation_focus.html", ctx)
 
 
-@app.get("/fragments/search/{lang}/", response_class=HTMLResponse)
+@app.get(
+    "/fragments/search/{lang}/", response_class=HTMLResponse, include_in_schema=False
+)
 async def search(
     request: Request,
     lang: str,
@@ -78,7 +88,7 @@ async def search(
         "lang": lang,
         "sort": sort,
         "include_keys": keys,
-        "RESULT_CAP": RESULT_CAP
+        "RESULT_CAP": RESULT_CAP,
     }
 
     return templates.TemplateResponse("search_fragment.html", ctx)

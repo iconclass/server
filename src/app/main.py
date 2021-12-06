@@ -47,12 +47,12 @@ async def json_list(notation: List[str] = Query(None)):
     return {"result": objs, "requested": notation}
 
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/", response_class=HTMLResponse, include_in_schema=False)
 async def homepage(request: Request):
     return templates.TemplateResponse("homepage.html", {"request": request})
 
 
-@app.get("/wikidatasample", response_class=HTMLResponse)
+@app.get("/wikidatasample", response_class=HTMLResponse, include_in_schema=False)
 async def wikidatasample():
     pass
 
@@ -104,14 +104,14 @@ def pdf(*args, **kwargs):
         return f'<a target="read" href="{SITE_URL}/read/{args[0]}.pdf">full text</a>'
 
 
-@app.get("/read/{filename}", response_class=HTMLResponse)
+@app.get("/read/{filename}", response_class=HTMLResponse, include_in_schema=False)
 async def read(request: Request, filename: str):
     return templates.TemplateResponse(
         "read.html", {"request": request, "filename": filename}
     )
 
 
-@app.get("/help/{page}", response_class=HTMLResponse)
+@app.get("/help/{page}", response_class=HTMLResponse, include_in_schema=False)
 async def help(request: Request, page: str):
     infilepath = os.path.join(HELP_PATH, f"{page}.md")
     if not os.path.exists(infilepath):
@@ -141,7 +141,12 @@ async def random() -> RedirectResponse:
 
 # https://json-ld.org/
 # https://github.com/digitalbazaar/pyld
-@app.get("/{notation}.jsonld", response_model=JSONLD, response_model_exclude_unset=True)
+@app.get(
+    "/{notation}.jsonld",
+    response_model=JSONLD,
+    response_model_exclude_unset=True,
+    include_in_schema=False,
+)
 async def notation_jsonld(notation: str):
     if notation == "ICONCLASS":
         # skos:hasTopConcept
@@ -213,7 +218,12 @@ async def notation_jsonld(notation: str):
     return JSONResponse(tmp)
 
 
-@app.get("/{notation}.jskos", response_model=JSKOS, response_model_exclude_unset=True)
+@app.get(
+    "/{notation}.jskos",
+    response_model=JSKOS,
+    response_model_exclude_unset=True,
+    include_in_schema=False,
+)
 async def notation_jskos(notation: str):
     if notation == "ICONCLASS":
         tmp = {
@@ -263,7 +273,12 @@ async def notation_jskos(notation: str):
     return JSONResponse(tmp)
 
 
-@app.get("/{notation}.json", response_model=Notation, response_model_exclude_unset=True)
+@app.get(
+    "/{notation}.json",
+    response_model=Notation,
+    response_model_exclude_unset=True,
+    include_in_schema=False,
+)
 async def notation_json(notation: str):
     if notation == "ICONCLASS":
         obj = {
@@ -279,7 +294,10 @@ async def notation_json(notation: str):
 
 
 @app.get(
-    "/{notation}.fat", response_model=FilledNotation, response_model_exclude_unset=True
+    "/{notation}.fat",
+    response_model=FilledNotation,
+    response_model_exclude_unset=True,
+    include_in_schema=False,
 )
 async def notation_fat(notation: str):
     if notation == "ICONCLASS":
@@ -296,7 +314,7 @@ async def notation_fat(notation: str):
     return fill_obj(obj)
 
 
-@app.get("/{notation}.rdf", response_class=Response)
+@app.get("/{notation}.rdf", response_class=Response, include_in_schema=False)
 async def notation_rdf(request: Request, notation: str):
     if notation in ("scheme", "ICONCLASS"):
         SKOSRDF = """<?xml version="1.0" encoding="UTF-8"?>
@@ -320,7 +338,7 @@ async def notation_rdf(request: Request, notation: str):
         )
 
 
-@app.get("/search", response_class=HTMLResponse)
+@app.get("/search", response_class=HTMLResponse, include_in_schema=False)
 async def search(
     request: Request,
     q: str,
@@ -356,7 +374,7 @@ async def api_search(
     return {"result": notations[:size], "total": len(notations)}
 
 
-@app.get("/browse/{lang}", response_class=HTMLResponse)
+@app.get("/browse/{lang}", response_class=HTMLResponse, include_in_schema=False)
 async def browse(request: Request, lang: str):
     lang = valid_lang(lang)
     results = get_random_notations()
@@ -364,7 +382,7 @@ async def browse(request: Request, lang: str):
     return RedirectResponse(f"/{lang}/{u}")
 
 
-@app.get("/{lang}/{notation}", response_class=HTMLResponse)
+@app.get("/{lang}/{notation}", response_class=HTMLResponse, include_in_schema=False)
 async def lang_notation(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     ctx = {
@@ -376,6 +394,6 @@ async def lang_notation(request: Request, lang: str, notation: str):
     return templates.TemplateResponse("browse.html", ctx)
 
 
-@app.get("/showcase", response_class=HTMLResponse)
+@app.get("/showcase", response_class=HTMLResponse, include_in_schema=False)
 async def showcase(request: Request):
     return templates.TemplateResponse("showcase.html", {"request": request})
