@@ -1,8 +1,12 @@
-<h4 style="margin-top: 1rem">Found {{total}} results, searching for <em>{{q}}</em></h4>
-<div style="margin-bottom: 10px">        
-    {% if include_keys == "1"%}<a class="btn" href="/search?lang={{lang}}&q={{q}}&sort={{sort}}&keys=0">Exclude (+ Keys)</a>{% else %}<a href="/search?lang={{lang}}&q={{q}}&sort={{sort}}&keys=1" class="btn">(+ Keys)</a>{% endif %}    
-    {% if sort == "rank" %}<a class="btn" href="/search?lang={{lang}}&q={{q}}&sort=notation&keys={{include_keys}}">Sort by Notation</a>{% else %}<a class="btn" href="/search?lang={{lang}}&q={{q}}&sort=rank&keys={{include_keys}}">Sort by Rank</a>{% endif %}
+<div class="float-end">
+    {% if include_keys == '1' %}<a id="includekeys" data="0" class="btn btn-sm btn-secondary" href="#">Exclude keys (+ )</a>{% else %}
+    <a id="includekeys" data="1" class="btn btn-sm btn-secondary" href="#">Include keys (+ )</a>{% endif %}
+    {% if sort == 'rank'%}<a id="searchsortorder" data="notation" class="btn btn-sm btn-secondary" href="#">Sort by notation</a>{% else %}
+    <a id="searchsortorder" data="rank" class="btn btn-sm btn-secondary" href="#">Sort by relevance</a>{% endif %}
+    
 </div>
+
+<h4 class="mt-4">Found {{total}} results, searching for <em>{{q}}</em></h4>
 
 <div style="max-width: 90ch">
 {% for r in results %}
@@ -12,3 +16,6 @@
 {% endfor %}
 </div>
 
+{% if total > RESULT_CAP %}
+    <em>We are showing the first {{RESULT_CAP}} results, of the {{total}} search results.</em>
+{% endif %}
