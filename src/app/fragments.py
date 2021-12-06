@@ -64,10 +64,12 @@ async def search(
     keys: Optional[str] = "0",
 ):
     if lang not in ("en", "de"):
-        lang = "en"  # for now we can only searh in en/de until we index all
+        lang = "en"  # for now we can only search in en/de until we index all
+
+    RESULT_CAP = 999
     results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"))
     # Properly filter in case of bogus notations
-    results_objs = filter(None, [iconclass.get(o) for o in results[:999]])
+    results_objs = filter(None, [iconclass.get(o) for o in results[:RESULT_CAP]])
     ctx = {
         "request": request,
         "results": results_objs,
@@ -76,6 +78,7 @@ async def search(
         "lang": lang,
         "sort": sort,
         "include_keys": keys,
+        "RESULT_CAP": RESULT_CAP
     }
 
     return templates.TemplateResponse("search_fragment.html", ctx)

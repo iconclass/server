@@ -52,6 +52,47 @@ async def homepage(request: Request):
     return templates.TemplateResponse("homepage.html", {"request": request})
 
 
+@app.get("/wikidatasample", response_class=HTMLResponse)
+async def wikidatasample():
+    pass
+
+
+# pip install sparqlwrapper
+# https://rdflib.github.io/sparqlwrapper/
+
+# import sys
+# from SPARQLWrapper import SPARQLWrapper, JSON
+
+# endpoint_url = "https://query.wikidata.org/sparql"
+
+# query = """#defaultView:ImageGrid
+# # Images described using ICONCLASS
+# SELECT DISTINCT (SAMPLE(?item) AS ?i) ?itemLabel (SAMPLE(?pic) as ?picture)
+# WHERE
+# {
+# ?item wdt:P1257 ?foo .
+# ?item wdt:P18 ?pic
+# SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+# } GROUP BY ?itemLabel
+# ORDER BY ?itemLabel"""
+
+
+# def get_results(endpoint_url, query):
+#     user_agent = "WDQS-example Python/%s.%s" % (sys.version_info[0], sys.version_info[1])
+#     # TODO adjust user agent; see https://w.wiki/CX6
+#     sparql = SPARQLWrapper(endpoint_url, agent=user_agent)
+#     sparql.setQuery(query)
+#     sparql.setReturnFormat(JSON)
+#     return sparql.query().convert()
+
+
+# results = get_results(endpoint_url, query)
+
+# for result in results["results"]["bindings"]:
+#     print(result)
+##############
+
+
 def aimg(*args, **kwargs):
     return f'<img src="https://test.iconclass.org/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
 

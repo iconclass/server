@@ -2,6 +2,7 @@ import iconclass
 import urllib.parse
 import re, os, sqlite3
 from typing import List
+from enum import Enum
 import smtplib
 from email.message import EmailMessage
 
@@ -113,7 +114,19 @@ def to_skos_ntriple(obj):
     return "\n".join(buf).encode("ascii")
 
 
+class SearchSortOptions(Enum):
+    RANK = "rank"
+    NOTATION = "notation"
+
+
 def do_search(q: str, lang: str, sort: str, keys: bool):
+    ##TODO
+    # sort is either "rank" or "notation" : this needs to be expressed in the parameter as an enumeration.
+    # How to do this properly?
+    try:
+        sort = SearchSortOptions(sort)
+    except ValueError:
+        sort = SearchSortOptions("rank")
     if lang not in ("en", "de"):
         lang = "en"
     IC_INDEX_PATH = os.environ.get("IC_INDEX_PATH", "iconclass_index.sqlite")
@@ -123,9 +136,9 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
     cur = index_db.cursor()
 
     if keys:
-        SQL = f"SELECT notation FROM {lang} WHERE text MATCH ? order by {sort}"
+        SQL = f"SELECT notation FROM {lang} WHERE text MATCH ? order by {sort.value}"
     else:
-        SQL = f"SELECT notation FROM {lang} WHERE is_key=0 AND text MATCH ? order by {sort}"
+        SQL = f"SELECT notation FROM {lang} WHERE is_key=0 AND text MATCH ? order by {sort.value}"
     try:
         results = [x[0] for x in cur.execute(SQL, (q,))]
     except sqlite3.OperationalError:
