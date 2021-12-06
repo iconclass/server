@@ -5,7 +5,7 @@
     {% if obj.get("kw", {}).get(lang, []) %}
     <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Search with these related keywords:</h4>
     <div style="margin: 0 0 8px 10px; font-style: italic">
-      {% for kw in obj.get('kws_all', {}).get(lang, []) %}<a href="/search?lang={{lang}}&q={{kw}}" title="Search for this keyword">{{kw}}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+      {% for kw in obj.get('kws_all', {}).get(lang, []) %}<a href="#" class="kw_search" data="{{kw}}" title="Search for this keyword">{{kw}}</a>{% if not loop.last %}, {% endif %}{% endfor %}
     </div>
     {% endif %}
 

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}IC Browse ({{language}}) {{ notation }}{% endblock %}
+{% block title %}{{ notation }} ({{language}}){% endblock %}
 
 {% block head_last%}<script type="module">import * as frontend from '/static/__target__/frontend.js';</script>
 <script src="/static/openseadragon-2.4.2/openseadragon.min.js"></script>
@@ -36,7 +36,7 @@
         </div>
         <div id="searchtab" style="margin-bottom: 10vh; borer-left: 1px solid #eee; display:none">
             {% block searchbox %}<div class="mt-3 mb-lg-0 me-3" style="width: 100%">
-            <input id="searchbox" autocomplete="off" name="q" type="search" class="form-control form-control-dark" placeholder="Type some word(s) in {{language}} to search for ..." aria-label="Search" value="{{q}}"/>
+            <input id="searchbox" autocomplete="off" name="q" type="search" class="form-control form-control-dark" placeholder="Type some word(s) in {{language}} to search for and press 'Enter'..." aria-label="Search" value="{{q}}"/>
           </div>
 
           {% endblock %}
