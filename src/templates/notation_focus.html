@@ -49,7 +49,7 @@
     {% endif %}
 
     {% if wikidatas %}
-    <h4 style="margin-top: 3vh">And on <a href="https://www.wikidata.org/">Wikidata</a>{% if wikidatas|length > 1 %}}, there are {{wikidatas | length}}:{% endif %}</h4>
+    <h4 style="margin-top: 3vh">And on <a href="https://www.wikidata.org/">Wikidata</a>{% if wikidatas|length > 1 %}, there are {{wikidatas | length}}:{% endif %}</h4>
     {% for w in wikidatas %}
     <a target="_sample" style="margin: 0 0 0 10px" href="{{w.i.value}}"><img height="200px" src="{{w.picture.value}}?height=200px" alt="{{w.itemLabel.value}}"></a>
     {% endfor %}
