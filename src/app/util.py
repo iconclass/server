@@ -5,8 +5,38 @@ from typing import List
 from enum import Enum
 import smtplib
 from email.message import EmailMessage
+import httpx
 
 KEYS_RE = r"^\w*\(\+"
+
+# Tip: to run it, do
+# >>> import asyncio
+# >>> asyncio.run(app.util.get_wikidata("73D24"))
+async def get_wikidata(notation: str):
+    query = (
+        """
+SELECT DISTINCT (SAMPLE(?item) AS ?i) ?itemLabel (SAMPLE(?pic) as ?picture)
+WHERE
+{
+?item wdt:P1257 "%s" .
+?item wdt:P18 ?pic
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} GROUP BY ?itemLabel
+ORDER BY ?itemLabel
+"""
+        % notation
+    )
+
+    with httpx.Client() as client:
+        headers = {
+            "Accept": "application/sparql-results+json",
+            "User-Agent": "ICONCLASS/2021 (https://test.iconclass.org/ info@iconclass.org)",
+        }
+        r = client.get(
+            "https://query.wikidata.org/sparql?query=" + urllib.parse.quote_plus(query),
+            headers=headers,
+        )
+    return r.json()
 
 
 def get_image_path_count(notation: str) -> List:

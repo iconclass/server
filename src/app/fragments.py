@@ -6,7 +6,7 @@ from typing import Optional, List, Dict, Text
 
 import iconclass
 from .main import app
-from .util import fill_obj, valid_lang, do_search
+from .util import fill_obj, valid_lang, do_search, get_wikidata
 
 templates = Jinja2Templates(directory="templates")
 
@@ -52,6 +52,9 @@ async def focus(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     obj = iconclass.get(notation)
     images_count, images_sample = get_images(notation, 9)
+    r = await get_wikidata(notation)
+    wikidatas = r["results"]["bindings"]
+
     ctx = {
         "request": request,
         "obj": fill_obj(obj),
@@ -59,6 +62,7 @@ async def focus(request: Request, lang: str, notation: str):
         "lang": lang,
         "images": images_sample,
         "images_count": images_count,
+        "wikidatas": wikidatas,
     }
     return templates.TemplateResponse("notation_focus.html", ctx)
 
