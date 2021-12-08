@@ -1,12 +1,23 @@
-<div class="float-end">
+<div class="row mt-3">
+    {% if r %}{% else %}<div class="col">
+        <a id="advancedsearch" href="#" class="btn btn-sm btn-success">Advanced Search</a> 
+    </div>
+    {% endif %}
+
+    <div class="col">
     {% if include_keys == '1' %}<a id="includekeys" data="0" class="btn btn-sm btn-secondary" href="#">Exclude keys (+ )</a>{% else %}
     <a id="includekeys" data="1" class="btn btn-sm btn-secondary" href="#">Include keys (+ )</a>{% endif %}
     {% if sort == 'rank'%}<a id="searchsortorder" data="notation" class="btn btn-sm btn-secondary" href="#">Sort by notation</a>{% else %}
     <a id="searchsortorder" data="rank" class="btn btn-sm btn-secondary" href="#">Sort by relevance</a>{% endif %}
-    
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col">
+        <b class="mt-4">Found {{total}} results, searching for <em>{{q}}</em></b>
+    </div>
 </div>
 
-<h4 class="mt-4">Found {{total}} results, searching for <em>{{q}}</em></h4>
+
 
 <div style="max-width: 90ch">
 {% for r in results %}

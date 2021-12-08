@@ -76,12 +76,13 @@ async def search(
     q: str,
     sort: Optional[str] = "rank",
     keys: Optional[str] = "0",
+    r: Optional[str] = "",
 ):
     if lang not in ("en", "de"):
         lang = "en"  # for now we can only search in en/de until we index all
 
     RESULT_CAP = 999
-    results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"))
+    results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"), r=r)
     # Properly filter in case of bogus notations
     results_objs = filter(None, [iconclass.get(o) for o in results[:RESULT_CAP]])
     ctx = {
@@ -89,6 +90,7 @@ async def search(
         "results": results_objs,
         "total": len(results),
         "q": q,
+        "r": r,
         "lang": lang,
         "sort": sort,
         "include_keys": keys,

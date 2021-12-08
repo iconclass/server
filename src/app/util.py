@@ -149,7 +149,16 @@ class SearchSortOptions(Enum):
     NOTATION = "notation"
 
 
-def do_search(q: str, lang: str, sort: str, keys: bool):
+# User-defined function for regex in the sqlite database
+def regexp(pattern, value):
+    matcher = re.compile(pattern)
+    if matcher.match(value):
+        return True
+    else:
+        return False
+
+
+def do_search(q: str, lang: str, sort: str, keys: bool, r: str):
     ##TODO
     # sort is either "rank" or "notation" : this needs to be expressed in the parameter as an enumeration.
     # How to do this properly?
@@ -163,14 +172,24 @@ def do_search(q: str, lang: str, sort: str, keys: bool):
     index_db = sqlite3.connect(IC_INDEX_PATH)
     index_db.enable_load_extension(True)
     index_db.load_extension("/usr/local/lib/fts5stemmer")
+    index_db.create_function("regexp", 2, regexp)
     cur = index_db.cursor()
 
     if keys:
-        SQL = f"SELECT notation FROM {lang} WHERE text MATCH ? order by {sort.value}"
+        keys = ""
     else:
-        SQL = f"SELECT notation FROM {lang} WHERE is_key=0 AND text MATCH ? order by {sort.value}"
+        keys = "is_key=0 AND "
+    if q:
+        SQL = f"SELECT notation FROM {lang} WHERE {keys}text MATCH ? order by {sort.value}"
+    else:
+        SQL = f"SELECT notation FROM notations WHERE notation REGEXP ?"
+        q = r
     try:
-        results = [x[0] for x in cur.execute(SQL, (q,))]
+        if len(r) > 0:
+            rr = re.compile(r)
+            results = [x[0] for x in cur.execute(SQL, (q,)) if rr.match(x[0])]
+        else:
+            results = [x[0] for x in cur.execute(SQL, (q,))]
     except sqlite3.OperationalError:
         results = []
     return results
