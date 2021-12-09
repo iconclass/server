@@ -34,7 +34,7 @@
     <div>
     {% if images_count > 1 %}
     <h4 style="margin-top: 1rem">We currently have a sample of {{images_count}} images</h4>
-    {% if images_count > 9 %}<div style="font-size: 75%">And here is a random selection of some of them</div>{% endif %}
+    {% if images_count > sample_size %}<div style="font-size: 75%">And here are {{sample_size}} random choices of some of them</div>{% endif %}
     {% else %}
     <h4 style="margin-top: 3vh">Here is a sample image:</h4>
     {% endif %}
@@ -51,8 +51,12 @@
     {% if wikidatas %}
     <h4 style="margin-top: 3vh">And on <a href="https://www.wikidata.org/">Wikidata</a>{% if wikidatas|length > 1 %}, there are {{wikidatas | length}}:{% endif %}</h4>
     {% for w in wikidatas %}
-    <a target="_sample" style="margin: 0 0 0 10px" href="{{w.i.value}}"><img height="200px" src="{{w.picture.value}}?height=200px" alt="{{w.itemLabel.value}}"></a>
+    <p style="margin: 0">
+        <a target="_sample" style="margin: 0 0 0 10px" href="{{w.i.value}}"><img style="height: 200px; display: none" src="{{w.picture.value}}?height=200px">{{w.itemLabel.value}}</a>
+    </p>
     {% endfor %}
+
+    <p class="mt-4">Showing the Wikidata images immediately takes too long, disabling that for now. The current link with Wikidata is "live" for every click a search is made using the Wikidata Query Service. Maybe we can consider cacheing in future.</p>
     {% endif %}
     
 </div>

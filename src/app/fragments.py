@@ -51,7 +51,8 @@ async def simple(request: Request, lang: str, notation: str):
 async def focus(request: Request, lang: str, notation: str):
     lang = valid_lang(lang)
     obj = iconclass.get(notation)
-    images_count, images_sample = get_images(notation, 9)
+    SAMPLE_SIZE = 42
+    images_count, images_sample = get_images(notation, SAMPLE_SIZE)
     r = await get_wikidata(notation)
     wikidatas = r["results"]["bindings"]
 
@@ -62,6 +63,7 @@ async def focus(request: Request, lang: str, notation: str):
         "lang": lang,
         "images": images_sample,
         "images_count": images_count,
+        "sample_size": SAMPLE_SIZE,
         "wikidatas": wikidatas,
     }
     return templates.TemplateResponse("notation_focus.html", ctx)
