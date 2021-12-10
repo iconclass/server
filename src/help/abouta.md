@@ -86,7 +86,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 1992
 
 - J.P.J. Brandhorst, P. van Huisstede, Iconclass: Recent Developments, Visual Resources, Vol VIII, 1992 pp 367-382 {{% pdf 1992_VRrecentdevelopments %}}
-- J. v.d. Berg, J.P.J. Brandhorst, J.W.J.M. Broeren, P. van Huisstede, B. Jongejan, G.J. Duijfjes-Vellekoop. ICONCLASS Browser User’s Guide, Utrecht, 1992
+- J. v.d. Berg, J.P.J. Brandhorst, J.W.J.M. Broeren, P. van Huisstede, B. Jongejan, G.J. Duijfjes-Vellekoop. ICONCLASS Browser User’s Guide, Utrecht, 1992  {{% pdf 1992_userguide %}}
 - H.E. Roberts, R. Hall, Iconographic Index to New Testament Subjects Represented in Photographs and Slides of Paintings in the Visual Collections, Fine Arts Library, Harvard University, vol. I: Narrative Paintings of the Italian School, Garland Publishing: New York 1992; vol. II: Christian Devotional Painting of the Italian School, Routlege : New York, London 2001.
 
 1993
