@@ -66,4 +66,7 @@ Ornamento workshop, Dublin, 2019<br/>{{% pdf 2019_ornamento_dublin %}}
 <tr><td valign="top">{{% aimg aboutpage_2020brill %}}<br/></td><td valign="top"><b>Iconclass @ Brill</b> (Etienne Posthumus)<br/>
 International Terminology Work Group, Getty Center, Los Angeles, 2020<br/>{{% pdf 2020_e_posthumus_iconclass_itwg %}}
 </td></tr>
+<tr><td valign="top">{{% aimg aboutpage_2020faper %}}<br/></td><td valign="top"><b>Iconographic Image Captioning for Artworks</b> (Eva Cetinić)<br/>
+FAPER 2020. International Workshop on Fine Art Pattern Extraction and Recognition<br/>{{% pdf 2020_cetinic_faper %}}
+</td></tr>
 </table>
