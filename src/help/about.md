@@ -8,15 +8,15 @@ Together these publications and emanations offer valuable insights in the ideas 
 Documentation here thus starts with a first step towards a comprehensive bibliography about the system and topics involving Iconclass __[A]__. They are listed chronologically. Included are also publications that offer iconographic indices organized in compliance with Iconclass. We have begun to collect sources in full text, both published and unpublished ones. These are included in PDF format and wherever possible, links are provided to the full texts.  
 A short survey is included of the path to the present Iconclass version __[B]__ for those interested in the 'archaeology of the Iconclass system'.
 A start has been made with a survey of the websites that offer Iconclass-ified information __[C]__. At this point in time there is little uniformity in the way the sites of museums, libraries and documentation institutes guide their users to iconographic information, even when they use Iconclass as their common vocabulary. Hopefully this new browser version can be a first step towards more uniformity.  
-Conference presentations and lectures dealing in whole or in part with Iconclass are also to be included __[D]__. We have begun this collection by offering our own presentations in PDF-format from circa 2010 forward.
+Conference presentations and lectures dealing in whole or in part with Iconclass are also to be included __[D]__. We have begun this collection by offering our own presentations in PDF-format from circa 2010 forward. In the spirit of Van de Waal we also collect information about pictorial information systems with an iconographic emphasis that do _not_ use Iconclass. 
 
-If you have information to supplement any of the following documentation pages, please contact us at the iconclass.org address shown below.  
+If you have information to supplement any of our documentation pages, please contact us at the iconclass.org address shown below.  
 
 __A. [Bibliography of publications about Iconclass and of publications using Iconclass for iconographic indexing](abouta#bibliography)__
 __B. [Survey of versions of the Iconclass system](aboutb#survey)__
 __C. [Web-based pictorial information systems using Iconclass for subject access](aboutc#webpisys)__
 __D. [Conference papers, presentations, and (online) lectures about Iconclass or related topics](aboutd#presentations)__
-
+__E. [Web-based systems with rich iconographic information, _not_ using Iconclass](aboute#other)__
 
 
 
