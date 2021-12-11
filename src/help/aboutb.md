@@ -4,7 +4,7 @@
 <table>
 <tr><td>{{% aimg aboutpage_dialcover %}}</td><td valign="top">H. van de Waal, Decimal Index of the Art of the Low Countries D.I.A.L.  
 Abridged edition of the Iconclass system, 1968, The Hague (second edition 1971) [full text](https://nu.nl/)</td></tr>
-<tr><td valign="top">{{% aimg aboutpage_icvol1 %}}<br/>1973 ...<br/>to<br/>... 1985<br/>{{% aimg aboutpage_icindex %}}</td><td valign="top">Official original edition of the complete system, including the bibliography and alphabetic index<br/><br/>
+<tr><td valign="top">{{% aimg aboutpage_icvol1 %}}<br/>1973 ...<br/>to<br/>... 1985<br/>{{% aimg aboutpage_icindex %}}</td><td valign="top"><a name="iconoriginal"/>Official original edition of the complete system, including the bibliography and alphabetic index<br/><br/>
 1973: Bibliography 2-3: L.D. Couprie, R.H. Fuchs, E. Tholen<br/>
 1974: System 2-3 - L.D. Couprie, R.H. Fuchs, E. Tholen<br/>
 1975: Bibliography 4 (pt. I): L.D. Couprie, E. Tholen, G. van Caspel-Vellekoop<br/>
@@ -44,7 +44,7 @@ Editing of the Iconclass files and assisting with the design of the browser: Bra
 [Bracmat](http://jongejan.dk/projects/) programming: Bart Jongejan, supervised by Jörgen van den Berg
 
 <table>
-<tr><td valign="top">1992: Iconclass 2000, first Windows edition on CD-ROM<br/>{{% aimg aboutpage_iconclass2000cd %}}</td><td valign="top">A Windows 95 Graphic User Interface was built on top of the original Iconclass browser 'engine'. The Bibliography was incorporated in this edition.<br/>
+<tr><td valign="top"><a name="firstbrowser"/>1992: Iconclass 2000, first Windows edition on CD-ROM<br/>{{% aimg aboutpage_iconclass2000cd %}}</td><td valign="top">A Windows 95 Graphic User Interface was built on top of the original Iconclass browser 'engine'. The Bibliography was incorporated in this edition.<br/>
 Cumulative design and programming by the C&L team, consisting of:<br/>
 Peter van Huisstede, Hans Brandhorst, Ger Duijfjes-Vellekoop, Bart Jongejan, Jacques Broeren.<br/>
 Supervision: Jörgen van den Berg</td>
