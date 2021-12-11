@@ -1,4 +1,4 @@
-# General
+# General introduction
 
 {{% aimg aboutpage_hvdwaal %}}
 The Iconclass system has a history reaching back into the 1940’s when Henri van de Waal began to develop ideas for a universal classification for the subject matter of works of art. The classification itself went through several phases, after its first edition as part of the [Decimal Index of Art of the Low Countries](abouta#dial) or D.I.A.L., in 1968. In its completed form it was published as a printed publication in [17 volumes](aboutb#iconoriginal) between 1973 and 1985. In its digital format it was included in the HIDA-MIDAS database management system of the Marburger Index in the 1980's. As a [standalone browser](aboutb#firstbrowser) it was first published by the department of Computer & Letteren of Utrecht University in the 1990's.  
