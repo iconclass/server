@@ -37,7 +37,7 @@ class TextNotFoundException(Exception):
     pass
 
 
-def lookup_text(n, txts):
+def lookup_text(n, txts, kwds):
     if not n:
         return ""
     # Handle the Keys (+ etc. )
@@ -55,14 +55,14 @@ def lookup_text(n, txts):
     obj = notations.get(base)
     if not obj:
         return ""
-    base_t = txts.get(base)
+    base_t = txts.get(base) + kwds.get(base, "")
     obj_t = base_t
     if key:
         obj_key = obj.get("K")
         # This object should have K and S keys
         if key in obj_key.get("S", []):
             lookup_k = obj_key["K"][0] + key
-            t2 = txts.get(lookup_k)
+            t2 = txts.get(lookup_k) + kwds.get(base, "")
             if t2:
                 obj_t = f"{base_t} (+ {t2})"
             else:
@@ -95,9 +95,9 @@ def read_k(filename):
     return d
 
 
-def read_txt(lang):
+def read_txt(lang, kw_or_text):
     d = {}
-    langpath = os.path.join("txt", lang)
+    langpath = os.path.join(kw_or_text, lang)
     for filename in os.listdir(langpath):
         filepath = os.path.join(langpath, filename)
         if not filepath.lower().endswith(".txt"):
@@ -115,7 +115,8 @@ def read_txt(lang):
 
 
 def index(lang, lang_name, prime_content=False):
-    txts = read_txt(lang)
+    txts = read_txt(lang, "txt")
+    kwds = read_txt(lang, "kw")
     all_notations = list(
         enumerate(gzip.open("all_notations.gz", "rt").read().split("\n"))
     )
@@ -136,7 +137,7 @@ def index(lang, lang_name, prime_content=False):
         batch = []
         for row_id, n in tqdm(all_notations):
             try:
-                t = "\n".join([lookup_text(part, txts) for part in get_parts(n)])
+                t = "\n".join([lookup_text(part, txts, kwds) for part in get_parts(n)])
             except TypeError:
                 print(f"Error {n}")
                 continue
