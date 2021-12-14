@@ -1,5 +1,15 @@
 # Terms
 
-Et excepteur pariatur ad minim aliqua amet consequat reprehenderit duis cupidatat. Lorem anim duis proident incididunt pariatur sunt duis id consequat. Ad excepteur adipisicing voluptate reprehenderit esse veniam magna.
+This used to be some place-holder text, but it was confusing to new users. We need to invest some time into writing up these terms.
 
-Consectetur elit amet sunt deserunt aliqua Lorem do cupidatat et non velit culpa laborum. Occaecat eiusmod ea consectetur minim ipsum dolore veniam cillum consequat aute dolore nostrud. Laborum ullamco culpa nulla sunt laborum sunt elit. Sint cillum exercitation laborum veniam do commodo sint voluptate irure qui esse. Do irure commodo labore nisi anim nostrud ea exercitation irure. Ipsum eiusmod cupidatat ad proident Lorem anim velit nisi eiusmod officia sunt mollit.
+In a nutshell, the intentions are to:
+
+- respect user privacy
+
+- not to install ANY third-party trackers or cookies
+
+- comply with any requests from copyright holders to remove infringing materials
+
+- foster a respectful, helpful community of ICONCLASS users
+
+If anyone in the community feels inspired to organise a brain-storming session to help us improve this documentation, [please get in touch](https://forms.gle/twPq7swQZXmSX46G8)
