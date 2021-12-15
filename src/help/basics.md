@@ -32,7 +32,7 @@ The third level of specificity is attained by adding a letter in upper case. For
 
 * Blank spaces on either side of the capital letter and between successive pairs of digits also provided greater legibility in the printed edition. However, the implementation of notations with 'spaces' causes most algorithms to interpret a notation as a "sentence" of separate words and is therefore advised against.
 
-Take a look, for example, at the subdivisions of [25 earth](https://test.iconclass.org/en/25), world as a celestial body:
+Take a look, for example, at the subdivisions of [25 earth](https://iconclass.org/25), world as a celestial body:
 
       25A maps, atlases
       25B continents represented allegorically
@@ -46,9 +46,9 @@ Take a look, for example, at the subdivisions of [25 earth](https://test.iconcla
       25K landscapes in the non-temperate zone, exotic landscapes
       25L cities represented allegorically or symbolically
       25M the Seven Wonders of the World
-From the letter(s) onward, all subsequent descents in the hierarchy take place by extending the notation to the right with more digits.
+From the letter(s) onward, subsequent descents in the hierarchy take place in principle by extending the notation to the right with more digits. The main exception to this rule - bracketed text - will be explained below.
 
-The following example shows the first subdivision of [25F animals](https://test.iconclass.org/en/25F):
+The following example shows the first subdivision of [25F animals](https://iconclass.org/25F):
 
       25F1 groups of animals
       25F2 mammals
@@ -82,7 +82,7 @@ A standard entry in the Iconclass system consists of a notation and its textual 
 
 
 #### Bracketed text
-Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical platform is created within the hierarchy.
+Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
 
 Example from division 2 of the Iconclass system:
 
@@ -90,7 +90,15 @@ Example from division 2 of the Iconclass system:
       25G41(...) flowers (with NAME)
       25G41(LILY) flowers: lily
       25G41(ROSE) flowers: rose
-Notations that are ready to accept an entry of bracketed text, for example 25G41(..), form an integral part of the Iconclass system. Usually, notations with bracketed text spelled out, for example 25G41(ROSE), are incorporated in the Iconclass Browser only for notations that have literary warrant in the Iconclass Bibliography. However, a large number of proper names of historical persons or fictional characters have found their own place in Iconclass, their life stories can often further subdivided by means of structural digits, for example 11H(BONAVENTURA) or 98B(CAESAR).
+Notations that are ready to accept an entry of bracketed text, for example 25G41(..), form an integral part of the Iconclass system. Usually, notations with bracketed text spelled out, for example 25G41(ROSE), are incorporated in the Iconclass Browser only for notations that have literary warrant in the Iconclass Bibliography. 
+The core of the Iconclass systems thus also includes quite a large number of historical people, like saints and persons from classical history. Not only have they found their place in Iconclass as named entities, but their life stories can be further subdivided systematically by means of so-called __[structural digits](#struct)__. Here are two examples of this combination:
+The notation __11H(FRANCIS)59__ contains the saint's name in brackets while the structural digit __59__ indicates the scene of the stigmatization:
+
+    {{% aimg 11hfrancis59 %}}
+    
+In [__98B(CAESAR)68__](https://iconclass.org/98B(CAESAR)68) the digits __68__ are used because they encode the death of someone from classical history.
+
+     {{% aimg 98bcaesar68 %}}
 
 
 #### Keys
@@ -122,14 +130,14 @@ At several points, Iconclass offers the option to duplicate the upper case lette
 __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 31A; in similar fashion 'indoors' is implied for 42D25__
       
 #### Structural Digits
-Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
+[&para;](#struct){: name="struct" }Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
 
 Example (classical gods):
 
       1 early life
       2 love-affairs
       3 most important deeds
-so structural meaning was added to:    
+so structural meaning was added to: 
 
       92B3 (story of) Apollo
       92B32 love-affairs of Apollo
