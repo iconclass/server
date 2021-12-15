@@ -1,6 +1,12 @@
 # News
 
-### 2021 December 14
+### December 15, 2021
+
+Received feedback from staff at Marburg and the Rijksmuseum that there are some critical aspects of the new server that does not support their work. As the system is used by professional catalogers on a daily basis, we are restoring the old system until the new system satisfies more criteria.
+
+Do you use the "old" system and have identified things in the new system which need attention? [Please let us know!](https://forms.gle/twPq7swQZXmSX46G8)
+
+### December 14, 2021
 
 Due to the critical [log4shell vulnerability](https://arstechnica.com/information-technology/2021/12/the-log4shell-zeroday-4-days-on-what-is-it-and-how-bad-is-it-really/) we decided to move the switch-over from the old site to the newer version ahead, effective immediately.
 
