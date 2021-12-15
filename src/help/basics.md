@@ -115,7 +115,7 @@ Key (+12) adds the notion 'heraldic' to the concept 'lion': the notation for a h
       {{% aimg 25f23lion12 %}}
 
 #### Queue of key
-Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25FF, for example, all indicating an abnormal part, limb or organ of a fabulous beast, can be expanded with one or more digits from a queue indicating the part or limb affected: 1 head, 11 nose, tusk, etc. Thus 25FF241(+511) denotes a 'unicorn with nose or tusk in an unusual place'. The added part (11) is referred to as "Queue of Key". Some 'queues' are made up of an entire key from a different part of Iconclass. The 
+Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25FF, for example, all indicating an abnormal part, limb or organ of a fabulous beast, can be expanded with one or more digits from a queue indicating the part or limb affected: 1 head, 11 nose, tusk, etc. Thus 25FF241(+511) denotes a 'unicorn with nose or tusk in an unusual place'. The added part (11) is referred to as "Queue of Key". Some 'queues' are made up of an entire key from a different part of Iconclass. In the online browser keys and queues are automatically merged whenever this is required by the original instructions.
 
 
 #### Doubling of letter
