@@ -12,6 +12,10 @@ The Henri van de Waal Foundation aims to carry the cost of the Illustrated Iconc
 However, it cannot do so by itself and without support from the community of users of Iconclass.
 
 __Iconclass consortium for the community of users__
-The Henri van de Waal Foundation is the legal entity that will take over the cost of the online Iconclass system. The foundation aims to organize the support from the community of Iconclass users via a consortium. The consortium will act as a flexible organization that will ask its members to contribute - in cash or in kind - to the common goal of an Open Access Iconclass website. As a legal entity the foundation will be the logical recipient of the contributions of sponsors in cash.
+The Henri van de Waal Foundation is the legal entity that will take over the cost of the online Iconclass system. The foundation aims to organize the support from the community of Iconclass users via a consortium. The consortium will act as a flexible, lightweight organization that will ask its members to contribute - in cash or in kind - to the common goal of an Open Access Iconclass website. As a legal entity the foundation will be the logical recipient of the contributions of sponsors in cash.
 
 __Keeping it simple__
+We are fully aware that this may sound somewhat simplistic and a little less than "professional". If so, that is precisely what we aim for, certainly in these initial stages: an __Illustrated Iconclass__ that is technically up-to-date and offers the functionality desired by its users, made sustainable by a small organization without any overhead.
+
+__Roadmap for additional functionalities__
+If the foundation is successful in recruiting a first group of consortium members, additional functionalities will be created.
