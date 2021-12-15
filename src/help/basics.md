@@ -106,16 +106,16 @@ Keys are elements of the Iconclass system that are declared in lists. A list of 
 
 The notation for a lion is 25F23(LION). Keys, valid for notations beginning with 25F, are:
 
-      +1 animals used symbolically
-      +11 bestiaries, 'Physiologus'
-      +12 heraldic animals
-      +2 sex and age of animals; propagation of animals
+      (+1) animals used symbolically
+      (+11) bestiaries, 'Physiologus'
+      (+12) heraldic animals
+      (+2) sex and age of animals; propagation of animals
       ...etc.
 Key (+12) adds the notion 'heraldic' to the concept 'lion': the notation for a heraldic lion reads 25F23(LION)(+12)
       {{% aimg 25f23lion12 %}}
 
 #### Queue of key
-Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25FF, for example, all indicating an abnormal part, limb or organ of a fabulous beast, can be expanded with one or more digits from a queue indicating the part or limb affected: 1 head, 11 nose, tusk, etc. Thus 25FF241(+511) denotes a 'unicorn with nose or tusk in an unusual place'. The added part (11) is referred to as "Queue of Key". Some 'queues' are made up of an entire key from a different part of Iconclass.
+Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25FF, for example, all indicating an abnormal part, limb or organ of a fabulous beast, can be expanded with one or more digits from a queue indicating the part or limb affected: 1 head, 11 nose, tusk, etc. Thus 25FF241(+511) denotes a 'unicorn with nose or tusk in an unusual place'. The added part (11) is referred to as "Queue of Key". Some 'queues' are made up of an entire key from a different part of Iconclass. The 
 
 
 #### Doubling of letter
@@ -123,9 +123,9 @@ At several points, Iconclass offers the option to duplicate the upper case lette
 
       25F animals
       25FF fabulous animals
-      31A the (nude) human figure [_male_]*
+      31A the (nude) human figure [male]*
       31AA the (nude) human figure; female
-      42D25 wedding feast, wedding meal [_indoors_]*
+      42D25 wedding feast, wedding meal [indoors]*
       42DD25 wedding feast, wedding meal; out of doors
 __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 31A; in similar fashion 'indoors' is implied for 42D25__
       
