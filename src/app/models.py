@@ -1,7 +1,5 @@
-from sqlite3.dbapi2 import OperationalError
 from typing import Optional, List, Dict, Text
 from pydantic import BaseModel
-from pydantic.errors import UrlUserInfoError
 from pydantic.types import OptionalInt
 
 

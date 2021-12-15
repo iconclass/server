@@ -29,145 +29,262 @@ def get_parts(a):
     return p
 
 
-CACHE = {}
+NODE_MAP = {}
 
 
-def reset_fontsizes():
-    for notation_element in CACHE.values():
-        notation_element.element.classList.remove("active_notation")
+def add_desired_to_tree(notation):
+    results_element = document.getElementById("results")
+    results_element.innerHTML = '<div style="margin-top: 20px" class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>'
 
-
-def got_nav_results(result):
-    # go through the path of objects in result, and add them to the CACHE tree
-    result = dict(result)
-    for obj in result.get("result", []):
-        parent = obj["p"][len(obj["p"]) - 2]
-        CACHE[obj["n"]] = NotationElement(CACHE[parent].element, obj["n"], obj, True)
-    reset_fontsizes()
-
-
-def nav_in_tree(event):
-    event.preventDefault()
-    desired = event.target.getAttribute("data-notation")
-    params = "&".join(
-        [
-            "notation=" + encodeURIComponent(p)
-            for p in get_parts(desired)
-            if p not in CACHE
-        ]
-    )
-    fetch("/json?" + params).then(
-        lambda response: response.json().then(got_nav_results)
-    )
-
-
-class NotationElement:
-    def __init__(self, parent_element, notation, obj=None, showkids=False):
-        self.parent_element = parent_element
-        self.notation = notation
-        self.expanded = showkids == True
-        nuri = "/{}.json".format(encodeURIComponent(notation))
-        if obj:
-            self.got_json_obj(obj, showkids)
+    parts = get_parts(notation)
+    last_part = NODE_MAP[
+        parts[0]
+    ]  # We are going to assume all the root nodes are in there already
+    for part in parts:
+        if part not in NODE_MAP:
+            build(last_part, last_part.kids_element, parts)
+            break
         else:
-            fetch(nuri).then(self.got_init_response)
-        # Also fetch the focus fragment
-        self.focus_text = "<p>...pending...</p>"
+            last_part = NODE_MAP[part]
+            last_part.kids_element.style.display = "block"
+            last_part.element.classList.add("open_notation")
+
+    setTimeout(lambda x: focus_node(notation), 500)
+
+
+def get_searchoption_opposite(value):
+    if value == "1":
+        return "0"
+    if value == "0":
+        return "1"
+    if value == "rank":
+        return "notation"
+    if value == "notation":
+        return "rank"
+
+
+async def results_clicker(event):
+    # handle the search option buttons
+    if event.target.id == "includekeys":
+        q = document.getElementById("searchbox").value
+        searchsortorder = document.getElementById("searchsortorder").getAttribute(
+            "data"
+        )
+        includekeys = document.getElementById("includekeys").getAttribute("data")
+        dosearch(q, includekeys, get_searchoption_opposite(searchsortorder))
+        return
+    if event.target.id == "searchsortorder":
+        q = document.getElementById("searchbox").value
+        includekeys = document.getElementById("includekeys").getAttribute("data")
+        searchsortorder = document.getElementById("searchsortorder").getAttribute(
+            "data"
+        )
+        dosearch(q, get_searchoption_opposite(includekeys), searchsortorder)
+        return
+    if event.target.id == "advancedsearch":
+        sre = document.getElementById("searchregex")
+        sre.style.display = "block"
+        sre.focus()
+        advs = document.getElementById("advancedsearch")
+        advs.style.display = "none"
+        return
+    if event.target.classList.contains("kw_search"):
+        kw = event.target.getAttribute("data")
+        if kw.find(" ") > -1:
+            kw = '"' + kw + '"'
+
+        navtabSearch_click(None)
+        searchsortorder = document.getElementById("searchsortorder").getAttribute(
+            "data"
+        )
+        dosearch(
+            kw,
+            "0",
+            get_searchoption_opposite(searchsortorder),
+        )
+        document.getElementById("searchbox").value = kw
+        return
+    desired = event.target.getAttribute("notation")
+    if len(desired) < 1:
+        return
+    if desired:
+        add_desired_to_tree(desired)
+
+
+async def tree_clicker(event):
+    desired = event.target.getAttribute("notation")
+    if len(desired) > 0:
+        focus_node(desired)
+
+
+async def focus_node(desired):
+    if desired not in NODE_MAP:
+        return
+    history.pushState({}, "", "/" + encodeURIComponent(desired))
+    node = NODE_MAP[desired]
+    if node.fragment is None:
         furi = "/fragments/focus/{}/{}".format(
-            document.IC_LANG, encodeURIComponent(notation)
+            document.IC_LANG, encodeURIComponent(desired)
         )
-        fetch(furi).then(self.got_fragment_focus)
+        result = await fetch(furi)
+        response = await result.text()
+        node.fragment = response
+        if len(node["c"]) > 0:
+            new_element = document.getElementById("kids" + desired)
+            build(node, new_element)
 
-    def got_fragment_focus(self, response):
-        response.text().then(self.got_fragment_focus_text)
+    # set the focus fragment
+    results_element = document.getElementById("results")
+    results_element.innerHTML = node.fragment
 
-    def got_fragment_focus_text(self, result):
-        self.focus_text = result
+    for anode in NODE_MAP.values():
+        anode.element.classList.remove("active_notation")
+    node.element.classList.add("active_notation")
 
-    def got_init_response(self, response):
-        response.json().then(self.got_json_obj)
+    if len(node["c"]) > 0:
+        kid_element = document.getElementById("kids" + desired)
+        if kid_element.style.display == "block":
+            kid_element.style.display = "none"
+            node.element.classList.remove("open_notation")
+        else:
+            kid_element.style.display = "block"
+            node.element.classList.add("open_notation")
 
-    def got_children_response(self, response):
-        response.json().then(self.got_json_objs_results)
 
-    def got_json_objs_results(self, result):
-        result = dict(result)
-        tmp_map = {}
-        for x in result.get("result", []):
-            tmp_map[x["n"]] = x
-        for c in self.children:
-            if c in tmp_map:
-                CACHE[c] = NotationElement(self.kids_element, c, tmp_map[c])
+async def build(node, an_element, path=[]):
 
-    def got_json_obj(self, obj, showkids=False):
-        obj = dict(obj)
-        txts = dict(obj.get("txt", {}))
-        kws = dict(obj.get("kw", {}))
-        self.children = obj.get("c", [])
-        expanda = Span(
-            self.notation,
-            id="x" + self.notation,
-            style={"cursor": "pointer"},
-            _class="notation_n",
-        )
+    # Fetch the IC object for this node
+    result = await fetch("/" + node["n"] + ".fat")
+    response = await result.json()
+    response = dict(response)
 
-        self.parent_element.insertAdjacentHTML(
+    for kind in response.get("c", []):
+        k_n = kind["n"]
+        if k_n.find("(+") > 0:
+            # This is a key
+            k_display = "none"
+        else:
+            k_display = "block"
+        NODE_MAP[k_n] = kind
+        kind.fragment = None
+        if k_n in path:
+            kids_display = "block"
+        else:
+            kids_display = "none"
+
+        display_txt = k_n + " &middot; " + dict(kind["txt"]).get(document.IC_LANG, "")
+        an_element.insertAdjacentHTML(
             "beforeend",
             Div(
-                Div(
-                    expanda,
-                    Span(txts.get(document.IC_LANG, ""), _class="notation_txt"),
-                    id=self.notation,
-                    _class="notation_container",
-                ),
-                Div(id="kids_" + self.notation),
-                style={"padding-left": "10px"},
+                Span(display_txt, _class="ntext", notation=k_n),
+                Div(id="kids" + k_n, style={"display": kids_display}),
+                id=k_n,
+                style={
+                    "padding-left": "5px",
+                    "cursor": "pointer",
+                    "display": k_display,
+                },
+                notation=k_n,
             ).render(),
         )
-        expander = document.getElementById("x" + self.notation)
-        expander.addEventListener("click", self.expand)
-        self.element = document.getElementById(self.notation)
-        self.kids_element = document.getElementById("kids_" + self.notation)
-
-        if showkids:
-
-            class E:
-                target = expander
-
-            self.expand(E())
-
-    def expand(self, event):
-        if self.expanded:
-            self.kids_element.style.display = "none"
-            self.element.classList.remove("open_notation")
-        else:
-            reset_fontsizes()
-            self.element.classList.add("active_notation")
-            self.element.classList.add("open_notation")
-            self.kids_element.style.display = "block"
-            # If any of self.c in CACHE, we have already fetched the kids don't do it again
-            if self.children[0] not in CACHE:
-                params = "&".join(
-                    [
-                        "notation=" + encodeURIComponent(c)
-                        for c in self.children
-                        if c.find("(+") < 0
-                    ]
-                )
-                fetch("/json?" + params).then(self.got_children_response)
-            # set the focus fragment
-            results = document.getElementById("results")
-            results.innerHTML = self.focus_text
-            # find all the current items that need nav, and set their handlers
-            for navver in results.getElementsByClassName("navver"):
-                navver.addEventListener("click", nav_in_tree)
-
-        self.expanded = not self.expanded
+        kind.element = document.getElementById(k_n)
+        kind.kids_element = document.getElementById("kids" + k_n)
+        if k_n in path:
+            build(kind, kind.kids_element, path)
 
 
-thetree = document.getElementById("thetree")
+iconclass_tree = {"n": "ICONCLASS", "c": []}
+document.iconclass_tree = iconclass_tree
 
-for n in "0123456789":
-    thetree.insertAdjacentHTML("beforeend", "<div id='tree" + n + "'/>")
-    element = document.getElementById("tree" + n)
-    CACHE[n] = NotationElement(element, n)
+thetree_element = document.getElementById("thetree")
+thetree_element.addEventListener("click", tree_clicker)
+build(iconclass_tree, thetree_element)
+
+# Check to see if the document was called with an initial notation, if so browse to it
+if document.notation and document.notation != "_":
+    setTimeout(lambda x: add_desired_to_tree(document.notation), 750)
+
+
+document.getElementById("results").addEventListener("click", results_clicker)
+
+searchtab_element = document.getElementById("searchtab")
+searchresults_element = document.getElementById("searchresults")
+searchtab_element.addEventListener("click", results_clicker)
+
+navtabNavigate = document.getElementById("navtabNavigate")
+navtabSearch = document.getElementById("navtabSearch")
+
+
+def navtabNavigate_click(event):
+    thetree_element.style.display = "block"
+    searchtab_element.style.display = "none"
+    navtabNavigate.classList.add("active")
+    navtabSearch.classList.remove("active")
+
+
+navtabNavigate.addEventListener("click", navtabNavigate_click)
+
+
+def navtabSearch_click(event):
+    thetree_element.style.display = "none"
+    searchtab_element.style.display = "block"
+    navtabSearch.classList.add("active")
+    navtabNavigate.classList.remove("active")
+
+
+navtabSearch.addEventListener("click", navtabSearch_click)
+
+
+########## Handle searchbox
+
+
+async def dosearch(q, keys, sort):
+    searchresults_element.innerHTML = '<div style="margin-top: 20px" class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>'
+
+    search_url = (
+        "/fragments/search/"
+        + document.IC_LANG
+        + "/?q="
+        + encodeURIComponent(q)
+        + "&sort="
+        + sort
+        + "&keys="
+        + keys
+        + "&r="
+        + encodeURIComponent(document.getElementById("searchregex").value)
+    )
+    result = await fetch(search_url)
+    response = await result.text()
+    searchresults_element.innerHTML = response
+    searchtab_element.style.display = "block"
+    thetree_element.style.display = "none"
+    navtabNavigate.classList.remove("active")
+    navtabSearch.classList.add("active")
+
+
+async def search_action():
+    q = document.getElementById("searchbox").value
+    includekeys = document.getElementById("includekeys").getAttribute("data")
+    searchsortorder = document.getElementById("searchsortorder").getAttribute("data")
+
+    dosearch(
+        q,
+        get_searchoption_opposite(includekeys),
+        get_searchoption_opposite(searchsortorder),
+    )
+
+
+async def searchbox_keyup(event):
+    if event.keyCode == 13:
+        search_action()
+
+
+document.getElementById("searchbox").addEventListener("keyup", searchbox_keyup)
+
+
+async def searchregex_keyup(event):
+    if event.keyCode == 13:
+        search_action()
+
+
+document.getElementById("searchregex").addEventListener("keyup", searchregex_keyup)
