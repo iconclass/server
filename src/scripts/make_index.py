@@ -55,14 +55,14 @@ def lookup_text(n, txts, kwds):
     obj = notations.get(base)
     if not obj:
         return ""
-    base_t = txts.get(base) + kwds.get(base, "")
+    base_t = txts.get(base, "") + kwds.get(base, "")
     obj_t = base_t
     if key:
         obj_key = obj.get("K")
         # This object should have K and S keys
         if key in obj_key.get("S", []):
             lookup_k = obj_key["K"][0] + key
-            t2 = txts.get(lookup_k) + kwds.get(base, "")
+            t2 = txts.get(lookup_k, "") + kwds.get(lookup_k, "")
             if t2:
                 obj_t = f"{base_t} (+ {t2})"
             else:

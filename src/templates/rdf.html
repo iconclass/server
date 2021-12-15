@@ -13,7 +13,7 @@
     {% for c in obj.c %}<skos:narrower rdf:resource="http://iconclass.org/{{c|urlencode}}"/>{% endfor %}
     {% for r in obj.r %}<skos:related rdf:resource="http://iconclass.org/{{r|urlencode}}"/>{% endfor %}
     {% if obj.p %}<skos:broader rdf:resource="http://iconclass.org/{{obj.p|last|urlencode}}"/>{% endif %}
-    {% for lang, kws in obj.kw.items() %}{% for kw in kws%}<dc:subject xml:lang="{{lang}}">{{kw}}</dc:subject>
-    {% endfor %}{%endfor%}
+    {% if obj.kw %}{% for lang, kws in obj.kw.items() %}{% for kw in kws%}<dc:subject xml:lang="{{lang}}">{{kw}}</dc:subject>
+    {% endfor %}{%endfor%}{% endif %}
   </rdf:Description>{% endfor %}
 </rdf:RDF>

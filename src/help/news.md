@@ -4,6 +4,8 @@
 
 Received feedback from staff at Marburg and the Rijksmuseum that there are some critical aspects of the new server that does not support their work. As the system is used by professional catalogers on a daily basis, we are restoring the old system until the new system satisfies more criteria.
 
+Added [notes on what is being done on the development of the new system](/help/dev).
+
 Do you use the "old" system and have identified things in the new system which need attention? [Please let us know!](https://forms.gle/twPq7swQZXmSX46G8)
 
 ### December 14, 2021
