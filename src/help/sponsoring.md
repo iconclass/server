@@ -17,5 +17,4 @@ The Henri van de Waal Foundation is the legal entity that will take over the cos
 __Keeping it simple__
 We are fully aware that this may sound somewhat simplistic and a little less than "professional". If so, that is precisely what we aim for, certainly in these initial stages: an __Illustrated Iconclass__ that is technically up-to-date and offers the functionality desired by its users, made sustainable by a small organization without any overhead.
 
-__Roadmap for additional functionalities__
-If the foundation is successful in recruiting a first group of consortium members, additional functionalities will be created.
+In the Netherlands a consortium is understood to be a temporary organization of partners working towards a common goal. There is no default legal structure, so members have no default responsibilities or liabilities beyond what they have agreed to as partners.
