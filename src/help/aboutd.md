@@ -63,6 +63,10 @@ OCAT, Beijing, 2019<br/>{{% pdf 2019_ocat_beijing %}}
 <tr><td valign="top">{{% aimg aboutpage_2019dublin %}}<br/></td><td valign="top"><b>Similarities</b><br/>
 Ornamento workshop, Dublin, 2019<br/>{{% pdf 2019_ornamento_dublin %}}
 </td></tr>
+<tr><td valign="top">{{% aimg aboutpage_2020digitalarthistory %}}<br/></td><td valign="top"><b>Organizing Information with Iconclass. From Kirschbaum's Lexicon to Artificia Intelligence</b><br/>
+Online lecture Series Digitale Kunstgeschichte, München 2020<br/>{{% pdf 2020digitalarthistory %}}
+Recording available via <a href="https://cast.itunes.uni-muenchen.de/vod/playlists/RlxPxujx2M.html">LMU cast</a>
+</td></tr>
 <tr><td valign="top">{{% aimg aboutpage_2020brill %}}<br/></td><td valign="top"><b>Iconclass @ Brill</b> (Etienne Posthumus)<br/>
 International Terminology Work Group, Getty Center, Los Angeles, 2020<br/>{{% pdf 2020_e_posthumus_iconclass_itwg %}}
 </td></tr>
