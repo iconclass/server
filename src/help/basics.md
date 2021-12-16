@@ -134,22 +134,29 @@ __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 3
 #### Structural Digits
 [&para;](#struct){: name="struct" }Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
 
-Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged by a symbol like a plus-sign, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is. This makes it impossible to identify a __structural digit__ if it simply embedded in a string of digits.
+Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged by a symbol like a plus-sign, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is. This makes it impossible to identify a __structural digit__ if it is simply embedded in a string of digits.
 
-Example (classical gods):
+Examples of structural digits available to express events from the story of classical gods:
 
       1 early life
       2 love-affairs
       3 most important deeds
-so structural meaning was added to: 
+      
+so structural digit __2__ indicates a "love-affair". Basic notations for a few of those gods are:
 
       92B1 (story of) Jupiter (Zeus)
       92B3 (story of) Apollo (Phoebus)
       92B4 (story of) Mars (Ares)      
 
+Love-affairs of Jupiter, Apollo or Mars will be indicated by the digit __2__ immediately following the basic notation.
+
       {{% aimg structdigit2 %}}
 
-       92B1__2__17 · Jupiter wooing Danae; she is usually lying in bed receiving a shower of gold
-       92B1__2__18 · Jupiter, usually in the shape of a white bull, abducts Europa and carries her across the water
-       92B3__2__5 · Apollo pursuing the nymph Daphne (as yet not metamorphosed)
-       92B4__2__33 · Mars and Venus surprised by Vulcan; he catches them in a net
+The love-affairs in these paintings are indicated by the concepts below. On the fifth position of each notation you will see the structural digit __2__. The basic notation for other classical gods or heroes, however, can be shorter or longer than four positions. Obviously, in those cases the position of the __2__ will shift.
+
+       92B1217 · Jupiter wooing Danae; she is usually lying in bed receiving a shower of gold
+       92B1218 · Jupiter, usually in the shape of a white bull, abducts Europa and carries her across the water
+       92B325 · Apollo pursuing the nymph Daphne (as yet not metamorphosed)
+       92B4233 · Mars and Venus surprised by Vulcan; he catches them in a net
+
+That is why the Iconclass Browser uses a highly specific rule-book to interpret the elements of a notation.
