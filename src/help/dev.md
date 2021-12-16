@@ -1,5 +1,7 @@
 ### Status updates on development
 
+- _2021-12-16_ Add some API documentation
+
 - _2021-12-15_ Improve responsiveness of site
 
 - _2021-12-15_ Investigating issues where certain keyword searches do not show results as expected.

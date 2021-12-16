@@ -20,12 +20,7 @@ templates = Jinja2Templates(directory="templates")
 
 # https://json-ld.org/
 # https://github.com/digitalbazaar/pyld
-@app.get(
-    "/{notation}.jsonld",
-    response_model=JSONLD,
-    response_model_exclude_unset=True,
-    include_in_schema=False,
-)
+@app.get("/{notation}.jsonld", response_model=JSONLD, response_model_exclude_unset=True)
 async def notation_jsonld(notation: str):
     if notation == "ICONCLASS":
         # skos:hasTopConcept
@@ -97,12 +92,7 @@ async def notation_jsonld(notation: str):
     return JSONResponse(tmp)
 
 
-@app.get(
-    "/{notation}.jskos",
-    response_model=JSKOS,
-    response_model_exclude_unset=True,
-    include_in_schema=False,
-)
+@app.get("/{notation}.jskos", response_model=JSKOS, response_model_exclude_unset=True)
 async def notation_jskos(notation: str):
     if notation == "ICONCLASS":
         tmp = {
@@ -152,12 +142,7 @@ async def notation_jskos(notation: str):
     return JSONResponse(tmp)
 
 
-@app.get(
-    "/{notation}.json",
-    response_model=Notation,
-    response_model_exclude_unset=True,
-    include_in_schema=False,
-)
+@app.get("/{notation}.json", response_model=Notation, response_model_exclude_unset=True)
 async def notation_json(notation: str):
     if notation == "ICONCLASS":
         obj = {
@@ -173,10 +158,7 @@ async def notation_json(notation: str):
 
 
 @app.get(
-    "/{notation}.fat",
-    response_model=FilledNotation,
-    response_model_exclude_unset=True,
-    include_in_schema=False,
+    "/{notation}.fat", response_model=FilledNotation, response_model_exclude_unset=True
 )
 async def notation_fat(notation: str):
     if notation == "ICONCLASS":
@@ -193,7 +175,7 @@ async def notation_fat(notation: str):
     return fill_obj(obj)
 
 
-@app.get("/{notation}.rdf", response_class=Response, include_in_schema=False)
+@app.get("/{notation}.rdf", response_class=Response)
 async def notation_rdf(request: Request, notation: str):
     if notation in ("scheme", "ICONCLASS"):
         SKOSRDF = """<?xml version="1.0" encoding="UTF-8"?>
