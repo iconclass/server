@@ -82,7 +82,7 @@ A standard entry in the Iconclass system consists of a notation and its textual 
 
 
 #### Bracketed text
-Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
+[&para;](#brackets){: name="brackets" }Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
 
 Example from division 2 of the Iconclass system:
 
@@ -92,7 +92,7 @@ Example from division 2 of the Iconclass system:
       25G41(ROSE) flowers: rose
 Notations that are ready to accept an entry of bracketed text, for example 25G41(..), form an integral part of the Iconclass system. Usually, notations with bracketed text spelled out, for example 25G41(ROSE), are incorporated in the Iconclass Browser only for notations that have literary warrant in the Iconclass Bibliography. 
 The core of the Iconclass systems thus also includes quite a large number of historical people, like saints and persons from classical history. Not only have they found their place in Iconclass as named entities, but their life stories can be further subdivided systematically by means of so-called __[structural digits](#struct)__. Here are two examples of this combination:
-The notation __11H(FRANCIS)59__ contains the saint's name in brackets while the structural digit __59__ indicates the scene of the stigmatization:
+[&para;](#francis){: name="francis" }The notation __11H(FRANCIS)59__ contains the saint's name in brackets while the structural digit __59__ indicates the scene of the stigmatization:
 
     {{% aimg 11hfrancis59 %}}
     
@@ -102,7 +102,7 @@ In [__98B(CAESAR)68__](https://iconclass.org/98B(CAESAR)68) the digits __68__ ar
 
 
 #### Keys
-Keys are elements of the Iconclass system that are declared in lists. A list of keys is valid for a certain range of notations. Keys are made up of strings of digits, occasionally of digits and word(s). Keys are preceded by the plus "+" sign and placed between brackets. They are placed at the end of a notation and add a 'shade of meaning' to the definition or meaning of the notation proper. Example:
+[&para;](#keys){: name="keys" }Keys are elements of the Iconclass system that are declared in lists. A list of keys is valid for a certain range of notations. Keys are made up of strings of digits, occasionally of digits and word(s). Keys are preceded by the plus "+" sign and placed between brackets. They are placed at the end of a notation and add a 'shade of meaning' to the definition or meaning of the notation proper. Example:
 
 The notation for a lion is 25F23(LION). Keys, valid for notations beginning with 25F, are:
 
@@ -119,7 +119,7 @@ Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25
 
 
 #### Doubling of letter
-At several points, Iconclass offers the option to duplicate the upper case letter of a notation and, in this way, modify its meaning. Letter duplication or doubling the letter is context sensitive: it is valid only for certain parts of the system. Within a declared range, duplication has a specific meaning. Often some kind of opposition is intended. Examples:
+[&para;](#double){: name="double" }At several points, Iconclass offers the option to duplicate the upper case letter of a notation and, in this way, modify its meaning. Letter duplication or doubling the letter is context sensitive: it is valid only for certain parts of the system. Within a declared range, duplication has a specific meaning. Often some kind of opposition is intended. Examples:
 
       25F animals
       25FF fabulous animals
@@ -128,9 +128,13 @@ At several points, Iconclass offers the option to duplicate the upper case lette
       42D25 wedding feast, wedding meal [indoors]*
       42DD25 wedding feast, wedding meal; out of doors
 __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 31A; in similar fashion 'indoors' is implied for 42D25__
+     
+
       
 #### Structural Digits
 [&para;](#struct){: name="struct" }Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
+
+Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged by a symbol like a plus-sign, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is. This makes it impossible to identify a __structural digit__ if it simply embedded in a string of digits.
 
 Example (classical gods):
 
@@ -139,19 +143,13 @@ Example (classical gods):
       3 most important deeds
 so structural meaning was added to: 
 
-      92B3 (story of) Apollo
-      92B32 love-affairs of Apollo
-      
-Example (saints):
+      92B1 (story of) Jupiter (Zeus)
+      92B3 (story of) Apollo (Phoebus)
+      92B4 (story of) Mars (Ares)      
 
-      1 specific aspects
-      2 early life
-      3 personal devotion
-      
-      11H(FRANCIS) founder of the Order of Friars Minor (Franciscans),
-      Francis(cus) of Assisi; possible attributes: book, crucifix, lily, skull, stigmata
-      11H(FRANCIS)2 early life of St. Francis of Assisi
-      
-Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is.
+      {{% aimg structdigit2 %}}
 
-
+       92B1__2__17 · Jupiter wooing Danae; she is usually lying in bed receiving a shower of gold
+       92B1__2__18 · Jupiter, usually in the shape of a white bull, abducts Europa and carries her across the water
+       92B3__2__5 · Apollo pursuing the nymph Daphne (as yet not metamorphosed)
+       92B4__2__33 · Mars and Venus surprised by Vulcan; he catches them in a net
