@@ -63,8 +63,8 @@ OCAT, Beijing, 2019<br/>{{% pdf 2019_ocat_beijing %}}
 <tr><td valign="top">{{% aimg aboutpage_2019dublin %}}<br/></td><td valign="top"><b>Similarities</b><br/>
 Ornamento workshop, Dublin, 2019<br/>{{% pdf 2019_ornamento_dublin %}}
 </td></tr>
-<tr><td valign="top">{{% aimg aboutpage_2020digitalarthistory %}}<br/></td><td valign="top"><b>Organizing Information with Iconclass. From Kirschbaum's Lexicon to Artificia Intelligence</b><br/>
-Online lecture Series Digitale Kunstgeschichte, München 2020<br/>{{% pdf 2020digitalarthistory %}}
+<tr><td valign="top">{{% aimg aboutpage_2020digitalarthistory %}}<br/></td><td valign="top"><b>Organizing Information with Iconclass. From Kirschbaum's Lexicon to Artificial Intelligence</b><br/>
+Online lecture Series Digitale Kunstgeschichte, München 2020<br/>{{% pdf 2020_digital_art_history %}}<br/>
 Recording available via <a href="https://cast.itunes.uni-muenchen.de/vod/playlists/RlxPxujx2M.html">LMU cast</a>
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_2020brill %}}<br/></td><td valign="top"><b>Iconclass @ Brill</b> (Etienne Posthumus)<br/>
@@ -72,5 +72,10 @@ International Terminology Work Group, Getty Center, Los Angeles, 2020<br/>{{% pd
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_2020faper %}}<br/></td><td valign="top"><b>Iconographic Image Captioning for Artworks</b> (Eva Cetinić)<br/>
 FAPER 2020. International Workshop on Fine Art Pattern Extraction and Recognition<br/>{{% pdf 2020_cetinic_faper %}}
+</td></tr>
+<tr><td valign="top">{{% aimg aboutpage_2021_luxemburg %}}<br/></td><td valign="top"><b>When will an algorith identify a sleeping lion as an emblem of a vigilant ruler?</b><br/>
+DTU-DHH Lecture Series, University of Luxemburg, December 2020
+<br/>{{% pdf 2020_Luxemburg %}}<br/>
+Recording made available in January 2021 via <a href="https://www.c2dh.uni.lu/thinkering/recording-when-will-algorithm-identify-sleeping-lion-emblem-vigilant-ruler">C2DH Digital History & Historiography</a>
 </td></tr>
 </table>
