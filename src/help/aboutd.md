@@ -1,4 +1,3 @@
-﻿<a name="presentations"/>
 ### D. Conference papers, presentations, and (online) lectures about Iconclass or related topics
 
 Collected here are presentations and lectures delivered at conferences and workshops. Most of them were Powerpoints; all are exported to PDF format, so there may be some loss of functionality. Although Iconclass is not always the central topic of the presentations, they all illustrate aspects of the system or its usage for a specific project or type of material.
@@ -54,7 +53,7 @@ Workhop meeting in preparation of the Horizon 2020 grant application (Call: H202
 <tr><td valign="top">{{% aimg aboutpage_2017cidoc %}}<br/></td><td valign="top"><b>Enriching Iconclass LOD with AAT concepts</b> (Reem Weda)<br/>
 CIDOC  Tbilisi, Georgia, 2017<br/>{{% pdf 2017_Reem_Weda_Tbilisi %}}
 </td></tr>
-<tr><td valign="top">{{% aimg aboutpage_2018cerlpda %}}<br/></td><td valign="top"><b>Arkyves and visual Provenance information</b><br/>
+<tr><td valign="top">{{% aimg aboutpage_2018cerlpda %}}<br/></td><td valign="top"><b>Arkyves and Visual Provenance information</b><br/>
 Amsterdam, UvA University Library, CERL PDA demo, 2017<br/>{{% pdf 2017_cerl_pda %}}
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_2019ocat %}}<br/></td><td valign="top"><b>A word is worth a thousand pictures - Why the use of Iconclass will make Artificial Intelligence smarter</b><br/>
