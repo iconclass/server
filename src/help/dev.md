@@ -1,5 +1,7 @@
 ### Status updates on development
 
+- _2021-12-19_ Show path in notation focus, to allow "wider" scope.
+
 - _2021-12-16_ Add some API documentation
 
 - _2021-12-15_ Improve responsiveness of site
