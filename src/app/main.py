@@ -153,13 +153,19 @@ async def browse(request: Request, lang: str):
 
 
 @app.get("/{lang}/{notation}", response_class=HTMLResponse, include_in_schema=False)
-async def lang_notation(request: Request, lang: str, notation: str):
+async def lang_notation(
+    request: Request,
+    lang: str,
+    notation: str,
+    q: Optional[str] = "",
+):
     lang = valid_lang(lang)
     ctx = {
         "request": request,
         "lang": lang,
         "language": LANGUAGES.get(lang, "English"),
         "notation": notation,
+        "q": q,
     }
     return templates.TemplateResponse("browse.html", ctx)
 
