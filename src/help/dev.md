@@ -1,17 +1,37 @@
 ### Status updates on development
 
-- _2021-12-21_ Add "q" parameter support to browse path so that searches can be called from URLs
+**2021-12-21**
 
-- _2021-12-20_ Show children in notation focus, to allow "narrower" scope.
+Add "q" parameter support to browse path so that searches can be called from URLs
 
-- _2021-12-19_ Show path in notation focus, to allow "wider" scope.
+Fix bug for indexing where text and keywords were squished together.
 
-- _2021-12-16_ Add some API documentation
+Add French and Italian to the search index.
 
-- _2021-12-15_ Improve responsiveness of site
+**2021-12-20**
 
-- _2021-12-15_ Investigating issues where certain keyword searches do not show results as expected.
+Show children in notation focus, to allow "narrower" scope.
 
-- _2021-12-15_ Fixed URL displayed when browsing to be without language, in canonical form and URL escaped.
+**2021-12-19**
 
-- _2021-12-15_ LOD URLs (like 52D1.rdf etc.) fixed small bug for showing items without keywords.
+Show path in notation focus, to allow "wider" scope.
+
+**2021-12-16**
+
+Add some API documentation
+
+**2021-12-15**
+
+Improve responsiveness of site
+
+**2021-12-15**
+
+Investigating issues where certain keyword searches do not show results as expected.
+
+**2021-12-15**
+
+Fixed URL displayed when browsing to be without language, in canonical form and URL escaped.
+
+**2021-12-15**
+
+LOD URLs (like 52D1.rdf etc.) fixed small bug for showing items without keywords.
