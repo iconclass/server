@@ -1,5 +1,7 @@
 ### Status updates on development
 
+- _2021-12-21_ Add "q" parameter support to browse path so that searches can be called from URLs
+
 - _2021-12-20_ Show children in notation focus, to allow "narrower" scope.
 
 - _2021-12-19_ Show path in notation focus, to allow "wider" scope.
