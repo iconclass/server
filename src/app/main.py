@@ -109,6 +109,7 @@ async def random() -> RedirectResponse:
 async def search(
     request: Request,
     q: str,
+    r: Optional[str] = "",
     lang: Optional[str] = "en",
     sort: Optional[str] = "rank",
     keys: Optional[str] = "0",
@@ -121,6 +122,7 @@ async def search(
         "results": results_objs,
         "total": len(results),
         "q": q,
+        "r": r,
         "lang": lang,
         "sort": sort,
         "include_keys": keys,
@@ -131,13 +133,14 @@ async def search(
 @app.get("/api/search")
 async def api_search(
     q: str,
+    r: Optional[str] = "",
     lang: Optional[str] = "en",
     size: Optional[int] = 999,
     page: Optional[int] = 1,
     sort: Optional[str] = "rank",
     keys: Optional[str] = "0",
 ):
-    notations = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"))
+    notations = do_search(q=q, r=r, lang=lang, sort=sort, keys=(keys == "1"))
     return {"result": notations[:size], "total": len(notations)}
 
 
