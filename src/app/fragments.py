@@ -44,6 +44,23 @@ async def simple(request: Request, lang: str, notation: str):
 
 
 @app.get(
+    "/fragments/path/{lang}/{notation}",
+    response_class=HTMLResponse,
+    include_in_schema=False,
+)
+async def path(request: Request, lang: str, notation: str):
+    lang = valid_lang(lang)
+    obj = iconclass.get(notation)
+    ctx = {
+        "request": request,
+        "obj": fill_obj(obj),
+        "notation": notation,
+        "lang": lang,
+    }
+    return templates.TemplateResponse("notation_path.html", ctx)
+
+
+@app.get(
     "/fragments/focus/{lang}/{notation}",
     response_class=HTMLResponse,
     include_in_schema=False,
@@ -80,9 +97,6 @@ async def search(
     keys: Optional[str] = "0",
     r: Optional[str] = "",
 ):
-    if lang not in ("en", "de"):
-        lang = "en"  # for now we can only search in en/de until we index all
-
     RESULT_CAP = 999
     results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"), r=r)
     # Properly filter in case of bogus notations
