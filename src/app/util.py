@@ -1,3 +1,4 @@
+from fastapi import HTTPException
 import iconclass
 import urllib.parse
 import re, os, sqlite3
