@@ -1,3 +1,4 @@
+from fastapi import HTTPException
 import iconclass
 import urllib.parse
 import re, os, sqlite3
@@ -166,8 +167,12 @@ def do_search(q: str, lang: str, sort: str, keys: bool, r: str):
         sort = SearchSortOptions(sort)
     except ValueError:
         sort = SearchSortOptions("rank")
-    if lang not in ("en", "de"):
-        lang = "en"
+    if lang not in ("en", "de", "fr", "it"):
+        raise HTTPException(
+            status_code=404,
+            detail=f"Language [{lang}] can not be searched in at the moment",
+        )
+
     IC_INDEX_PATH = os.environ.get("IC_INDEX_PATH", "iconclass_index.sqlite")
     index_db = sqlite3.connect(IC_INDEX_PATH)
     index_db.enable_load_extension(True)

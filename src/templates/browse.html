@@ -13,6 +13,8 @@
     width: 0.6rem; height: 0.6rem
 }
 .navver {cursor: pointer}
+.kw_search {text-decoration: none; cursor: pointer; color: black; font-size: 85%}
+a:hover {text-decoration: underline; color: blue}
 
 </style>
 {% endblock %}
@@ -34,7 +36,7 @@
 
         <div id="thetree" style="margin-bottom: 10vh; border-left: 1px solid #eee">
         </div>
-        <div id="searchtab" style="margin-bottom: 10vh; borer-left: 1px solid #eee; display:none">
+        <div id="searchtab" style="margin-bottom: 10vh; border-left: 1px solid #eee; display: none">
             {% block searchbox %}<div class="mt-3 mb-lg-0 me-3" style="width: 100%">
             <input id="searchbox" autocomplete="off" name="q" type="search" class="form-control form-control-dark" placeholder="Type some word(s) in {{language}} to search for and press 'Enter'..." aria-label="Search" value="{{q}}"/>
             <input style="display: none; margin-top: 5px" id="searchregex" autocomplete="off" name="r" type="search" class="form-control form-control-dark" placeholder="Type a Regex to filter notation results with" aria-label="Regex" value="{{r}}"/>
@@ -66,15 +68,15 @@
     <div class="col-3">&nbsp;</div>
     <div class="col-9">
     <p>View the contents in a different language</p>
-  {% if lang != "en"%}<a class="btn btn-sm" href="/browse/en">English</a>{% endif %} 
-  {% if lang != "de"%}<a class="btn btn-sm" href="/browse/de">Deutsch</a>{% endif %} 
-  {% if lang != "fr"%}<a class="btn btn-sm" href="/browse/fr">Français</a>{% endif %} 
-  {% if lang != "it"%}<a class="btn btn-sm" href="/browse/it">Italiano</a>{% endif %} 
-  {% if lang != "pt"%}<a class="btn btn-sm" href="/browse/pt">Portuguese</a>{% endif %} 
-  {% if lang != "fi"%}<a class="btn btn-sm" href="/browse/fi">Finnish</a>{% endif %} 
-  {% if lang != "nl"%}<a class="btn btn-sm" href="/browse/nl">Nederlands</a>{% endif %}
-  {% if lang != "zh"%}<a class="btn btn-sm" href="/browse/zh">中文</a>{% endif %}
-  {% if lang != "ja"%}<a class="btn btn-sm" href="/browse/jp">日本語</a>{% endif %}
+  {% if lang != "en"%}<a class="btn btn-sm" href="/en/_">English</a>{% endif %} 
+  {% if lang != "de"%}<a class="btn btn-sm" href="/de/_">Deutsch</a>{% endif %} 
+  {% if lang != "fr"%}<a class="btn btn-sm" href="/fr/_">Français</a>{% endif %} 
+  {% if lang != "it"%}<a class="btn btn-sm" href="/it/_">Italiano</a>{% endif %} 
+  {% if lang != "pt"%}<a class="btn btn-sm" href="/pt/_">Portuguese</a>{% endif %} 
+  {% if lang != "fi"%}<a class="btn btn-sm" href="/fi/_">Finnish</a>{% endif %} 
+  {% if lang != "nl"%}<a class="btn btn-sm" href="/nl/_">Nederlands</a>{% endif %}
+  {% if lang != "zh"%}<a class="btn btn-sm" href="/zh/_">中文</a>{% endif %}
+  {% if lang != "ja"%}<a class="btn btn-sm" href="/jp/_">日本語</a>{% endif %}
   </div>
 </div>
 
@@ -83,6 +85,7 @@
 
 <script>
 document.notation = "{{notation}}"
+document.q = "{{q}}"
 </script>
 
 

@@ -55,7 +55,7 @@ def lookup_text(n, txts, kwds):
     obj = notations.get(base)
     if not obj:
         return ""
-    base_t = txts.get(base, "") + kwds.get(base, "")
+    base_t = txts.get(base, "") + " " + kwds.get(base, "")
     obj_t = base_t
     if key:
         obj_key = obj.get("K")

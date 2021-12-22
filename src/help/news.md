@@ -1,5 +1,9 @@
 # News
 
+### December 21, 2021
+
+For the previous six days, since adding the keywords to the search index, some results for certain search queries were not correct. Sorry about that, was due to human error. It has been fixed now, and as a bonus, we are also adding search for more languages. The index now includes English, German, French and Italian.
+
 ### December 15, 2021
 
 Received feedback from staff at Marburg and the Rijksmuseum that there are some critical aspects of the new server that does not support their work. As the system is used by professional catalogers on a daily basis, we are restoring the old system until the new system satisfies more criteria.

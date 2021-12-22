@@ -1,7 +1,18 @@
 <div>
-    <h4>Selected concept:</h4>
-    <span style="padding-left: 0.2rem; border-left: 2px solid red; color: red; font-size: 170%">{{obj.n}} &middot; </span>
-    <span style="font-size: 170%">{{obj.txt.get(lang, "")}}</span>
+    
+    {% for p in obj.p%}
+    <div>
+      {% if loop.last %}
+        <span style="padding-left: 0.2rem; border-left: 2px solid red; color: red; font-size: 170%; cursor: pointer">{{obj.n}} &middot; </span>
+        <span style="font-size: 170%; cursor: pointer">{{obj.txt.get(lang, "")}}</span>
+      {% else %}
+        <span notation="{{p['n']}}" style="padding-left: 0.2rem; cursor: pointer; font-size: 75%">{{p.n}} &middot; {{p.txt.get(lang, "")}}</span>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+
+
     {% if obj.get("kw", {}).get(lang, []) %}
     <h4 style="margin: 0.4rem 0 0 0; font-size: 75%">Search with these related keywords:</h4>
     <div style="margin: 0 0 8px 10px; font-style: italic">
@@ -21,9 +32,9 @@
     {% endif %}
 
     {% if obj.k %}
-    <h4 style="font-size: 75%; margin-top: 1rem">Add more detail with (+) keys</h4>
-    {% for c in obj.k%}
-    <div style="padding-left: 8px">
+    <h4 style="font-size: 75%; margin-top: 1rem">Add more detail:</h4>
+    {% for c in obj.c%}
+    <div style="padding-left: 3ch; font-size: 80%">
       <span style="cursor: pointer" notation="{{c['n']}}">{{c['n']}} &middot; 
       {{ c.get('txt', {}).get(lang, "")}}</span>
     </div>
@@ -33,7 +44,7 @@
     {% if images %}
     <div>
     {% if images_count > 1 %}
-    <h4 style="margin-top: 1rem">We currently have a sample of {{images_count}} images</h4>
+    <h4 style="margin-top: 1rem">{{images_count}} sample images</h4>
     {% if images_count > sample_size %}<div style="font-size: 75%">And here are {{sample_size}} random choices of some of them</div>{% endif %}
     {% else %}
     <h4 style="margin-top: 3vh">Here is a sample image:</h4>
@@ -48,15 +59,5 @@
     </div>
     {% endif %}
 
-    {% if wikidatas %}
-    <h4 style="margin-top: 3vh">And on <a href="https://www.wikidata.org/">Wikidata</a>{% if wikidatas|length > 1 %}, there are {{wikidatas | length}}:{% endif %}</h4>
-    {% for w in wikidatas %}
-    <p style="margin: 0">
-        <a target="_sample" style="margin: 0 0 0 10px" href="{{w.i.value}}"><img style="height: 200px; display: none" src="{{w.picture.value}}?height=200px">{{w.itemLabel.value}}</a>
-    </p>
-    {% endfor %}
-
-    <p class="mt-4">Showing the Wikidata images immediately takes too long, disabling that for now. The current link with Wikidata is "live" for every click a search is made using the Wikidata Query Service. Maybe we can consider cacheing in future.</p>
-    {% endif %}
     
 </div>
