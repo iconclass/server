@@ -32,7 +32,7 @@ The third level of specificity is attained by adding a letter in upper case. For
 
 * Blank spaces on either side of the capital letter and between successive pairs of digits also provided greater legibility in the printed edition. However, the implementation of notations with 'spaces' causes most algorithms to interpret a notation as a "sentence" of separate words and is therefore advised against.
 
-Take a look, for example, at the subdivisions of [25 earth](https://iconclass.org/25), world as a celestial body:
+Take a look, for example, at the subdivisions of [25 earth](/en/25), world as a celestial body:
 
       25A maps, atlases
       25B continents represented allegorically
@@ -48,7 +48,7 @@ Take a look, for example, at the subdivisions of [25 earth](https://iconclass.or
       25M the Seven Wonders of the World
 From the letter(s) onward, subsequent descents in the hierarchy take place in principle by extending the notation to the right with more digits. The main exception to this rule - bracketed text - will be explained below.
 
-The following example shows the first subdivision of [25F animals](https://iconclass.org/25F):
+The following example shows the first subdivision of [25F animals](/en/25F):
 
       25F1 groups of animals
       25F2 mammals
@@ -96,13 +96,14 @@ The core of the Iconclass systems thus also includes quite a large number of his
 
     {{% aimg 11hfrancis59 %}}
     
-In [__98B(CAESAR)68__](https://iconclass.org/98B(CAESAR)68) the digits __68__ are used because they encode the death of someone from classical history.
+In [__98B(CAESAR)68__](/en/98B(CAESAR)68) the digits __68__ are used because they encode the death of someone from classical history.
 
      {{% aimg 98bcaesar68 %}}
 
 
 #### Keys
-[&para;](#keys){: name="keys" }Keys are elements of the Iconclass system that are declared in lists. A list of keys is valid for a certain range of notations. Keys are made up of strings of digits, occasionally of digits and word(s). Keys are preceded by the plus "+" sign and placed between brackets. They are placed at the end of a notation and add a 'shade of meaning' to the definition or meaning of the notation proper. Example:
+[&para;](#keys){: name="keys" } __Keys__ are flexible elements of the Iconclass system that allow you to add more detail to a basic concept. They are shown in the browser as a clickable list of concept definitions between brackets, below the hierarchical "children" of a concept. A set of keys is often also hierarchically subdivided.
+Keys are context-sensitive, so they are always made valid for a specific range of concepts. Keys are made up of strings of digits, occasionally of digits and word(s). Keys are preceded by the plus "+" sign and placed between brackets. They are placed at the end of a notation and add a 'shade of meaning' to the definition or meaning of the notation proper. Example:
 
 The notation for a lion is 25F23(LION). Keys, valid for notations beginning with 25F, are:
 
@@ -119,7 +120,7 @@ Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25
 
 
 #### Doubling of letter
-[&para;](#double){: name="double" }At several points, Iconclass offers the option to duplicate the upper case letter of a notation and, in this way, modify its meaning. Letter duplication or doubling the letter is context sensitive: it is valid only for certain parts of the system. Within a declared range, duplication has a specific meaning. Often some kind of opposition is intended. Examples:
+[&para;](#double){: name="double" } At several points, Iconclass offers the option to duplicate the upper case letter of a notation and, in this way, modify its meaning. Letter duplication or doubling the letter is context sensitive: it is valid only for certain parts of the system. Within a declared range, duplication has a specific meaning. Often some kind of opposition is intended. Examples:
 
       25F animals
       25FF fabulous animals
