@@ -1,5 +1,11 @@
 ### Status updates on development
 
+**2021-12-23**
+
+Fix thorny bug with navigating to certain notations where spinner just kept on spinning with no results.
+
+Make sample images only visible with a login. Prepare for more features for authenticated users.
+
 **2021-12-21**
 
 Add "q" parameter support to browse path so that searches can be called from URLs

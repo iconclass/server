@@ -41,14 +41,15 @@
     {% endfor %}
     {% endif %}
 
-    {% if images %}
+    {% if request.user.is_authenticated %}
+    {% if images %}    
     <div>
     {% if images_count > 1 %}
-    <h4 style="margin-top: 1rem">{{images_count}} sample images</h4>
-    {% if images_count > sample_size %}<div style="font-size: 75%">And here are {{sample_size}} random choices of some of them</div>{% endif %}
+    <h4 {% if images_count > sample_size %}title="And here are {{sample_size}} random choices of some of them"{% endif %} style="margin-top: 1rem">{{images_count}} sample images</h4>
     {% else %}
     <h4 style="margin-top: 3vh">Here is a sample image:</h4>
-    {% endif %}
+    {% endif %}   
+
     <div class="row">
     <div class="col">
     {% for i in images %}
@@ -57,7 +58,11 @@
     </div>
     </div>
     </div>
+    {% else %}
+        <div class="p-5 fs-8">There are no sample images for this notation yet.</div>    
     {% endif %}
-
+    {% else %}
+        <div class="p-5 fs-12"><em>For more features, <a title="eg. like seeing sample images" href="/login">you need to log in</a>.</em></div>    
+    {% endif %}
     
 </div>
