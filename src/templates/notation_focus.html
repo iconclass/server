@@ -3,7 +3,7 @@
     {% for p in obj.p%}
     <div>
       {% if loop.last %}
-        <span style="padding-left: 0.2rem; border-left: 2px solid red; color: red; font-size: 170%; cursor: pointer">{{obj.n}} &middot; </span>
+        <span style="padding-left: 0.2rem; color: red; font-size: 170%; cursor: pointer">{{obj.n}} &middot; </span>
         <span style="font-size: 170%; cursor: pointer">{{obj.txt.get(lang, "")}}</span>
       {% else %}
         <span notation="{{p['n']}}" style="padding-left: 0.2rem; cursor: pointer; font-size: 75%">{{p.n}} &middot; {{p.txt.get(lang, "")}}</span>
