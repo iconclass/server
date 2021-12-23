@@ -15,12 +15,12 @@ def get_parts(a):
                 if x and x != ")":
                     p.append(tmplastp + x + ")")
                     tmplastp += x
-            lastp = p[-1]
+            lastp = p[len(p) - 1]
         elif p1.startswith("(") and p1.endswith(")"):
             if p1 != "(...)":
                 p.append(lastp + "(...)")
             p.append(lastp + p1)
-            lastp = p[-1]
+            lastp = p[len(p) - 1]
         else:
             for x in range(len(p1)):
                 p.append(lastp + p1[x])
@@ -203,7 +203,9 @@ build(iconclass_tree, thetree_element)
 # Check to see if the document was called with an initial notation, if so browse to it
 if document.notation and document.notation != "_":
     setTimeout(lambda x: add_desired_to_tree(document.notation), 750)
-
+# See if the document was called with a q search parameter, if so do the search
+if document.q:
+    setTimeout(lambda x: search_action(), 750)
 
 document.getElementById("results").addEventListener("click", results_clicker)
 
