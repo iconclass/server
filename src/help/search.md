@@ -12,7 +12,7 @@ Assigning an Iconclass concept - or any other standardized term - to an image, i
 
 ##### Old man leaning on a staff
 
-To find concepts to tag the Rembrandt etching that is the first of these pictures - __a poorly dressed old man leaning on a staff__ - a logical point of departure is to search for the words __old__ and __man__. Sorted by __relevance__, these are the first search results: 
+To find concepts to tag the Rembrandt etching that is the first of these pictures - __a poorly dressed old man leaning on a staff__ - a point of departure could be to search with the words __old__ and __man__. Sorted by __relevance__, these are the first search results: 
 
           {{% aimg search_oldman %}} 
 
@@ -58,7 +58,21 @@ To exclude references to __saints__ from the search result, simply use the word 
 
           {{% aimg beggar002 %}} 
 
-Playing around with keywords for searching, using words you notice in the search results, can be an efficient way to filter those results. Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result. This will obviously come more easily when you are more familiar with the Iconclass schedules, but paying attention to the notations in the search results will quickly get you there.
+Playing around with keywords for searching, and using words you notice in the search results, can be an efficient way to filter those results. Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result. This will obviously come more easily when you are more familiar with the Iconclass schedules, but paying attention to the notations in the search results will quickly get you there.
+
+The illustrations themselves may also give you ideas for searches. A picture like this one by Jacques Callot of _Die Bettler Zunft_ (_the guild of beggars_) could inspire you to formulate another search with a Boolean condition.
+
+          {{% aimg beggarcallot %}} 
+          
+As you become more aware of the concepts Iconclass puts at your disposal, you will appreciate the possibility of a search like this where the __AND__ condition between _walking_ and _stick_ is implied, and a different type of support - _crutches_ - is also retrieved by adding an __OR__ condition.
+          
+          {{% aimg booleanor %}} 
+
+#### A spider
+
+{{% aimg search003 %}}
+
+
 
 ### Browse
 
