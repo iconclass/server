@@ -8,11 +8,11 @@ Initially, of course, this overview of the __Search__ and __Browse__ functionali
 ### Search
 Assigning an Iconclass concept - or any other standardized term - to an image, is always a secondary step in the creation of subject information. The primary steps in the process are identifying what is in front of your eyes and deciding what information you actually want to convey about it. That will depend on a broad spectrum of parameters - from the purpose and the budget of your project to the depth of your iconographic expertise - and the examples we are using here can only cover a tiny part of that spectrum. Moreover, in actual cataloguing practice the criteria for the selection of details inevitably evolves over time, because you will learn from your observations and simply "see" more as you go along.
 
-{{% aimg search001 %}}
+{{% aimg search002 %}}
 
 ##### Old man leaning on a staff
 
-To find concepts to tag the [Rembrandt etching](https://www.rijksmuseum.nl/collectie/RP-P-OB-245){:target="_read"} that is the first of these pictures - __a poorly dressed old man leaning on a staff__ - a logical point of departure is to search for the words __old__ and __man__. Sorted by __relevance__, these are the first search results: 
+To find concepts to tag the Rembrandt etching that is the first of these pictures - __a poorly dressed old man leaning on a staff__ - a logical point of departure is to search for the words __old__ and __man__. Sorted by __relevance__, these are the first search results: 
 
           {{% aimg search_oldman %}} 
 
@@ -43,13 +43,22 @@ Here are two small sets of pictures to illustrate the principle:
 
           {{% aimg 31a232 %}} 
        
-This first set gives priority to __31A232 leaning figure__ and shows several variations of this posture. Imagine these to be part of a far larger set to which __(+9)__ keys could be added to express the [interpretation of the meaning of the posture](/en/31A232(+9)).
+This first set gives priority to __31A232 leaning figure__ and shows several variations of this posture. To express [connotations of the posture](/en/31A232(+9)) __(+9)__ keys could be added.
 
           {{% aimg 31d16_5 %}} 
 
 The second set gives priority to  __31D16 · old man__ and with the __(+5)__ keys the different postures - sitting, crouching, kneeling, leaning, lying down - could be addressed.
 
-       
+On the [Rijksmuseum website](https://www.rijksmuseum.nl/collectie/RP-P-OB-245){:target="_read"} a different angle was chosen for the description of the etching. Its English caption reads "Beggar in a high cap, standing and leaning on a stick". Although it is an interesting question whether we first "see" a poorly dressed old man and only afterwards "interpret" this as a beggar, the reason the refer to this caption is much more practical. A search for __beggar__ offers an opportunity to show the use of a Boolean condition when doing a search in Iconclass.
+The screenshot below shows the result of a straightforward search for __beggar__: 260 hits with a large number of references to saints.
+
+          {{% aimg beggar001 %}} 
+
+To exclude references to __saints__ from the search result, simply use the word NOT (in capitals) as a token for a Boolean condition. What remains is a much shorter list which is much easier to scan.
+
+          {{% aimg beggar002 %}} 
+
+Playing around with keywords for searching, using words you notice in the search results, can be an efficient way to filter those results. Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result.
 
 ### Browse
 
