@@ -5,7 +5,7 @@ The unique elements of the Iconclass system are its alphanumeric classification 
 
 
 #### Main divisions of the Iconclass classification system
-The main divisions of the Iconclass system are represented by digits 0 to 9. Of these ten 'main divisions', the numbers 1 to 5 are 'general' topics, designed to comprise all the principal aspects of what can be represented. Divisions 6 through 9 accommodate 'special' topics, coherent subject matter of a narrative nature, with an emphasis on the Bible (7) and Classical Mythology (9). A tenth division, represented by the number 0, was added to the digital version in 1996 at the request of Iconclass users, to accommodate abstract art.
+[&para;](#maindivisions){: name="maindivisions" } The main divisions of the Iconclass system are represented by digits 0 to 9. Of these ten 'main divisions', the numbers 1 to 5 are 'general' topics, designed to comprise all the principal aspects of what can be represented. Divisions 6 through 9 accommodate 'special' topics, coherent subject matter of a narrative nature, with an emphasis on the Bible (7) and Classical Mythology (9). A tenth division, represented by the number 0, was added to the digital version in 1996 at the request of Iconclass users, to accommodate abstract art.
 
       0 Abstract, Non-representational Art
       1 Religion and Magic
