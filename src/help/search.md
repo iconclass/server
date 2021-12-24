@@ -35,30 +35,30 @@ If we had started our search not with "__old__" and "__man__" but with "__leanin
 The concept __31A232 leaning figure__ itself can also be made more specific with another key, as highlighted in the screenshot above. This makes it possible to create an alternative tag for the same subject:
 __31A232(+813) · leaning figure (+ old male (human being))__.
 "Synonyms" like this raise the question whether one of the options is the "__correct__" one. And while neither of the alternatives is intrinsically correct or incorrect, there are practical considerations that may help you decide which one will better suit your purpose.
-The first consideration is a simple, internal one: "Will it be more useful, given your research question or your collection, to create a group under _leaning figure_  or under _old man_? Because creating groups of related images, that is the whole idea of classification...
+The first consideration is a simple, internal one: "Will it be more useful, given your research question or your collection, to create a group under _leaning figure_  or under _old man_? Remember that creating groups of related images is the whole idea of classification...
 The second consideration is an external one: "What have others done?" To help you with that question, we are now _illustrating_ Iconclass. The sample images will not offer a _ready-made_ answer, but they may point you in a direction. We always advise you to explore the databases from which they were selected, as it will help you get a feeling for the broader context your examples will join.
-A final consideration may also play its part: you don't _have to choose_. Other than the fact that it is more time consuming, there is no real reason why you should not tag an image with "synonymic" notations, if that enriches the information you provide your users.
+A final consideration may also play its part: you don't _have to choose_. Other than the fact that it is more time consuming, there is no real reason why you should not tag an image with "synonymic" notations, if that enriches the information you provide to your users.
 
 Here are two small sets of pictures to illustrate the principle:
 
           {{% aimg 31a232 %}} 
        
-This first set gives priority to __31A232 leaning figure__ and shows several variations of this posture. To express [connotations of the posture](/en/31A232(+9)) __(+9)__ keys could be added.
+This first set gives priority to __31A232 leaning figure__ and shows several variations of this posture. To express [connotations of the posture](/en/31A232(+9)) keys from the __(+9)__ section could be added.
 
           {{% aimg 31d16_5 %}} 
 
 The second set gives priority to  __31D16 · old man__ and with the __(+5)__ keys the different postures - sitting, crouching, kneeling, leaning, lying down - could be addressed.
 
-On the [Rijksmuseum website](https://www.rijksmuseum.nl/collectie/RP-P-OB-245){:target="_read"} a different angle was chosen for the description of the etching. Its English caption reads "Beggar in a high cap, standing and leaning on a stick". Although it is an interesting question whether we first "see" a poorly dressed old man and only afterwards "interpret" this as a beggar, the reason the refer to this caption is much more practical. A search for __beggar__ offers an opportunity to show the use of a Boolean condition when doing a search in Iconclass.
+On the [Rijksmuseum website](https://www.rijksmuseum.nl/collectie/RP-P-OB-245){:target="_read"} a different angle was chosen for the description of the etching. Its English caption reads "Beggar in a high cap, standing and leaning on a stick". Although it is an interesting question whether we first "see" a poorly dressed old man and only afterwards "interpret" this as a beggar, the reason to refer to this caption is much more practical. A search for __beggar__ offers an opportunity to show the use of a Boolean condition when doing a search in Iconclass.
 The screenshot below shows the result of a straightforward search for __beggar__: 260 hits with a large number of references to saints.
 
           {{% aimg beggar001 %}} 
 
-To exclude references to __saints__ from the search result, simply use the word NOT (in capitals) as a token for a Boolean condition. What remains is a much shorter list which is much easier to scan.
+To exclude references to __saints__ from the search result, simply use the word NOT (in capitals) as a token for a Boolean condition. What remains is a much shorter list which is easier to scan.
 
           {{% aimg beggar002 %}} 
 
-Playing around with keywords for searching, using words you notice in the search results, can be an efficient way to filter those results. Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result.
+Playing around with keywords for searching, using words you notice in the search results, can be an efficient way to filter those results. Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result. This will obviously come more easily when you are more familiar with the Iconclass schedules, but paying attention to the notations in the search results will quickly get you there.
 
 ### Browse
 
