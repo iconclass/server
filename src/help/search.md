@@ -16,7 +16,7 @@ To find concepts to tag the Rembrandt etching that is the first of these picture
 
           {{% aimg search_oldman %}} 
 
-If you want to see a concept in its context, i.e. in its place in the hierarchy, just click on it, as is illustrated below for __31D16 old man__.
+The results of the word search are presented in a scrollable list, sorted by relevance or by [notation](basics#notations). If you want to see a concept in its context, i.e. in its place in the hierarchy, just click on it, as is illustrated below for __31D16 old man__.
 
           {{% aimg 31d16 %}}
 
@@ -54,11 +54,12 @@ The screenshot below shows the result of a straightforward search for __beggar__
 
           {{% aimg beggar001 %}} 
 
-To exclude references to __saints__ from the search result, simply use the word NOT (in capitals) as a token for a Boolean condition. What remains is a much shorter list which is easier to scan.
+To exclude references to __saints__ from the search result, simply use the word __NOT__ (in capitals) as a token for a Boolean condition. What remains is just a short list which you can scan very quickly.
 
           {{% aimg beggar002 %}} 
 
-Playing around with keywords for searching, and using words you notice in the search results, can be an efficient way to filter those results. Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result. This will obviously come more easily when you are more familiar with the Iconclass schedules, but paying attention to the notations in the search results will quickly get you there.
+Using multiple words in a search can be an efficient way to filter the results. Usually you can pick up some hints by scrolling the list of search results. 
+Another way to filter the list is by using Iconclass notations. In this particular case __beggar NOT 11H__ would lead to the same result. This will obviously come more easily when you are more familiar with the Iconclass schedules, but paying attention to the notations in the search results will quickly get you there. For your convenience we have gathered the 450 main categories in a separate [__Outline of the Iconclass system__](outline){:target="_read"}.
 
 The illustrations themselves may also give you ideas for searches. A picture like this one by Jacques Callot of _Die Bettler Zunft_ (_the guild of beggars_) could inspire you to formulate another search with a Boolean condition.
 

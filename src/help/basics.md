@@ -1,7 +1,7 @@
 ﻿<a name="basics"/>
 ### Iconclass basics
 
-The unique elements of the Iconclass system are its alphanumeric classification codes, called __notations__. Notations always begin with one of the digits 0 - 9, corresponding with the ten main divisions of Iconclass. Notations can be used to describe or index the subjects of visual documents regardless of the complexity of the subjects. Several notations can be used to describe complex subjects. Every notation is part of a hierarchical structure and, as such, incorporates all of its iconographical broader terms. The text explaining the meaning of an Iconclass notation is the notation's '__textual correlate__', the actual definition of the concept.
+[&para;](#notations){: name="notations" } The unique elements of the Iconclass system are its alphanumeric classification codes, called __notations__. Notations always begin with one of the digits 0 - 9, corresponding with the ten main divisions of Iconclass. Notations can be used to describe or index the subjects of visual documents regardless of the complexity of the subjects. Several notations can be used to describe complex subjects. Every notation is part of a hierarchical structure and, as such, incorporates all of its iconographical broader terms. The text explaining the meaning of an Iconclass notation is the notation's '__textual correlate__', the actual definition of the concept.
 
 
 #### Main divisions of the Iconclass classification system
