@@ -1,11 +1,11 @@
 ﻿<a name="basics"/>
 ### Iconclass basics
 
-The unique elements of the Iconclass system are its alphanumeric classification codes, called __notations__. Notations always begin with one of the digits 0 - 9, corresponding with the ten main divisions of Iconclass. Notations can be used to describe or index the subjects of visual documents regardless of the complexity of the subjects. Several notations can be used to describe complex subjects. Every notation is part of a hierarchical structure and, as such, incorporates all of its iconographical broader terms. The text explaining the meaning of an Iconclass notation is the notation's '__textual correlate__', the actual definition of the concept.
+[&para;](#notations){: name="notations" } The unique elements of the Iconclass system are its alphanumeric classification codes, called __notations__. Notations always begin with one of the digits 0 - 9, corresponding with the ten main divisions of Iconclass. Notations can be used to describe or index the subjects of visual documents regardless of the complexity of the subjects. Several notations can be used to describe complex subjects. Every notation is part of a hierarchical structure and, as such, incorporates all of its iconographical broader terms. The text explaining the meaning of an Iconclass notation is the notation's '__textual correlate__', the actual definition of the concept.
 
 
 #### Main divisions of the Iconclass classification system
-The main divisions of the Iconclass system are represented by digits 0 to 9. Of these ten 'main divisions', the numbers 1 to 5 are 'general' topics, designed to comprise all the principal aspects of what can be represented. Divisions 6 through 9 accommodate 'special' topics, coherent subject matter of a narrative nature, with an emphasis on the Bible (7) and Classical Mythology (9). A tenth division, represented by the number 0, was added to the digital version in 1996 at the request of Iconclass users, to accommodate abstract art.
+[&para;](#maindivisions){: name="maindivisions" } The main divisions of the Iconclass system are represented by digits 0 to 9. Of these ten 'main divisions', the numbers 1 to 5 are 'general' topics, designed to comprise all the principal aspects of what can be represented. Divisions 6 through 9 accommodate 'special' topics, coherent subject matter of a narrative nature, with an emphasis on the Bible (7) and Classical Mythology (9). A tenth division, represented by the number 0, was added to the digital version in 1996 at the request of Iconclass users, to accommodate abstract art.
 
       0 Abstract, Non-representational Art
       1 Religion and Magic
@@ -82,7 +82,7 @@ A standard entry in the Iconclass system consists of a notation and its textual 
 
 
 #### Bracketed text
-[&para;](#brackets){: name="brackets" }Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
+[&para;](#brackets){: name="brackets" } Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
 
 Example from division 2 of the Iconclass system:
 
@@ -133,7 +133,7 @@ __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 3
 
       
 #### Structural Digits
-[&para;](#struct){: name="struct" }Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
+[&para;](#struct){: name="struct" } Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
 
 Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged by a symbol like a plus-sign, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is. This makes it impossible to identify a __structural digit__ if it is simply embedded in a string of digits.
 
