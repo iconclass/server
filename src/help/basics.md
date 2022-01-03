@@ -82,7 +82,7 @@ A standard entry in the Iconclass system consists of a notation and its textual 
 
 
 #### Bracketed text
-[&para;](#brackets){: name="brackets" }Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
+[&para;](#brackets){: name="brackets" } Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
 
 Example from division 2 of the Iconclass system:
 
@@ -133,7 +133,7 @@ __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 3
 
       
 #### Structural Digits
-[&para;](#struct){: name="struct" }Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
+[&para;](#struct){: name="struct" } Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
 
 Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged by a symbol like a plus-sign, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is. This makes it impossible to identify a __structural digit__ if it is simply embedded in a string of digits.
 
