@@ -106,11 +106,11 @@ but when you click the button to __Include keys (+)__ this changes. The search w
 
 #### Christ healing lepers
      
-Often research in iconography follows a meandering pattern of going back and forth between your queries and new directions suggested by the images you retrieve with your searches. The Iconclass browser aims to support this meandering pattern to a certain extent, allowing you to follow hunches and side paths, which hopefully help you to discover new information. The journey can start with a very simple search, for example to find the concept with which to classify this mosaic scene at Monreale cathedral.
+Often research in iconography follows a meandering pattern of going back and forth between your queries and new directions suggested by the images you retrieve with your searches. The Iconclass browser aims to support this meandering pattern to a certain extent, allowing you to follow hunches and side paths, which could help you to discover information that is new and useful to you. A journey can start with a very simple search, for example to find the concept with which to classify this mosaic scene at Monreale cathedral.
 
 {{% aimg search004 %}} 
 
-Even if you are not very familiar with biblical iconography you will recognize this scene as one where Christ is addressing or blessing a group of men. They are dressed in loincloths and covered by spots on their torso and legs. Some are stretching their hands towards Christ. We can identify them as the __ten lepers__ who are healed by Christ according to Luke 17:11-19, but it is not easy to determine whether this identification _precedes_ or _follows_ the realization that the spots on their bodies are signs of their leprosy and that the group consists of exactly _ten_ men. As is so often the case, our awareness of the _meaning_ of an iconographic detail actually _leads_ our eyes, blurring the chronology of our iconographic interpretations. Fortunately, we are not dealing here with the psychology of vision or the theory of iconographic analysis, but with the simpler task of finding a fitting concept for this scene.
+Even if you are not very familiar with biblical iconography you will recognize this scene as one where Christ is addressing or blessing a group of men. They are dressed in loincloths and covered by spots on their torso and legs. Some are stretching their hands towards Christ. We can identify them as the __ten lepers__ who are healed by Christ, according to Luke 17:11-19, but it is not easy to determine whether this identification _precedes_ or _follows_ the realization that the spots on their bodies are signs of their leprosy and that the group consists of exactly _ten_ men. As is so often the case, our awareness of the _meaning_ of an iconographic detail actually _leads_ our eyes, blurring the chronology of our iconographic interpretations. Fortunately, we are not dealing here with the psychology of vision or the theory of iconographic analysis, but with the simpler task of finding a fitting Iconclass concept for this scene.
 
           {{% aimg 73c452 %}}
 
@@ -118,10 +118,23 @@ The most efficient way to find the concept we need would be to combine __Christ_
 
           {{% aimg tenlepers %}}
           
-That is also the query for which you would need to be well-versed in biblical iconography. If you would not know this particular chapter of Luke's gospel, it is not very likely you would grasp the relevance of the exact number of the group of lepers. The spots on their bodies, however, are a clear indication of their illness, so __Christ__ and __lepers__ would be a more obvious combination for a search. You don't have to be a very experienced Iconclass user to know that __73__ is the notation indicating __New Testament__ scenes, so adding that limits the harvest to a short list of concepts.
+That is also the query for which you would need to be well-versed in biblical iconography. If you would not know this particular chapter of Luke's gospel, it is not very likely you would grasp the relevance of the exact number of the group of lepers.
+The spots on their bodies, on the other hand, are a clear indication of their illness, so __Christ__ and __lepers__ would be a more obvious combination for a search. You don't have to be a very experienced Iconclass user to know that __73__ is the root notation for all __New Testament__ scenes, so adding that to the search conditions is a concise way to limit the harvest to a short list of concepts.
  
           {{% aimg tenlepers2 %}}
           
+When you click on the concept that seems to offer the best fit for the mosaic in Monreale, various elements of the _Illustrated Iconclass_ fall into place. The broader terms in the _path_ through the hierarchy invite you to check out other scenes of __73C45 Christ healing lepers__ or even of __73C4 miracles of Christ ~ healing the sick__ in general. The sample images provide material for comparison.
+          
+          {{% aimg tenlepers3 %}}
+
+They may help to confirm the identification, offer a slightly different visualization or interpretation, but also raise completely new questions.
+This detail from an English psalter, for example, which is a few decades younger than the Palermo mosaic, uses a very similar composition, but the inscription, in Monreale placed on the wall above the head of Christ, is here moved to the scroll he is holding in his hand.
+          
+          {{% aimg tenlepers4 %}}
+
+When we browse the illustrations we have of Christ healing lepers we are probably more conscious of the fact that we are looking at the "_iconography of contagion_" than we would have been two years ago. The Covid-pandemic and the - sometimes fiercely debated - "_mouth mask_" policy has made it difficult to overlook the fact that the lepers in various series of illustrations of this Gospel chapter, dating from the first half of the 16th century, are all wearing some form of face cover. 
+
+          {{% aimg tenlepers5 %}}
                      
 ### Browse
 
