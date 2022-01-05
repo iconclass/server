@@ -123,19 +123,66 @@ The spots on their bodies, on the other hand, are a clear indication of their il
  
           {{% aimg tenlepers2 %}}
           
-When you click on the concept that seems to offer the best fit for the mosaic in Monreale, various elements of the _Illustrated Iconclass_ fall into place. The broader terms in the _path_ through the hierarchy invite you to check out other scenes of __73C45 Christ healing lepers__ or even of __73C4 miracles of Christ ~ healing the sick__ in general. The sample images provide material for comparison.
+When you click on the concept that seems to offer the best fit for the mosaic in Monreale, various elements of the _Illustrated Iconclass_ fall into place. The broader terms in the _path_ through the hierarchy invite you to check out other scenes of __73C45 Christ healing lepers__ or even of __73C4 miracles of Christ ~ healing the sick__ in general.
           
           {{% aimg tenlepers3 %}}
 
-They may help to confirm the identification, offer a slightly different visualization or interpretation, but also raise completely new questions.
-This detail from an English psalter, for example, which is a few decades younger than the Palermo mosaic, uses a very similar composition, but the inscription, in Monreale placed on the wall above the head of Christ, is here moved to the scroll he is holding in his hand.
+The sample images provide material for comparison. They may help to confirm the identification, offer a slightly different visualization or interpretation, but also raise completely new questions.
+This detail from an English psalter, for example, which is a few decades younger than the Palermo mosaic, uses a very similar composition for the same narrative, but there are some variations. The _ten_ men are fully dressed, for example, and the quote from Luke's gospel - _go and show yourselves to the priests_ - in Monreale written on the wall above the head of Christ, is here moved to the banderole he is holding in his hand.
           
           {{% aimg tenlepers4 %}}
 
-When we browse the illustrations we have of Christ healing lepers we are probably more conscious of the fact that we are looking at the "_iconography of contagion_" than we would have been two years ago. The Covid-pandemic and the - sometimes fiercely debated - "_mouth mask_" policy has made it difficult to overlook the fact that the lepers in various series of illustrations of this Gospel chapter, dating from the first half of the 16th century, are all wearing some form of face cover. 
+When we browse our illustrations of Christ healing lepers we are probably more conscious of the fact that we are looking at the "_iconography of contagion_" than we would have been two years ago. The Covid-pandemic and the - sometimes fiercely debated - "_mouth mask_" policy will make the iconographer much more alert to certain details. For instance, it would now be difficult to overlook the fact that the lepers in various series of bible illustrations dating from the first half of the 16th century, are all wearing some form of face cover, with the exception of the one who is cured and kneels to thank Christ in the illustration on the left ...
 
           {{% aimg tenlepers5 %}}
                      
+### Portraits
+
+{{% aimg newsearches1 %}}
+
+Iconclass covers a wide spectrum of themes, some of which are among the most common subjects found in image collections. Portraits are undoubtedly among those. Here is a portrait, made in 1832, of the Belgian magistrate and politician Théodore Joseph Jonet and his daughters Juliette and Emilie, which was acquired some years ago by the Groeningemuseum in Bruges. Such a family portrait can be approached from various directions. It is a portrait of historical persons we know by name. It is also a representation of family relations, i.e. of a widowed father and his two daughters, one of whom is engaged to be married. It is also a testimony of social status, of the _haute bourgeoisie_ to which the Jonet family belonged.
+Again, whether we provide information about one or all of these aspects or perhaps add other specific details, for example about their fashion choices, does not _depend_ on Iconclass, but it _can_ be influenced by the organization of the schedules and by the _keywords_ that were selected to guide us to concepts. It is therefore a good idea to be flexible when searching for terms.
+The richest harvest of concepts is found with a simple search for __portrait__ and with the __keys__-button switched to _include_. Obviously you don't want to scroll through a list of 26,481 results, and the concept that the algorithm sees as 'most relevant' -  _self-portrait of an artist in late Gothic style_ - does not make much sense.
+
+          {{% aimg portrait %}}
+          
+So adding a second keyword, and excluding the keys is the logical thing to do. As this is a __family group__ you could combine __portrait__ and __family__ but as you can see that does not produce suitable candidates.
+
+          {{% aimg portraitfamily %}}
+
+__Portrait__ and __group__, however, looks much more promising. The results also invite us to take a closer look at three other elements of the Iconclass toolbox, __[bracketed texts](basics#brackets){:target="_read"}__, __[structural digits](basics#struct){:target="_read"}__ and __[letter duplication](basics#double){:target="_read"}__.
+
+          {{% aimg portraitgroup %}}
+
+
+The results that the algorithm considers _most relevant_, offer two alternative options: portraits of historical persons which we _cannot_ identify by name and portraits of those we _can_. If we know a name, as in our example, we can enter it between __the brackets (...)__ and make it part of the code.
+Moreover, the concepts allow us to distinguish between men and women. The male variant is not made explicit but that a single - __B__ - in the notation signifies that the sitter is a man is implied by the fact that the double letter - __BB__ - signifies that the sitter is a woman.
+This then would be a suitable notation for the father in this family group as the broader terms in the path demonstrate:
+
+          {{% aimg 61b2withname13 %}}
+
+Complying with the examples originally given in the printed volumes of Iconclass, the name would be entered thus: __61B2(JONET, Théodore Joseph)13__. This model does not necessarily fit historical names for every period, so some variety between projects and databases can be observed.
+Obviously, if you would index this portrait with this one concept, it would not be retrieved by a query for _female sitters_ or for _Juliette Jonet_, for example. To accomplish the latter you would have to add __61BB2(JONET, Juliette)13__.
+The __-13__ part of the notation (following the brackets) is the __structural digit__, a feature of the Iconclass system with which you can identify recurring, or "structural", patterns of iconography. When used it should allow a search algorithm capable of retrieving this pattern - __61B2(...)13__ - to filter a database for all portraits of groups.
+Flexibility, which means playing around with various keywords, would lead to this very precise result:
+
+          {{% aimg fatherfamily %}}
+
+Classifying the portrait with the concept __42B7412 · father and daughter(s) (family group)__ would mean that one of its close thematic "neighbours" would be Dorothea Lange's famous photograph of the _Migrant mother_ Florence Owens Thompson with three of her children. The latter would be classified as __42B742 · mother and child(ren), woman and child(ren) (family group)__, and they would then share the same _broader term_ for a family group consisting of parents and children:
+
+          {{% aimg family %}}
+
+
+### Landscapes and city views
+
+{{% aimg newsearches2 %}}
+
+### Recreation
+
+{{% aimg newsearches3 %}}
+
+### Classical love-affairs
+
 ### Browse
 
 Browsing the tree of concepts is a straightforward process: clicking on a concept causes it to "open" and to show its hierarchical "children". A red line marks 
