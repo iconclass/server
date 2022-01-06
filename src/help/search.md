@@ -140,7 +140,7 @@ When we browse our illustrations of Christ healing lepers we are probably more c
 
 {{% aimg newsearches1 %}}
 
-Iconclass covers a wide spectrum of themes, some of which are among the most common subjects found in image collections. Portraits are undoubtedly among those. Here is a portrait, made in 1832, of the Belgian magistrate and politician Théodore Joseph Jonet and his daughters Juliette and Emilie, which was acquired some years ago by the Groeningemuseum in Bruges. Such a family portrait can be approached from various directions. It is a portrait of historical persons we know by name. It is also a representation of family relations, i.e. of a widowed father and his two daughters, one of whom is engaged to be married. It is also a testimony of social status, of the _haute bourgeoisie_ to which the Jonet family belonged.
+Iconclass covers a wide spectrum of themes, some of which are among the most common subjects found in image collections. Portraits are undoubtedly among those. Here is a portrait, made in 1832 by François-Joseph Navez, of the Belgian magistrate and politician Théodore Joseph Jonet and his daughters Juliette and Emilie, which was acquired some years ago by the Groeningemuseum in Bruges. Iconographically indexing such a family portrait can be approached from various directions. It is a portrait of historical persons we know by name. It is also a representation of family relations, i.e. of a widowed father and his two daughters, one of whom is engaged to be married. It is also a testimony of social status, of the _haute bourgeoisie_ to which the Jonet family belonged.
 Again, whether we provide information about one or all of these aspects or perhaps add other specific details, for example about their fashion choices, does not _depend_ on Iconclass, but it _can_ be influenced by the organization of the schedules and by the _keywords_ that were selected to guide us to concepts. It is therefore a good idea to be flexible when searching for terms.
 The richest harvest of concepts is found with a simple search for __portrait__ and with the __keys__-button switched to _include_. Obviously you don't want to scroll through a list of 26,481 results, and the concept that the algorithm sees as 'most relevant' -  _self-portrait of an artist in late Gothic style_ - does not make much sense.
 
@@ -155,22 +155,34 @@ __Portrait__ and __group__, however, looks much more promising. The results also
           {{% aimg portraitgroup %}}
 
 
-The results that the algorithm considers _most relevant_, offer two alternative options: portraits of historical persons which we _cannot_ identify by name and portraits of those we _can_. If we know a name, as in our example, we can enter it between __the brackets (...)__ and make it part of the code.
+The results that the algorithm considers _most relevant_, offer two alternative options: portraits of historical persons who remain _anonymous_ because we cannot identify them by name, and portraits of those we _can_ identify. If we know a name, as in our example, we can enter it between __the brackets (...)__ and make it part of the code.
 Moreover, the concepts allow us to distinguish between men and women. The male variant is not made explicit but that a single - __B__ - in the notation signifies that the sitter is a man is implied by the fact that the double letter - __BB__ - signifies that the sitter is a woman.
 This then would be a suitable notation for the father in this family group as the broader terms in the path demonstrate:
 
           {{% aimg 61b2withname13 %}}
 
-Complying with the examples originally given in the printed volumes of Iconclass, the name would be entered thus: __61B2(JONET, Théodore Joseph)13__. This model does not necessarily fit historical names for every period, so some variety between projects and databases can be observed.
-Obviously, if you would index this portrait with this one concept, it would not be retrieved by a query for _female sitters_ or for _Juliette Jonet_, for example. To accomplish the latter you would have to add __61BB2(JONET, Juliette)13__.
-The __-13__ part of the notation (following the brackets) is the __structural digit__, a feature of the Iconclass system with which you can identify recurring, or "structural", patterns of iconography. When used it should allow a search algorithm capable of retrieving this pattern - __61B2(...)13__ - to filter a database for all portraits of groups.
-Flexibility, which means playing around with various keywords, would lead to this very precise result:
+Complying with the examples originally given in the printed volumes of Iconclass, the name would be entered thus: __61B2(JONET, Théodore Joseph)13__. This default model does not necessarily fit historical names for every period or region, so some variety between projects and databases can be observed.
+Obviously, if you would index this portrait with just this one concept, your end users would not be able to retrieve it with a query for _female sitters_ or for the two daughters by their proper names. Should you want to make that possible, you would have to add __61BB2(JONET, Juliette)13__ and __61BB2(JONET, Emilie)13__.
+The __-13__ part of the notation (following the brackets) is the __structural digit__, a feature of the Iconclass system with which you can identify recurring, or "structural", patterns of iconography. Using it should make it possible for a search algorithm to  retrieve this pattern - __61B2(...)13__ - and filter a database for all portraits of groups. 
+
+In this particular case it turns out that being quite explicit about the composition of the group - playing around with keywords, asking for __father daughter family group__ - would yield this very precise result:
 
           {{% aimg fatherfamily %}}
 
-Classifying the portrait with the concept __42B7412 · father and daughter(s) (family group)__ would mean that one of its close thematic "neighbours" would be Dorothea Lange's famous photograph of the _Migrant mother_ Florence Owens Thompson with three of her children. The latter would be classified as __42B742 · mother and child(ren), woman and child(ren) (family group)__, and they would then share the same _broader term_ for a family group consisting of parents and children:
+It is important to realize that _retrieving a concept_ from the Iconclass system with the help of such a combination of keywords, implies that the same search could _retrieve any metadata record_ from a database that contains this notation, and - by implication - all relevant images linked to those records. 
+Moreover, due to the hierarchical organization of the notation, it will insert the image in the broader context of __family groups__: 
+
+          {{% aimg familygroup %}}
+
+Classifying the portrait with the concept __42B7412 · father and daughter(s) (family group)__ would thus mean that one of its close thematic "neighbours" would be Dorothea Lange's famous photograph of the _Migrant mother_ [Florence Owens Thompson](https://en.wikipedia.org/wiki/Florence_Owens_Thompson) with three of her children. The latter would be classified as __42B742 · mother and child(ren), woman and child(ren) (family group)__, and they would then share the same _broader term_ for a family group consisting of parents and children:
 
           {{% aimg family %}}
+
+The social and economical distance between the two families could be expressed using the concepts __46A131 bourgeoisie, middle class, citizens, burghers__ and __46A15 the poor__, which would contextualize the images in yet another way. Instead of zooming out we could also zoom in - literally - on the images. It is documented that in the case of Thompson the photographer instructed the two children to turn their faces away from the camera so the mother's face would draw all the attention. Zooming in on the portrait by Navez, we notice the engagement ring on the hand of Juliette which suggest they sat for Navez before her marriage with Joseph-Émile Lequime on July 5th 1832. __Marriage__ as a secondary context for this painting would be made retrievable by the Iconclass concept __42D1712 wedding ring__...
+
+          {{% aimg ring %}}
+
+Hopefully it is clear that whatever type of information you want to convey and whatever aspect you want to focus on, depend on decisions that _precede_ the selection of classification concepts to be assigned to the images. The _consequences_ of your selection for their _retrieval_, however, that should become clearer as you search and browse the system.
 
 
 ### Landscapes and city views
