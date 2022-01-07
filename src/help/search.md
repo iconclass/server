@@ -207,7 +207,7 @@ When the results are sorted by notation, they are probably more in line with you
 
           {{% aimg cityview2 %}}
 
-Surprises like this cannot be avoided for the simple reason that algorithms, however smart, are intended to create some order in sets that are simply too large to be processed within an acceptable timeframe. That is the main reason you can always try a few variations of the keyword searches. __City__ and __panorama__, for example, produce this:
+Surprises like this cannot be avoided for the simple reason that algorithms, however smart, are intended to create some order in sets that are simply too large to be processed within an acceptable timeframe. That is the main reason you do well to try a few variations of the keyword searches. __City__ and __panorama__, for example, produce this:
 
           {{% aimg citypanorama %}}
           
