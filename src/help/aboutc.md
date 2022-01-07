@@ -111,9 +111,9 @@ At this moment the Virtual Print Cabinet contains more than 110,000 objects.<br/
 Partly included in Arkyves.
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_azulejos %}}<br/></td><td valign="top"><a href="http://redeazulejo.letras.ulisboa.pt/pesquisa-az/iconografia_pesquisa.aspx" target="read">http://redeazulejo.letras.ulisboa.pt/pesquisa-az/iconografia_pesquisa.aspx</a><br/><br/>
-<b>AZ Sistema de Referência & Indexação de Azulejo</b>
+<b>Az Infinitum Sistema de Referência & Indexação de Azulejo</b>
 The study of azulejos (tiles) has asserted itself as a specific area of study in the history of art of Portugal, although its objects are in a close relationship with other areas of the visual arts - painting, architecture, sculpture, etc - as those who produced them mastered other techniques as well.<br/>
-The AZ site offers the most extensive database in the field of the study of Portuguese tiles.
+The Az infinitum site offers the most extensive database in the field of the study of Portuguese tiles.
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_galicones %}}<br/></td><td valign="top"><a href="https://www.galicones.com/home" target="read">https://www.galicones.com/home</a><br/><br/>
 <b>GALICONES</b> is a scholarly database and digital library formed of prints used to illustrate early modern books which are currently held in the General Library of the University of Santiago de Compostela (Spain). It is part of the project in progress "The Management of Knowledge in Digital Humanities: Iconclass Index and Iconographic Study of a Sample of the Rare Book Collection at the USC", conducted by Carme López Calderón and funded by the Programa de axudas á etapa posdoutoral da Xunta de Galicia (Consellería de Cultura, Educación e Ordenación Universitaria).<br/>
