@@ -174,20 +174,46 @@ Moreover, due to the hierarchical organization of the notation, it will insert t
 
           {{% aimg familygroup %}}
 
-Classifying the portrait with the concept __42B7412 · father and daughter(s) (family group)__ would thus mean that one of its close thematic "neighbours" would be Dorothea Lange's famous photograph of the _Migrant mother_ [Florence Owens Thompson](https://en.wikipedia.org/wiki/Florence_Owens_Thompson) with three of her children. The latter would be classified as __42B742 · mother and child(ren), woman and child(ren) (family group)__, and they would then share the same _broader term_ for a family group consisting of parents and children:
+Classifying the portrait with the concept __42B7412 father and daughter(s) (family group)__ would thus mean that one of its close thematic "neighbours" would be Dorothea Lange's famous photograph of [Florence Owens Thompson](https://en.wikipedia.org/wiki/Florence_Owens_Thompson) (the _Migrant Mother_) with three of her children. This picture would be classified as __42B742 mother and child(ren), woman and child(ren) (family group)__, and they would then share the same _broader term_ for a family group consisting of parents and children:
 
           {{% aimg family %}}
 
-The social and economical distance between the two families could be expressed using the concepts __46A131 bourgeoisie, middle class, citizens, burghers__ and __46A15 the poor__, which would contextualize the images in yet another way. Instead of zooming out we could also zoom in - literally - on the images. It is documented that in the case of Thompson the photographer instructed the two children to turn their faces away from the camera so the mother's face would draw all the attention. Zooming in on the portrait by Navez, we notice the engagement ring on the hand of Juliette which suggest they sat for Navez before her marriage with Joseph-Émile Lequime on July 5th 1832. __Marriage__ as a secondary context for this painting would be made retrievable by the Iconclass concept __42D1712 wedding ring__...
+The social and economical position of the two families could be expressed using the concepts __46A131 bourgeoisie, middle class, citizens, burghers__ and __46A15 the poor__, which would contextualize the images in yet another way. Instead of zooming out we could also zoom in - literally - on the images. It is documented that in the case of Thompson the photographer instructed the two children to turn their faces away from the camera so the mother's face would draw all the attention. Zooming in on the portrait by Navez, we notice the engagement ring on the hand of Juliette which suggests they sat for Navez before her marriage with Joseph-Émile Lequime on July 5th 1832. __Marriage__ as a secondary context for this painting would be made retrievable by the Iconclass concept __42D1712 wedding ring__...
 
           {{% aimg ring %}}
 
-Hopefully it is clear that whatever type of information you want to convey and whatever aspect you want to focus on, depend on decisions that _precede_ the selection of classification concepts to be assigned to the images. The _consequences_ of your selection for their _retrieval_, however, that should become clearer as you search and browse the system.
+As explained at the start of this explanation, whatever type of information you want to convey and whatever aspect you want to focus on, depends on decisions that _precede_ the selection of classification concepts to be assigned to the images. The _consequences_ of your selection for their _retrieval and contextualization_, however, are another matter. They should become clearer as you search and browse the system.
 
 
-### Landscapes and city views
+### City-views and landscapes
+Another theme that takes its place among the most common subjects of pictures produced since the 16th century is that of landscapes and city-views, both as their main theme and as the backdrop of a narrative. One of the most famous city-views is this _View of Delft_ painted around 1660-1661 by Johannes Vermeer.
 
 {{% aimg newsearches2 %}}
+
+The basic concept to tag this painting would be __25I12 prospect of city, town panorama, silhouette of city__. If you are using Iconclass on a regular basis to index a collection of paintings or prints, you will probably know this notation by heart. An institution like the [Rijksmuseum in Amsterdam has used it for almost 3,500 objects](https://www.rijksmuseum.nl/nl/zoeken?p=1&ps=12&f.classification.iconClassDescription.sort=prospect+of+city%2c+town+panorama%2c+silhouette+of+city&st=Objects){:target="_read"}, so their cataloguers will not need to locate the concept with a keyword search. 
+For those who are less familiar with the system, or want to find additional concepts for details to identify by name, it will be useful to experiment a bit with the keywords, as we shall see.
+
+Among the fairly obvious words you could use are __city__ and __view__. If you do, the algorithm that determines the ordering of the search results may surprise you a little as the list will be topped by __25II111 city founders - II - ideal city__.
+
+          {{% aimg cityview %}}
+          
+The reason for this is basic statistics. The concept definition is just _four_ words long while _two_ of those words are __city__, so _city_ becomes very "relevant" according to the indexing algorithm.
+When the results are sorted by notation, they are probably more in line with your expectations: 
+
+          {{% aimg cityview2 %}}
+
+Surprises like this cannot be avoided for the simple reason that algorithms, however smart, are intended to create some order in sets that are simply too large to be processed within an acceptable timeframe. That is the main reason you should try a few variations of the keyword searches. __City__ and __panorama__, for example, produce this:
+
+          {{% aimg citypanorama %}}
+          
+The application of this concept to collections with very heterogeneous content may of course cause widely divergent images to be retrieved with the same database query. A panoramic photograph of New York may be thematically comparable to the _View of Delft_ but the city in the background of the emblem is also represented as a panorama. Both could be tagged with __25I12__...
+
+          {{% aimg panorama2 %}}
+
+The view of an identifiable city will, by definition, contain buildings or other details that you may want to document as named entities. A famous painting like the Vermeer has been extensively analysed; buildings have been identified and the exact vantage point has been established and attempts have been made to determine the exact date and time. However that may be, buildings like the Schiedam and Rotterdam city-gates or the New Church and the typical 
+
+          {{% aimg delft %}}
+
 
 ### Recreation
 
