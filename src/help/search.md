@@ -186,14 +186,19 @@ As explained at the start of this explanation, whatever type of information you 
 
 
 ### City-views and landscapes
-Another theme that takes its place among the most common subjects of pictures produced since the 16th century is that of landscapes and city-views, both as their main theme and as the backdrop of a narrative. One of the most famous city-views is this _View of Delft_ painted around 1660-1661 by Johannes Vermeer.
+Another theme that takes its place among the most common subjects of pictures produced since the 16th century is that of landscapes and city-views, both as their main theme and as the backdrop of a story or a message. One of the most famous city-views is this _View of Delft_ painted around 1660-1661 by Johannes Vermeer.
 
 {{% aimg newsearches2 %}}
 
-The basic concept to tag this painting would be __25I12 prospect of city, town panorama, silhouette of city__. If you are using Iconclass on a regular basis to index a collection of paintings or prints, you will probably know this notation by heart. An institution like the [Rijksmuseum in Amsterdam has used it for almost 3,500 objects](https://www.rijksmuseum.nl/nl/zoeken?p=1&ps=12&f.classification.iconClassDescription.sort=prospect+of+city%2c+town+panorama%2c+silhouette+of+city&st=Objects){:target="_read"}, so their cataloguers will not need to locate the concept with a keyword search. 
+A basic concept to tag this painting would be __25I12 prospect of city, town panorama, silhouette of city__. If you are using Iconclass on a regular basis to index a collection of paintings or prints, you will probably know this notation by heart. An institution like the [Rijksmuseum in Amsterdam has used it for almost 3,500 objects](https://www.rijksmuseum.nl/nl/zoeken?p=1&ps=12&f.classification.iconClassDescription.sort=prospect+of+city%2c+town+panorama%2c+silhouette+of+city&st=Objects){:target="_read"}, so their cataloguers will not need to locate the concept with a keyword search. 
+
+           Remarkably, the Rijksmuseum prefers not to use the actual simple classification code - 25I12 - for 
+           searches or display in its URL's, but opts for the complete set of words of the concept definition: 
+           https://www.rijksmuseum.nl/nl/zoeken?p=1&ps=12&f.classification.iconClassDescription.sort=prospect+of+city%2c+town+panorama%2c+silhouette+of+city&st=Objects
+
 For those who are less familiar with the system, or want to find additional concepts for details to identify by name, it will be useful to experiment a bit with the keywords, as we shall see.
 
-Among the fairly obvious words you could use are __city__ and __view__. If you do, the algorithm that determines the ordering of the search results may surprise you a little as the list will be topped by __25II111 city founders - II - ideal city__.
+Among the fairly obvious words you could use, are __city__ and __view__. If you do, the algorithm that determines the ordering of the search results may surprise you a little, as the list will be topped by __25II111 city founders - II - ideal city__.
 
           {{% aimg cityview %}}
           
@@ -202,7 +207,7 @@ When the results are sorted by notation, they are probably more in line with you
 
           {{% aimg cityview2 %}}
 
-Surprises like this cannot be avoided for the simple reason that algorithms, however smart, are intended to create some order in sets that are simply too large to be processed within an acceptable timeframe. That is the main reason you should try a few variations of the keyword searches. __City__ and __panorama__, for example, produce this:
+Surprises like this cannot be avoided for the simple reason that algorithms, however smart, are intended to create some order in sets that are simply too large to be processed within an acceptable timeframe. That is the main reason you can always try a few variations of the keyword searches. __City__ and __panorama__, for example, produce this:
 
           {{% aimg citypanorama %}}
           
@@ -210,11 +215,34 @@ The application of this concept to collections with very heterogeneous content m
 
           {{% aimg panorama2 %}}
 
-The view of an identifiable city will, by definition, contain buildings or other details that you may want to document as named entities. A famous painting like the Vermeer has been extensively analysed; buildings have been identified and the exact vantage point has been established and attempts have been made to determine the exact date and time. However that may be, buildings like the Schiedam and Rotterdam city-gates or the New Church and the typical 
+The view of an identifiable city will, by definition, contain buildings or other details that you may want to document as named entities. If you would not recognize certain buildings, you wouldn't know which city was represented.
+A famous painting like Vermeer's has been extensively analysed; buildings have been identified, Vermeer's exact vantage point has been reconstructed and attempts have even been made to determine the exact date and time - as if the painting were a digital snapshot with a timestamp and geolocation information.
 
           {{% aimg delft %}}
 
+However that may be, buildings like the __Schiedamse Poort__ and the __Rotterdamse Poort__ or the __Nieuwe Kerk__ are typically among the landmarks that would be tagged as identified details in the metadata.
+Of the __Rotterdamse Poort__, for example, you may want to register the fact that it was one of Delft's __city-gates__:
 
+          {{% aimg citygate %}}
+          
+To find the appropriate notation to enter the specific name of an historical building, simply search for __historical__ and __building__:
+
+          {{% aimg histobuilding %}}
+
+Should both be tagged a little systematically, Vermeer's _View of Delft_ would pop up side by side with this drawing by Balthazar Jooss which shows Delft from more or less the same vantage point ten years before the city-view changed dramatically as both city-gates were torn down in 1836.
+
+          {{% aimg rotterdamsepoort %}}
+          
+These would be among the Iconclass concepts the descriptions would share:
+
+          11Q712 · church (exterior)
+          25I12 · prospect of city, town panorama, silhouette of city
+          25I1461 · city-gate
+          46C231 · tow-boat, towing-barge
+          61E(DELFT) · names of cities and villages (with NAME)
+          61F(NIEUWE KERK) · names of historical buildings, sites, streets, etc. (with NAME)
+          61F(ROTTERDAMSE POORT) · names of historical buildings, sites, streets, etc. (with NAME)
+          
 ### Recreation
 
 {{% aimg newsearches3 %}}
