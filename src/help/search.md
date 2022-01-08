@@ -136,7 +136,7 @@ When we browse our illustrations of Christ healing lepers we are probably more c
 
           {{% aimg tenlepers5 %}}
                      
-### Portraits
+### Portraits - _Family group_
 
 {{% aimg newsearches1 %}}
 
@@ -185,7 +185,7 @@ The social and economical position of the two families could be expressed using 
 As explained at the start of this explanation, whatever type of information you want to convey and whatever aspect you want to focus on, depends on decisions that _precede_ the selection of classification concepts to be assigned to the images. The _consequences_ of your selection for their _retrieval and contextualization_, however, are another matter. They should become clearer as you search and browse the system.
 
 
-### City-views and landscapes
+### City-views and landscapes - _View of Delft_
 Another theme that takes its place among the most common subjects of pictures produced since the 16th century is that of landscapes and city-views, both as their main theme and as the backdrop of a story or a message. One of the most famous city-views is this _View of Delft_ painted around 1660-1661 by Johannes Vermeer.
 
 {{% aimg newsearches2 %}}
@@ -243,9 +243,31 @@ These would be among the Iconclass concepts the descriptions would share:
           61F(NIEUWE KERK) · names of historical buildings, sites, streets, etc. (with NAME)
           61F(ROTTERDAMSE POORT) · names of historical buildings, sites, streets, etc. (with NAME)
           
-### Recreation
+### Recreation - _Couple under an umbrella_
 
 {{% aimg newsearches3 %}}
+
+          {{% aimg sunbathing %}}
+          
+A keyword that will quickly find us a concept for Ron Mueck's hyperrealistic but larger-than-life sculpture _Couple under an umbrella_ is __beach__. Paradoxically enough, this elderly couple is sitting and lying on the wooden floor of _Museum Voorlinden_ in Wassenaar (NL), so the beach setting is suggested, not visualized. Still, we can safely assume that __43B52 sunbathing (on the beach)__ will be seen by most users as a relevant concept.
+
+          {{% aimg sunbathing2 %}}
+
+If you click on this search result and then open the __Browse__ tab, you will see more of the context confirming that this is indeed an appropriate choice. The search result you will have clicked on, will be shown in the concept tree under the Browse tab, marked by a red line. We shall discuss the __Browse__ options further on, but for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
+
+          {{% aimg 43B52 %}}
+
+Their postures, the parasol that is their attribute, their bathing suits, their interaction, and various other aspects can all be tagged with Iconclass concepts. Here a sample set:
+
+          31AA2351 · sitting on the ground - AA - female human figure
+          31A2361 · lying on the back with uplifted upper part of the body
+          33C23 · couple of lovers
+          41D2632 · parasol, sunshade
+          42D3 · marriage, married couple, 'matrimonium'
+          
+It will be clear that two of these concepts suggest that we know more about these "sitters" than we actually do. Of course, we could try to make sure that _married couple_ or _couple of lovers_ are "correct" labels by gathering specific information. Most descriptions of this sculpture focus on the quiet display of affection it conveys. Although the intention of the artist and the reception thereof by an audience are important, the operative word when we classify aspects of the work is "useful". Even if we are not sure about the fact that we are dealing with an actual _portrait_ of an existing man and woman, let alone that we are sure about their marital status, applying __42D3__ to the image will still make sense. It will ensure that the image appears when the database is searched for the concept of "_married couple_". If you think that is informative, then applying the code is justified.
+
+
 
 ### Classical love-affairs
 
