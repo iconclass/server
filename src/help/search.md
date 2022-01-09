@@ -18,13 +18,12 @@ but, more importantly, you will see the illustrations that we have added to the 
 {{% aimg register3 %}}
 
 
-
-### Search
+### Searching & Browsing
 Assigning Iconclass concepts to an image is always a secondary step in the creation of subject information. The primary steps in the process are identifying what is in front of your eyes and deciding what information you actually want to convey about it. That will depend on a broad spectrum of parameters - from the purpose and the budget of your project to the depth of your iconographic expertise - and the examples we are using here can only cover a tiny part of that spectrum. Moreover, in actual cataloguing practice your criteria for the selection of details will inevitably evolve over time, because you will learn from your observations and simply "see" more as you go along.
 
 {{% aimg search002 %}}
 
-##### Old man leaning on a staff
+#### People - _Old man leaning on a staff_
 
 To find concepts to tag this etching by Rembrandt - __a poorly dressed old man leaning on a staff__ - a point of departure could be to search with the words __old__ and __man__. The results of a search are presented in a scrollable list, sorted by relevance or by [notation](basics#notations){:target="_read"}.
 Sorted by __relevance__, these are the first search results: 
@@ -42,7 +41,7 @@ In addition, the list of available __[keys](basics#keys){:target="_read"}__, is 
 One of the keys is: __31D16(+5) · old man (+ positions (of the human figure))__. Among its further subdivisions we find: __31D16(+52) · old man (+ leaning)__, which would be an appropriate tag for our image.
 
 
-#### Is there a "correct" notation?
+##### Is there a "correct" notation?
 If we had started our search not with "__old__" and "__man__" but with "__leaning__", the result would of course have been different:
 
           {{% aimg 31a232_8 %}} 
@@ -84,7 +83,7 @@ As you become more aware of the concepts Iconclass puts at your disposal, you wi
           
           {{% aimg booleanor %}} 
 
-#### A spider
+#### Animal world - _A spider_
 
 {{% aimg search003 %}} 
 
@@ -104,7 +103,7 @@ but when you click the button to __Include keys (+)__ this changes. The search w
 
           {{% aimg spider004 %}}
 
-#### Christ healing lepers
+#### Biblical theme - _Christ healing lepers_
      
 Often research in iconography follows a meandering pattern of going back and forth between your queries and new directions suggested by the images you retrieve with your searches. The Iconclass browser aims to support this meandering pattern to a certain extent, allowing you to follow hunches and side paths, which could help you to discover information that is new and useful to you. A journey can start with a very simple search, for example to find the concept with which to classify this mosaic scene at Monreale cathedral.
 
@@ -136,7 +135,7 @@ When we browse our illustrations of Christ healing lepers we are probably more c
 
           {{% aimg tenlepers5 %}}
                      
-### Portraits - _Family group_
+#### Portraits - _Family group_
 
 {{% aimg newsearches1 %}}
 
@@ -249,34 +248,36 @@ These would be among the Iconclass concepts the descriptions would share:
 
           {{% aimg sunbathing %}}
           
-A keyword that will quickly find us a concept for Ron Mueck's hyperrealistic but larger-than-life sculpture _Couple under an umbrella_ is __beach__. Paradoxically enough, this elderly couple is sitting and lying on the wooden floor of _Museum Voorlinden_ in Wassenaar (NL), so the beach setting is suggested, not visualized. Still, we can safely assume that __43B52 sunbathing (on the beach)__ will be seen by most users as a relevant concept.
+A keyword that will quickly find us a concept for Ron Mueck's hyperrealistic but larger-than-life sculpture _Couple under an umbrella_ is __beach__. Paradoxically, this elderly couple is sitting and lying on the wooden floor of _Museum Voorlinden_ in Wassenaar (NL), so the beach setting is suggested, not visualized. Still, we can safely assume that __43B52 sunbathing (on the beach)__ will be seen by most users as a relevant concept.
 
           {{% aimg sunbathing2 %}}
 
-If you click on this search result and then open the __Browse__ tab, you will see more of the context confirming that this is indeed an appropriate choice. The search result you will have clicked on, will be shown in the concept tree under the Browse tab, marked by a red line. We shall discuss the __Browse__ options further on, but for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
+If you click on this search result and then open the __Browse__ tab, you will see more of the context confirming that this is indeed an appropriate choice. If you click on the search result __43B52__ it will be shown on the right together with its broader terms; it will also be available in the concept tree under the Browse tab, where it is marked by a red line. We shall discuss the __Browse__ options further on, but for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
 
           {{% aimg 43B52 %}}
 
-Their postures, the parasol that is their attribute, their bathing suits, their interaction, and various other aspects can all be tagged with Iconclass concepts. Here a sample set:
+Their postures, the parasol that is their attribute, their bathing suits, their interaction, and various other aspects can all be tagged with Iconclass concepts. As explained before: the selection of aspects takes precedence over its "translation" in Iconclass concepts, so this sample set is just a suggestion:
 
           31AA2351 · sitting on the ground - AA - female human figure
           31A2361 · lying on the back with uplifted upper part of the body
+          31B6212(+91) · looking downwards (+ relations with friendly, non-aggressive character
+                         (expressive connotations))
           33C23 · couple of lovers
           41D2632 · parasol, sunshade
           42D3 · marriage, married couple, 'matrimonium'
           
-It will be clear that two of these concepts suggest that we know more about these "sitters" than we actually do. Of course, we could try to make sure that _married couple_ or _couple of lovers_ are "correct" labels by gathering specific information. Most descriptions of this sculpture focus on the quiet display of affection it conveys. Although the intention of the artist and the reception thereof by an audience are important, the operative word when we classify aspects of the work is "useful". Even if we are not sure about the fact that we are dealing with an actual _portrait_ of an existing man and woman, let alone that we are sure about their marital status, applying __42D3__ to the image will still make sense. It will ensure that the image appears when the database is searched for the concept of "_married couple_". If you think that is informative, then applying the code is justified.
+It will be clear that two of these concepts suggest that we know more about these "sitters" than we actually do. Of course, we could try to make sure that _married couple_ or _couple of lovers_ are "correct" labels by gathering specific information, even ask the artist.
+Most descriptions of this sculpture focus on the quiet display of affection it conveys. Although the intention of the artist and the reception thereof by an audience are important, the operative word when we classify aspects of the work is "useful". Even if we are not sure about the fact that we are dealing with a _portrait_ of an actual man and woman, let alone that we are sure about their marital status, applying __42D3__ to the image will still make sense. It will ensure that the image appears when the database is searched for the concept of "_married couple_". If you think that is informative, then applying the code is justified.
 
+### Abstract ideas - _Impossibility_
 
+Abstract concepts and ideas may seem to be reserved for early modern symbolic images, like allegories and personifications, emblems and devices, but the abstract notions gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are actually applicable to a much wider range of images. Moreover, to express abstract ideas very concrete forms and actions are often used.
 
-### Classical love-affairs
+{{% aimg impossibility %}}
 
-### Browse
+Here are three representations of the idea of __Impossibility__ that are quite different iconographically.
 
-Browsing the tree of concepts is a straightforward process: clicking on a concept causes it to "open" and to show its hierarchical "children". A red line marks 
-
-
-### Sample searches
+### Advanced searches
 
 Only show items from notation 5, the bible:
 
@@ -286,4 +287,3 @@ If you want to _exclude_ something, this could be handy:
 
 `((?<!11D).)*$` and this will filter out all notations that start with "11D"
 
-### Iconclass, a gentle introduction
