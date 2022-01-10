@@ -246,17 +246,20 @@ These would be among the Iconclass concepts the descriptions would share:
 
 {{% aimg newsearches3 %}}
 
+A keyword that will quickly find us a concept for Ron Mueck's hyperrealistic and larger-than-life sculpture _Couple under an umbrella_ is __beach__. 
+
+
           {{% aimg sunbathing %}}
           
-A keyword that will quickly find us a concept for Ron Mueck's hyperrealistic but larger-than-life sculpture _Couple under an umbrella_ is __beach__. Paradoxically, this elderly couple is sitting and lying on the wooden floor of _Museum Voorlinden_ in Wassenaar (NL), so the beach setting is suggested, not visualized. Still, we can safely assume that __43B52 sunbathing (on the beach)__ will be seen by most users as a relevant concept.
+Paradoxically, this elderly couple is sitting and lying on the wooden floor of _Museum Voorlinden_ in Wassenaar (NL), so the beach setting is suggested, not visualized. Still, we can safely assume that __43B52 sunbathing (on the beach)__ will be seen by most users as a relevant concept.
 
           {{% aimg sunbathing2 %}}
 
-If you click on this search result and then open the __Browse__ tab, you will see more of the context confirming that this is indeed an appropriate choice. If you click on the search result __43B52__ it will be shown on the right together with its broader terms; it will also be available in the concept tree under the Browse tab, where it is marked by a red line. We shall discuss the __Browse__ options further on, but for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
+If you click on this search result and then open the __Browse__ tab, you will see more of the context confirming that this is indeed an appropriate choice. The search result __43B52 sunbathing (on the beach)__ itself will be shown on the right hand side together with its broader terms; it will also automatically be selected in the concept tree under the __Browse__ tab, where it is marked by a red line. We shall discuss the __Browse__ options later; for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
 
           {{% aimg 43B52 %}}
 
-Their postures, the parasol that is their attribute, their bathing suits, their interaction, and various other aspects can all be tagged with Iconclass concepts. As explained before: the selection of aspects takes precedence over its "translation" in Iconclass concepts, so this sample set is just a suggestion:
+The postures of the couple, the parasol over their head, their bathing suits, their interaction, and various other aspects of the image can all be tagged with Iconclass concepts. Here is a set of concepts that could be used. Please remember: first you decide which aspects to record, and only then you select concepts that best match those aspects:
 
           31AA2351 · sitting on the ground - AA - female human figure
           31A2361 · lying on the back with uplifted upper part of the body
@@ -265,17 +268,25 @@ Their postures, the parasol that is their attribute, their bathing suits, their 
           33C23 · couple of lovers
           41D2632 · parasol, sunshade
           42D3 · marriage, married couple, 'matrimonium'
+          56F22 · Reciprocal Love
           
-It will be clear that two of these concepts suggest that we know more about these "sitters" than we actually do. Of course, we could try to make sure that _married couple_ or _couple of lovers_ are "correct" labels by gathering specific information, even ask the artist.
-Most descriptions of this sculpture focus on the quiet display of affection it conveys. Although the intention of the artist and the reception thereof by an audience are important, the operative word when we classify aspects of the work is "useful". Even if we are not sure about the fact that we are dealing with a _portrait_ of an actual man and woman, let alone that we are sure about their marital status, applying __42D3__ to the image will still make sense. It will ensure that the image appears when the database is searched for the concept of "_married couple_". If you think that is informative, then applying the code is justified.
+It will be clear that some of these concepts suggest that we _know_ more about these "sitters" than we can actually _see_. We cannot see - literally - that they are a _married couple_, or feel _love_ for each other. We would need additional information to establish that these are "correct" labels. In this case, we could ask the artist for confirmation that the quiet display of affection we observe, is "historically" correct.
+Although the intention of the artist and the reception thereof by an audience are important, the operative word when we classify aspects of the work is "useful". Even if we are not sure whether we are dealing with a portrait of an actual man and woman, let alone that we are sure about their marital status, applying __42D3 married couple__ and __56F22 Reciprocal Love__ to the image will still make sense. It will ensure that the image appears when the database is searched for the concept of "_married couple_" or the abstract idea of _Love_. If you think that is informative, then applying the code is justified.
 
-### Abstract ideas - _Impossibility_
+### Abstract ideas - concrete forms
 
-Abstract concepts and ideas may seem to be reserved for early modern symbolic images, like allegories and personifications, emblems and devices, but the abstract notions gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are actually applicable to a much wider range of images. Moreover, to express abstract ideas very concrete forms and actions are often used.
+Most commentators of Mueck's sculpture are in agreement: the elderly couple convey a message of mutual affection. We've included the Iconclass concept __56F22 Reciprocal Love__ among our suggestions to record this abstract meaning, even though  Mueck's sculpture uses an extremely concrete form to convey this abstract idea. This combination - a concrete form expressing an abstract meaning - is more common than is often realized. And while the abstract ideas gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are often seen as reserved for symbolic images, like allegories and personifications, emblems and devices, they can actually be used for the interpretation of a wide spectrum of images. Take for instance __56F23 Friendship; 'Amicitia' (Ripa)__ which is a "sibling" of __56F22 Reciprocal Love__ as shown by the consecutive notations.
+
+          {{% aimg 56F23IC %}}
+          
+The reference to Cesare Ripa's Iconologia that is often included in concept definitions like this one may strengthen the impression that they are intended for specialized use, but the abstract idea of __Friendship__ can of course also be expressed by a straightforward image like this portrait of two young men by Pontormo. One of the men in the portrait is actually pointing at a manuscript quote from Cicero's _De Amicitia_ as a testimony of their friendship.
+
+          {{% aimg 56F23 %}}
+
+
+Here are three examples of concrete actions visualizing the abstract notion of __Impossibility__ all dating from the 1540's. Hans Sebald Beham shows a man trying to uproot a tree, Alciato's emblem uses the _washing of an Ethiopian_ and the Horapollo picture shows a man walking without a head and feet walking on water.
 
 {{% aimg impossibility %}}
-
-Here are three representations of the idea of __Impossibility__ that are quite different iconographically.
 
 ### Advanced searches
 
