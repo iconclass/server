@@ -165,7 +165,7 @@ The outline below lists the 450 basic categories of the Iconclass system. You ca
            31G   the soul
         32   human types; peoples and nationalities
            32A   human types
-           32B   human races; peoples; nationalities
+           32B   peoples; ethnic groups; nationalities
            32C   scientific classification of human races
         33   relations between individual persons
            33A   non-aggressive relationships
