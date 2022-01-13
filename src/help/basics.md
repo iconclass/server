@@ -19,7 +19,7 @@
       9 Classical Mythology and Ancient History
 
 #### Subdivisions: Increasing specificity
-Within each division of Iconclass, definitions are organized according to a logic of increasing specificity. A main division is divided further into a maximum of nine subdivisions by adding a second digit to the right of the first one. Division 2 Nature, for example, is subdivided in the following way:
+[&para;](#subdivision){: name="subdivision" } Within each division of Iconclass, definitions are organized according to a __logic of increasing specificity__. A main division is divided further into a maximum of nine subdivisions by adding a second digit to the right of the first one. Division 2 Nature, for example, is subdivided in the following way:
 
       21 the four elements, and ether, the fifth element
       22 natural phenomena
@@ -28,6 +28,7 @@ Within each division of Iconclass, definitions are organized according to a logi
       25 earth, world as celestial body
       26 meteorological phenomena
       29 surrealia, surrealistic representations
+      
 The third level of specificity is attained by adding a letter in upper case. For reasons of legibility in the [original printed version of Iconclass](aboutb#iconoriginal), the letter 'J' was omitted. Thus the addition of a letter permits as many as 25 subdivisions instead of 9, and it also increases the legibility of the notations.
 
 * Blank spaces on either side of the capital letter and between successive pairs of digits also provided greater legibility in the printed edition. However, the implementation of notations with 'spaces' causes most algorithms to interpret a notation as a "sentence" of separate words and is therefore advised against.
@@ -82,7 +83,7 @@ A standard entry in the Iconclass system consists of a notation and its textual 
 
 
 #### Bracketed text
-[&para;](#brackets){: name="brackets" } Bracketed text is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
+[&para;](#brackets){: name="brackets" } __Bracketed text__ is a feature that enables the user to break away from the hierarchy of alphanumeric notations. At certain points in the hierarchy the user is invited, by the phrase: __"with NAME"__ (or an equivalent expression), to add a species name, a proper name, a number, or a combination of these in parentheses to the end of a notation. Thus a non-hierarchical - alphabetical and/or numerical - listing is created within the hierarchy.
 
 Example from division 2 of the Iconclass system:
 
@@ -120,7 +121,7 @@ Certain keys can be expanded with digits from a 'queue'. The keys +1 to +6 of 25
 
 
 #### Doubling of letter
-[&para;](#double){: name="double" } At several points, Iconclass offers the option to duplicate the upper case letter of a notation and, in this way, modify its meaning. Letter duplication or doubling the letter is context sensitive: it is valid only for certain parts of the system. Within a declared range, duplication has a specific meaning. Often some kind of opposition is intended. Examples:
+[&para;](#double){: name="double" } At several points, Iconclass offers the option to duplicate the upper case letter of a notation and, in this way, modify its meaning. __Letter duplication__ or doubling the letter is context sensitive: it is valid only for certain parts of the system. Within a declared range, duplication has a specific meaning. Often some kind of opposition is intended. Examples:
 
       25F animals
       25FF fabulous animals
@@ -133,7 +134,7 @@ __* the meaning of 31AA is made explicit as 'female', so 'male' is implied for 3
 
       
 #### Structural Digits
-[&para;](#struct){: name="struct" } Originally, at the time when Iconclass was devised, structural digits were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
+[&para;](#struct){: name="struct" } Originally, at the time when Iconclass was devised, __structural digits__ were guidelines in structuring the information concerning certain large groups of characters, such as Greek gods, persons from classical history, or male and female saints. All important episodes in a character's lifetime were numbered consecutively with 'structural' digits:
 
 Structural digits share with key numbers the property of having an intrinsic meaning which is valid only for a particular part of the Iconclass system. Like keys, structural digits are declared in lists, valid for a particular range of the system. Structural digits can be used to make cross-sections through the system which are very interesting from an iconographical point of view. Unlike keys, structural digits are not flagged by a symbol like a plus-sign, but form an integral part of a notation. There are no formal rules to establish that a certain digit is in fact a structural digit, other than the declaration that it is. This makes it impossible to identify a __structural digit__ if it is simply embedded in a string of digits.
 

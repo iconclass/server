@@ -275,18 +275,49 @@ Although the intention of the artist and the reception thereof by an audience ar
 
 ### Abstract ideas - concrete forms
 
-Most commentators of Mueck's sculpture are in agreement: the elderly couple convey a message of mutual affection. We've included the Iconclass concept __56F22 Reciprocal Love__ among our suggestions to record this abstract meaning, even though  Mueck's sculpture uses an extremely concrete form to convey this abstract idea. This combination - a concrete form expressing an abstract meaning - is more common than is often realized. And while the abstract ideas gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are often seen as reserved for symbolic images, like allegories and personifications, emblems and devices, they can actually be used for the interpretation of a wide spectrum of images. Take for instance __56F23 Friendship; 'Amicitia' (Ripa)__ which is a "sibling" of __56F22 Reciprocal Love__ as shown by the consecutive notations.
+Most commentators of Mueck's sculpture are in agreement: the elderly couple convey a message of mutual affection. We've included the Iconclass concept __56F22 Reciprocal Love__ among our suggestions to record this abstract meaning, even though Mueck's sculpture uses an extremely concrete form to convey this abstract idea. Interpreting a concrete form with the help of an abstract idea is of course a common procedure in iconography. And while the abstract ideas gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are often applied to symbolic images, like allegories and personifications, emblems and devices, they can also be used for the interpretation of a wide spectrum of images. Take for instance __56F23 Friendship; 'Amicitia' (Ripa)__ which is a "sibling" of __56F22 Reciprocal Love__ as shown by the consecutive notations.
 
           {{% aimg 56F23IC %}}
           
-The reference to Cesare Ripa's Iconologia that is often included in concept definitions like this one may strengthen the impression that they are intended for specialized use, but the abstract idea of __Friendship__ can of course also be expressed by a straightforward image like this portrait of two young men by Pontormo. One of the men in the portrait is actually pointing at a manuscript quote from Cicero's _De Amicitia_ as a testimony of their friendship.
+The reference to Cesare Ripa's Iconologia that is often included in concept definitions like this one may strengthen the impression that they are intended for specialized use, but the abstract idea of __Friendship__ can of course also be expressed by a straightforward image like this portrait of two young men by Pontormo. One of the men in the portrait is actually pointing at a manuscript quote from Cicero's _De Amicitia_ as a testimony of their friendship. Again: historical correctness or provability is _not_ at stake here. The issue is whether it is useful to make sure this image is found when a database is searched for the concept _friendship_, so it is made available for further research. 
 
           {{% aimg 56F23 %}}
 
+Additional suggestions include the following concepts:
 
-Here are three examples of concrete actions visualizing the abstract notion of __Impossibility__ all dating from the 1540's. Hans Sebald Beham shows a man trying to uproot a tree, Alciato's emblem uses the _washing of an Ethiopian_ and the Horapollo picture shows a man walking without a head and feet walking on water.
+          31A25552 · index finger forwards, pointing, indicating
+          33A5 · friends
+          49L7 · handwriting, written text
+          61B112 · anonymous historical persons portrayed in a double portrait
+          83(CICERO, De Amicitia) · (scenes from) specific works of literature: Cicero, De Amicitia
 
-{{% aimg impossibility %}}
+### Abstract ideas - _False friends_
+
+The concepts in Iconclass are subdivided hierarchically, according to a logic of increasing specificity, as is explained in some more detail on the page dealing with the [basics](basics#subdivision){:target="_read"} of the system. 
+
+But this logic is "humanities logic", flexible rather than rigid. 
+
+                although the repertoire of human concepts is in a sense hierarchical ... 
+                it is nonetheless extremely different in nature from the precise 
+                and rigid way that concepts are built up systematically and strictly
+                hierarchically in mathematics or computer science
+
+In Iconclass category 5, for instance, concepts often come in small groups that are each other's opposites. The notations of one group have singular letters, the opposing group had double letters.
+__56F23 Friendship; 'Amicitia' (Ripa)__ for example, is opposed to __56FF23 Enmity; 'Inimicitia', 'Inimicitia mortale' (Ripa)__.
+But abstract ideas about emotions or morality do not always come in binary pairs. Hence a subtle variation like __56F232 Infidelity in Friendship; 'Amicitia senza giovamento' (Ripa)__ can be subordinated to the main Friendship concept.
+Its complexity is expressed in various emblems, one of which - _In amicos falsos_ - is found in _Minerva Britanna_, an English emblem book by Henry Peacham. The story is about two friends who are attacked by a bear. One of them flees and climbs a tree, while the other trips and then plays dead. Only when the bear has left, the "false friend" dares to come down. His friend then says that the bear has whispered a warning in his ear _not to trust unreliable friends_....
+
+          {{% aimg abstractions %}}
+
+
+#### Offensive words, missing concepts, problematic areas
+
+32B3
+33C6
+42F1
+12I
+
+
 
 ### Advanced searches
 
