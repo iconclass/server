@@ -1,4 +1,4 @@
-## Using the Illustrated Iconclass: Browse & Search  
+## The Illustrated Iconclass: Search, Browse and Edit 
 
 Those who have been using Iconclass for some time and those who are new to it, will come to this new, illustrated edition with different expectations and different ideas about what it is for and how it works. This explanation therefore aims to take into account two differen user groups.
 
@@ -255,7 +255,7 @@ Paradoxically, this elderly couple is sitting and lying on the wooden floor of _
 
           {{% aimg sunbathing2 %}}
 
-If you click on this search result and then open the __Browse__ tab, you will see more of the context confirming that this is indeed an appropriate choice. The search result __43B52 sunbathing (on the beach)__ itself will be shown on the right hand side together with its broader terms; it will also automatically be selected in the concept tree under the __Browse__ tab, where it is marked by a red line. We shall discuss the __Browse__ options later; for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
+If you click on this search result and then open the __Browse__ tab, you will see more of the context, confirming that this is indeed an appropriate choice. The search result __43B52 sunbathing (on the beach)__ itself will be shown on the right hand side together with its broader terms; it will also automatically be selected in the concept tree under the __Browse__ tab, where it is marked by a red line. We shall discuss the __Browse__ options later; for now it is enough to realize that you can juxtapose two concepts and thus inspect more of the context.
 
           {{% aimg 43B52 %}}
 
@@ -275,7 +275,7 @@ Although the intention of the artist and the reception thereof by an audience ar
 
 ### Abstract ideas - concrete forms
 
-Most commentators of Mueck's sculpture are in agreement: the elderly couple convey a message of mutual affection. We've included the Iconclass concept __56F22 Reciprocal Love__ among our suggestions to record this abstract meaning, even though Mueck's sculpture uses an extremely concrete form to convey this abstract idea. Interpreting a concrete form with the help of an abstract idea is of course a common procedure in iconography. And while the abstract ideas gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are often applied to symbolic images, like allegories and personifications, emblems and devices, they can also be used for the interpretation of a wide spectrum of images. Take for instance __56F23 Friendship; 'Amicitia' (Ripa)__ which is a "sibling" of __56F22 Reciprocal Love__ as shown by the consecutive notations.
+Most commentators of Mueck's sculpture are in agreement: the elderly couple convey a message of mutual affection. We've included the Iconclass concept __56F22 Reciprocal Love__ among our suggestions to record this abstract meaning, even though Mueck's sculpture uses an extremely concrete form to convey this abstract idea. Interpreting a concrete form with the help of an abstract idea is of course a common procedure in iconography. And while the abstract ideas gathered in [Iconclass category 5](outline#iconclass5){:target="_read"} are often applied to symbolic images, like allegories and personifications, emblems and devices, they can also be used for the interpretation of a wide spectrum of images. Take for instance __56F23 Friendship; 'Amicitia' (Ripa)__.
 
           {{% aimg 56F23IC %}}
           
@@ -283,7 +283,7 @@ The reference to Cesare Ripa's Iconologia that is often included in concept defi
 
           {{% aimg 56F23 %}}
 
-Additional suggestions include the following concepts:
+Additional concepts could include the following:
 
           31A25552 · index finger forwards, pointing, indicating
           33A5 · friends
@@ -291,31 +291,69 @@ Additional suggestions include the following concepts:
           61B112 · anonymous historical persons portrayed in a double portrait
           83(CICERO, De Amicitia) · (scenes from) specific works of literature: Cicero, De Amicitia
 
-### Abstract ideas - _False friends_
+### Flexible hierarchies
 
-The concepts in Iconclass are subdivided hierarchically, according to a logic of increasing specificity, as is explained in some more detail on the page dealing with the [basics](basics#subdivision){:target="_read"} of the system. 
+As we saw above, the abstract concepts suggested for the interpretation of the works of Ron Mueck and Pontormo - __Reciprocal love__ and __Friendship__ -  have a common broader term or "_parent_": __56F2 · (personifications and symbolic representations of) Love; 'Amore (secondo Seneca)' (Ripa)__.
+They also have "_siblings_", i.e. concepts that share their level of specificity and have the same parent:
+__56F21 · Neighbourly Love; 'Amor del Prossimo' (Ripa)__
+__56F24 · Self-love; 'Amor di se stesso' (Ripa)__
+Although the notations suggest otherwise, the relationship between these concepts is not strictly hierachic, and this tension between the flexible organization of themes and motifs and the more rigid logic of algorithms can be observed throughout the Iconclass system. The reason for this tension is simple: the Iconclass schedules and its system of notations were constructed on paper, which allowed the logic of the notational system to develop "organically", sometimes almost on an _ad hoc_ basis. When the system was transferred to a computerized environment, complex algorithms had to make sure these pluriform relationships fitted a uniform mould. The notational structure had to be made more consistent by [a major editorial effort](abouta#1993report){:target="_read"}, and the instructions for its use – which were scattered over the seven printed volumes – had to be transformed into a single rule base, a "grammar" for the ICONCLASS language.
+This tension is not unique to Iconclass; it permeates most humanities computing. As formulated by Douglas Hofstader and Emmanuel Sander:
 
-But this logic is "humanities logic", flexible rather than rigid. 
-
-                although the repertoire of human concepts is in a sense hierarchical ... 
+                "... although the repertoire of human concepts is in a sense hierarchical ... 
                 it is nonetheless extremely different in nature from the precise 
                 and rigid way that concepts are built up systematically and strictly
-                hierarchically in mathematics or computer science
+                hierarchically in mathematics or computer science"
+                (Surfaces and Essences. Analogy as the fuel and fire
+                of thinking, Basic Books 2013, p. 54)
 
-In Iconclass category 5, for instance, concepts often come in small groups that are each other's opposites. The notations of one group have singular letters, the opposing group had double letters.
-__56F23 Friendship; 'Amicitia' (Ripa)__ for example, is opposed to __56FF23 Enmity; 'Inimicitia', 'Inimicitia mortale' (Ripa)__.
-But abstract ideas about emotions or morality do not always come in binary pairs. Hence a subtle variation like __56F232 Infidelity in Friendship; 'Amicitia senza giovamento' (Ripa)__ can be subordinated to the main Friendship concept.
-Its complexity is expressed in various emblems, one of which - _In amicos falsos_ - is found in _Minerva Britanna_, an English emblem book by Henry Peacham. The story is about two friends who are attacked by a bear. One of them flees and climbs a tree, while the other trips and then plays dead. Only when the bear has left, the "false friend" dares to come down. His friend then says that the bear has whispered a warning in his ear _not to trust unreliable friends_....
+Due to the wide scope of the categories gathered in Iconclass, this tension works out in different ways for different parts of the system. Subdividing the postures and gestures of arms and hands is different from subdividing Emotions or Moral qualities which in its turns differs from subdividing a biblical story or a classical myth.
+By implementing the Iconclass system's rule base, the browser software solves the tension between the two types of hierarchy. Users are normally unaware of it, except when concepts they need for cataloguing are missing or when parts of the schedules need to be revised, as is the case for a number of categories that have recently drawn serious negative attention. Some of the more urgent problems have been dealt with in a recent revision of [section 32B3](abouta#32Brevision){:target="_read"}, but a more substantial effort is required to revise outdated and sometimes offensive terminology.
+This effort should be a collaborative one, with the active participation of the community of users, so it is important to share with the help of some examples how expansions and corrections were implemented in the years behind us.
 
-          {{% aimg abstractions %}}
+### Additions and corrections
+
+{{% aimg additions1 %}}
+
+Here are three images for which new concepts were added to Iconclass. For the first one we added __26C6 wind as a human face, blowing with rounded cheeks__; for the second one __41C27(GRATER) · kitchen utensils: grater__; for the third one __31A25434 slapping each other's palms__.
+
+In these cases the procedure was straightforward: a user noticed that Iconclass did not really offer a concept to match the iconography. Once it was established that simply adding a keyword or slightly changing an existing concept definition would not do the trick, we added the new concept to the most appropriate branch of the schedules. The definition was translated into the various languages and keywords were added to help the retrieval. 
+Which branch is most appropriate? That is decided on practical grounds. There should be a logical relation with the parent concept, and there should still be some room in the enumeration of concepts. The logic of the connection - to repeat it - is based on association and analogy, not on mathematics, so there is always some room for discussion. Here is the context for the _slapping_  gesture:
+
+          {{% aimg slapping %}}
+
+Do notice that the _interpretation_ of the gesture - in this case it visualizes "_agreement at the end of a negotiation_" - is not embedded in its definition. That would limit its usability as a "gestural concept". Moreover, _that_ concept would be a better fit as a narrower term of, for instance, __46B43 bargaining__.
+The siblings of __26C6 wind as a human face, blowing with rounded cheeks__ again demonstrate the associative logic upon which much of the subdividing is based.
+
+          {{% aimg winds %}}
+
+__26C0__ to __26C5__ were part of the original published versision, but the concept __26C9 absence of wind, calm__ was also recently added to this section, as there are many images that visualize this idea, from emblems to seascapes. Its location too based on the logic of analogies. The _absence of wind_ concludes a listing of concepts intuitively associated with the _wind_. Positioning these concepts in each other's vicinity could help a researcher develop ideas and ask questions.
+
+{{% aimg 26C9 %}}
+
+As more and more biblical and mythological imagery is catalogued, researchers occasionally discover scenes for which Iconclass did not yet contain a concept. In most cases it is easy to add those scenes as they tend to be a more detailed expansion of a story already present in Iconclass, so the concept can be appended to an existing branch of the hierarchy.
+
+          {{% aimg frogs %}}
+
+Here is an example from the [Biblia sacra](aboutc#bibliasacra){:target="_read"} project on early modern Netherlandish bible illustration.
+In Exodus 7:28-29 it is foretold that during the second of the plagues of Egypt [frogs will swarm over Egypt](https://test.iconclass.org/71E117221){:target="_read"} and even enter pharaoh's palace. Appending the new concept to an existing branch of the schedules did not present a problem:
+
+          {{% aimg 71E117221 %}}
+
+Most of the expansions of Iconclass in the past decade were isolated, local additions. But there were also some more substantial _groups_ of concepts added, for which the help of local domain experts was indispensable.
+In 2018 a cluster of some 80 concepts in section [__49E39 alchemy__](https://test.iconclass.org/49E39){:target="_read"} was added to accommodate the specialist cataloguing of the [alchemistic sources of the Herzog August Bibliothek in Wolfenbüttel](aboutc#alchemie){:target="_read"}.
+A few years earlier a similar amount of specialized costume concepts was added to section [__41D2 costume__](https://test.iconclass.org/41D2){:target="_read"} with the help of fashion experts of the Rijksmuseum.
+
+{{% aimg systemadds %}}
 
 
-#### Offensive words, missing concepts, problematic areas
+### The revision of outdated and offensive terminology
 
 32B3
 33C6
 42F1
 12I
+46A42
 
 
 

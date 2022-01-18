@@ -8,7 +8,7 @@ Here are listed the databases that are available online. Some of them, e.g. [Bri
 The <b>Arkyves</b> aggregator site, bringing together sources like medieval illuminated manuscripts, printer's devices and emblems, paintings and graphic material from the collections of a.o. the Rijksmuseum, Folger Shakespeare Library, Herzog August Bibliothek, the Getty Institute, and Glasgow University Library.<br/>
 N.B.: Access is restricted to subscribers.<br/>
 Also see: <a href="https://brill.com/view/db/arko" target="read">https://brill.com/view/db/arko</a></td></tr>
-<tr><td valign="top">{{% aimg aboutpage_bibliasacra %}}<br/></td><td valign="top"><a href="https://bibliasacra.nl/" target="read">https://bibliasacra.nl/</a><br/><br/>
+<tr><td valign="top"><a name="bibliasacra"/>{{% aimg aboutpage_bibliasacra %}}<br/></td><td valign="top"><a href="https://bibliasacra.nl/" target="read">https://bibliasacra.nl/</a><br/><br/>
 <b>Biblia Sacra</b> is an electronic bibliography, allowing its users to request information (text and reproductions) on bibles, individual bible books or parts thereof, printed in the Netherlands and Belgium, or bibles printed in other countries that might reasonably be expected to be destined for the Dutch or Belgian market. Gathers bible illustration from the period 1447-1800.<br/>
 Included in Arkyves.
 </td></tr>
@@ -59,7 +59,7 @@ Included in Arkyves.
 This website provides access to all the French Emblem Books of the 16th century in the Stirling Maxwell collection along with their Latin versions when appropriate. they are supplemented with editions from the Bodleian Library and the Bibliothèque Mazarine.<br/>
 Included in Arkyves.
 </td></tr>
-<tr><td valign="top">{{% aimg aboutpage_alchemie %}}<br/></td><td valign="top"><a href="http://alchemie.hab.de/" target="read">http://alchemie.hab.de/</a><br/><br/>
+<tr><td valign="top"><a name="alchemie"/>{{% aimg aboutpage_alchemie %}}<br/></td><td valign="top"><a href="http://alchemie.hab.de/" target="read">http://alchemie.hab.de/</a><br/><br/>
 Erschließung <b>alchemiegeschichtlicher Quellen in der Herzog August Bibliothek</b><br/>
 A portal for (illustrated) sources for the history of Alchemy. A project of the Herzog August Bibliothek in Wolfenbüttel that aims to make the Alchemica sources more accessible for historians of the history of culture and of the sciences.<br/>
 Included in Arkyves.
@@ -124,6 +124,9 @@ The <b>Corpus Vitrearum Medii Aevi Deutschland (CVMA)</b> is part of the interna
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_niki %}}<br/></td><td valign="top"><a href="http://www.niki.digitalcollections.it/islandora/search/" target="read">http://www.niki.digitalcollections.it/islandora/search/</a><br/><br/>
 Collection of the <b>Dutch University Institute for Art History</b> in Florence. The catalog currently consists of approximately 40,000 descriptive records and provides access to circa 45,000 zoomable images of works of art. The collection's strength lies in the photographic reproduction of European paintings and drawings from the 16th, 17th and 18th centuries. The database includes a conspicuous amount of unpublished and unknown material. Digitised materials are gradually being added.
+</td></tr>
+<tr><td valign="top">{{% aimg aboutpage_heartfield %}}<br/></td><td valign="top"><a href="https://heartfield.adk.de/en/project" target="read">https://heartfield.adk.de/en/project</a><br/><br/>
+<b>Heartfield Online</b>. John Heartfield mostly created his art under adverse conditions: his life was marked by persecution and exile. He used art as a propagandistic "weapon" against social injustice and political opponents and in particular the National Socialists. It attracted the attention of the censorship authorities and had to be viewed in secret – yet it reached an audience of millions. Over 6,000 works, fragile objects made of paper, survived war, flight and exile, and are now kept by the Akademie der Künste in Berlin.
 </td></tr>
 </table>
 
