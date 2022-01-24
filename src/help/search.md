@@ -365,7 +365,7 @@ The Iconclass section that most urgently needed to be repaired was identified se
 
 With the help of a few examples we shall illustrate the editorial revisions and evaluate the role of Iconclass in the historiographic process and the survival of colonial and racist ideas.
 
-The first of these is a drawing by Bernard Naudin, published on March 11th 1905, in the journal [L'Assiette au beurre](https://gallica.bnf.fr/ark:/12148/bpt6k1048124h/f5.item). The drawing is a political caricature dealing with a shocking event that took place on the 14th of July, 1903. During the celebration of _Bastille day_ in Brazzaville, a young Congolese prisoner called Pakpa, was brutally executed by the French soldier Fernand Gaud with of a stick of dynamite.
+The first of these is a drawing by Bernard Naudin, published on March 11th 1905, in the journal [L'Assiette au beurre](https://gallica.bnf.fr/ark:/12148/bpt6k1048124h/f5.item). The drawing is a political caricature dealing with a shocking event that took place on the 14th of July, 1903. During the celebration of _Bastille day_ in Brazzaville, a young Congolese prisoner called Pakpa, was brutally executed by the French soldier Fernand Gaud with a stick of dynamite.
 
           {{% aimg 14juillet %}}
 
@@ -373,15 +373,17 @@ Several French journals published a report about the atrocity and the trial, in 
 The execution, the trial, and the media coverage were researched by Edward Berenson for his article about colonialism in early 20th century France: _"The Politics of Atrocity: the Scandal in the French Congo (1905)"_, published in [Historia y Política, 39(2018)109-138](https://doi.org/10.18042/hp.39.05){:target="_read"}.
 
 As an example of brutality and racism, the murder itself is of course of another order than a depiction or description of the event can ever be; and it would be easy to dismiss the _choice of words_ to describe the drawing of Naudin, as not very relevant compared to the monstrosity of the act. The original caption -  _"Gaud et Toqué, pour se distraire, ont fait sauter un nègre avec une cartouche de dynamite"_ - was no doubt intended sarcastically, given the anarchistic and anticolonial leaning of _L'Assiette au Beurre_. But even among the readers of L'Assiette - in 1905 - the phrase _fait sauter un nègre_ ("_make a negro jump_") will probably not have raised eyebrows because the word __nègre__ was used in it.
-Neither did the term __African negroes__ in the 1970's when the first volumes of Iconclass were published, a situation that did not really change when Iconclass was transferred to the computer and put online:
+Neither did the term __African negroes__ in the 1970's when the first volumes of Iconclass were published. That situation did not really change when Iconclass was transformed to a computerized system in the 1990's, nor when it was put online in 1999.
           
           {{% aimg 32b321old %}}
 
-The revision that is incorporated in the new version of the browser, has been long overdue. In section __32B3__ skin colour was dropped from the criteria for subdividing peoples and nationalities. Subdividing now rests more consistently on location and migration.
+The revision that is incorporated in this new version of the browser, has therefore been long overdue. Section __32B3__ is the first part of Iconclass which has been checked for offensive words. References to skin colour were dropped from the criteria for subdividing peoples and nationalities. Subdividing now rests on location and migration of people, which also made the section more consistent.
 
           {{% aimg 32B321new %}}
 
-However, we should point out that the revision of the _words_ used in the definitions, did not make the concepts more "correct". It may sound paradoxical but the "_correctness_" of a description like "_(indigenous) peoples of Sub-Saharan Africa_" is simply not the issue. The issue at stake is whether it improves the chances of discovery if historical sources are brought together under this class number. Perhaps it is easier to grasp this with the help of one of the other concepts we could use to describe Naudin's drawing:
+However, it should be pointed out that the revision of the _words_ used in the definitions, however necessary, did not make the concepts and their context more "correct".
+It may sound paradoxical but the "_correctness_" of a description like "_(indigenous) peoples of Sub-Saharan Africa_" is simply not the issue. The issue at stake is whether bringing historical sources together under this concept improves the chances of those sources being discovered and using in historical discourse.
+Perhaps it is easier to grasp this with the help of one of the other concepts we could use to describe Naudin's drawing:
 
           32B321(CONGOLESE) · (indigenous) peoples of sub-Saharan Africa (with NAME)
           44B04 · colonial system
@@ -398,7 +400,7 @@ One of these concepts is __44G34 · death penalty, execution__, of which these a
 
           {{% aimg 44g34 %}}
 
-Tagging the caricature by Naudin with this term does __not__ imply that anyone using it, will considere this brutal murder as a legitimate punishment under the law. It merely means that this drawing is now discoverable as an historical source, in the context of the French colonial system of jurisprudence of the early 20th century.
+When we tag the caricature by Naudin with this term we do __not__ imply that this brutal murder can be regarded as a legitimate punishment under the law. It merely means that this drawing will be one of the historical sources that can be __discovered__ by anyone researching the French colonial system of jurisprudence of the early 20th century. Until then it will simply be lying on the shelf of a library or be a record in a database - unnoticed.
 
 Gerechtigkeitsbilder
 Burning at the stake
