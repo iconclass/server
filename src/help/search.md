@@ -327,7 +327,7 @@ The siblings of __26C6 wind as a human face, blowing with rounded cheeks__ again
 
           {{% aimg winds %}}
 
-__26C0__ to __26C5__ were part of the original published versision, but the concept __26C9 absence of wind, calm__ was also recently added to this section, as there are many images that visualize this idea, from emblems to seascapes. Its location too based on the logic of analogies. The _absence of wind_ concludes a listing of concepts intuitively associated with the _wind_. Positioning these concepts in each other's vicinity could help a researcher develop ideas and ask questions.
+__26C0__ to __26C5__ were part of the original published versision, but the concept __26C9 absence of wind, calm__ was also recently added to this section, as there are many images that visualize this idea, from emblems to seascapes. Its location too is based on the logic of analogies. The _absence of wind_ concludes a listing of concepts intuitively associated with the _wind_. Positioning these concepts in each other's vicinity could help a researcher develop ideas and ask questions.
 
 {{% aimg 26C9 %}}
 
@@ -336,7 +336,7 @@ As more and more biblical and mythological imagery is catalogued, researchers oc
           {{% aimg frogs %}}
 
 Here is an example from the [Biblia sacra](aboutc#bibliasacra){:target="_read"} project on early modern Netherlandish bible illustration.
-In Exodus 7:28-29 it is foretold that during the second of the plagues of Egypt [frogs will swarm over Egypt](https://test.iconclass.org/71E117221){:target="_read"} and even enter pharaoh's palace. Appending the new concept to an existing branch of the schedules did not present a problem:
+In Exodus 7:28-29 it is foretold that during the second of the plagues of Egypt [frogs will swarm over Egypt](https://test.iconclass.org/71E117221){:target="_read"} and even enter pharaoh's palace. Appending this extension of the story as a new concept to an existing branch of the schedules did not present a problem:
 
           {{% aimg 71E117221 %}}
 
@@ -347,23 +347,63 @@ A few years earlier a similar amount of specialized costume concepts was added t
 {{% aimg systemadds %}}
 
 
-### The revision of outdated and offensive terminology
+### Keeping the Iconclass terminology up-to-date
 
-32B3
-33C6
-42F1
-12I
-46A42
+A classification must be able to cope with the changes in the field for which it was designed or it will become irrelevant and fall out of use. Those changes may be small and isolated. Historical research may simply have laid bare some hitherto unknown sources or developed new ways of looking at familiar images. And we have seen in the previous paragraphs that Iconclass can easily absorb small changes. 
+Those changes may also be much more substantial and widespread. Over the past decades new ideas have started to affect the historiography of slavery and the lives of black people, of diversity and the role of women and ethnic minorities, of homosexuality and gender issues, of migration and the role of non-western cultures, to name but a few of the more obvious issues.
+At times when even such an enumeration of issues itself can be seen as arbitrary or prejudicial, a classification system designed for the __history of culture and imagery__ faces a complex challenge to remain relevant. Against this background it is gratifying for the editor of such a system to see that it is under - justified! - attack for outdated and occasionally offensive concept definitions, because that suggests that the system is still considered relevant. We are therefore very grateful that [Alina Kühl](https://thearticle.hypotheses.org/9773){:target="_read"} and [Moritz Lampe](https://edoc.hu-berlin.de/bitstream/handle/18452/24410/BHR481_Lampe.pdf?sequence=1){:target="_read"} recently highlighted some sore spots in the Iconclass schedules. The more comprehensive of those critical reviews - Lampe's - not only targets the words and the organization of several branches of the classification, but also points at the gap between the contents of Iconclass and the changing composition of heritage collections.
+
+In the past fifty years Iconclass has been used to describe a very heterogeneous corpus of visual and textual(!) images. They range from early medieval manuscript illumination to satirical journals of the 19th and early 20th century, and from the Adages of Erasmus to posters warning against HIV infections.
+
+{{% aimg corpus001 %}}
+
+The subject matter covered by this corpus varies widely, but the _point of entry_ of Iconclass in the historiographic and cataloguing process, _does not_. It always plays its part at the very end of that process. It is the final link in a chain that starts with the _events, the ideas, and the mentality_ of the past. The events, ideas and mentality have disappeared, obviously, but traces of them may have survived in material form as _visual and textual records_, often in the collections of our archives, libraries and museums.
+To make the subject matter of those records available for research, i.e. to _bring our historical opponent in the field_, we classify their content. We determine which concepts best describe the historical events they depict, the ideas or convictions they convey, and the beliefs and the mentality of which they are a testimony. 
+The events that were recorded may have been acts of violence or piety, of kindness or cruelty. Ideas that for centuries were perfectly acceptable, may later have been regarded as scandalous - or the other way around. Mentalities or beliefs that were the norm in one part of the world, may have been objectionable in another. Hence classifying the content of the sources recording them, is always a balancing act.
+Anachronisms and some form of bias are unavoidable. Classifications are not _"neutral"_ or _"objective"_. However, if a classification is a publicly available tool that everyone can consult, its failings are at least out in the open. And the heritage collections that use it, all share _the same shortcomings_. So, repairing them in the shared classification, also means repairing them in the applications using it - at least in theory...
+The Iconclass section that most urgently needed to be repaired was identified several years ago, but it took a while to actually edit and implement the revision of __[32B3 · peoples and nationalities (other than prehistoric or 'historical')](https://test.iconclass.org/32B3){:target="_read"}__.
+
+With the help of a few examples we shall illustrate the editorial revisions and evaluate the role of Iconclass in the historiographic process and the survival of colonial and racist ideas.
+
+The first of these is a drawing by Bernard Naudin, published on March 11th 1905, in the journal [L'Assiette au beurre](https://gallica.bnf.fr/ark:/12148/bpt6k1048124h/f5.item). The drawing is a political caricature dealing with a shocking event that took place on the 14th of July, 1903. During the celebration of _Bastille day_ in Brazzaville, a young Congolese prisoner called Pakpa, was brutally executed by the French soldier Fernand Gaud with of a stick of dynamite.
+
+          {{% aimg 14juillet %}}
+
+Several French journals published a report about the atrocity and the trial, in 1905, of Gaud and his commanding officer Georges Toqué (Toquet). They injected the story with gory details that were partly made up to attract more readers, as was not unusual in newspapers of the _Belle Époque_.
+The execution, the trial, and the media coverage were researched by Edward Berenson for his article about colonialism in early 20th century France: _"The Politics of Atrocity: the Scandal in the French Congo (1905)"_, published in [Historia y Política, 39(2018)109-138](https://doi.org/10.18042/hp.39.05){:target="_read"}.
+
+As an example of brutality and racism, the murder itself is of course of another order than a depiction or description of the event can ever be; and it would be easy to dismiss the _choice of words_ to describe the drawing of Naudin, as not very relevant compared to the monstrosity of the act. The original caption -  _"Gaud et Toqué, pour se distraire, ont fait sauter un nègre avec une cartouche de dynamite"_ - was no doubt intended sarcastically, given the anarchistic and anticolonial leaning of _L'Assiette au Beurre_. But even among the readers of L'Assiette - in 1905 - the phrase _fait sauter un nègre_ ("_make a negro jump_") will probably not have raised eyebrows because the word __nègre__ was used in it.
+Neither did the term __African negroes__ in the 1970's when the first volumes of Iconclass were published, a situation that did not really change when Iconclass was transferred to the computer and put online:
+          
+          {{% aimg 32b321old %}}
+
+The revision that is incorporated in the new version of the browser, has been long overdue. In section __32B3__ skin colour was dropped from the criteria for subdividing peoples and nationalities. Subdividing now rests more consistently on location and migration.
+
+          {{% aimg 32B321new %}}
+
+However, we should point out that the revision of the _words_ used in the definitions, did not make the concepts more "correct". It may sound paradoxical but the "_correctness_" of a description like "_(indigenous) peoples of Sub-Saharan Africa_" is simply not the issue. The issue at stake is whether it improves the chances of discovery if historical sources are brought together under this class number. Perhaps it is easier to grasp this with the help of one of the other concepts we could use to describe Naudin's drawing:
+
+          32B321(CONGOLESE) · (indigenous) peoples of sub-Saharan Africa (with NAME)
+          44B04 · colonial system
+          44C312 · political caricatures and satires
+          44G321(DYNAMITE) · instruments of torture, execution or punishment (with NAME)
+          44G34 · death penalty, execution
+          44G5111 · murder
+          61B2(PAKPA) · historical person (with NAME)
+          61B2(TOQUÉ, George) ·  historical person (with NAME)
+          61B2(GAUD, Fernand) · historical person (with NAME)
+          61I(AFFAIRE DE FORT CRAMPEL) · names of historical events and situations (with NAME)
+
+One of these concepts is __44G34 · death penalty, execution__, of which these are the broader terms:
+
+          {{% aimg 44g34 %}}
+
+Tagging the caricature by Naudin with this term does __not__ imply that anyone using it, will considere this brutal murder as a legitimate punishment under the law. It merely means that this drawing is now discoverable as an historical source, in the context of the French colonial system of jurisprudence of the early 20th century.
+
+Gerechtigkeitsbilder
+Burning at the stake
 
 
 
-### Advanced searches
 
-Only show items from notation 5, the bible:
-
-`5`
-
-If you want to _exclude_ something, this could be handy:
-
-`((?<!11D).)*$` and this will filter out all notations that start with "11D"
 
