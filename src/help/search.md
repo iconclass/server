@@ -382,7 +382,7 @@ The revision that is incorporated in this new version of the browser, has theref
           {{% aimg 32B321new %}}
 
 However, it should be pointed out that the revision of the _words_ used in the definitions, however necessary, did not make the concepts and their context more "correct".
-It may sound paradoxical but the "_correctness_" of a description like "_(indigenous) peoples of Sub-Saharan Africa_" is simply not the issue. The issue at stake is whether bringing historical sources together under this concept improves the chances of those sources being discovered and using in historical discourse.
+It may sound paradoxical but the "_correctness_" of a description like "_(indigenous) peoples of Sub-Saharan Africa_" is simply not the issue. The issue at stake is whether bringing historical sources together under this concept improves the chances of those sources being discovered and used in historical discourse.
 Perhaps it is easier to grasp this with the help of one of the other concepts we could use to describe Naudin's drawing:
 
           32B321(CONGOLESE) · (indigenous) peoples of sub-Saharan Africa (with NAME)
