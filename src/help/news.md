@@ -1,5 +1,11 @@
 # News
 
+### January 25, 2022
+
+A few weeks ago a "Help/How to use" file was started; also addressing more general issues of iconography. It is not yet linked, but it is [accessible as it progresses](https://test.iconclass.org/help/search)
+[Suggestions and comments are very welcome](https://forms.gle/twPq7swQZXmSX46G8)
+
+
 ### December 21, 2021
 
 For the previous six days, since adding the keywords to the search index, some results for certain search queries were not correct. Sorry about that, was due to human error. It has been fixed now, and as a bonus, we are also adding search for more languages. The index now includes English, German, French and Italian.
