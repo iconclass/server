@@ -3,7 +3,7 @@
 
 <table>
 <tr><td>{{% aimg aboutpage_dialcover %}}</td><td valign="top">H. van de Waal, Decimal Index of the Art of the Low Countries D.I.A.L.  
-Abridged edition of the Iconclass system, 1968, The Hague (second edition 1971) [full text](https://nu.nl/)</td></tr>
+Abridged edition of the Iconclass system, 1968, The Hague (second edition 1971) {{% pdf 1968_DIAL %}}</td></tr>
 <tr><td valign="top">{{% aimg aboutpage_icvol1 %}}<br/>1973 ...<br/>to<br/>... 1985<br/>{{% aimg aboutpage_icindex %}}</td><td valign="top"><a name="iconoriginal"/>Official original edition of the complete system, including the bibliography and alphabetic index<br/><br/>
 1973: Bibliography 2-3: L.D. Couprie, R.H. Fuchs, E. Tholen<br/>
 1974: System 2-3 - L.D. Couprie, R.H. Fuchs, E. Tholen<br/>
