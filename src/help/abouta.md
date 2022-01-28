@@ -201,6 +201,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 - Cetinic, E. Towards Generating and Evaluating Iconographic Image Captions of Artworks. J. Imaging 2021, 7, 123. https://doi.org/10.3390/jimaging7080123 {{% pdf 2021_jimaging-07-00123-v2 %}}
 - Banar, N., Daelemans, W. and Kestemont, M., Multi-modal Label Retrieval for the Visual Arts: The Case of Iconclass. DOI: 10.5220/0010390606220629. In: Proceedings of the 13th International Conference on Agents and Artificial Intelligence (ICAART 2021) - Volume 1, pages 622-629, ISBN: 978-989-758-484-8
 - [&para;](#32Brevision){: name="32Brevision" }  J.P.J. Brandhorst (with contributions by Angela Kailus a.o.), Revising Iconclass section 32B human races, peoples; nationalities. {{% pdf 2021_updating32B %}} of the explanation and a listing of the revised concept definitions.
+- [&para;](#extendedhand){: name="extendedhand" }  J.P.J. Brandhorst, The extended hand. The description and retrieval of an iconographic detail. Unpublished manuscript - comparing how the Index of Medieval Art and Iconclass deal with a gesture. {{% pdf 2021_extendedhand %}}
 
 2022
 
