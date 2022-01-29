@@ -353,17 +353,17 @@ A classification must be able to cope with the changes in the field for which it
 Those changes may also be much more substantial and widespread. Over the past decades new ideas have started to affect the historiography of slavery and the lives of black people, of diversity and the role of women and ethnic minorities, of homosexuality and gender issues, of migration and the role of non-western cultures, to name but a few of the more obvious issues.
 At times when even such an enumeration of issues itself can be seen as arbitrary or prejudicial, a classification system designed for the __history of culture and imagery__ faces a complex challenge to remain relevant. Against this background it is gratifying for the editor of such a system to see that it is under - justified! - attack for outdated and occasionally offensive concept definitions, because that suggests that the system is still considered relevant. We are therefore very grateful that [Alina Kühnl](https://thearticle.hypotheses.org/9773){:target="_read"} and [Moritz Lampe](https://edoc.hu-berlin.de/bitstream/handle/18452/24410/BHR481_Lampe.pdf?sequence=1){:target="_read"} recently highlighted some sore spots in the Iconclass schedules. The more comprehensive of those critical reviews - Lampe's - not only targets the words and the organization of several branches of the classification, but also points at the gap between the contents of Iconclass and the changing composition of heritage collections.
 
-In the past fifty years Iconclass has been used to describe a very heterogeneous corpus of visual and textual(!) images. They range from early medieval manuscript illumination to satirical journals of the 19th and early 20th century, and from the Adages of Erasmus to posters warning against HIV infections.
+In the past fifty years Iconclass has been used to describe a very heterogeneous corpus of visual and textual images. They range from early medieval manuscript illumination to satirical journals of the 19th and early 20th century, and from the Adages of Erasmus to posters warning against HIV infections.
 
 {{% aimg corpus001 %}}
 
-The subject matter covered by this corpus varies widely, but the _point of entry_ of Iconclass in the historiographic and cataloguing process, _does not_. It always plays its part at the very end of that process. It is the final link in a chain that starts with the _events, the ideas, and the mentality_ of the past. The events, ideas and mentality have disappeared, obviously, and Iconclass is only put in position if traces of them have survived in material form as _visual and textual records_, e.g. as pictures and documents in the collections of our archives, libraries and museums.
+The subject matter covered by this corpus varies widely, but the _point of entry_ of Iconclass in the historiographic and cataloguing process, _does not_. It always plays its part at the very end of that process. It is the final link in a chain that starts with the _events, the ideas, and the mentality_ of the past. Those events, ideas and mentality themselves have disappeared, obviously. Iconclass is only called into action if traces of them have survived in material form as _visual and textual records_, e.g. as pictures and documents in the collections of our archives, libraries and museums.
 To make the subject matter of those records available for research, i.e. to _bring our historical opponent in the field_, we classify their content. We determine which concepts best describe the historical events they depict, the ideas or convictions they convey, and the beliefs and the mentality of which they are a testimony. 
-The events that were recorded may have been acts of violence or piety, of kindness or cruelty. Ideas that for centuries were perfectly acceptable, may later have been regarded as scandalous - or the other way around. Mentalities or beliefs that were the norm in one part of the world, may have been objectionable in another. Hence classifying the content of the sources recording them, is always a balancing act.
+The events that were recorded may have been acts of violence or piety, of kindness or cruelty. Ideas that for centuries were perfectly acceptable, may later have been regarded as scandalous - or the other way around. Mentalities or beliefs that were the norm in one part of the world, may have been considered objectionable in another. Hence classifying the content of the sources recording them, is always a balancing act.
 Anachronisms and some form of bias are unavoidable. Classifications are not _"neutral"_ or _"objective"_. However, if a classification is a publicly available tool that everyone can consult, its failings are at least out in the open. And the heritage collections that use it, all share _the same shortcomings_. So, repairing them in the shared classification, also means repairing them in the applications using it - at least in theory...
 The Iconclass section that most urgently needed to be repaired was identified several years ago, but it took a while to actually edit and implement the revision of __[32B3 · peoples and nationalities (other than prehistoric or 'historical')](https://test.iconclass.org/32B3){:target="_read"}__.
 
-With the help of a few examples we shall illustrate the editorial revisions and evaluate the role of Iconclass in the historiographic process and the survival of colonial and racist ideas.
+With the help of a few examples we shall discuss the editorial revisions and evaluate the role of Iconclass in the historiographic process and the survival of colonial and racist ideas.
 
 The first of these is a drawing by Bernard Naudin, published on March 11th 1905, in the journal [L'Assiette au beurre](https://gallica.bnf.fr/ark:/12148/bpt6k1048124h/f5.item). The drawing is a political caricature about a shocking event that took place on the 14th of July, 1903. During the celebration of _Bastille day_ in Brazzaville, a young Congolese prisoner called Pakpa, was brutally executed by the French soldier Fernand Gaud with a stick of dynamite.
 
@@ -372,8 +372,9 @@ The first of these is a drawing by Bernard Naudin, published on March 11th 1905,
 Several French journals published a report about the atrocity and the trial, in 1905, of Gaud and his commanding officer Georges Toqué (Toquet). They injected the story with gory details that were partly made up to attract more readers, as was not unusual in newspapers of the _Belle Époque_.
 The execution, the trial, and the media coverage were researched by Edward Berenson for his article about colonialism in early 20th century France: _"The Politics of Atrocity: the Scandal in the French Congo (1905)"_, published in [Historia y Política, 39(2018)109-138](https://doi.org/10.18042/hp.39.05){:target="_read"}.
 
-As an example of brutality and racism, the murder itself is of course of a different order than a depiction or description of the event can ever be; and it would be easy to dismiss the _choice of words_ to describe the drawing of Naudin, as not very relevant compared to the monstrosity of the act. The original caption -  _"Gaud et Toqué, pour se distraire, ont fait sauter un nègre avec une cartouche de dynamite"_ - was no doubt intended sarcastically, given the anarchistic and anticolonial leaning of _L'Assiette au Beurre_. But even among the readers of L'Assiette - in 1905 - the phrase _ont fait sauter un nègre_ ("_have made a negro jump_") will probably not have raised eyebrows because of its choice of words and the use of "__nègre__".
-Neither did the term "__African negroes__" in the 1970's when the first volumes of Iconclass were published. The term still was not noticed when Iconclass was transformed to a computerized system in the 1990's, nor did it get any attention when Iconclass was put online in 1999.
+As an example of brutality and racism, the murder itself is of course of a different order than any depiction or description of the event can ever be; and it would be easy to dismiss the _choice of words_ to describe the drawing of Naudin, as an insignificant detail compared to the monstrosity of the act.
+The original caption -  _"Gaud et Toqué, pour se distraire, ont fait sauter un nègre avec une cartouche de dynamite"_ - was no doubt intended sarcastically, given the anarchistic and anticolonial leaning of _L'Assiette au Beurre_. But even among the readers of L'Assiette - in 1905 - the phrase _ont fait sauter un nègre_ ("_have made a negro jump_") will probably not have raised eyebrows. It is unlikely anyone will have been offended at the time by the use of the word "__nègre__".
+Neither did the term "__African negroes__" offend users when the first volumes of Iconclass were published in the early 1970's. The term still was not noticed when Iconclass was transformed to a computerized system in the 1990's, nor did it get any attention when Iconclass was put online in 1999.
           
           {{% aimg 32b321old %}}
 
@@ -400,11 +401,58 @@ One of these concepts is __44G34 · death penalty, execution__, of which these a
 
           {{% aimg 44g34 %}}
 
-When we tag the caricature by Naudin with this term we do __not__ imply that this brutal murder can be regarded as a legitimate punishment under the law. It merely means that this drawing will be one of the historical sources that can be __discovered__ by anyone researching the __death penalty__, for example under the French colonial system in Congo. Until it is __tagged with metadata__ it will simply be lying on the shelf of a library or be a record in a database - unnoticed.
+When we tag the caricature by Naudin with this term we do __not__ imply that this brutal murder can be regarded as a legitimate punishment under criminal law. It merely means that this drawing will be one of the historical sources that can be __discovered__ by anyone researching the __death penalty__, for example under the French colonial system in Congo. But only after it has been __tagged with the appropriate metadata__. Otherwise it will simply be lying on the shelf of a library or be a record hidden away in a database.
 
 {{% aimg deathpenalty %}}
 
-Once it is tagged with the concept _44G34 death penalty, execution_, it can take its place next to the stoning of the man who [gathered wood on a sabbath](https://test.iconclass.org/71E3162){:target="_read"} (Numbers 15:32-36), the story of Joachim Carpitzo who had his [wife executed in 1623 for her alleged adultery](http://hdl.handle.net/10934/RM0001.COLLECT.144921){:target="_read"}, and the case of [the Scottsboro boys in 1933](https://www.archives.gov/files/publications/prologue/2014/spring/scottsboro.pdf){:target="_read"} - to name but three random examples.
+Once it is tagged with the concept _44G34 death penalty, execution_, it can take its place next to the stoning of the man who [gathered wood on a sabbath](https://test.iconclass.org/71E3162){:target="_read"} (Numbers 15:32-36), the story of Joachim Carpitzo who had his [wife executed in 1623 for her alleged adultery](http://hdl.handle.net/10934/RM0001.COLLECT.144921){:target="_read"}, and the case of [the Scottsboro boys in 1933](https://www.archives.gov/files/publications/prologue/2014/spring/scottsboro.pdf){:target="_read"}. Three random examples demonstrating that ideas about law, punishment and the death penalty are always context-sensitive and change over time.
+
+#### Adding concepts - including offensive ones
+
+Updating the Iconclass schedules can lead to the replacement of offensive expressions that were once carelessly used. However, _improving_ the system does not always lead to the _removal_ of offensive concepts. On the contrary. The description of discriminatory imagery can necessitate the expansion of Iconclass with offensive concepts that were hitherto missing. Adding such concepts can be morally difficult and technically very easy at the same time. A particularly topical instance of this paradoxical situation is provided by a disturbing example of anti-semitic imagery.
+
+{{% aimg 12A9 %}}
+
+Iconclass already has a section for the imagery of anti-semitism. It contains, for example, a few concepts about the dress regulations to which Jewish people were usually submitted. It is there that we find the medieval pointed [Jew-hat](https://test.iconclass.org/12A9322){:target="_read"}, shown on the left, in an early 13th century miniature from an English psalter. 
+
+The woodcut from a _Blockbuch_ and the relief found on the church of Wittenberg are two examples of virulently anti-semitic imagery, known as a _Judensau_: a sow suckling some Jews, with a rabbi "looking at the Talmud under her tail" (in the words of Martin Luther).
+Given the fact that this imagery is still in place in a substantial number of German churches and that many prints and pamphlets of this theme have survived - and that the public display of the sculptures is a fiercely debated topic - it would be useful to add the concept to Iconclass. Tagging the images with a standardized term would facilitate their discovery when researchers need them. It would be very simple - technically - to add it as a new narrower term of this concept:
+
+          {{% aimg 12A91 %}}
+
+The concept could be added as __12A914 · Judensau, a sow suckling Jews ~ anti-semitic insinuations__.
+
+How would this addition then be effectuated?
+
+First of all, you should know that all changes to the content of the Iconclass system start at [GitHub](https://github.com/iconclass){:target="_read"}, the open access repository where the Iconclass datafiles are stored and can be downloaded from.
+
+          {{% aimg github %}}
+
+With a few clicks users could download a copy of the datafile named __txt_en_0_1.txt__ to their own computer, and then edit the file, adding the line __12A914 · Judensau, a sow suckling Jews ~ anti-semitic insinuations__, as shown in the example here:
+          
+          {{% aimg 12A914 %}}
+
+To make sure the concept will eventually be recognized by the browser software, the notation must also be registered in the central "_notation registry file_", called - unsurprisingly - __notations.txt__. This you can also download to your own computer.
+In the central notation registry, the new notation __12A914__ needs to be entered twice. First it must be registered as a "_child_"  concept of __12A91__, as shown below.
+__N__ stands for __Notation__, __C__ stands for __Child__. 
+
+          {{% aimg notation12A914 %}}
+
+A basic record needs to be added for the notation too, so it takes it place after __12A913__, the notation that stands for [__desecration of relics ~ anti-semitic insinuations__](https://test.iconclass.org/12A913){:target="_read"}.
+          
+          {{% aimg insert_12A914 %}}          
+
+__K__ stands for __Key__, which here means that the Key [__(+0) variant__](https://test.iconclass.org/12(%2B0)){:target="_read"} is activated for the new notation too.
+
+Having edited your own copy of the Iconclass file on your own computer, the file with the new concept is ready to be uploaded to the central repository on the GitHub platform, where your suggestion can be evaluated and discussed by others before being imported into the browser.
+
+Is editing the Iconclass datafiles really _that_ simple?
+
+Technically? Yes.
+Editorially, it is more complicated, as it needs to be established that the concept is actually an enrichment of the existing vocabulary and not, for instance, a duplication of a concept already at some other location in the schedules.
+Also, with this simple procedure _only_ the English version of the system is expanded. The concept still needs to be translated for the other versions of Iconclass.
+
+
 
 
 
