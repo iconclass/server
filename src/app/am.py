@@ -269,7 +269,10 @@ class CookieTokenAuthBackend(AuthenticationBackend):
     async def authenticate(self, request):
         access_token = request.cookies.get("access_token")
         if access_token:
-            user = get_user_from_token(access_token)
+            try:
+                user = get_user_from_token(access_token)
+            except HTTPException:
+                return
             if user:
                 su = SimpleUser(user.username)
                 return AuthCredentials(["authenticated"]), su

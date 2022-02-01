@@ -1,5 +1,9 @@
 ### Status updates on development
 
+**2022-02-01**
+
+Maintenance on handling malformed or expired auth cookies
+
 **2021-12-23**
 
 Fix thorny bug with navigating to certain notations where spinner just kept on spinning with no results.
