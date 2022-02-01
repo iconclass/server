@@ -8,6 +8,12 @@ What does a _smell_ look like? How is _smelling_ visualized? How are _olfactory 
 Those are only a few of the questions that a non-specialist in the field of _olfactory_ studies like me could ask. They are raised here to give us some pointers when we try to locate concepts in Iconclass that may be useful to record _olfactory_ information. 
 Looking for those concepts also gives us a chance to test the search algoritms of the new Iconclass browser, and assess the retrieval options provided by the text of the _concept definitions_ and the _keywords_ that help us find them.
 
+##### 31A3 the (five) senses
+
+{{% aimg 31A3 %}}
+
+
+Seen from the perspective of communication _smell_ is bi-directional. Put simply, phenomena like people, animals, objects, and processes can _produce_ a scent and actors like people, animals (and machines) can _smell_ them.
 The first, and probably most obvious search is with the word __smell__
 
 
