@@ -32,7 +32,7 @@ def get_parts(a):
 NODE_MAP = {}
 
 
-def add_desired_to_tree(notation):
+async def add_desired_to_tree(notation):
     results_element = document.getElementById("results")
     results_element.innerHTML = '<div style="margin-top: 20px" class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>'
 
@@ -42,14 +42,14 @@ def add_desired_to_tree(notation):
     ]  # We are going to assume all the root nodes are in there already
     for part in parts:
         if part not in NODE_MAP:
-            build(last_part, last_part.kids_element, parts)
+            await build(last_part, last_part.kids_element, parts)
             break
         else:
             last_part = NODE_MAP[part]
             last_part.kids_element.style.display = "block"
             last_part.element.classList.add("open_notation")
 
-    setTimeout(lambda x: focus_node(notation), 500)
+    focus_node(notation)
 
 
 def get_searchoption_opposite(value):
@@ -190,7 +190,7 @@ async def build(node, an_element, path=[]):
         kind.element = document.getElementById(k_n)
         kind.kids_element = document.getElementById("kids" + k_n)
         if k_n in path:
-            build(kind, kind.kids_element, path)
+            await build(kind, kind.kids_element, path)
 
 
 iconclass_tree = {"n": "ICONCLASS", "c": []}
