@@ -104,6 +104,7 @@ Summarizing the editorial options we have discussed above:
 - new synonyms for existing keywords (e.g. _odour_ for _scent_)
 - new cross references between concepts (e.g. from __31A514__ to __41C76__)
 - new concepts using the with NAME option (e.g. __31A5142(LA BOHÈME) · perfumes (with NAME)__)
+- editing the concept definition (combined with adding a keyword) (mentioning Esau's _smell_ in __71C274__)
 
 What we have not discussed so far is the expansion of the system with completely new concepts. Obviously that option is always on the cards, but the threshold to add a new concept is somewhat higher, as we have to make sure the theme cannot be described with the help of a set of existing terms. Let us look at one of the proposals we have received so far to clarify this.
 In Torquato Tasso's Gerusalemme Liberata, the story of the __Abduction of Rinaldo by Armida__ is told: The sorceress uses a magic chain of woodbines, lilies and roses ("_Di ligustri, di gigli e de le rose_") to put Rinaldo under her spell. The magic smells that should be made findable are those of lilies and roses, with which we would then retrieve this picture by [Francesco Zugno](http://hdl.handle.net/10934/RM0001.COLLECT.6615){:target="_read"}.
