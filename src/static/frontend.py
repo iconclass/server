@@ -68,7 +68,12 @@ async def build(anid, an_element, path=[]):
             # We have already added this child
             kind_node.kids_element.style.display = "block"
         else:
-            if len(kind_node.get("c", [])) > 0:
+            # Exclude the keys as children to determine icon
+            kids_without_keys = [
+                kn for kn in kind_node.get("c", []) if kn["n"].find("(+") < 1
+            ]
+
+            if len(kids_without_keys) > 0:
                 kind_icon = caret_right_fill
             else:
                 kind_icon = dot
@@ -109,7 +114,11 @@ async def focus_node(desired):
     kids_element = document.getElementById("kids" + desired)
     icon_element = document.getElementById("icon" + desired)
     text_element = document.getElementById("text" + desired)
-    if len(node["c"]) > 0:
+
+    # Exclude the keys as children to determine icon
+    kids_without_keys = [kn for kn in node.get("c", []) if kn["n"].find("(+") < 1]
+
+    if len(kids_without_keys) > 0:
         kind_icon = None
     else:
         kind_icon = dot
@@ -295,4 +304,8 @@ results_element = document.getElementById("results")
 results_element.addEventListener("click", focussed_results_clicker)
 thetree_element = document.getElementById("thetree")
 thetree_element.addEventListener("click", tree_clicker)
-build("ICONCLASS", thetree_element, [])
+
+if document.notation and document.notation != "_":
+    add_desired_to_tree(document.notation)
+else:
+    build("ICONCLASS", thetree_element)
