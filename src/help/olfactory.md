@@ -88,7 +88,7 @@ __31A2531(+933) · hand(s) bent towards the head (+ holding something)__ is a co
 When Isaac blesses his deceitful son Jacob (Genesis 27:27-29), this is how he starts (in the King James translation): "_the smell of my son is as the smell of a field which the Lord hath blessed_". In Iconclass the scene is described as follows __71C274 · Isaac lying in bed blesses Jacob who, disguised in Esau's clothes, brings food to his father; Jacob's hands and neck are covered with goatskins__
 In other words, in Iconclass the visual aspect is made explicit - _clothes and goatskins_ - but the aspect of smell, crucial though it may have been - is kept implicit.
 The story of Jacob and Esau is only one example of a narrative with an implied olfactory aspect. To make it explicit and retrievable we have two options. The concept definition could be edited in such a way that the element of smell is added to the text: "_Isaac lying in bed blesses Jacob who, disguised in Esau's clothes_ __to imitate the touch and scent of his brother__, _brings food to his father_...".
-__Scent__ could also be added as a keyword to retrieve the concept in searches.
+__Scent__ could also be added as a keyword to retrieve the concept.
 
 {{% aimg narrascent %}}
 
@@ -96,5 +96,36 @@ Sometimes olfactory aspects are mentioned quite casually in a narrative, but the
 
           {{% aimg 71D1252 %}}
 
+#### Adding new concepts
 
+Summarizing the editorial options we have discussed above: 
 
+- new keywords for existing concepts (e.g. _stench_ for __25I171 · sewers__)
+- new synonyms for existing keywords (e.g. _odour_ for _scent_)
+- new cross references between concepts (e.g. from __31A514__ to __41C76__)
+- new concepts using the with NAME option (e.g. __31A5142(LA BOHÈME) · perfumes (with NAME)__)
+
+What we have not discussed so far is the expansion of the system with completely new concepts. Obviously that option is always on the cards, but the threshold to add a new concept is somewhat higher, as we have to make sure the theme cannot be described with the help of a set of existing terms. Let us look at one of the proposals we have received so far to clarify this.
+In Torquato Tasso's Gerusalemme Liberata, the story of the __Abduction of Rinaldo by Armida__ is told: The sorceress uses a magic chain of woodbines, lilies and roses ("_Di ligustri, di gigli e de le rose_") to put Rinaldo under her spell. The magic smells that should be made findable are those of lilies and roses, with which we would then retrieve this picture by [Francesco Zugno](http://hdl.handle.net/10934/RM0001.COLLECT.6615){:target="_read"}.
+
+          {{% aimg combinotations %}}
+
+Iconclass does have concepts for the names of the protagonists of the scene, and a reference to the book and stanza that are the source of the picture can be created using the default rules of the _with NAME_ option:
+
+- 82A(RINALDO) 
+- 82AA(ARMIDA) 
+- 83(TASSO, Gerusalemme Liberata, XIV:68)
+
+but it does not have a comprehensive description of this story as it is told by Tasso. As a matter of fact, Iconclass does not have comprehensive concepts for narrative content except for the bible and a few texts from classical history, such as the Iliad and Odyssee and the Metamorphoses. A list of [scenes from the plays of William Shakespeare](https://github.com/iconclass/data/blob/main/txt/en/txt_en_shakespeare.txt){:target="_read"} - a candidate to be added to the core Iconclass system - illustrates the amount of work that would be needed for each text.
+There are also obvious drawbacks to the approach of describing the scene with a single, comprehensive concept. Much richer retrieval options are generated when a series of tags is combined to form a description, e.g.:
+
+          13D4 · enchantment ~ potion or herbs
+          25G41(LILY) · flowers: lily
+          25G41(ROSE) · flowers: rose
+          25G4111 · garland, wreath
+          33C234 · (lovers) caressing each other
+          82A(RINALDO)
+          82AA(ARMIDA)
+          83(TASSO, Gerusalemme Liberata, XIV:68)
+
+Needless to say, the richer option would require more work ...
