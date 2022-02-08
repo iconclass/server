@@ -5,13 +5,13 @@
 <script src="/static/openseadragon-2.4.2/openseadragon.min.js"></script>
 
 <style type="text/css">
-.active_notation  {border-left: 2px solid red}
-.open_notation::before {
-    display: inline-block; content: ""; vertical-align: .125em;
-    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23000' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-    background-repeat: no-repeat; background-size: 0.5rem 0.5rem;
-    width: 0.6rem; height: 0.6rem
+.focussed  {
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    background-color: #eee;
+    padding: 4px;
 }
+
 .navver {cursor: pointer}
 .kw_search {text-decoration: none; cursor: pointer; color: black; font-size: 85%}
 a:hover {text-decoration: underline; color: blue}
