@@ -1,5 +1,13 @@
 ### Status updates on development
 
+**2022-02-08**
+
+Debug tree building, and small improvement to image thumbnail display.
+
+**2022-02-07**
+
+Improved the tree building logic when browsing, and better tree icons.
+
 **2022-02-01**
 
 Maintenance on handling malformed or expired auth cookies
