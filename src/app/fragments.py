@@ -1,10 +1,11 @@
 import os, sqlite3, random
-from fastapi import Request, Query
+from fastapi import Request, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from typing import Optional, List, Dict, Text
 
 import iconclass
+from markupsafe import Markup
 from .main import app
 from .util import fill_obj, valid_lang, do_search, get_wikidata
 
@@ -16,7 +17,7 @@ def get_images(notation: str, size: int = 169) -> List:
     index_db = sqlite3.connect(IC_PATH)
     cur = index_db.cursor()
     cur.execute(
-        "SELECT image, webpage, desc FROM images i INNER JOIN images_ic ii ON ii.id = i.id WHERE ii.notation = ?",
+        "SELECT image, webpage, desc, i.id  FROM images i INNER JOIN images_ic ii ON ii.id = i.id WHERE ii.notation = ?",
         (notation,),
     )
     results = cur.fetchall()
@@ -24,6 +25,34 @@ def get_images(notation: str, size: int = 169) -> List:
         return len(results), random.sample(results, size)
     else:
         return len(results), results
+
+
+def get_object(anid: str):
+    IC_PATH = os.environ.get("IC_PATH", "iconclass.sqlite")
+    index_db = sqlite3.connect(IC_PATH)
+    cur = index_db.cursor()
+    cur.execute(
+        "SELECT image, webpage, desc FROM images i WHERE i.id = ?",
+        (anid,),
+    )
+    results = cur.fetchall()
+    return results
+
+
+@app.get(
+    "/fragments/object/{anid}",
+    response_class=HTMLResponse,
+    include_in_schema=False,
+)
+async def object(request: Request, anid: str):
+    # get the object
+    results = get_object(anid)
+    if len(results) > 0:
+        image, webpage, desc = results[0]
+    else:
+        raise HTTPException(status_code=404, detail=f"Item {anid} not found")
+    ctx = {"request": request, "image": image, "url": webpage, "desc": Markup(desc)}
+    return templates.TemplateResponse("object_focus.html", ctx)
 
 
 @app.get(
@@ -70,8 +99,8 @@ async def focus(request: Request, lang: str, notation: str):
     obj = iconclass.get(notation)
     SAMPLE_SIZE = 42
     images_count, images_sample = get_images(notation, SAMPLE_SIZE)
-    r = await get_wikidata(notation)
-    wikidatas = r["results"]["bindings"]
+    # r = await get_wikidata(notation)
+    # wikidatas = r["results"]["bindings"]
 
     ctx = {
         "request": request,
@@ -81,7 +110,7 @@ async def focus(request: Request, lang: str, notation: str):
         "images": images_sample,
         "images_count": images_count,
         "sample_size": SAMPLE_SIZE,
-        "wikidatas": wikidatas,
+        "wikidatas": [],
     }
     return templates.TemplateResponse("notation_focus.html", ctx)
 
