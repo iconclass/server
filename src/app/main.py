@@ -160,11 +160,17 @@ async def lang_notation(
     q: Optional[str] = "",
 ):
     lang = valid_lang(lang)
+    if notation != "_":
+        obj = iconclass.get(notation)
+        fill_obj(obj)
+    else:
+        obj = {}
     ctx = {
         "request": request,
         "lang": lang,
         "language": LANGUAGES.get(lang, "English"),
         "notation": notation,
+        "obj": obj,
         "q": q,
     }
     return templates.TemplateResponse("browse.html", ctx)
@@ -176,12 +182,20 @@ async def showcase(request: Request):
 
 
 @app.get("/{notation}", response_class=HTMLResponse)
-async def lang_notation(request: Request, notation: str):
-    lang = "en"
-    ctx = {
-        "request": request,
-        "lang": lang,
-        "language": LANGUAGES.get(lang, "English"),
-        "notation": notation,
-    }
-    return templates.TemplateResponse("browse.html", ctx)
+async def notation(request: Request, notation: str):
+    if notation[0] in "0123456789":
+        return RedirectResponse(f"/en/{notation}")
+
+    # lang = "en"
+    # ctx = {
+    #     "request": request,
+    #     "lang": lang,
+    #     "language": LANGUAGES.get(lang, "English"),
+    #     "notation": notation,
+    # }
+    # return templates.TemplateResponse("browse.html", ctx)
+
+
+# if __name__ == "__main__":
+#     from uvicorn import run as uvicorn_run
+#     uvicorn_run(app, port=42000)
