@@ -1,66 +1,178 @@
 from htmltree import *
-import re
-
-SPLITTER = re.compile(r"(\(.+?\))")
-
-
-def get_parts(a):
-    "Split an ICONCLASS notation up into a list of its parts"
-    p = []
-    lastp = ""
-    for p1 in SPLITTER.split(a):
-        if p1.startswith("(+"):
-            tmplastp = lastp + "(+"
-            for x in p1[2:]:
-                if x and x != ")":
-                    p.append(tmplastp + x + ")")
-                    tmplastp += x
-            lastp = p[len(p) - 1]
-        elif p1.startswith("(") and p1.endswith(")"):
-            if p1 != "(...)":
-                p.append(lastp + "(...)")
-            p.append(lastp + p1)
-            lastp = p[len(p) - 1]
-        else:
-            for x in range(len(p1)):
-                p.append(lastp + p1[x])
-                if len(p) > 0:
-                    lastp = p[len(p) - 1]
-    return p
-
 
 NODE_MAP = {}
+caret_right_fill = """<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+</svg>"""
+caret_down_fill = """<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg>"""
+dot = """<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+</svg>"""
+
+
+async def get_obj(anid):
+    if anid in NODE_MAP:
+        obj = dict(NODE_MAP[anid])
+        # if obj.isFat == True:
+        return obj
+    result = await fetch("/" + anid + ".fat")  # TODO handle 404
+    response = await result.json()
+    obj = dict(response)
+    # obj.isFat = True
+    NODE_MAP[anid] = obj
+    # for c in obj.get("c", []):
+    #     c.isFat = False
+    #     NODE_MAP[c["n"]] = c
+    return obj
+
+
+def find_attr_parents(element, attr):
+    val = element.getAttribute(attr)
+    if val and len(val) > 0:
+        return val
+    parent = element.parentElement
+    if parent:
+        return find_attr_parents(parent, attr)
 
 
 async def add_desired_to_tree(notation):
     results_element = document.getElementById("results")
     results_element.innerHTML = '<div style="margin-top: 20px" class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>'
 
-    parts = get_parts(notation)
-    last_part = NODE_MAP[
-        parts[0]
-    ]  # We are going to assume all the root nodes are in there already
-    for part in parts:
-        if part not in NODE_MAP:
-            await build(last_part, last_part.kids_element, parts)
-            break
+    node = await get_obj(notation)
+    pad = [x["n"] for x in node.get("p") if x["n"] != notation]
+    await build("ICONCLASS", thetree_element, pad)
+    await focus_node(notation)
+
+
+async def build(anid, an_element, path=[]):
+    node = await get_obj(anid)
+
+    for kind in node.get("c", []):
+        kind_node = await get_obj(kind["n"])
+        k_n = kind["n"]
+
+        if k_n in path:
+            kids_display = "block"
         else:
-            last_part = NODE_MAP[part]
-            last_part.kids_element.style.display = "block"
-            last_part.element.classList.add("open_notation")
+            kids_display = "none"
 
-    focus_node(notation)
+        node_style = {"padding-left": "1ch", "cursor": "pointer"}
+        if k_n.find("(+") > 0:
+            # This is a key
+            node_style["display"] = "none"
+
+        if kind_node.kids_element:
+            # We have already added this child
+            kind_node.kids_element.style.display = "block"
+        else:
+            # Exclude the keys as children to determine icon
+            kids_without_keys = [
+                kn for kn in kind_node.get("c", []) if kn["n"].find("(+") < 1
+            ]
+
+            if len(kids_without_keys) > 0:
+                kind_icon = caret_right_fill
+            else:
+                kind_icon = dot
+            display_txt = (
+                k_n + " &middot; " + dict(kind["txt"]).get(document.IC_LANG, "")
+            )
+
+            an_element.insertAdjacentHTML(
+                "beforeend",
+                Div(
+                    Span(
+                        kind_icon,
+                        id="icon" + k_n,
+                        anid=k_n,
+                        style={"margin-right": "0.6ch"},
+                    ),
+                    Span(display_txt, anid=k_n, id="text" + k_n, _class="notationtext"),
+                    Div(id="kids" + k_n, style={"display": kids_display}),
+                    id=k_n,
+                    style=node_style,
+                    anid=k_n,
+                ).render(),
+            )
+            kind_node.fragment = None
+            kind_node.element = document.getElementById(k_n)
+            kind_node.kids_element = document.getElementById("kids" + k_n)
+            kind_node.text_element = document.getElementById("text" + k_n)
+        if k_n in path:
+            await build(k_n, kind_node.kids_element, path)
 
 
-def get_searchoption_opposite(value):
-    if value == "1":
-        return "0"
-    if value == "0":
-        return "1"
-    if value == "rank":
-        return "notation"
-    if value == "notation":
-        return "rank"
+async def focus_node(desired):
+    if desired not in NODE_MAP:
+        return
+    history.pushState({}, "", "/" + encodeURIComponent(desired))
+    node = NODE_MAP[desired]
+
+    kids_element = document.getElementById("kids" + desired)
+    icon_element = document.getElementById("icon" + desired)
+    text_element = document.getElementById("text" + desired)
+
+    # Some notations, like 11II321 has a "virtual" double key.
+    # In its path, ['1', '11', '11I', '11II', '11II3', '11II32', '11II321']
+    # the notation 11II does not actually exist
+    # But we still want to be able to focus and display these.
+
+    if kids_element:
+        # Exclude the keys as children to determine icon
+        kids_without_keys = [kn for kn in node.get("c", []) if kn["n"].find("(+") < 1]
+        if len(kids_without_keys) > 0:
+            kind_icon = None
+        else:
+            kind_icon = dot
+        if kids_element.style.display == "none":
+            kids_element.style.display = "block"
+            icon_element.innerHTML = kind_icon or caret_down_fill
+        else:
+            kids_element.style.display = "none"
+            icon_element.innerHTML = kind_icon or caret_right_fill
+
+    if not node.fragment:
+        furi = "/fragments/focus/{}/{}".format(
+            document.IC_LANG, encodeURIComponent(desired)
+        )
+        result = await fetch(furi)
+        response = await result.text()
+        node.fragment = response
+        if len(node["c"]) > 0 and kids_element:
+            await build(desired, kids_element)
+
+    results_element.innerHTML = node.fragment
+
+    for notationtext in document.querySelectorAll(".notationtext"):
+        notationtext.classList.remove("focussed")
+    if text_element:
+        text_element.classList.add("focussed")
+
+    try:
+        node.element.scrollIntoViewIfNeeded()  # This is a proprietary method does not work on all browsers
+    except:
+        pass
+
+
+async def show_object(anid):
+    furi = "/fragments/object/{}/".format(encodeURIComponent(anid))
+    result = await fetch(furi)
+    response = await result.text()
+    results_element.innerHTML = response
+
+
+async def tree_clicker(event):
+    desired = find_attr_parents(event.target, "anid")
+    if len(desired) > 0:
+        focus_node(desired)
+
+
+async def focussed_results_clicker(event):
+    results_clicker(event)
+    navtabNavigate_click()
 
 
 async def results_clicker(event):
@@ -111,104 +223,6 @@ async def results_clicker(event):
         add_desired_to_tree(desired)
 
 
-async def tree_clicker(event):
-    desired = event.target.getAttribute("notation")
-    if len(desired) > 0:
-        focus_node(desired)
-
-
-async def focus_node(desired):
-    if desired not in NODE_MAP:
-        return
-    history.pushState({}, "", "/" + encodeURIComponent(desired))
-    node = NODE_MAP[desired]
-    if node.fragment is None:
-        furi = "/fragments/focus/{}/{}".format(
-            document.IC_LANG, encodeURIComponent(desired)
-        )
-        result = await fetch(furi)
-        response = await result.text()
-        node.fragment = response
-        if len(node["c"]) > 0:
-            new_element = document.getElementById("kids" + desired)
-            build(node, new_element)
-
-    # set the focus fragment
-    results_element = document.getElementById("results")
-    results_element.innerHTML = node.fragment
-
-    for anode in NODE_MAP.values():
-        anode.element.classList.remove("active_notation")
-    node.element.classList.add("active_notation")
-
-    if len(node["c"]) > 0:
-        kid_element = document.getElementById("kids" + desired)
-        if kid_element.style.display == "block":
-            kid_element.style.display = "none"
-            node.element.classList.remove("open_notation")
-        else:
-            kid_element.style.display = "block"
-            node.element.classList.add("open_notation")
-
-
-async def build(node, an_element, path=[]):
-
-    # Fetch the IC object for this node
-    result = await fetch("/" + node["n"] + ".fat")
-    response = await result.json()
-    response = dict(response)
-
-    for kind in response.get("c", []):
-        k_n = kind["n"]
-        if k_n.find("(+") > 0:
-            # This is a key
-            k_display = "none"
-        else:
-            k_display = "block"
-        NODE_MAP[k_n] = kind
-        kind.fragment = None
-        if k_n in path:
-            kids_display = "block"
-        else:
-            kids_display = "none"
-
-        display_txt = k_n + " &middot; " + dict(kind["txt"]).get(document.IC_LANG, "")
-        an_element.insertAdjacentHTML(
-            "beforeend",
-            Div(
-                Span(display_txt, _class="ntext", notation=k_n),
-                Div(id="kids" + k_n, style={"display": kids_display}),
-                id=k_n,
-                style={
-                    "padding-left": "5px",
-                    "cursor": "pointer",
-                    "display": k_display,
-                },
-                notation=k_n,
-            ).render(),
-        )
-        kind.element = document.getElementById(k_n)
-        kind.kids_element = document.getElementById("kids" + k_n)
-        if k_n in path:
-            await build(kind, kind.kids_element, path)
-
-
-iconclass_tree = {"n": "ICONCLASS", "c": []}
-document.iconclass_tree = iconclass_tree
-
-thetree_element = document.getElementById("thetree")
-thetree_element.addEventListener("click", tree_clicker)
-build(iconclass_tree, thetree_element)
-
-# Check to see if the document was called with an initial notation, if so browse to it
-if document.notation and document.notation != "_":
-    setTimeout(lambda x: add_desired_to_tree(document.notation), 750)
-# See if the document was called with a q search parameter, if so do the search
-if document.q:
-    setTimeout(lambda x: search_action(), 750)
-
-document.getElementById("results").addEventListener("click", results_clicker)
-
 searchtab_element = document.getElementById("searchtab")
 searchresults_element = document.getElementById("searchresults")
 searchtab_element.addEventListener("click", results_clicker)
@@ -237,7 +251,15 @@ def navtabSearch_click(event):
 navtabSearch.addEventListener("click", navtabSearch_click)
 
 
-########## Handle searchbox
+def get_searchoption_opposite(value):
+    if value == "1":
+        return "0"
+    if value == "0":
+        return "1"
+    if value == "rank":
+        return "notation"
+    if value == "notation":
+        return "rank"
 
 
 async def dosearch(q, keys, sort):
@@ -290,3 +312,14 @@ async def searchregex_keyup(event):
 
 
 document.getElementById("searchregex").addEventListener("keyup", searchregex_keyup)
+
+
+results_element = document.getElementById("results")
+results_element.addEventListener("click", focussed_results_clicker)
+thetree_element = document.getElementById("thetree")
+thetree_element.addEventListener("click", tree_clicker)
+
+if document.notation and document.notation != "_":
+    add_desired_to_tree(document.notation)
+else:
+    build("ICONCLASS", thetree_element)

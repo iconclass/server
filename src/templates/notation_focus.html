@@ -50,12 +50,21 @@
     <h4 style="margin-top: 3vh">Here is a sample image:</h4>
     {% endif %}   
 
-    <div class="row">
-    <div class="col">
+    <div class="row" data-masonry='{"percentPosition": true }' style="cursor: pointer">
+    
     {% for i in images %}
-        <a target="_sample" style="margin: 0 0 0 10px" href="{{i[1]}}"><img height="200px" src="https://test.iconclass.org/iiif/3/{{i[0]}}/full/,300/0/default.jpg" title="{{i[2]}}"></a>
+        <div class="col-sm-6 col-lg-2 mb-4">
+            <div class="card">
+            <a target="_sample" href="{{i[1]}}" title="{{i[2]}}">
+                <img width="100%" src="https://test.iconclass.org/iiif/2/{{i[0]}}/full/150,/0/default.jpg"></a>
+            </a>
+            <div class="card-body">
+                <p style="font-size: 75%" class="card-title">{{i[2][:79]}}{% if i[2]|length > 79 %} ...{% endif %}</p> 
+            </div>
+            </div>
+        </div>
     {% endfor %}
-    </div>
+    
     </div>
     </div>
     {% else %}
