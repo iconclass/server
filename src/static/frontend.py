@@ -115,19 +115,25 @@ async def focus_node(desired):
     icon_element = document.getElementById("icon" + desired)
     text_element = document.getElementById("text" + desired)
 
-    # Exclude the keys as children to determine icon
-    kids_without_keys = [kn for kn in node.get("c", []) if kn["n"].find("(+") < 1]
+    # Some notations, like 11II321 has a "virtual" double key.
+    # In its path, ['1', '11', '11I', '11II', '11II3', '11II32', '11II321']
+    # the notation 11II does not actually exist
+    # But we still want to be able to focus and display these.
 
-    if len(kids_without_keys) > 0:
-        kind_icon = None
-    else:
-        kind_icon = dot
-    if kids_element.style.display == "none":
-        kids_element.style.display = "block"
-        icon_element.innerHTML = kind_icon or caret_down_fill
-    else:
-        kids_element.style.display = "none"
-        icon_element.innerHTML = kind_icon or caret_right_fill
+    if kids_element:
+        # Exclude the keys as children to determine icon
+        kids_without_keys = [kn for kn in node.get("c", []) if kn["n"].find("(+") < 1]
+        if len(kids_without_keys) > 0:
+            kind_icon = None
+        else:
+            kind_icon = dot
+        if kids_element.style.display == "none":
+            kids_element.style.display = "block"
+            icon_element.innerHTML = kind_icon or caret_down_fill
+        else:
+            kids_element.style.display = "none"
+            icon_element.innerHTML = kind_icon or caret_right_fill
+
     if not node.fragment:
         furi = "/fragments/focus/{}/{}".format(
             document.IC_LANG, encodeURIComponent(desired)
@@ -135,19 +141,27 @@ async def focus_node(desired):
         result = await fetch(furi)
         response = await result.text()
         node.fragment = response
-        if len(node["c"]) > 0:
+        if len(node["c"]) > 0 and kids_element:
             await build(desired, kids_element)
 
     results_element.innerHTML = node.fragment
 
     for notationtext in document.querySelectorAll(".notationtext"):
         notationtext.classList.remove("focussed")
-    text_element.classList.add("focussed")
+    if text_element:
+        text_element.classList.add("focussed")
 
     try:
         node.element.scrollIntoViewIfNeeded()  # This is a proprietary method does not work on all browsers
     except:
         pass
+
+
+async def show_object(anid):
+    furi = "/fragments/object/{}/".format(encodeURIComponent(anid))
+    result = await fetch(furi)
+    response = await result.text()
+    results_element.innerHTML = response
 
 
 async def tree_clicker(event):
