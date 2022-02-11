@@ -53,10 +53,10 @@
     <div class="row" data-masonry='{"percentPosition": true }' style="cursor: pointer">
     
     {% for i in images %}
-        <div class="col-sm-6 col-lg-2 mb-4">
+        <div class="col-sm-6 col-lg-3 mb-4">
             <div class="card">
             <a target="_sample" href="{{i[1]}}" title="{{i[2]}}">
-                <img width="100%" src="https://test.iconclass.org/iiif/2/{{i[0]}}/full/150,/0/default.jpg"></a>
+                <img width="100%" src="https://test.iconclass.org/iiif/2/{{i[0]}}/full/200,/0/default.jpg"></a>
             </a>
             <div class="card-body">
                 <p style="font-size: 75%" class="card-title">{{i[2][:79]}}{% if i[2]|length > 79 %} ...{% endif %}</p> 
