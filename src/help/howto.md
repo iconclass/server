@@ -1,9 +1,21 @@
 ## Illustrated Iconclass
 
-#### First register and login
+#### Preparing to use
 
-{{% aimg How2slide001 %}}
+{{% aimg howto_slide1 %}}
 
-#### Username and Feedback
+#### Login and Feedback option
 
-{{% aimg How2slide002 %}}
+{{% aimg howto_slide2 %}}
+
+#### Introductory
+
+{{% aimg howto_slide3 %}}
+
+#### Introductory
+
+{{% aimg howto_slide4 %}}
+
+#### Introductory
+
+{{% aimg howto_slide5 %}}
