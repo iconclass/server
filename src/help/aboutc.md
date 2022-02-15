@@ -128,5 +128,10 @@ Collection of the <b>Dutch University Institute for Art History</b> in Florence.
 <tr><td valign="top">{{% aimg aboutpage_heartfield %}}<br/></td><td valign="top"><a href="https://heartfield.adk.de/en/project" target="read">https://heartfield.adk.de/en/project</a><br/><br/>
 <b>Heartfield Online</b>. John Heartfield mostly created his art under adverse conditions: his life was marked by persecution and exile. He used art as a propagandistic "weapon" against social injustice and political opponents and in particular the National Socialists. It attracted the attention of the censorship authorities and had to be viewed in secret – yet it reached an audience of millions. Over 6,000 works, fragile objects made of paper, survived war, flight and exile, and are now kept by the Akademie der Künste in Berlin.
 </td></tr>
+<tr><td valign="top">{{% aimg custodialugt %}}<br/></td><td valign="top"><a href="https://collectiononline.fondationcustodia.fr/" target="read">https://collectiononline.fondationcustodia.fr/</a><br/><br/>
+<b>Fondation Custodia - Collection Frits Lugt</b>. The Collection Online, launched in February 2020, is still in its early stages and consists of object records for a part of the collection.
+Currently, all the Italian drawings, as well as those by Rembrandt and his circle held by the Fondation Custodia are available to search in the online collection database. This concerns over 700 objects.
+In the upcoming years, the database will be updated with other works of art on an ongoing basis. At the moment publication is being prepared of the Rembrandt etchings, Flemish and Dutch Old Master paintings, French 19th century drawings, and part of the collection of artists’ letters and manuscripts (French autographs 14th-17th century).
+</td></tr>
 </table>
 
