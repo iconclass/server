@@ -1,5 +1,11 @@
 <a name="sponsors"/>
+
 ### Towards a sustainable future for Iconclass
+
+{{% aimg ic_survey_users %}}
+
+Above is a small survey of institutions that offer their users the options to search the content of their collection with the help of Iconclass.
+
 
 Over the years the Iconclass system has been used by many institutions to provide subject access to their collections, and for more than fifteen years we have managed to make the system available online for free, without significant sponsoring.
 For one thing, this means - _incredibile dictu_ - that we have been carrying the costs of a server, bandwidth, domain name, etcetera, out or our own pockets.
