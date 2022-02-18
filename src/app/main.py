@@ -88,7 +88,7 @@ async def help(request: Request, page: str):
     if not os.path.exists(infilepath):
         raise HTTPException(status_code=404, detail=f"Page [{page}] not found")
     md = markdown.Markdown(
-        output_format="html5", extensions=["nl2br", "meta", "attr_list"]
+        output_format="html5", extensions=["nl2br", "meta", "attr_list", "tables"]
     )
     html = md.convert(open(infilepath).read())
     out2, _ = apply_shortcodes(html, {"aimg": aimg, "pdf": pdf})
@@ -158,6 +158,7 @@ async def lang_notation(
     lang: str,
     notation: str,
     q: Optional[str] = "",
+    k: Optional[str] = "",
 ):
     lang = valid_lang(lang)
     if notation != "_":
@@ -172,6 +173,7 @@ async def lang_notation(
         "notation": notation,
         "obj": obj,
         "q": q,
+        "k": k,
     }
     return templates.TemplateResponse("browse.html", ctx)
 
@@ -185,17 +187,3 @@ async def showcase(request: Request):
 async def notation(request: Request, notation: str):
     if notation[0] in "0123456789":
         return RedirectResponse(f"/en/{notation}")
-
-    # lang = "en"
-    # ctx = {
-    #     "request": request,
-    #     "lang": lang,
-    #     "language": LANGUAGES.get(lang, "English"),
-    #     "notation": notation,
-    # }
-    # return templates.TemplateResponse("browse.html", ctx)
-
-
-# if __name__ == "__main__":
-#     from uvicorn import run as uvicorn_run
-#     uvicorn_run(app, port=42000)
