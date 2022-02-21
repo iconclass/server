@@ -1,28 +1,41 @@
 <a name="sponsors"/>
 
-### Towards a sustainable future for Iconclass
+## Towards a sustainable Iconclass system
+
+Iconclass is used by a steadily growing number of institutions and projects, to provide subject access to image collections. That is a development to be very pleased about.
+
+At the same time it is cause for concern; for the simple reason that this also means that an increasing number of professional and institutional users - a selection of which you see below - has come to depend on what essentially is a volunteer service.
 
 {{% aimg ic_survey_users %}}
 
-Above is a small survey of institutions that offer their users the options to search the content of their collection with the help of Iconclass.
+For some twenty years now we have managed to make the Iconclass system available in the shape of the online _Iconclass browser_ and the _Harvester of Iconclass Metadata_ service.
+While we remain committed to creating a stable situation for Iconclass, and ensuring the continued availability of an online Iconclass system in __Open Access__, it is clear that this cannot depend on the commitment of a few individuals. The active involvement of the community of Iconclass users is a necessary condition for a stable future.
+
+### Henri van de Waal Foundation
+
+To organize and structure the involvement is one of the goals of the <a href="https://henrivandewaalfoundation.org" target="read">Henri van de Waal Foundation</a>, founded in June of 2021. This non-profit Foundation aims to stimulate computer-assisted iconographic research in the widest possible sense, but also sees a first task in mobilizing the user community of Iconclass and setting up broader support for the maintenance and development of the system.
+The Henri van de Waal Foundation is the legal entity that has assumed responsibility for the maintenance and further development of the Iconclass system with the formal endorsement of [the Netherlands Institute of Art History](https://henrivandewaalfoundation.org/Iconclasstransferstatement20211104.pdf){:target="read"}. The Foundation commits itself to continue publishing Iconclass as an _Open Access_ classification system. This commitment implies that the Foundation accepts that the system will remain a cost item, as _Open Access_ publications by definition do not produce any turnover.
+
+### Consortium for the Support of Iconclass
+
+Two conditions will have to be met to provide a more stable basis for Iconclass: some form of financing needs to be found to meet the costs of maintenance and development, as those costs cannot be carried by the Foundation without the support of the user community. But, perhaps even more important, 
 
 
-Over the years the Iconclass system has been used by many institutions to provide subject access to their collections, and for more than fifteen years we have managed to make the system available online for free, without significant sponsoring.
-For one thing, this means - _incredibile dictu_ - that we have been carrying the costs of a server, bandwidth, domain name, etcetera, out or our own pockets.
+To provide a platform and a structure for that support, the Foundation will set up a __Consortium for the Support of Iconclass__.
+Before such a Consortium can undertake any activity, let alone develop any fundraising initiatives, several questions need to be answered.
+- Who are the institutional and the individual users of the system, and how large is the actual and the potential Iconclass community?
+- What are the estimated structural and incidental costs, divided over software development, editorial maintenance, server hardware and bandwidth?
+- What will the Consortium membership entail?
+- What are the plans for (software) products to support the wider acceptance of the Iconclass classification?
 
-We are obviously committed to creating a safe and stable situation, and to guarantee the continued availability over time of an online **Iconclass system in Open Access**. But it will be clear that this cannot completely depend on the commitment - and the financial situation - of two individuals.
-Hence the non-profit <a href="https://henrivandewaalfoundation.org" target="read">Henri van de Waal Foundation</a> has been established. The foundation aims to stimulate computer-assisted iconographic research in the widest possible sense, but also to provide sustainable support for the maintenance and further development of Iconclass.
+##### The user community
+The Iconclass Browser has always been available to unregistered users, so information about its user base is diffuse.
 
-**Towards sponsoring**
+##### Estimated effort
 
-Publishing anything in Open Access is always a precarious balancing act, and in few domains this is more true than in the Humanities. That is why the launch of this new version of the Iconclass site coincides with an initiative to recruit sponsors.
-The Henri van de Waal Foundation aims to carry the cost of the Illustrated Iconclass Browser and its maintenance and development.
-However, it cannot do so by itself and without support from the community of users of Iconclass.
 
-**Iconclass consortium for the community of users**
+##### Membership costs and benefits
 
-The Henri van de Waal Foundation is the legal entity that will take over the cost of the online Iconclass system. The foundation aims to organize the support from the community of Iconclass users via a consortium. The consortium will act as a flexible, lightweight organization that will ask its members to contribute - in cash or in kind - to the common goal of an Open Access Iconclass website. As a legal entity the foundation will be the logical recipient of the contributions of sponsors in cash.
 
-**Keeping it simple**
+##### Iconclass extensions
 
-In the Netherlands a consortium is understood to be a temporary organization of partners working towards a common goal. There is no default legal structure, so members have no default responsibilities or liabilities beyond what they have agreed to as partners.
