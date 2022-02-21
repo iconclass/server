@@ -18,11 +18,9 @@ The Henri van de Waal Foundation is the legal entity that has assumed responsibi
 
 ### Consortium for the Support of Iconclass
 
-Two conditions will have to be met to provide a more stable basis for Iconclass: some form of financing needs to be found to meet the costs of maintenance and development, as those costs cannot be carried by the Foundation without the support of the user community. But, perhaps even more important, 
-
-
+Two conditions must be met for a more stable basis for Iconclass: some form of financing needs to be organized to help the Foundation carry the costs of maintenance and development. But, perhaps even more importantly, detailed knowledge about the contents of the system and about the software that runs the online Browser, must be shared by a larger group of people.
 To provide a platform and a structure for that support, the Foundation will set up a __Consortium for the Support of Iconclass__.
-Before such a Consortium can undertake any activity, let alone develop any fundraising initiatives, several questions need to be answered.
+Before the Consortium can start fundraising initiatives or provide more systematic documentation about the editorial rules and the source code of the Browser system, several questions need to be answered.
 - Who are the institutional and the individual users of the system, and how large is the actual and the potential Iconclass community?
 - What are the estimated structural and incidental costs, divided over software development, editorial maintenance, server hardware and bandwidth?
 - What will the Consortium membership entail?

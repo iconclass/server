@@ -2,11 +2,9 @@
 
 # Illustrated Iconclass - Extensions
 
-{{% aimg ic_prospectus_001 %}}
-
 ### Plans for 2022-2023
 
-The aim of the Iconclass consortium is not just to ensure a sustainable future of the Iconclass system. If possible, funds raised by the consortium will be used to develop additional software. Below is a survey of the extensions of the Iconclass system and the deployment of the Iconclass dataset we envisage. Of course, this survey is a wishlist and just how realistic it is, depends on the success of the consortium's fundraising activities.
+The aim of the Iconclass consortium is not just to ensure a sustainable future for the Iconclass system. If possible, funds raised by the consortium will be used to develop additional software. Below is a survey of the extensions of the Iconclass system and the deployment of the Iconclass dataset we envisage. Of course, this survey is a wishlist and just how realistic it is, depends on the success of the consortium's fundraising activities.
 If you have your own ideas to supplement ours, don't hesitate to use the Feedback button.
 
 #### Extension 1: Iconclass Bibliography
