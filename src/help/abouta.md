@@ -138,8 +138,9 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 
 - C. Togneri, ICONCLASS and Its Application to Primary Documents. In: C. Hourihane (ed.) Image and Belief. Studies in Celebration of the eightieth anniversary of the Index of Christian Art. (Princeton, 1999), pp 259-271
 - J. van den Berg, G.J. Duijfjes-Vellekoop, Translating ICONCLASS and the Connectivity Concept of the Iconclass2000 Browser. In: C. Hourihane (ed.) Image and Belief. Studies in Celebration of the eightieth anniversary of the Index of Christian Art. (Princeton, 1999), pp 291-307
+- J.P.J. Brandhorst, Ululas Athenas: Owls to Athens. In: C. Hourihane (ed.) Image and Belief. Studies in Celebration of the eightieth anniversary of the Index of Christian Art. (Princeton, 1999), pp 271-290
 - P. van Huisstede & J.P.J. Brandhorst, Dutch Pinter’s devices. 15th-17th century. A Catalogue with CD-ROM (3 Vols). Nieuwkoop, 1999
-  [revieved by: M. Baca, In: Art Documentation: Journal of the Art Libraries Society of North America, Vol. 19, No. 2 (Fall 2000), pp. 52-53]
+  [reviewed by: M. Baca, In: Art Documentation: Journal of the Art Libraries Society of North America, Vol. 19, No. 2 (Fall 2000), pp. 52-53]
 - E. Posthumus, Libertas Browser
 - Katalog der Zeichnungen. Kunstsammlung der Universität Göttingen. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1999
 - Plakate der SBZ/DDR. Politik, Wirtschaf, Kultur. Deutsches Historisches Museum, Berlin. CD-ROM, produced by Computer & Letteren (U. of Utrecht) for KG Saur, 1999
@@ -157,7 +158,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 
 2004
 
-- J.P.J. Brandhorst, Using Iconclass for the Iconographic Indexing of Emblems. DigiCULT Publications, 2004
+- J.P.J. Brandhorst, Using Iconclass for the Iconographic Indexing of Emblems. DigiCULT Publications, 2004 {{% pdf 2004_Digicult_Emblems %}}
 
 2007
 
@@ -170,13 +171,13 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 
 2009
 
-- E. Posthumus, J.P.J. Brandhorst: http://www.iconclass.org: the online browser of the ICONCLASS system. It was officially launched on November 10th, 2009, but actually operational since 2006 with a slightly different stylesheet. (Since the launch some 2,000 corrections and expansions were incorporated in the online system.)
+- E. Posthumus, J.P.J. Brandhorst: [http://www.iconclass.org](http://www.iconclass.org){:target="read"}: the online browser of the ICONCLASS system. It was officially launched on November 10th, 2009, but actually operational since 2006 with a slightly different stylesheet. (Since the launch some 2,000 corrections and expansions were incorporated in the online system.) 
 
 2010
 
 - N. Motohashi, K. Yamauchi and T. Takagi, "Improvement of bag of visual words using Iconclass," 2010 Annual Meeting of the North American Fuzzy Information Processing Society, Toronto, ON, 2010, pp. 1-5, doi: 10.1109/NAFIPS.2010.5548294.
 - L. Couprie, Iconclass. In: Henri van de Waal. Bundel ter gelegenheid van zijn honderdste geboortedag. 3 maart 1910/3 maart 2010. Leiden, 2010, pp. 33-45.
-- Katrin Weller, Knowledge Representation in the Social Semantic Web. In: Knowledge and Information, K. G. Saur 2010 (https://doi.org/10.1515/9783598441585) pp. 46-49
+- Katrin Weller, Knowledge Representation in the Social Semantic Web. In: [Knowledge and Information, K. G. Saur 2010 pp. 46-49](https://doi.org/10.1515/9783598441585){:target="read"}
 
 2015
 
