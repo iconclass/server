@@ -203,6 +203,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 - [&para;](#32Brevision){: name="32Brevision" }  J.P.J. Brandhorst (with contributions by Angela Kailus a.o.), Revising Iconclass section 32B human races, peoples; nationalities. {{% pdf 2021_updating32B %}} of the explanation and a listing of the revised concept definitions.
 - [&para;](#extendedhand){: name="extendedhand" }  J.P.J. Brandhorst, The extended hand. The description and retrieval of an iconographic detail. Unpublished manuscript - comparing how the Index of Medieval Art and Iconclass deal with a gesture. {{% pdf 2021_extendedhand %}}
 - M. Lampe, Diskriminierende Begriffe und Wissensordnungen im Bildarchiv. Ein postkoloniale Perspektive am Beispiel des Bildindex der Kunst und Architektur. Berliner Handreichungen zur Bibliotheks-und Informationswissenschaft. Heft 481. {{% pdf 2021_lampe %}}
+- S. Baroncini, M. Daquino, F. Tomasi, Modelling Art Interpretation and Meaning. A Data Model for Describing Iconology and Iconography. (Author manuscript deposited in [ArXiv](https://doi.org/10.48550/arXiv.2106.12967)). {{% pdf 2021_baroncini %}}
 
 2022
 
