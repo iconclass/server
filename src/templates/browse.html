@@ -46,8 +46,8 @@ a:hover {text-decoration: underline; color: blue}
             <div class="col-sm">
                 <a id="advancedsearch" href="#" class="btn btn-sm btn-success">Advanced Search</a> 
             </div>          
-            <div class="col-sm">
-                <a id="includekeys" data="1" class="btn btn-sm btn-secondary" href="#">Include keys (+ )</a>
+            <div class="col-sm">    
+                <a id="includekeys" data="{% if k == "1"%}0{% else %}1{% endif %}" class="btn btn-sm btn-secondary" href="#">Include keys (+ )</a>
                 <a id="searchsortorder" data="notation" class="btn btn-sm btn-secondary" href="#">Sort by notation</a>
                 <a target="docs" title="Documentation on using search" href="/help/search"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ddd;" class="bi bi-patch-question" viewBox="0 0 16 16">
                     <path d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"/>
@@ -101,6 +101,7 @@ a:hover {text-decoration: underline; color: blue}
 <script>
 document.notation = "{{notation}}"
 document.q = "{{q}}"
+document.k = "{{k}}"
 </script>
 
 
