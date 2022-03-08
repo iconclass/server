@@ -166,7 +166,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 2008
 
 - K. Stanicka-Brzezicka, System klasyfikacji ikonograficznej Iconclass: charakterystyka, przykłady zastosowania, problemy [Iconclass: system of iconographical classification - characteristics, usage, problems]. In: Nowoczesne metody gromadzenia i udostępniania wiedzy o zabytkach [Modern methods of gathering and proliferating knowledge on art heritage], Wrocław 2008, pp. 29-34 (Cyfrowe Spotkania z Zabytkami, 1)
-- Hidenobu KUJIRAI, ICONCLASS : Iconographic classification system (Special feature - Classification, with a fresh eye). In: The Journal of Information Science and Technology Association Vol. 58(2008), issue 2, pp 57-63. (DOI: https://doi.org/10.18919/jkg.58.2_57) {{% pdf 2008_KJ00004841766 %}}
+- Hidenobu KUJIRAI, ICONCLASS : Iconographic classification system (Special feature - Classification, with a fresh eye). In: The Journal of Information Science and Technology Association Vol. 58(2008), issue 2, pp 57-63. DOI: https://doi.org/10.18919/jkg.58.2_57. {{% pdf 2008_KJ00004841766 %}}
 
 2009
 
@@ -185,25 +185,25 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 2019
 
 - J.P.J. Brandhorst, ICONCLASS: a key to collaboration in the Digital Humanities. In: C. Hourihane (ed.) The Routledge companion to medieval iconography (London, 2019), pp 201-219
-- Carvalho, Rosário Salema de. “To be part of... Architecture, Decoration or Iconography. Documenting Azulejo as integrated heritage.” ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences IV-2/W6 (2019): 39–46. http://dx.doi.org/10.5194/isprs-annals-iv-2-w6-39-2019. {{% pdf 2019_isprs-annals-IV-2-W6-39 %}}
+- Carvalho, Rosário Salema de. “To be part of... Architecture, Decoration or Iconography. Documenting Azulejo as integrated heritage.” [ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences IV-2/W6 (2019): 39–46.](http://dx.doi.org/10.5194/isprs-annals-iv-2-w6-39-2019){:target="read"}. {{% pdf 2019_isprs-annals-IV-2-W6-39 %}}
 - J.P.J. Brandhorst, A word is worth a thousand pictures. Why the use of Iconclass will make Artificial Intelligence smarter. Lecture presented at the conference "Changing Frontiers: Iconographic Archives in the Past and Present" on October 13th 2019, at University of Chicago Center in Beijing. (Chinese translation forthcoming) English manuscript version: {{% pdf 2019_iconclass_and_ai %}}
 - Kabashi, Anyla. 2019. “Iconclass – classification system for art and iconography”. Tese de Graduação, Faculdade de Humanidades e Ciências Sociais da Universidade de Zagreb (https://repozitorij.ffzg.unizg.hr/islandora/object/ffzg:639) {{% pdf 2019_kabashi_zavrsni %}}
 
 2020
 
 - Carvalho, Rosário Salema de, and João Pedro Monteiro. São Tiago no Azulejo Barroco Português. Ad Limina 11, no. 11 (2020): 213–42. https://www.caminodesantiago.gal/pt/conocimiento-e-investigacion/ad-limina/ad-limina-xi.
-- Carvalho, Rosário Salema de Carvalho. The Iconographic Role of Azulejo Frames. Word & Image 36, no. 2 (2020): 135–65. https://doi.org/10.1080/02666286.2019.1639347
+- Carvalho, Rosário Salema de Carvalho. The Iconographic Role of Azulejo Frames. [Word & Image 36, no. 2 (2020): 135–65.](https://doi.org/10.1080/02666286.2019.1639347)
 - Banar, N., Daelemans, W. and Kestemont, M., Neural Machine Translation of Artwork Titles Using Iconclass Codes. In: Proceedings of the The 4th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, December 2020, pp 42-51 {{% pdf 2020_kestemont_latechclfl-15 %}}
 
 2021
 
-- Leo, L. On the Developments of the Iconographic File Authority: New Research Perspectives. Environ. Sci. Proc. 2021, 10, 13. https://doi.org/10.3390/environsciproc2021010013
+- Leo, L. On the Developments of the Iconographic File Authority: [New Research Perspectives. Environ. Sci. Proc. 2021, 10, 13.](https://doi.org/10.3390/environsciproc2021010013){:target="_read"}
 - Cetinic, E. Towards Generating and Evaluating Iconographic Image Captions of Artworks. J. Imaging 2021, 7, 123. https://doi.org/10.3390/jimaging7080123 {{% pdf 2021_jimaging-07-00123-v2 %}}
-- Banar, N., Daelemans, W. and Kestemont, M., Multi-modal Label Retrieval for the Visual Arts: The Case of Iconclass. DOI: 10.5220/0010390606220629. In: Proceedings of the 13th International Conference on Agents and Artificial Intelligence (ICAART 2021) - Volume 1, pages 622-629, ISBN: 978-989-758-484-8
+- Banar, N., Daelemans, W. and Kestemont, M., [Multi-modal Label Retrieval for the Visual Arts: The Case of Iconclass. DOI:](https://doi.org/10.5220/0010390606220629){:target="_read"}. In: Proceedings of the 13th International Conference on Agents and Artificial Intelligence (ICAART 2021) - Volume 1, pages 622-629, ISBN: 978-989-758-484-8
 - [&para;](#32Brevision){: name="32Brevision" }  J.P.J. Brandhorst (with contributions by Angela Kailus a.o.), Revising Iconclass section 32B human races, peoples; nationalities. {{% pdf 2021_updating32B %}} of the explanation and a listing of the revised concept definitions.
 - [&para;](#extendedhand){: name="extendedhand" }  J.P.J. Brandhorst, The extended hand. The description and retrieval of an iconographic detail. Unpublished manuscript - comparing how the Index of Medieval Art and Iconclass deal with a gesture. {{% pdf 2021_extendedhand %}}
 - M. Lampe, Diskriminierende Begriffe und Wissensordnungen im Bildarchiv. Ein postkoloniale Perspektive am Beispiel des Bildindex der Kunst und Architektur. Berliner Handreichungen zur Bibliotheks-und Informationswissenschaft. Heft 481. {{% pdf 2021_lampe %}}
-- S. Baroncini, M. Daquino, F. Tomasi, Modelling Art Interpretation and Meaning. A Data Model for Describing Iconology and Iconography. (Author manuscript deposited in [ArXiv](https://doi.org/10.48550/arXiv.2106.12967)). {{% pdf 2021_baroncini %}}
+- S. Baroncini, M. Daquino, F. Tomasi, Modelling Art Interpretation and Meaning. A Data Model for Describing Iconology and Iconography. (Author manuscript deposited in [ArXiv](https://doi.org/10.48550/arXiv.2106.12967){:target="read"}). {{% pdf 2021_baroncini %}}
 
 2022
 
