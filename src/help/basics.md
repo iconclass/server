@@ -97,7 +97,7 @@ The core of the Iconclass systems thus also includes quite a large number of his
 
     {{% aimg 11hfrancis59 %}}
     
-In [__98B(CAESAR)68__](/en/98B(CAESAR)68) the digits __68__ are used because they encode the death of someone from classical history.
+In [__98B(CAESAR)68__](https://test.iconclass.org/98B(CAESAR)68) the digits __68__ are used because they encode the death of someone from classical history.
 
      {{% aimg 98bcaesar68 %}}
 

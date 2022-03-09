@@ -37,8 +37,9 @@ The first step to set yourself up as co-editor of Iconclass, is to register with
 
 {{% aimg wingit %}}
 
-Those data files are simple [UTF-8](https://en.wikipedia.org/wiki/UTF-8){:target="_read"} encoded, structured text files. The file that is named __notations.txt__ can be regarded as the spine of the system. Every concept in Iconclass consists of a definition and an alphanumeric code - a __notation__ - which assigns every definition its unique location in the schedules. So, let us look at the __notations.txt__ file first.
-The file contains all - almost 40,000 - unique notations, everyone of which is the core of a record in the text file that starts with a capital __N__ and ends with __$__.
+Those data files are simple [UTF-8](https://en.wikipedia.org/wiki/UTF-8){:target="_read"} encoded, __structured text__ files. They can be edited with any [plain text editor](https://en.wikipedia.org/wiki/Plain_text){:target="_read"}.
+
+The file that is named __notations.txt__ can be regarded as the spine of the system. Every concept in Iconclass consists of a definition and an alphanumeric code - a __notation__ - which assigns every definition its unique location in the schedules. The __notations.txt__ file is a virtual roadmap of the entire Iconclass system. It contains all - almost 40,000 - unique notations, each one of which is the core of a record in the text file that starts with a capital __N__ and ends with __$__. A typical record looks like this:
 
         N 11A
         K 11k
@@ -49,17 +50,21 @@ The file contains all - almost 40,000 - unique notations, everyone of which is t
         R 11C
         $
 
-The structure of the __notations.txt__ is simple. These are the main elements, with __field names__ consisting of a single capital letter:
+The structure of a records is simple. These are the main elements (__field names__ consist of a single capital letter):
 
 __N__ = Notation - the alphanumeric code
 __K__ = Key - if a list of keys is available for the concept, its identifier is entered in the __K__ field
-__C__ = Children - 
-__;__ = repeated field
-__R__ = Reference
+__C__ = Children - the logic of a classification is subdivision; the subdivisions of a concept are its "_Children_"
+__;__ = repeated field - in the example there are four entries in the field __C__, preceded by a semi-colon and a space
+__R__ = Reference - an (often associative) cross-reference to a related concept
 __$__ = End of record
 
+When this record is imported in the Browser database, the [server software](https://github.com/iconclass/server){:target="_read"} will transform the data into this piece of information:
 
 {{% aimg browser_11A %}}
+
+The notations are supplemented by the texts of the concept definitions, the keywords . The cross reference
+
 
 
 ### Judensau, nazism, snake-charmer
