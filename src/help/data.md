@@ -27,7 +27,7 @@ The decision to assign the concept of __Fearlessness__ to these images, will ult
 
 The __male bias__ of the concept definition, however, is an internal Iconclass issue; understandably, the mentality of sources like Cesare Ripa's _Iconologia_ trickled through in the Iconclass vocabulary. However, the words of the definitions are not carved in stone. They can be edited to adapt them to modern ideas, for instance about inclusivity and discrimination. Modernizing the definition to detach the concept of __Courage__ from its male bias - by removing the word __manliness__ - will obviously improve its applicability. Explaining how this can be done and how every member of the Iconclass user community can assist and act as a co-editor, is the main purpose of this page.
 
-At the core of the editorial process are the __Iconclass data files__, which are stored in the [Open Access repository of __Github__](https://github.com/iconclass/data){:target="_read"}.
+At the core of the editorial process are the __Iconclass data files__, which are stored in the [Open Access repository of __Github__](https://github.com/iconclass/data){:target="read"}.
 
 {{% aimg github %}}
 
@@ -37,9 +37,19 @@ The first step to set yourself up as co-editor of Iconclass, is to register with
 
 {{% aimg wingit %}}
 
-Those data files are simple [UTF-8](https://en.wikipedia.org/wiki/UTF-8){:target="_read"} encoded, __structured text__ files. They can be edited with any [plain text editor](https://en.wikipedia.org/wiki/Plain_text){:target="_read"}.
+Those data files are simple [UTF-8](https://en.wikipedia.org/wiki/UTF-8){:target="read"} encoded, __structured text__ files. They can be edited with any [plain text editor](https://en.wikipedia.org/wiki/Plain_text){:target="read"}.
 
-The file that is named __notations.txt__ can be regarded as the spine of the system. Every concept in Iconclass consists of a definition and an alphanumeric code - a __notation__ - which assigns every definition its unique location in the schedules. The __notations.txt__ file is a virtual roadmap of the entire Iconclass system. It contains all - almost 40,000 - unique notations, each one of which is the core of a record in the text file that starts with a capital __N__ and ends with __$__. A typical record looks like this:
+The file that is named __notations.txt__ can be regarded as the spine of the system. Every concept in Iconclass consists of a definition and an alphanumeric code - a __notation__ - which assigns every definition its unique location in the schedules. The __notations.txt__ file thus is a virtual roadmap of the entire Iconclass system. It contains all - almost 40,000 - unique notations, each one of which is the core of a record in the notations file that is structured like this (__field names__ consist of a single capital letter):
+
+__N__ = [Notation](basics#notations){:target="read"} - the alphanumeric code
+__K__ = [Key](basics#keys){:target="read"} - if a list of keys is available for the concept, its identifier is entered in the __K__ field
+__C__ = [Children](basics#path){:target="read"} - the logic of a classification is hierarchical subdivision; the subdivisions of a concept are its "_Children_"
+__;__ = repeated field - in the example there are four entries in the field __C__, preceded by a semi-colon and a space
+__R__ = [Reference](basics#cross){:target="cross"} - an (often associative) cross-reference to a related concept
+__$__ = End of record
+
+
+A random example of a record with all of these elements:
 
         N 11A
         K 11k
@@ -50,20 +60,12 @@ The file that is named __notations.txt__ can be regarded as the spine of the sys
         R 11C
         $
 
-The structure of a records is simple. These are the main elements (__field names__ consist of a single capital letter):
+When this record is imported in the Browser database, the [server software](https://github.com/iconclass/server){:target="read"} will transform the data into this piece of information by adding the corresponding definitions to the notations, fetching the list of __keys__ and activating the hyperlinks:
 
-__N__ = Notation - the alphanumeric code
-__K__ = Key - if a list of keys is available for the concept, its identifier is entered in the __K__ field
-__C__ = Children - the logic of a classification is subdivision; the subdivisions of a concept are its "_Children_"
-__;__ = repeated field - in the example there are four entries in the field __C__, preceded by a semi-colon and a space
-__R__ = Reference - an (often associative) cross-reference to a related concept
-__$__ = End of record
+[{{% aimg browser_11A %}}](https://test.iconclass.org/11A){:target="read"}
+__Click the screenshot__ to open the Browser and see the _sample images_ added too.
 
-When this record is imported in the Browser database, the [server software](https://github.com/iconclass/server){:target="_read"} will transform the data into this piece of information:
 
-{{% aimg browser_11A %}}
-
-The notations are supplemented by the texts of the concept definitions, the keywords . The cross reference
 
 
 
