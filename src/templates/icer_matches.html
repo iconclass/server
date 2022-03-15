@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row p-3">
+        <div class="col-8">
+            <form action="/icerupload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/jpeg">
+                <input type="submit" value="Analyze">
+            </form>
+            {% for m in filename_ics %}
+                <img src="https://iiif.arkyves.org/{{m.filename}}/full/,300/0/default.jpg" title="{{m.match}}">
+            {% endfor %}
+        </div>
+        {% if ics %}
+        <div class="col-4">
+            {% for ic in ics %}
+                <p style="margin: 0"><a target="_new" href="/{{ic.n|urlencode}}">{{ic.n}}</a> &middot; {{ic.txt.en}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+    </div>
+</div>
+
+{% endblock %}
