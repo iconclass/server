@@ -42,6 +42,7 @@ from .fragments import *
 from .am import *
 from .metabotnik import *
 from .lod import *
+from .sparql import *
 
 
 @app.get("/json")
