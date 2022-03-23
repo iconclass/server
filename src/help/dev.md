@@ -1,5 +1,13 @@
 ### Status updates on development
 
+**2022-03-23**
+
+Add Fulltextsearch SPARQL service, that only returns URIs for results.
+
+**2022-03-08**
+
+Add ability to search using URL with q= and k= parameters
+
 **2022-02-08**
 
 Debug tree building, and small improvement to image thumbnail display.
