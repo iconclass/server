@@ -40,6 +40,22 @@ def get_object(anid: str):
 
 
 @app.get(
+    "/fragments/images/{notation}", response_class=HTMLResponse, include_in_schema=False
+)
+async def images(request: Request, notation: str):
+    SAMPLE_SIZE = 42
+    images_count, images_sample = get_images(notation, SAMPLE_SIZE)
+    ctx = {
+        "request": request,
+        "notation": notation,
+        "images": images_sample,
+        "images_count": images_count,
+        "sample_size": SAMPLE_SIZE,
+    }
+    return templates.TemplateResponse("images_notation.html", ctx)
+
+
+@app.get(
     "/fragments/object/{anid}",
     response_class=HTMLResponse,
     include_in_schema=False,
