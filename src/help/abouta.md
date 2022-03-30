@@ -195,6 +195,8 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 - Carvalho, Rosário Salema de, and João Pedro Monteiro. São Tiago no Azulejo Barroco Português. Ad Limina 11, no. 11 (2020): 213–42. https://www.caminodesantiago.gal/pt/conocimiento-e-investigacion/ad-limina/ad-limina-xi.
 - Carvalho, Rosário Salema de Carvalho. The Iconographic Role of Azulejo Frames. [Word & Image 36, no. 2 (2020): 135–65.](https://doi.org/10.1080/02666286.2019.1639347)
 - Banar, N., Daelemans, W. and Kestemont, M., Neural Machine Translation of Artwork Titles Using Iconclass Codes. In: Proceedings of the The 4th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, December 2020, pp 42-51 {{% pdf 2020_kestemont_latechclfl-15 %}}
+- R. Tumanov, G. Viehhauser, A. Feldmann, B. Koller, Graph-Based Paths through a Narrative Corpus of Images: A Digital Edition of Giovanni Domenico Tiepolo’s Divertimento per li regazzi Based on the CIDOC CRM. In: Tara Andrews, Franziska Diehr, Thomas Efer, Andreas Kuczera and Joris van Zundert (eds.): Graph Technologies in the Humanities - Proceedings 2020, published at [http://ceur-ws.org](http://ceur-ws.org) - also downloadable here as {{% pdf 2020_tumanov_viehhauser %}}
+
 
 2021
 
