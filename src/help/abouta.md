@@ -79,6 +79,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 
 1991
 
+- J.P.J. Brandhorst, P. van Huisstede, Dutch Printer's Devices (prototype). CD-ROM edition. First CD-ROM production integrating a complete version of the Iconclass system in a pictorial information system. Den Haag, 1991.
 - Kitty Kilian, Iconclass: het Esperanto van de kunstgeschiedenis. NRC, 6 july 1991 {{% pdf 1991_NRC_Iconclass_Esperanto %}}
 - G. Labrot, Collections of Paintings in Naples 1600-1780. München, 1991
 - J.P.J. Brandhorst, P. van Huisstede, Report on the Iconclass Workshop, June 26-28, 1989. <a name="vrreport"> Special Issue of Visual Resources, Vol VIII, 1991, pp i-xiv and pp 1-78 {{% pdf 1991_VRWorkshopreport %}}
