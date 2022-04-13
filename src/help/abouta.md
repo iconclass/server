@@ -79,6 +79,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 
 1991
 
+- J.P.J. Brandhorst, P. van Huisstede, Dutch Printer's Devices (prototype). CD-ROM edition. First CD-ROM production integrating a complete version of the Iconclass system in a pictorial information system. Den Haag, 1991.
 - Kitty Kilian, Iconclass: het Esperanto van de kunstgeschiedenis. NRC, 6 july 1991 {{% pdf 1991_NRC_Iconclass_Esperanto %}}
 - G. Labrot, Collections of Paintings in Naples 1600-1780. München, 1991
 - J.P.J. Brandhorst, P. van Huisstede, Report on the Iconclass Workshop, June 26-28, 1989. <a name="vrreport"> Special Issue of Visual Resources, Vol VIII, 1991, pp i-xiv and pp 1-78 {{% pdf 1991_VRWorkshopreport %}}
@@ -88,6 +89,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 - J.P.J. Brandhorst, P. van Huisstede, Iconclass: Recent Developments, Visual Resources, Vol VIII, 1992 pp 367-382 {{% pdf 1992_VRrecentdevelopments %}}
 - J. v.d. Berg, J.P.J. Brandhorst, J.W.J.M. Broeren, P. van Huisstede, B. Jongejan, G.J. Duijfjes-Vellekoop. ICONCLASS Browser User’s Guide, Utrecht, 1992  {{% pdf 1992_userguide %}}
 - H.E. Roberts, R. Hall, Iconographic Index to New Testament Subjects Represented in Photographs and Slides of Paintings in the Visual Collections, Fine Arts Library, Harvard University, vol. I: Narrative Paintings of the Italian School, Garland Publishing: New York 1992; vol. II: Christian Devotional Painting of the Italian School, Routlege : New York, London 2001.
+- I. Lavin, Iconography as a Humanistic Discipline ("Iconography at the Crossroads"). In: B. Cassidy (ed.), Iconography at the Crossroads. Papers from the colloquium sponsored by the Index of Christian Art Princeton University, 23-24 March 1990, pp. 33-41, in particular pp. 39-40
 
 1993
 

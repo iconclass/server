@@ -44,19 +44,24 @@ Editing of the Iconclass files and assisting with the design of the browser: Bra
 [Bracmat](http://jongejan.dk/projects/) programming: Bart Jongejan, supervised by Jörgen van den Berg
 
 <table>
-<tr><td valign="top"><a name="firstbrowser"/>1992: Iconclass 2000, first Windows edition on CD-ROM<br/>{{% aimg aboutpage_iconclass2000cd %}}</td><td valign="top">A Windows 95 Graphic User Interface was built on top of the original Iconclass browser 'engine'. The Bibliography was incorporated in this edition.<br/>
+<tr><td valign="top"><a name="firstdpd"/><b>1991</b>: Dutch Printer's Devices 1.0.<br/>{{% aimg aboutpage_firstdpd %}}</td>
+<td valign="top">Before it was made available as a standalone edition, the first Windows (3.1) version of Iconclass was tested as part of a <i>pictorial information system</i>. The Koninklijke Bibliotheek and the Utrecht Department of Computer & Letteren joined forces to produce a CD-ROM of Dutch Printer's Devices, made accessible iconographically with the help of a complete version of the Iconclass system. It was created by Peter van Huisstede, Hans Brandhorst, Ger Duijfjes-Vellekoop, Bart Jongejan, Jacques Broeren.<br/>
+Supervision: Jörgen van den Berg<br/><br/>
+</td></tr>
+<tr><td valign="top"><a name="firstbrowser"/><b>1992</b>: Iconclass 2000, first Windows<br/>standalone edition on CD-ROM<br/>{{% aimg aboutpage_iconclass2000cd %}}</td><td valign="top">A Windows Graphic User Interface (3.1, then 95) was built on top of the original (DOS) Iconclass browser 'engine'. The Bibliography was incorporated in this edition.<br/>
 Cumulative design and programming by the C&L team, consisting of:<br/>
 Peter van Huisstede, Hans Brandhorst, Ger Duijfjes-Vellekoop, Bart Jongejan, Jacques Broeren.<br/>
 Supervision: Jörgen van den Berg</td>
 </tr>
-<tr><td valign="top"><br/>{{% aimg aboutpage_userguide %}}</td><td valign="top"><br/>1992: Iconclass on CD-ROM</br>
+<tr><td valign="top"><br/>{{% aimg aboutpage_userguide %}}</td><td valign="top"><br/><b>1992</b>: Iconclass on CD-ROM</br>
 Browser User's Guide<br/>
 Edited by Peter van Huisstede, Hans Brandhorst, Ger Duijfjes-Vellekoop</td></tr>
 </table>
 <br/><br/>
 __CD-ROM series incorporating the Iconclass system__  
 {{% aimg aboutpage_saurcd %}}  
-These CD-ROM's were all produced by the Iconclass team of Computer & Letteren for KG Saur, the Courtauld Institute and De Graaf Publishers.  All CD's contain a database management application, a dataset of pictures, and the complete Iconclass system as a linked and embedded object (OLE).
+These CD-ROM's were all produced by the Iconclass team of Computer & Letteren for KG Saur, the Courtauld Institute and De Graaf Publishers.  All CD's contain a database management application, a dataset of pictures, and the complete Iconclass system as a linked and embedded object (OLE). 
+The CD-ROM <b>Dutch Printer's Devices 15th - 17th century</b> contained the definitive version of the catalogue of which the first pilot had been published in 1991.
 
 __1999-2000: Iconclass "Libertas" Browser 1.0__  (first online Browser edition)  
 Design and Programming: Etienne Posthumus, supervised by Jörgen van den Berg at the Computer & Letteren Department of Utrecht university, on behalf of the Iconclass Research & Development Group.  
