@@ -45,12 +45,16 @@ def get_object(anid: str):
 async def images(request: Request, notation: str):
     SAMPLE_SIZE = 42
     images_count, images_sample = get_images(notation, SAMPLE_SIZE)
+    obj = iconclass.get(notation)
+
     ctx = {
         "request": request,
         "notation": notation,
         "images": images_sample,
         "images_count": images_count,
         "sample_size": SAMPLE_SIZE,
+        "obj": fill_obj(obj),
+        "lang": "en",
     }
     return templates.TemplateResponse("images_notation.html", ctx)
 
