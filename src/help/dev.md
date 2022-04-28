@@ -2,6 +2,8 @@
 
 **2022-04-28**
 
+Add "Copy to clipboard" buttons to notation view.
+
 Fixed bugs with doubly adding notations to tree when browsing.
 
 Allow navigating straight to a notation by typing it in the search box.
