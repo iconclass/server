@@ -148,6 +148,8 @@ async def search(
 ):
     RESULT_CAP = 999
     results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"), r=r)
+    if len(results) < 1 and q and q[0] != '"':
+        results = do_search(q=f'"{q}"', lang=lang, sort=sort, keys=(keys == "1"), r=r)
     # Properly filter in case of bogus notations
     results_objs = filter(None, [iconclass.get(o) for o in results[:RESULT_CAP]])
     ctx = {
