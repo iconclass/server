@@ -101,6 +101,7 @@ async def build(anid, an_element, path=[]):
             kind_node.element = document.getElementById(k_n)
             kind_node.kids_element = document.getElementById("kids" + k_n)
             kind_node.text_element = document.getElementById("text" + k_n)
+            NODE_MAP[k_n] = kind_node
         if k_n in path:
             await build(k_n, kind_node.kids_element, path)
 
@@ -176,6 +177,11 @@ async def focussed_results_clicker(event):
 
 
 async def results_clicker(event):
+    copy_clipboard = find_attr_parents(event.target, "copy_clipboard")
+    if copy_clipboard:
+        navigator.clipboard.writeText(copy_clipboard)
+        return
+
     # handle the search option buttons
     if event.target.id == "includekeys":
         q = document.getElementById("searchbox").value
@@ -323,3 +329,11 @@ if document.notation and document.notation != "_":
     add_desired_to_tree(document.notation)
 else:
     build("ICONCLASS", thetree_element)
+
+
+def init():
+    if len(document.q) > 0:
+        search_action()
+
+
+window.addEventListener("load", init)
