@@ -185,7 +185,12 @@ def do_search(q: str, lang: str, sort: str, keys: bool, r: str):
     else:
         keys = "is_key=0 AND "
     if q:
-        SQL = f"SELECT notation FROM {lang} WHERE {keys}text MATCH ? order by {sort.value}"
+        if q[0] in "0123456789":
+            SQL = f"SELECT notation FROM notations WHERE notation like ? order by notation"
+            if not q.endswith("%"):
+                q = q + "%"
+        else:
+            SQL = f"SELECT notation FROM {lang} WHERE {keys}text MATCH ? order by {sort.value}"
     else:
         SQL = f"SELECT notation FROM notations WHERE notation REGEXP ?"
         q = r
