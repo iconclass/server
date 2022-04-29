@@ -186,7 +186,7 @@ def do_search(q: str, lang: str, sort: str, keys: bool, r: str):
         keys = "is_key=0 AND "
     if q:
         if q[0] in "0123456789":
-            SQL = f"SELECT notation FROM notations WHERE notation like ? order by notation"
+            SQL = f"SELECT notation FROM notations WHERE {keys}notation like ? order by notation"
             if not q.endswith("%"):
                 q = q + "%"
         else:
