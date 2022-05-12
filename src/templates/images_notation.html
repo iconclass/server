@@ -1,4 +1,24 @@
 <div>
+
+    <div style="margin-bottom: 5vh">
+    {% for p in obj.p%}
+    <div>
+      {% if loop.last %}
+        <a href="/{{p['n'] | urlencode}}" style="font-size: 170%; text-decoration: none; color: black">
+            <span style="padding-left: 0.2rem; color: red;">{{p['n']}} &middot; </span>
+            <span>{{p.get('txt', {}).get(lang, "")}}</span>
+        </a>
+      {% else %}
+        <a href="/{{p['n'] | urlencode}}" style="text-decoration: none; color: black">
+            <span style="padding-left: 0.2rem;">{{p['n']}} &middot; </span>
+            <span>{{p.get('txt', {}).get(lang, "")}}</span>
+        </a>
+      {% endif %}
+    </div>
+    {% endfor %}
+    </div>
+
+
 {% for img in images %}
 <a href="{{img[1]}}"><img src="https://test.iconclass.org/iiif/2/{{img[0]}}/full/,200/0/default.jpg" filename={{img}}></a>
 {% endfor %}

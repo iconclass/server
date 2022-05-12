@@ -1,5 +1,15 @@
 ### Status updates on development
 
+**2022-04-28**
+
+Add "Copy to clipboard" buttons to notation view.
+
+Fixed bugs with doubly adding notations to tree when browsing.
+
+Allow navigating straight to a notation by typing it in the search box.
+
+Fix searching for keywords etc. containing hyphens when not manually quoted by a user. eg. [31A256](/31A256)
+
 **2022-03-23**
 
 Add Fulltextsearch SPARQL service, that only returns URIs for results.

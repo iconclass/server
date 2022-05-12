@@ -45,12 +45,16 @@ def get_object(anid: str):
 async def images(request: Request, notation: str):
     SAMPLE_SIZE = 42
     images_count, images_sample = get_images(notation, SAMPLE_SIZE)
+    obj = iconclass.get(notation)
+
     ctx = {
         "request": request,
         "notation": notation,
         "images": images_sample,
         "images_count": images_count,
         "sample_size": SAMPLE_SIZE,
+        "obj": fill_obj(obj),
+        "lang": "en",
     }
     return templates.TemplateResponse("images_notation.html", ctx)
 
@@ -144,6 +148,8 @@ async def search(
 ):
     RESULT_CAP = 999
     results = do_search(q=q, lang=lang, sort=sort, keys=(keys == "1"), r=r)
+    if len(results) < 1 and q and q[0] != '"':
+        results = do_search(q=f'"{q}"', lang=lang, sort=sort, keys=(keys == "1"), r=r)
     # Properly filter in case of bogus notations
     results_objs = filter(None, [iconclass.get(o) for o in results[:RESULT_CAP]])
     ctx = {
