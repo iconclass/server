@@ -1,5 +1,9 @@
 # News
 
+## May 12, 2022
+
+iconclass.org is now the production version of the new Illustrated Iconclass
+
 ### April 28, 2022
 
 Small bugfixes done to prepare for switching off old site.
