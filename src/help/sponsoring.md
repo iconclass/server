@@ -4,7 +4,8 @@
 
 {{% aimg taxcollectors %}}
 
-Two conditions must be met for a more stable basis for Iconclass: some form of financing needs to be organized to help the [Henri van de Waal Foundation](https://henrivandewaalfoundation.org/){:target="read"} carry the costs of maintenance and development. Perhaps even more importantly, however, a larger group of people should have detailed knowledge about editing the system and programming the software that runs it. Open data and open source software are a necessary, but not a sufficient condition...
+Two conditions must be met for a more stable basis for Iconclass: some form of financing needs to be organized to help the [Henri van de Waal Foundation](https://henrivandewaalfoundation.org/){:target="read"} carry the costs of maintenance and development. That is the aim for the Foundation for 2022 and 2023.
+In the long run, however, it is just as important that a larger group of people should have detailed knowledge about editing the system and programming the software that runs it. Open data and open source software are a necessary, but not a sufficient condition...
 To provide a platform and a structure for that support, the Foundation is considering to set up a __Consortium for the Support of Iconclass__. However, before a Consortium can start fundraising initiatives or provide more systematic documentation about the editorial rules and the source code of the Browser system, several questions need to be asked and answered to ensure an open and transparant dialogue between the Foundation and the community of users.
 
 - Who are the institutional and the individual users of the system, and how large is the actual and the potential Iconclass community?
@@ -16,7 +17,7 @@ To provide a platform and a structure for that support, the Foundation is consid
 
 
 ##### The user community
-The Iconclass Browser has always been available to unregistered users, so we shall first have to build an administration of this elusive user base before we can estimate its size and composition. The new version uses a system of registration because certain features, such as personalized clipboard functionalities, require the identification of individual users. Privacy rules obviously dictate that we shall have to ask the explicit permission of those who now register, to be approached about supporting the Consortium.
+The Iconclass Browser has always been available to unregistered users, so we shall first have to build an administration of this elusive user base before we can estimate its size and composition. The new version uses a system of registration because certain features, such as seeing the sample illustrations, require the identification of individual users. Privacy rules obviously dictate that we shall have to ask the explicit permission of those who now register, to be approached about supporting the Consortium.
 For the same reason we shall also ask registered users whether they are prepared to publicly share information about the collection they are describing with Iconclass. It can help prevent unnecessary duplication of efforts if we can have some form of centralized administration of iconographic projects, but, more positively, it can be extremely useful to share insights and experiences with colleagues in similar projects.
 
 ##### Estimated effort
@@ -41,9 +42,14 @@ The registration of projects involving Iconclass could be complemented with a fr
 ##### Membership costs and benefits
 
 The size of the community, and in particular the number of institutions using of Iconclass, are determining factors in the calculations of membership contributions. Contributions would be voluntary, and they could be in cash or kind. Since the whole point is to provide a firmer basis for Iconclass, "in kind" participation in the editorial or the programming effort would also be very welcome.
-Using the Iconclass Browser will continue to be free, as will registration.
+Using the Iconclass Browser will continue to be free, as will be the registration.
 If we cannot gather sufficient support it will simply lead to the eventual discontinuation of the Iconclass Browser and the website. It would mean that the investment many institutions have done to provide access to image content in a standardized way, will go to waste.
 
+##### The price of a daily cappuccino
 
+For all calculations - from the exact number of institutions using Iconclass to the number of daily users or the amount of editorial hours needed in the near future - we need to take a margin of uncertainty into account. Like we said above the best we can do now is to extrapolate from the experience of the past fifteen years, mixed in with what we expect from a future where scholars will take iconographic research more seriously than in recent years.
+In the end this adds up to the equivalent of a daily cup of cappuccino in a reasonably priced European coffee shop, so we would ask institutional users to sponsor the Foundation with an annual contribution of 750 euro.
 
+[{{% aimg cappuccino %}}](https://henrivandewaalfoundation.org/BeleidsplanHvdW2022_en.pdf){:target="read"}
 
+For individual sponsors we are contemplating a voluntary donation scheme comparable to e.g. the [archive.org](https://archive.org/){:target="read"} website.
