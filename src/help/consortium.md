@@ -15,7 +15,7 @@ The Henri van de Waal Foundation is the legal entity that has assumed responsibi
 
 Those costs can be subdivided in two segments: the external costs of keeping the service in the air, i.e. the costs of server hardware, bandwidth, etcetera; and the internal costs of the time invested in creating the software and editing the content.
 
-To meet the external costs the Foundation will need some form of sponsoring. On the [__Sponsoring Iconclass__](https://iconclass.org/help/sponsoring){:target="read"} page, more information can be found.
+To meet those costs the Foundation will need some form of sponsoring. On the [__Sponsoring Iconclass__](https://iconclass.org/help/sponsoring){:target="read"} page, more information can be found.
 
 
 
