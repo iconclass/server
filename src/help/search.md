@@ -57,7 +57,7 @@ Here are two small sets of pictures to illustrate the principle:
 
           {{% aimg 31a232 %}} 
        
-This first set gives priority to __31A232 leaning figure__ and shows several variations of this posture. To express [connotations of the posture](/en/31A232(+9)) keys from the __(+9)__ section could be added.
+This first set gives priority to __31A232 leaning figure__ and shows several variations of this posture. To express [connotations of the posture](https://iconclass.org/31A232(%2B9)){:target="read"} keys from the __(+9)__ section could be added.
 
           {{% aimg 31d16_5 %}} 
 
@@ -336,13 +336,13 @@ As more and more biblical and mythological imagery is catalogued, researchers oc
           {{% aimg frogs %}}
 
 Here is an example from the [Biblia sacra](aboutc#bibliasacra){:target="_read"} project on early modern Netherlandish bible illustration.
-In Exodus 7:28-29 it is announced that during the second of the plagues of Egypt [frogs will swarm over Egypt](https://test.iconclass.org/71E117221){:target="_read"} and even enter pharaoh's palace. Appending this extension of the story as a new concept to an existing branch of the schedules did not present a problem:
+In Exodus 7:28-29 it is announced that during the second of the plagues of Egypt [frogs will swarm over Egypt](https://iconclass.org/71E117221){:target="_read"} and even enter pharaoh's palace. Appending this extension of the story as a new concept to an existing branch of the schedules did not present a problem:
 
           {{% aimg 71E117221 %}}
 
 Most of the expansions of Iconclass in the past decade were isolated, local additions. But there were also some more substantial _groups_ of concepts added, for which the help of local domain experts was indispensable.
-In 2018 a cluster of some 80 concepts in section [__49E39 alchemy__](https://test.iconclass.org/49E39){:target="_read"} was added to accommodate the specialist cataloguing of the [alchemistic sources of the Herzog August Bibliothek in Wolfenbüttel](aboutc#alchemie){:target="_read"}.
-A few years earlier a similar amount of specialized costume concepts was added to section [__41D2 costume__](https://test.iconclass.org/41D2){:target="_read"} with the help of fashion experts of the Rijksmuseum.
+In 2018 a cluster of some 80 concepts in section [__49E39 alchemy__](https://iconclass.org/49E39){:target="_read"} was added to accommodate the specialist cataloguing of the [alchemistic sources of the Herzog August Bibliothek in Wolfenbüttel](aboutc#alchemie){:target="_read"}.
+A few years earlier a similar amount of specialized costume concepts was added to section [__41D2 costume__](https://iconclass.org/41D2){:target="_read"} with the help of fashion experts of the Rijksmuseum.
 
 {{% aimg systemadds %}}
 
@@ -361,7 +361,7 @@ The subject matter covered by this corpus varies widely, but the _point of entry
 To make the subject matter of those records available for research, i.e. to _bring our historical opponent in the field_, we classify their content. We determine which concepts best describe the historical events they depict, the ideas or convictions they convey, and the beliefs and the mentality of which they are a testimony. 
 The events that were recorded may have been acts of violence or piety, of kindness or cruelty. Ideas that for centuries were perfectly acceptable, may later have been regarded as scandalous - or the other way around. Mentalities or beliefs that were the norm in one part of the world, may have been considered objectionable in another. Hence classifying the content of the sources recording them, is always a balancing act.
 Anachronisms and some form of bias are unavoidable. Classifications are not _"neutral"_ or _"objective"_. However, if a classification is a publicly available tool that everyone can consult, its failings are at least out in the open. And the heritage collections that use it, all share _the same shortcomings_. So, repairing them in the shared classification, also means repairing them in the applications using it - at least in theory...
-The Iconclass section that most urgently needed to be repaired was identified several years ago, but it took a while to actually edit and implement the revision of __[32B3 · peoples and nationalities (other than prehistoric or 'historical')](https://test.iconclass.org/32B3){:target="_read"}__.
+The Iconclass section that most urgently needed to be repaired was identified several years ago, but it took a while to actually edit and implement the revision of __[32B3 · peoples and nationalities (other than prehistoric or 'historical')](https://iconclass.org/32B3){:target="_read"}__.
 
 With the help of a few examples we shall discuss the editorial revisions and evaluate the role of Iconclass in the historiographic process and the survival of colonial and racist ideas.
 
@@ -405,7 +405,7 @@ When we tag the caricature by Naudin with this term we do __not__ imply that thi
 
 {{% aimg deathpenalty %}}
 
-Once it is tagged with the concept _44G34 death penalty, execution_, it can take its place next to the stoning of the man who [gathered wood on a sabbath](https://test.iconclass.org/71E3162){:target="_read"} (Numbers 15:32-36), the story of Joachim Carpitzo who had his [wife executed in 1623 for her alleged adultery](http://hdl.handle.net/10934/RM0001.COLLECT.144921){:target="_read"}, and the case of [the Scottsboro boys in 1933](https://www.archives.gov/files/publications/prologue/2014/spring/scottsboro.pdf){:target="_read"}. Three random examples demonstrating that ideas about law, punishment and the death penalty are always context-sensitive and change over time.
+Once it is tagged with the concept _44G34 death penalty, execution_, it can take its place next to the stoning of the man who [gathered wood on a sabbath](https://iconclass.org/71E3162){:target="_read"} (Numbers 15:32-36), the story of Joachim Carpitzo who had his [wife executed in 1623 for her alleged adultery](http://hdl.handle.net/10934/RM0001.COLLECT.144921){:target="_read"}, and the case of [the Scottsboro boys in 1933](https://www.archives.gov/files/publications/prologue/2014/spring/scottsboro.pdf){:target="_read"}. Three random examples demonstrating that ideas about law, punishment and the death penalty are always context-sensitive and change over time.
 
 #### Adding concepts - including offensive ones
 
@@ -413,7 +413,7 @@ Updating the Iconclass schedules can lead to the replacement of offensive expres
 
 {{% aimg 12A9 %}}
 
-Iconclass already has a section for the imagery of anti-semitism. It contains, for example, a few concepts about the dress regulations to which Jewish people were usually submitted. It is there that we find the medieval pointed [Jew-hat](https://test.iconclass.org/12A9322){:target="_read"}, shown on the left, in an early 13th century miniature from an English psalter. 
+Iconclass already has a section for the imagery of anti-semitism. It contains, for example, a few concepts about the dress regulations to which Jewish people were usually submitted. It is there that we find the medieval pointed [Jew-hat](https://iconclass.org/12A9322){:target="_read"}, shown on the left, in an early 13th century miniature from an English psalter. 
 
 The woodcut from a _Blockbuch_ and the relief found on the church of Wittenberg are two examples of virulently anti-semitic imagery, known as a _Judensau_: a sow suckling some Jews, with a rabbi "looking at the Talmud under her tail" (in the words of Martin Luther).
 Given the fact that this imagery is still in place in a substantial number of German churches and that many prints and pamphlets of this theme have survived - and that the public display of the sculptures is a fiercely debated topic - it would be useful to add the concept to Iconclass. Tagging the images with a standardized term would facilitate their discovery when researchers need them. It would be very simple - technically - to add it as a new narrower term of this concept:
@@ -438,11 +438,11 @@ __N__ stands for __Notation__, __C__ stands for __Child__.
 
           {{% aimg notation12A914 %}}
 
-A basic record needs to be added for the notation too, so it takes it place after __12A913__, the notation that stands for [__desecration of relics ~ anti-semitic insinuations__](https://test.iconclass.org/12A913){:target="_read"}.
+A basic record needs to be added for the notation too, so it takes it place after __12A913__, the notation that stands for [__desecration of relics ~ anti-semitic insinuations__](https://iconclass.org/12A913){:target="_read"}.
           
           {{% aimg insert_12A914 %}}          
 
-__K__ stands for __Key__, which here means that the Key [__(+0) variant__](https://test.iconclass.org/12(%2B0)){:target="_read"} is activated for the new notation too.
+__K__ stands for __Key__, which here means that the Key [__(+0) variant__](https://iconclass.org/12(%2B0)){:target="_read"} is activated for the new notation too.
 
 Having edited your own copy of the Iconclass file on your own computer, the file with the new concept is ready to be uploaded to the central repository on the GitHub platform, where your suggestion can be evaluated and discussed by others before being imported into the browser.
 

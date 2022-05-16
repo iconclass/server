@@ -13,7 +13,7 @@ Also see: <a href="https://brill.com/view/db/arko" target="read">https://brill.c
 Included in Arkyves.
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_bildindex %}}<br/></td><td valign="top"><a href="https://www.bildindex.de/" target="read">https://www.bildindex.de/</a><br/><br/>
-The <b>(Marburger) Bildindex</b> is an aggregator site bringing together collections of circa 80 heritage institutions, museum, libraries, archives, documentation institutes, which makes it the largest collection of objects classified with Iconclass.
+The <b>Bildindex der Kunst und Architektur</b> (Image Index of Art and Architecture) is an aggregator site bringing together collections of circa 80 heritage institutions, museum, libraries, archives, documentation institutes, which makes it the largest collection of objects classified with Iconclass.
 </td></tr>
 <tr><td valign="top">{{% aimg aboutpage_incunable %}}<br/></td><td valign="top"><a href="https://www.bsb-muenchen.de/en/collections/historical-prints/collections/incunabula/" target="read">https://www.bsb-muenchen.de/en/collections/historical-prints/collections/incunabula/</a><br/><br/>
 <b>Incunables in Bavaria</b><br/>
@@ -132,6 +132,23 @@ Collection of the <b>Dutch University Institute for Art History</b> in Florence.
 <b>Fondation Custodia - Collection Frits Lugt</b>. The Collection Online, launched in February 2020, is still in its early stages and consists of object records for a part of the collection.
 Currently, all the Italian drawings, as well as those by Rembrandt and his circle held by the Fondation Custodia are available to search in the online collection database. This concerns over 700 objects.
 In the upcoming years, the database will be updated with other works of art on an ongoing basis. At the moment publication is being prepared of the Rembrandt etchings, Flemish and Dutch Old Master paintings, French 19th century drawings, and part of the collection of artists’ letters and manuscripts (French autographs 14th-17th century).
+</td></tr>
+<tr><td valign="top">{{% aimg ridim %}}<br/></td><td valign="top"><a href="https://ridim.musiconn.de/" target="read">https://ridim.musiconn.de/</a><br/><br/>
+<b>Répertoire International d’Iconographie musicale (RIdIM)</b><br/>
+Database on music and dance in art of the German branch of the Répertoire International d'Iconographie musicale (RIdIM)
+More than 21,000 representations of music and dance on objects of all art genres and styles, all periods and contexts of origin from collections of museums, libraries and archives in Germany.
+</td></tr>
+<tr><td valign="top">{{% aimg schinkel %}}<br/></td><td valign="top"><a href="https://schinkel.smb.museum/" target="read">https://schinkel.smb.museum/</a><br/><br/>
+<b>Das Erbe Schinkels</b> (The Schinkel Legacy)<br/>
+Online catalog of the bequest of Karl Friedrich Schinkel (1781-1841) in the Berlin Kupferstichkabinett, Museum of Prints and Drawings
+</td></tr>
+<tr><td valign="top">{{% aimg keulen %}}<br/></td><td valign="top"><a href="https://www.kulturelles-erbe-koeln.de/" target="read">https://www.kulturelles-erbe-koeln.de/</a><br/><br/>
+<b>Kulturelles Erbe Köln</b> (Cologne Cultural Heritage)<br/>
+Image database of holdings of Cologne museums, presented by Rheinisches Bildarchiv (Photographic Archives of the Rhineland) Partially integrated into the Bildindex.
+</td></tr>
+<tr><td valign="top">{{% aimg belvederevienna %}}<br/></td><td valign="top"><a href="https://www.belvedere.at/sammlung" target="read">https://www.belvedere.at/sammlung</a><br/><br/>
+<b>Museum Belvedere Vienna</b><br/>
+Collection database of the Belvedere's paintings, sculpture, prints and drawings.
 </td></tr>
 </table>
 
