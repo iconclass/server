@@ -3,6 +3,8 @@ from fastapi import Request, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from typing import Optional, List, Dict, Text
+from pydantic import BaseModel
+
 
 import iconclass
 from markupsafe import Markup
@@ -165,3 +167,39 @@ async def search(
     }
 
     return templates.TemplateResponse("search_fragment.html", ctx)
+
+
+class IcerData(BaseModel):
+    filename_ics: list
+    ics: dict
+
+
+@app.post(
+    "/fragments/icer/{lang}/", response_class=HTMLResponse, include_in_schema=False
+)
+async def icer_results(request: Request, lang: str, data: IcerData):
+    ic_match_list = {}
+    for i in data.filename_ics:
+        for ic in i["ic"]:
+            if ic in ic_match_list and ic_match_list[ic] > i["match"]:
+                continue
+            else:
+                ic_match_list[ic] = i["match"]
+    RESULT_CAP = 999
+    results = [(match, ic) for ic, match in ic_match_list.items()]
+    results_objs = filter(
+        None, [iconclass.get(ic) for _, ic in reversed(sorted(results))]
+    )
+    ctx = {
+        "request": request,
+        "results": results_objs,
+        "total": len(results),
+        "q": "this uploaded image",
+        "r": "",
+        "lang": lang,
+        "sort": "rank",
+        "include_keys": "1",
+        "RESULT_CAP": RESULT_CAP,
+    }
+
+    return templates.TemplateResponse("icer_matches.html", ctx)

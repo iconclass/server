@@ -344,10 +344,108 @@ if document.notation and document.notation != "_":
 else:
     build("ICONCLASS", thetree_element)
 
+###### ICER Functionality
+
+target = document.getElementById("searchbox")
+output = document.getElementById("theoutput")
+
+
+async def render_results(data):
+    h = __new__(Headers)
+    h.append("Content-Type", "application/json")
+    response = await fetch(
+        "/fragments/icer/" + document.IC_LANG + "/",
+        {
+            "method": "POST",
+            "mode": "cors",
+            "cache": "no-cache",
+            "credentials": "same-origin",
+            "headers": h,
+            "body": JSON.stringify(data),
+        },
+    )
+    content = await response.text()
+    searchresults_element.innerHTML = content
+
+
+async def blob_and_post(blob):
+    b = await blob.arrayBuffer()
+    bb = JSON.stringify({"file_base64": arrayBufferToBase64(b)})
+    h = __new__(Headers)
+    h.append("Content-Type", "application/json")
+    response = await fetch(
+        "/api/similarity",
+        {
+            "method": "POST",
+            "mode": "cors",
+            "cache": "no-cache",
+            "headers": h,
+            "body": bb,
+        },
+    )
+
+    data = await response.json()
+    render_results(data)
+
+
+async def resize_and_post(e):
+    img = e.target
+    ratio = img.width / img.height
+    n_width = 500
+    n_height = n_width / ratio
+    canvas = document.createElement("canvas")
+    canvas.width = n_width
+    canvas.height = n_height
+    ctx = canvas.getContext("2d")
+    ctx.drawImage(img, 0, 0, n_width, n_height)
+    output.src = canvas.toDataURL("image/png")
+    output.style.display = "block"
+    canvas.toBlob(blob_and_post)
+
+
+async def handle_files(file_list):
+    target.style.border = "1px solid black"
+
+    img = document.createElement("img")
+    img.addEventListener("load", resize_and_post)
+
+    file = None
+    for f in file_list:
+        if f["type"].startswith("image/"):
+            img.src = URL.createObjectURL(f)
+            break
+
+
+def paste_listener(e):
+    d = e.clipboardData.getData("text")
+    if d.startswith("http"):
+        console.log("Pasted an URL?", d)
+    else:
+        e.preventDefault()
+        handle_files(e.clipboardData.files)
+
+
+def drop_listener(e):
+    e.stopPropagation()
+    e.preventDefault()
+    handle_files(e.dataTransfer.files)
+
+
+def drag_listener(e):
+    if e["type"] == "dragenter":
+        target.style.border = "4px dotted green"
+    else:
+        target.style.border = "1px solid black"
+
 
 def init():
     if len(document.q) > 0:
         search_action()
+    target = document.getElementById("searchbox")
+    target.addEventListener("paste", paste_listener)
+    target.addEventListener("drop", drop_listener)
+    target.addEventListener("dragenter", drag_listener)
+    target.addEventListener("dragleave", drag_listener)
 
 
 window.addEventListener("load", init)

@@ -1,27 +1,40 @@
-{% extends "base.html" %}
+<div class="row mt-3">
+    {% if r %}{% else %}<div class="col">
+        <a id="advancedsearch" href="#" class="btn btn-sm btn-success">Advanced Search</a> 
+    </div>
+    {% endif %}
 
-{% block content %}
-<div class="container-fluid">
-    <div class="row p-3">
-        <div class="col-8">
-            <form action="/icerupload" method="POST" enctype="multipart/form-data">
-                <input type="file" name="file" accept="image/jpeg">
-                <input type="submit" value="Analyze">
-            </form>
-            {% for m in filename_ics %}
-                <img src="https://iiif.arkyves.org/{{m.filename}}/full/,300/0/default.jpg" title="{{m.match}}">
-            {% endfor %}
-        </div>
-        {% if ics %}
-        <div class="col-4">
-            {% for ic in ics %}
-                <p style="margin: 0"><a target="_new" href="/{{ic.n|urlencode}}">{{ic.n}}</a> &middot; {{ic.txt.en}}</p>
-            {% endfor %}
-        </div>
-        {% endif %}
-
-
+    <div class="col">
+    {% if include_keys == '1' %}<a id="includekeys" data="0" class="btn btn-sm btn-secondary" href="#">Exclude keys (+ )</a>{% else %}
+    <a id="includekeys" data="1" class="btn btn-sm btn-secondary" href="#">Include keys (+ )</a>{% endif %}
+    {% if sort == 'rank'%}<a id="searchsortorder" data="notation" class="btn btn-sm btn-secondary" href="#">Sort by notation</a>{% else %}
+    <a id="searchsortorder" data="rank" class="btn btn-sm btn-secondary" href="#">Sort by relevance</a>{% endif %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col">
+        <b class="mt-4">Found {{total}} results, searching for <em>{{q}}</em></b>
     </div>
 </div>
 
-{% endblock %}
+{% if request.user.is_authenticated %}
+
+<div style="max-width: 90ch">
+{% for r in results %}
+<div style="text-indent: -1em; margin-left: 1em; margin-bottom: 5px">
+    <span style="cursor: pointer" notation="{{r['n']}}">{{r['n']}} &middot; {{ r.get('txt').get(lang)}}</span>
+</div>
+{% endfor %}
+</div>
+
+{% if total > RESULT_CAP %}
+    <em>We are showing the first {{RESULT_CAP}} results, of the {{total}} search results.</em>
+{% endif %}
+
+{% else %}
+<div>
+    <p>To use this feature you need to be logged in.</p>
+    <p>It is currently only available to <a href="/help/sponsoring">sponsors of the Iconclass consortium</a></p>
+
+</div>
+{% endif %}
