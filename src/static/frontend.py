@@ -283,6 +283,7 @@ def get_searchoption_opposite(value):
 
 
 async def dosearch(q, keys, sort):
+    output.style.display = "none"
     searchresults_element.innerHTML = '<div style="margin-top: 20px" class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>'
 
     search_url = (
@@ -368,13 +369,31 @@ async def render_results(data):
     searchresults_element.innerHTML = content
 
 
+async def render_focus(data):
+    h = __new__(Headers)
+    h.append("Content-Type", "application/json")
+    response = await fetch(
+        "/fragments/icerimages/" + document.IC_LANG + "/",
+        {
+            "method": "POST",
+            "mode": "cors",
+            "cache": "no-cache",
+            "credentials": "same-origin",
+            "headers": h,
+            "body": JSON.stringify(data),
+        },
+    )
+    content = await response.text()
+    results_element.innerHTML = content
+
+
 async def blob_and_post(blob):
     b = await blob.arrayBuffer()
     bb = JSON.stringify({"file_base64": arrayBufferToBase64(b)})
     h = __new__(Headers)
     h.append("Content-Type", "application/json")
     response = await fetch(
-        "/api/similarity",
+        "https://iconclass.org/api/similarity",
         {
             "method": "POST",
             "mode": "cors",
@@ -386,6 +405,7 @@ async def blob_and_post(blob):
 
     data = await response.json()
     render_results(data)
+    render_focus(data)
 
 
 async def resize_and_post(e):

@@ -203,3 +203,18 @@ async def icer_results(request: Request, lang: str, data: IcerData):
     }
 
     return templates.TemplateResponse("icer_matches.html", ctx)
+
+
+@app.post(
+    "/fragments/icerimages/{lang}/",
+    response_class=HTMLResponse,
+    include_in_schema=False,
+)
+async def icer_images(request: Request, lang: str, data: IcerData):
+
+    ctx = {
+        "request": request,
+        "images": data.filename_ics,
+    }
+
+    return templates.TemplateResponse("icer_images.html", ctx)
