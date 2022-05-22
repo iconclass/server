@@ -150,5 +150,9 @@ Image database of holdings of Cologne museums, presented by Rheinisches Bildarch
 <b>Museum Belvedere Vienna</b><br/>
 Collection database of the Belvedere's paintings, sculpture, prints and drawings.
 </td></tr>
+<tr><td valign="top">{{% aimg emilia_imago %}}<br/></td><td valign="top"><a href="https://imago.sebina.it/opac/.do" target="read">https://imago.sebina.it/opac/.do</a><br/><br/>
+<b>Imago, collective digital catalogue</b><br/>
+Opere grafiche fotografiche e cartografiche delle istituzioni della Regione Emilia-Romagna
+</td></tr>
 </table>
 
