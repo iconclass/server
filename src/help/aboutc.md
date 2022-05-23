@@ -154,5 +154,9 @@ Collection database of the Belvedere's paintings, sculpture, prints and drawings
 <b>Imago, collective digital catalogue</b><br/>
 Opere grafiche fotografiche e cartografiche delle istituzioni della Regione Emilia-Romagna
 </td></tr>
+<tr><td valign="top">{{% aimg rudolphina %}}<br/></td><td valign="top"><a href="https://www.inventariarudolphina.com/" target="read">https://www.inventariarudolphina.com/</a><br/><br/>
+<b>Inventaria Rudolphina</b><br/>
+The painting collection of Emperor Rudolf II in Prague, scattered during the Thirty Years’ War, was one of the foremost ensembles of its kind in Europe. The inventories, period testimonies and other sources, and last but not least identified works, provide an idea of its scope. Heuristic research and the "Art for display" database allow an analysis of the collection with a regard to pictorial genres composition and the representation of painters, painting “schools”, also its spatial arrangement and administration.
+</td></tr>
 </table>
 
