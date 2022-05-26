@@ -1,5 +1,9 @@
 ### Status updates on development
 
+**2022-05-26**
+
+Add copy to clipboard to search results.
+
 **2022-04-28**
 
 Add "Copy to clipboard" buttons to notation view.
