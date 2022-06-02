@@ -10,7 +10,7 @@ Small bugfixes done to prepare for switching off old site.
 
 ### January 25, 2022
 
-A few weeks ago a "Help/How to use" file was started; also addressing more general issues of iconography. It is not yet linked, but it is [accessible as it progresses](https://test.iconclass.org/help/search)
+A few weeks ago a "Help/How to use" file was started; also addressing more general issues of iconography. It is not yet linked, but it is [accessible as it progresses](/help/search)
 [Suggestions and comments are very welcome](https://forms.gle/twPq7swQZXmSX46G8)
 
 ### December 21, 2021

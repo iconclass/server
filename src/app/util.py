@@ -31,7 +31,7 @@ ORDER BY ?itemLabel
     with httpx.Client() as client:
         headers = {
             "Accept": "application/sparql-results+json",
-            "User-Agent": "ICONCLASS/2021 (https://test.iconclass.org/ info@iconclass.org)",
+            "User-Agent": "ICONCLASS/2021 (https://iconclass.org/ info@iconclass.org)",
         }
         r = client.get(
             "https://query.wikidata.org/sparql?query=" + urllib.parse.quote_plus(query),

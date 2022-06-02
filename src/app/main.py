@@ -66,7 +66,7 @@ async def wikidatasample(notation: str, request: Request):
 
 
 def aimg(*args, **kwargs):
-    return f'<img src="https://test.iconclass.org/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
+    return f'<img src="https://iconclass.org/iiif/2/{args[0]}.jpg/full/full/0/default.jpg"/>'
 
 
 def pdf(*args, **kwargs):

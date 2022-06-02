@@ -6,7 +6,7 @@ At the same time it is cause for concern; for the simple reason that this also m
 {{% aimg ic_survey_users %}}
 
 For some twenty years now we have managed to make the Iconclass system available in the shape of the online _Iconclass Browser_ and the _Harvester of Iconclass Metadata_ service.
-While we remain committed to creating a stable situation for Iconclass, and ensuring the continued availability of an online Iconclass system in __Open Access__, it is clear that in the long run this cannot depend on the commitment of [two individuals](https://test.iconclass.org/help/team){:target="read"}. The active involvement of the community of Iconclass users is a necessary condition for a stable future.
+While we remain committed to creating a stable situation for Iconclass, and ensuring the continued availability of an online Iconclass system in **Open Access**, it is clear that in the long run this cannot depend on the commitment of [two individuals](/help/team){:target="read"}. The active involvement of the community of Iconclass users is a necessary condition for a stable future.
 
 ### Henri van de Waal Foundation
 
@@ -15,8 +15,4 @@ The Henri van de Waal Foundation is the legal entity that has assumed responsibi
 
 Those costs can be subdivided in two segments: the external costs of keeping the service in the air, i.e. the costs of server hardware, bandwidth, etcetera; and the internal costs of the time invested in creating the software and editing the content.
 
-To meet those costs the Foundation will need some form of sponsoring. On the [__Sponsoring Iconclass__](https://iconclass.org/help/sponsoring){:target="read"} page, more information can be found.
-
-
-
-
+To meet those costs the Foundation will need some form of sponsoring. On the [**Sponsoring Iconclass**](https://iconclass.org/help/sponsoring){:target="read"} page, more information can be found.
