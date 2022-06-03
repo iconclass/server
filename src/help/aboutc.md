@@ -161,9 +161,7 @@ The painting collection of Emperor Rudolf II in Prague, scattered during the Thi
 
 <tr><td valign="top">{{% aimg vitrosearch %}}<br/></td><td valign="top"><a href="https://www.vitrosearch.ch/" target="read">https://www.vitrosearch.ch/</a><br/><br/>
 <b>vitrosearch</b><br/>
-vitrosearch is a scientific database created as a joint initiative of the Vitrocentre and the Vitromusée Romont.
-The Vitrocentre Romont is dedicated to research in stained glass, reverse glass painting and glass objects.
+vitrosearch is a research database for glass art created by the Vitrocentre Romont. Vitrocentre Romont is dedicated to research in stained glass, reverse glass painting and glass objects. vitrosearch also includes inventories of the Corpus Vitrearum Switzerland as well as art works from the collection of the Vitromusée Romont.
 </td></tr>
-
 
 </table>
