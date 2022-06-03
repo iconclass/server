@@ -158,5 +158,12 @@ Opere grafiche fotografiche e cartografiche delle istituzioni della Regione Emil
 <b>Inventaria Rudolphina</b><br/>
 The painting collection of Emperor Rudolf II in Prague, scattered during the Thirty Years’ War, was one of the foremost ensembles of its kind in Europe. The inventories, period testimonies and other sources, and last but not least identified works, provide an idea of its scope. Heuristic research and the "Art for display" database allow an analysis of the collection with a regard to pictorial genres composition and the representation of painters, painting “schools”, also its spatial arrangement and administration.
 </td></tr>
-</table>
 
+<tr><td valign="top">{{% aimg vitrosearch %}}<br/></td><td valign="top"><a href="https://www.vitrosearch.ch/" target="read">https://www.vitrosearch.ch/</a><br/><br/>
+<b>vitrosearch</b><br/>
+vitrosearch is a scientific database created as a joint initiative of the Vitrocentre and the Vitromusée Romont.
+The Vitrocentre Romont is dedicated to research in stained glass, reverse glass painting and glass objects.
+</td></tr>
+
+
+</table>
