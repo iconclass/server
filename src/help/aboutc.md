@@ -158,10 +158,13 @@ Opere grafiche fotografiche e cartografiche delle istituzioni della Regione Emil
 <b>Inventaria Rudolphina</b><br/>
 The painting collection of Emperor Rudolf II in Prague, scattered during the Thirty Years’ War, was one of the foremost ensembles of its kind in Europe. The inventories, period testimonies and other sources, and last but not least identified works, provide an idea of its scope. Heuristic research and the "Art for display" database allow an analysis of the collection with a regard to pictorial genres composition and the representation of painters, painting “schools”, also its spatial arrangement and administration.
 </td></tr>
-
 <tr><td valign="top">{{% aimg vitrosearch %}}<br/></td><td valign="top"><a href="https://www.vitrosearch.ch/" target="read">https://www.vitrosearch.ch/</a><br/><br/>
-<b>vitrosearch</b><br/>
-vitrosearch is a research database for glass art created by the Vitrocentre Romont. Vitrocentre Romont is dedicated to research in stained glass, reverse glass painting and glass objects. vitrosearch also includes inventories of the Corpus Vitrearum Switzerland as well as art works from the collection of the Vitromusée Romont.
+<b>Vitrosearch</b><br/>
+Vitrosearch is a research database for glass art created by the Vitrocentre Romont. Vitrocentre Romont is dedicated to research in stained glass, reverse glass painting and glass objects. vitrosearch also includes inventories of the Corpus Vitrearum Switzerland as well as art works from the collection of the Vitromusée Romont.
+</td></tr>
+<tr><td valign="top">{{% aimg fokoproject %}}<br/></td><td valign="top"><a href="https://foko-project.eu/#/de" target="read">https://foko-project.eu/#/de</a><br/><br/>
+<b>Kunstdenkmäler in Ostmitteleuropa (FoKO) - Monuments of Eastern Central Europe</b><br/>
+A portal created for the transnational project _Forschungsinfrastruktur Kunstdenkmäler in Ostmitteleuropa_ which focusses on the monuments of the eastern part of Central Europe, a region with a complex historical dynamic. It is closely related to the project to produce a _Handbuch zur Geschichte der Kunst in Ostmitteleuropa_  at the Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO) at the university of Leipzig.
 </td></tr>
 
 </table>
