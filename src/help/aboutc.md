@@ -164,7 +164,7 @@ Vitrosearch is a research database for glass art created by the Vitrocentre Romo
 </td></tr>
 <tr><td valign="top">{{% aimg fokoproject %}}<br/></td><td valign="top"><a href="https://foko-project.eu/#/de" target="read">https://foko-project.eu/#/de</a><br/><br/>
 <b>Kunstdenkmäler in Ostmitteleuropa (FoKO) - Monuments of Eastern Central Europe</b><br/>
-A portal created for the transnational project _Forschungsinfrastruktur Kunstdenkmäler in Ostmitteleuropa_ which focusses on the monuments of the eastern part of Central Europe, a region with a complex historical dynamic. It is closely related to the project to produce a _Handbuch zur Geschichte der Kunst in Ostmitteleuropa_  at the Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO) at the university of Leipzig.
+A portal created for the transnational project <b>Forschungsinfrastruktur Kunstdenkmäler in Ostmitteleuropa</b> which focusses on the monuments of the eastern part of Central Europe, a region with a complex historical dynamic. It is closely related to the project to produce a <i>Handbuch zur Geschichte der Kunst in Ostmitteleuropa</i>  at the Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO) at the university of Leipzig.
 </td></tr>
 
 </table>
