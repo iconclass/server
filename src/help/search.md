@@ -1,6 +1,6 @@
 ## The Illustrated Iconclass: Search, Browse and Edit 
 
-Those who have been using Iconclass for some time and those who are new to it, will come to this new, illustrated edition with different expectations and different ideas about what it is for and how it works. This explanation therefore aims to take into account two differen user groups.
+Those who have been using Iconclass for some time and those who are new to it, will come to this new, illustrated edition with different expectations and different ideas about what it is for and how it works. This explanation therefore aims to take into account two different user groups.
 
 Initially, of course, this overview of the __Search__ and __Browse__ functionality will make more sense if you have some experience with Iconclass. If that is your case, you still may need a little time to adjust to the changes, as with all new versions of software that you are familiar with. Do remember, however, that you have a direct line to the makers of this Iconclass browser system. You will find the __Feedback__ button at the top right hand corner of the browser window. If you have comments or questions, make sure to use it. Your experiences are very valuable to us. If you are new to Iconclass, your experiences are of course no less valuable, as you will look at its functionalities with fresh eyes. The invitation to use the Feedback button is there for you too.
 
