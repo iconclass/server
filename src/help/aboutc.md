@@ -152,7 +152,7 @@ Collection database of the Belvedere's paintings, sculpture, prints and drawings
 </td></tr>
 <tr><td valign="top">{{% aimg emilia_imago %}}<br/></td><td valign="top"><a href="https://imago.sebina.it/opac/.do" target="read">https://imago.sebina.it/opac/.do</a><br/><br/>
 <b>Imago, collective digital catalogue</b><br/>
-Opere grafiche fotografiche e cartografiche delle istituzioni della Regione Emilia-Romagna
+Imago è il catalogo collettivo digitale di opere grafiche, fotografiche e cartografiche (stampe, disegni, manifesti, figurine, fotografie, cartoline), dal quindicesimo al ventunesimo secolo, appartenenti a istituzioni culturali della Regione Emilia-Romagna. Consultabile sul web dal 2000, oggi propone oltre 1 milione di informazioni bibliografiche relative a un ricco patrimonio di immagini storiche, satiriche, didascaliche, allegoriche, documentarie e d’invenzione, comprensive di opere provenienti da corpora letterari e iconografici di importanti archivi culturali del '900.
 </td></tr>
 <tr><td valign="top">{{% aimg rudolphina %}}<br/></td><td valign="top"><a href="https://www.inventariarudolphina.com/" target="read">https://www.inventariarudolphina.com/</a><br/><br/>
 <b>Inventaria Rudolphina</b><br/>
