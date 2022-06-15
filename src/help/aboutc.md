@@ -110,7 +110,7 @@ The <b>Virtuelles Kupferstichkabinett</b> is the shared research database of the
 At this moment the Virtual Print Cabinet contains more than 110,000 objects.<br/>
 Partly included in Arkyves.
 </td></tr>
-<tr><td valign="top">{{% aimg aboutpage_azulejos %}}<br/></td><td valign="top"><a href="http://redeazulejo.letras.ulisboa.pt/pesquisa-az/iconografia_pesquisa.aspx" target="read">http://redeazulejo.letras.ulisboa.pt/pesquisa-az/iconografia_pesquisa.aspx</a><br/><br/>
+<tr><td valign="top">{{% aimg aboutpage_azulejos %}}<br/></td><td valign="top"><a href="https://redeazulejo.letras.ulisboa.pt/pesquisa-az" target="read">https://redeazulejo.letras.ulisboa.pt/pesquisa-az</a><br/><br/>
 <b>Az Infinitum Sistema de Referência & Indexação de Azulejo</b>
 The study of azulejos (tiles) has asserted itself as a specific area of study in the history of art of Portugal, although its objects are in a close relationship with other areas of the visual arts - painting, architecture, sculpture, etc - as those who produced them mastered other techniques as well.<br/>
 The Az infinitum site offers the most extensive database in the field of the study of Portuguese tiles.
