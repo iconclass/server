@@ -89,7 +89,7 @@ async def notation_jsonld(notation: str):
             {"uri": f"https://iconclass.org/{urllib.parse.quote(r)}"}
             for r in obj.get("r", [])
         ]
-    return JSONResponse(tmp)
+    return JSONResponse(tmp, headers={"Access-Control-Allow-Origin": "*"})
 
 
 @app.get("/{notation}.jskos", response_model=JSKOS, response_model_exclude_unset=True)
@@ -154,7 +154,7 @@ async def notation_json(notation: str):
         }
     else:
         obj = iconclass.get(notation)
-    return obj
+    return JSONResponse(obj, headers={"Access-Control-Allow-Origin": "*"})
 
 
 @app.get(
@@ -172,7 +172,7 @@ async def notation_fat(notation: str):
     else:
         obj = iconclass.get(notation)
 
-    return fill_obj(obj)
+    return JSONResponse(fill_obj(obj), headers={"Access-Control-Allow-Origin": "*"})
 
 
 @app.get("/{notation}.rdf", response_class=Response)

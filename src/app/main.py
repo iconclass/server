@@ -1,8 +1,5 @@
 from fastapi import Depends, FastAPI, Request, HTTPException, Query
-from fastapi.responses import (
-    HTMLResponse,
-    RedirectResponse,
-)
+from fastapi.responses import HTMLResponse, RedirectResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from jinja2 import Markup
@@ -48,7 +45,10 @@ from .sparql import *
 @app.get("/json")
 async def json_list(notation: List[str] = Query(None)):
     objs = iconclass.get_list(notation)
-    return {"result": objs, "requested": notation}
+    return JSONResponse(
+        {"result": objs, "requested": notation},
+        headers={"Access-Control-Allow-Origin": "*"},
+    )
 
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
@@ -142,7 +142,11 @@ async def api_search(
     keys: Optional[str] = "0",
 ):
     notations = do_search(q=q, r=r, lang=lang, sort=sort, keys=(keys == "1"))
-    return {"result": notations[:size], "total": len(notations)}
+
+    return JSONResponse(
+        {"result": notations[:size], "total": len(notations)},
+        headers={"Access-Control-Allow-Origin": "*"},
+    )
 
 
 @app.get("/browse/{lang}", response_class=HTMLResponse, include_in_schema=False)
