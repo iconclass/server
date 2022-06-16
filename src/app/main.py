@@ -20,7 +20,7 @@ from .util import (
 )
 from .models import *
 
-from .config import ORIGINS, HELP_PATH, SITE_URL
+from .config import ORIGINS, HELP_PATH, SITE_URL, ADOBE_PDFAPI_ID
 
 
 app = FastAPI(openapi_url="/openapi")
@@ -79,7 +79,8 @@ def pdf(*args, **kwargs):
 @app.get("/read/{filename}", response_class=HTMLResponse, include_in_schema=False)
 async def read(request: Request, filename: str):
     return templates.TemplateResponse(
-        "read.html", {"request": request, "filename": filename}
+        "read.html",
+        {"request": request, "filename": filename, "ADOBE_PDFAPI_ID": ADOBE_PDFAPI_ID},
     )
 
 
