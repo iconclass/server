@@ -166,5 +166,9 @@ Vitrosearch is a research database for glass art created by the Vitrocentre Romo
 <b>Kunstdenkmäler in Ostmitteleuropa (FoKO) - Monuments of Eastern Central Europe</b><br/>
 A portal created for the transnational project <b>Forschungsinfrastruktur Kunstdenkmäler in Ostmitteleuropa</b> which focusses on the monuments of the eastern part of Central Europe, a region with a complex historical dynamic. It is closely related to the project to produce a <i>Handbuch zur Geschichte der Kunst in Ostmitteleuropa</i>  at the Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO) at the university of Leipzig.
 </td></tr>
+<tr><td valign="top">{{% aimg giesbrecht %}}<br/></td><td valign="top"><a href="https://bildpostkarten.uni-osnabrueck.de/frontend/" target="read">https://bildpostkarten.uni-osnabrueck.de/frontend/</a><br/><br/>
+<b>Historische Bildpostkarten - Sammlung Prof. Dr. Sabine Giesbrecht</b><br/>
+An archive of postcards of the University of Osnabrück. The university is creating a pictorial information system that gives access to the collection, allowing it to be used as a source of cultural and historical research. The project is supported by the Sievert-Stiftung für Wissenschaft und Kultur and the Ministeriums für Wissenschaft und Kultur des Landes Niedersachsen. At the moment the site contains some 15,000 iconographically indexed cards.
+</td></tr>
 
 </table>
