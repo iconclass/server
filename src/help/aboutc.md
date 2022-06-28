@@ -170,5 +170,10 @@ A portal created for the transnational project <b>Forschungsinfrastruktur Kunstd
 <b>Historische Bildpostkarten - Sammlung Prof. Dr. Sabine Giesbrecht</b><br/>
 An archive of postcards of the University of Osnabrück. The university is creating a pictorial information system that gives access to the collection, allowing it to be used as a source of cultural and historical research. The project is supported by the Sievert-Stiftung für Wissenschaft und Kultur and the Ministeriums für Wissenschaft und Kultur des Landes Niedersachsen. At the moment the site contains some 15,000 iconographically indexed cards.
 </td></tr>
+<tr><td valign="top">{{% aimg icgamescollection %}}<br/></td><td valign="top"><a href="https://www.internationale-computerspielesammlung.de/en/" target="read">https://www.internationale-computerspielesammlung.de/en/</a><br/><br/>
+<b>Internationale Computerspielsammlung - International Computer Game Collection</b><br/>
+The International Computer Game Collection (Internationale Computerspielesammlung) is a project of the Computer Game Museum (Computerspielemuseum), the German Entertainment Software Self-Regulation Body (Unterhaltungssoftware Selbstkontrolle – USK), the Digital Games Research Center for the University of Potsdam (DIGAREC) and their collection, the German Games Industry Association and the Foundation for Digital Games Culture (Stiftung Digitale Spielekultur), in 2017, with the objective of creating the world’s biggest collection of video and computer games. By combining the software collections held by the Computer Game Museum, USK and DIGAREC with the archive of the German Computer Games Awards (Deutscher Computerspielpreis) in a two-stage process, one of the world’s most extensive and important collections is created, bringing together over 58,000 computer and video games.
+</td></tr>
+
 
 </table>
