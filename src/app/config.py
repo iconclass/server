@@ -17,3 +17,4 @@ ORIGINS = os.environ.get(
 ACCESS_TOKEN_EXPIRE_DAYS = int(os.environ.get("ACCESS_TOKEN_EXPIRE_DAYS", "30"))
 SITE_URL = os.environ.get("SITE_URL", "https://iconclass.org")
 HELP_PATH = os.environ.get("HELP_PATH", "./help/")
+ADOBE_PDFAPI_ID = os.environ.get("ADOBE_PDFAPI_ID", "?")
