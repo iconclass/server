@@ -1,12 +1,12 @@
-<a name="sponsors"/>
+<a name="funding"/>
 
-# Sponsoring Iconclass
+# Funding Iconclass
 
 {{% aimg taxcollectors %}}
 
-Two conditions must be met for a more stable basis for Iconclass: some form of financing needs to be organized to help the [Henri van de Waal Foundation](https://henrivandewaalfoundation.org/){:target="read"} carry the costs of maintenance and development. That is the aim for the Foundation for 2022 and 2023.
+Two conditions must be met for a more stable basis for Iconclass: some form of funding needs to be organized to help the [Henri van de Waal Foundation](https://henrivandewaalfoundation.org/){:target="read"} carry the costs of maintenance and development. That is the aim for the Foundation for 2022 and 2023.
 In the long run, however, it is just as important that a larger group of people has detailed knowledge about editing the system and programming the software that runs it. Open data and open source software are a necessary, but not a sufficient condition...
-To provide a platform and a structure for that support, the Foundation is considering to set up a __Consortium for the Support of Iconclass__. However, before a Consortium can start fundraising initiatives or provide more systematic documentation about the editorial rules and the source code of the Browser system, several questions need to be asked and answered to ensure an open and transparant dialogue between the Foundation and the community of users.
+To provide a platform and a structure for that support, the Foundation is now setting up a __Consortium for the Support of Iconclass__. However, before a Consortium can start fundraising initiatives or provide more systematic documentation about the editorial rules and the source code of the Browser system, several questions need to be asked and answered to ensure an open and transparant dialogue between the Foundation and the community of users.
 
 - Who are the institutional and the individual users of the system, and how large is the actual and the potential Iconclass user community?
 - What effort is required to sustain the Iconclass Browser, technically and editorially?
