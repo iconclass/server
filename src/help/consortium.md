@@ -10,12 +10,12 @@ While we remain committed to creating a stable situation for Iconclass, and ensu
 
 ### An Iconclass Consortium
 
-Under Dutch law a _consortium_ can be defined as a temporary organization of a certain number of partners to accomplish a common goal. It is not a legal entity in its own right, so when legal issues are involved a more formal organization has to be developed.
-The common goal that is immediately in front of us is self-evident: the continued availability of the online Iconclass system, free of charge and open to all users who want to use it as their standard for iconographic information.
+Under Dutch law a _consortium_ is defined as a temporary organization of a certain number of partners to accomplish a common goal. It is not a legal entity in its own right, so when legal issues are involved a more formal organization has to be developed.
+The common goal that is immediately in front of us is self-evident: the continued availability of the online Iconclass system, free of charge and open to everyone who wants to use it to standardize iconographic information.
 
-A first step towards a _consortium of partners_ is to find out who else is prepared to become a partner. The initiating partner is the Henri van de Waal Foundation, but, obviously, _one_ partner is not a _consortium_...
+When you take the initiative to form a _consortium of partners_ the first step is to find out who else is prepared to become a partner. The initiating partner is the Henri van de Waal Foundation, but, obviously, _one_ partner is not a _consortium_...
 
-So, to determine whether we can actually build a consortium of partners, we have created a [survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Obc9MOjOg8WmnkUTFMA7jQqXQnskjci1Zxm4Tjr4yMEqUQ/viewform). Institutions and individual researchers can use it to tell tus whether they are able and willing to contribute to the common goal, either by making a financial contribution or by investing their own time in the work that has to be done to keep the system going, and to develop richer functionality.
+So, to determine whether we can actually build a consortium of partners, we have created a [survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Obc9MOjOg8WmnkUTFMA7jQqXQnskjci1Zxm4Tjr4yMEqUQ/viewform). Institutions and individual researchers can use it to tell us whether they are able and willing to contribute to the common goal, either by making a financial contribution or by investing their own time in the work that has to be done to keep the system going, and to develop richer functionality.
 
 
 ### Henri van de Waal Foundation
@@ -25,6 +25,6 @@ The Henri van de Waal Foundation is the legal entity that has assumed responsibi
 
 The cost involved can be subdivided in several segments. First there are the external costs of keeping the service in the air, i.e. the costs of server hardware, bandwidth, etcetera. Then there are the internal costs of the time invested in creating the software and editing the content.
 
-To meet the external costs the Foundation evidently needs funding. 
+To meet the external costs the Foundation evidently needs funding. But to continue developing the system, adding more images to the dataset of samples, add new translations and maintain and finetune the software, real people need to invest real time and some form of compensation is required for that too.
 
 On the [**Sponsoring Iconclass**](https://iconclass.org/help/sponsoring){:target="read"} page, more information can be found.
