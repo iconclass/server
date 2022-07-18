@@ -84,7 +84,7 @@ International Terminology Work Group, Getty Center, Los Angeles, 2020<br/>{{% pd
 <tr><td valign="top">{{% aimg aboutpage_2020faper %}}<br/></td><td valign="top"><b>Iconographic Image Captioning for Artworks</b> (Eva Cetinić)<br/>
 FAPER 2020. International Workshop on Fine Art Pattern Extraction and Recognition<br/>{{% pdf 2020_cetinic_faper %}}
 </td></tr>
-<tr><td valign="top">{{% aimg aboutpage_2021_luxemburg %}}<br/></td><td valign="top"><b>When will an algorith identify a sleeping lion as an emblem of a vigilant ruler?</b><br/>
+<tr><td valign="top">{{% aimg aboutpage_2021_luxemburg %}}<br/></td><td valign="top"><b>When will an algorithm identify a sleeping lion as an emblem of a vigilant ruler?</b><br/>
 DTU-DHH Lecture Series, University of Luxemburg, December 2020
 <br/>{{% pdf 2020_Luxemburg %}}<br/>
 Recording made available in January 2021 via <a href="https://www.c2dh.uni.lu/thinkering/recording-when-will-algorithm-identify-sleeping-lion-emblem-vigilant-ruler" target="read">C2DH Digital History & Historiography</a>
@@ -96,5 +96,9 @@ Hereditas | Atlas da Paisagem Cultural Herdar o Futuro: O Património Cultural n
 <tr><td valign="top">{{% aimg aboutpage_azlab68 %}}<br/></td><td valign="top"><b>On the shoulders of giants</b>
 <br/>Demonstration of the digital edition of Kirschbaum's Lexikon der christlichen Ikonographie, enriched with Iconclass tagging and English, French, Italian and Dutch language support.<br/>
 June 2021. Recording on Youtube channel <a href="https://www.youtube.com/watch?v=TqFM9F4lgrk" target="read">AZ Lab #68</a>
+</td></tr>
+<tr><td valign="top">{{% aimg aboutpage_2022gent %}}<br/></td><td valign="top"><b>Classification and Pattern Matching</b>
+<br/>Lecture delivered at the workshop <b>Body Posture and Art: New Approaches</b> (Museum of Fine Arts, Ghent, May 19-20, 2022).<br/>
+The lecture summary, broadly corresponding with the presentation, is also available: {{% pdf 2022gent %}}
 </td></tr>
 </table>
