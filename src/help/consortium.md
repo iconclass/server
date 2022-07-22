@@ -10,7 +10,7 @@ While we remain committed to creating a stable situation for Iconclass, and ensu
 
 ### An Iconclass Consortium
 
-Under Dutch law a _consortium_ is defined as a temporary organization of a certain number of partners to accomplish a common goal. It is not a legal entity in its own right, so when legal issues are involved a more formal organization has to be developed.
+Under Dutch law a _consortium_ is defined as a temporary organization of a certain number of partners to accomplish a common goal. It is not automatically a legal entity in its own right, so for legal and financial issues the Henri van de Waal Foundation will take responsibility, at least in the initial stages.
 The common goal that is immediately in front of us is self-evident: the continued availability of the online Iconclass system, free of charge and open to everyone who wants to use it to standardize iconographic information.
 
 When you take the initiative to form a _consortium of partners_ the first step is to find out who else is prepared to become a partner. The initiating partner is the Henri van de Waal Foundation, but, obviously, _one_ partner is not a _consortium_...
