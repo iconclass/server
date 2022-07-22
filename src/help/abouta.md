@@ -97,7 +97,7 @@ Our aim is to offer a comprehensive overview of the articles, book chapters, ind
 - Angelika Grund, Iconclass. On Subject Analysis of Iconographic Representations of Works of Art. In: Knowledge Organization 20(1993)No. 1, pp 20-29
 - A. E. Cawkell, Encyclopaedic Dictionary of Information Technology and Systems,(Bowker, 1993), in the lemma IMAGES, pp 132-154 dr Catherine Gordon describes the use of iconclass at the Witt Library
 - C. Gordon, Analysis of Shakespeare. A complete listing of scenes for the expansion of 83(...) [unpublished] {{% pdf 1993_Shakespeare_index_gordon %}}
-- [&para;](#1993report){: name="1993report" } J.P.J. Brandhorst, P. van Huisstede, Analysis of the Iconclass files in Leiden, Marburg and London. Unpublished report, in preparation of an Iconclass Machine Readable Version (IMRV). Replaced by the stand alone Iconclass Browser. Utrecht, Computer & Letteren, Version 2, 1993 {{% pdf 1993_analysisLeidenWittMarburg_version2 %}}
+- [&para;](#1993report){: name="1993report" } J.P.J. Brandhorst, P. van Huisstede, Analysis of the Iconclass files in Leiden, Marburg and London. Unpublished report, in preparation of an Iconclass Machine Readable Version (IMRV). Replaced by the stand alone Iconclass Browser. Utrecht, Computer & Letteren, Version 2, 1993, with handwritten annotations by Ger Duijfjes-Vellekoop {{% pdf 1993_analysisLeidenWittMarburg_version2 %}}
 
 1994
 
